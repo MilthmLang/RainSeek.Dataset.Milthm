@@ -12,6 +12,7 @@ repositories {
 }
 
 dependencies {
+    api("com.ibm.icu", "icu4j", "77.1")
 }
 
 gradlePlugin {
