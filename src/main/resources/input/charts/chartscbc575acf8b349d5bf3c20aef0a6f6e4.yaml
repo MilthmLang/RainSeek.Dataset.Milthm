@@ -1,0 +1,21 @@
+---
+id: "e0162d0e-0727-49c2-80fa-f611621650ea"
+illustration: "illustration_ff8d91880b992fb41954014404486170"
+bpmInfo:
+- start: -1.137931
+  bpm: 145.0
+  beatsPerBar: 0
+- start: 154.44827
+  bpm: 116.0
+  beatsPerBar: 4
+- start: 156.51724
+  bpm: 145.0
+  beatsPerBar: 4
+songId: "song_6e549e0529f747e4ad00a7dc2ee60952"
+difficulty: "Cloudburst"
+difficultyValue: 0.0
+charter: "Kiyotsuki"
+charterRefs:
+- "people_9832d457d4934e0db7cf9e9d0cae55ec"
+chartId: "chart_e0162d0e072749c280faf611621650ea"
+tags: []

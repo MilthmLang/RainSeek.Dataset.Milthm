@@ -1,0 +1,18 @@
+---
+id: "6eac0020-b9a1-480e-9539-633c0e502f9c"
+illustration: "illustration_ff8d91880b992fb41954014404486170"
+bpmInfo:
+- start: -1.137931
+  bpm: 145.0
+  beatsPerBar: 0
+- start: 154.44827
+  bpm: 116.0
+  beatsPerBar: 4
+songId: "song_6e549e0529f747e4ad00a7dc2ee60952"
+difficulty: "Drizzle"
+difficultyValue: 0.0
+charter: "zero.dream"
+charterRefs:
+- "people_af8c0c4a38db41f8a4fbce342ada2eb7"
+chartId: "chart_6eac0020b9a1480e9539633c0e502f9c"
+tags: []

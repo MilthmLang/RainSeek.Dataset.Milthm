@@ -1,0 +1,34 @@
+---
+id: "3a908e2d-8a39-4220-a6b8-4817bd1cea4a"
+illustration: "illustration_cf796efb7ebcd1c4f878a0bc9fcc174c"
+bpmInfo:
+- start: 1.625
+  bpm: 148.0
+  beatsPerBar: 4
+- start: 40.543
+  bpm: 220.0
+  beatsPerBar: 3
+- start: 47.088
+  bpm: 230.0
+  beatsPerBar: 3
+- start: 50.218
+  bpm: 210.0
+  beatsPerBar: 3
+- start: 51.932
+  bpm: 156.0
+  beatsPerBar: 4
+- start: 58.085
+  bpm: 150.0
+  beatsPerBar: 4
+- start: 61.285
+  bpm: 148.0
+  beatsPerBar: 4
+songId: "song_7bd5fb09519848dab1eb026dc245ba90"
+difficulty: "Cloudburst"
+difficultyValue: 0.0
+charter: "泪泪泪泪 AAAA KKKK"
+charterRefs:
+- "people_97508ec52f944422a7bfc8501727bf1c"
+chartId: "chart_3a908e2d8a394220a6b84817bd1cea4a"
+tags:
+- "notanote"

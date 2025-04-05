@@ -1,0 +1,18 @@
+---
+id: "b60f0788-f9af-4a41-8c73-2b72151d309f"
+illustration: "illustration_459a4466fae35d54ba00fd037af07104"
+bpmInfo:
+- start: 0.063
+  bpm: 167.0
+  beatsPerBar: 0
+- start: 0.053
+  bpm: 167.0
+  beatsPerBar: 0
+songId: "song_573e26d2df0e40b1836c14c6136956c1"
+difficulty: "Cloudburst"
+difficultyValue: 0.0
+charter: "Matthiola incana (L.) R. Br."
+charterRefs:
+- "people_bc87f9000468420cb03be7be2829bc69"
+chartId: "chart_b60f0788f9af4a418c732b72151d309f"
+tags: []
