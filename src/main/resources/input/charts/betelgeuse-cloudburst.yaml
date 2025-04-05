@@ -1,15 +1,16 @@
 ---
 id: "01929c36-e7ba-40d5-8123-ca3d4c2da4fb"
-illustration: "illustration_b9176fe60e39ebd409e67a0eed1ba3a6"
+illustration: "illustration_betelgeuse"
 bpmInfo:
 - start: 0.0085
   bpm: 105.0
   beatsPerBar: 0
-songId: "song_92a8cda3a5a540d4b28908fc812693db"
+songId: "song_betelgeuse"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "Akko vs. Kiyotsuki"
 charterRefs:
-- "people_68184840bb69432680914ea79e91977c"
+  - "people_akko"
+  - "people_kiyotsuki"
 chartId: "chart_01929c36e7ba40d58123ca3d4c2da4fb"
 tags: []
