@@ -1,13 +1,14 @@
 ---
 id: "2d6e3256-818b-434e-9980-ee6fcf14a8c7"
-illustration: "illustration_ca4dd3d0afcdbe54b88f151f4ebcbfec"
+illustration: "illustration_blueface"
 bpmInfo:
 - start: 0.08
   bpm: 125.0
   beatsPerBar: 0
-songId: "song_e3f8683c1ca54164a64cdd4f0fb73da7"
+songId: "song_blueface"
 difficulty: "Drizzle"
 difficultyValue: 0.0
+# TODO
 charter: "SakiA vs. TwT"
 charterRefs:
 - "people_23a5f1ec79394ddcbbafabbb51317447"
