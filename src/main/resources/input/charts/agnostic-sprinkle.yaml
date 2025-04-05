@@ -11,9 +11,8 @@ bpmInfo:
 songId: "song_agnostic"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
-# TODO: charter
 charter: "Monotropa uniflora L."
 charterRefs:
-- "people_9f36b1e87cf44b9dabff582429eb0b80"
+- "people_magazet"
 chartId: "chart_9a75cbb5f9ad4557b3ed5553a16023d7"
 tags: []

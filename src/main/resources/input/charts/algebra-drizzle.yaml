@@ -1,15 +1,15 @@
 ---
 id: "e09a8896-ad87-4cee-8f2a-40b8d4439f26"
-illustration: "illustration_eaa3813fc1ac3d04585c78aa58e6f242"
+illustration: "illustration_algebra"
 bpmInfo:
 - start: 1.355
   bpm: 177.0
   beatsPerBar: 0
-songId: "song_1c93620873d54dddbfec198a191767f6"
+songId: "song_algebra"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "Magazet"
 charterRefs:
-- "people_05e886c0d0d1482b866c4e50e455687e"
+- "people_magazet"
 chartId: "chart_e09a8896ad874cee8f2a40b8d4439f26"
 tags: []
