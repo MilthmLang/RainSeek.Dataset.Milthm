@@ -1,15 +1,15 @@
 ---
 id: "962ec79e-489c-43ea-bd72-6dc3448e3983"
-illustration: "illustration_eaa3813fc1ac3d04585c78aa58e6f242"
+illustration: "illustration_algebra"
 bpmInfo:
 - start: 0.0
   bpm: 177.0
   beatsPerBar: 0
-songId: "song_1c93620873d54dddbfec198a191767f6"
+songId: "song_algebra"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "200319202320020825"
 charterRefs:
-- "people_0d4dfe3dd5cd4fda95e7041ec10541ce"
+- "people_milthm_team"
 chartId: "chart_962ec79e489c43eabd726dc3448e3983"
 tags: []

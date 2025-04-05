@@ -11,9 +11,8 @@ bpmInfo:
 songId: "song_agnostic"
 difficulty: "Drizzle"
 difficultyValue: 0.0
-# TODO: charter
 charter: "Mirabilis jalapa L."
 charterRefs:
-- "people_b4c3be67be2940f08fd57c575c993a3b"
+- "people_magazet"
 chartId: "chart_74bf4e17c24648719b2b0dd0d0e6ee28"
 tags: []
