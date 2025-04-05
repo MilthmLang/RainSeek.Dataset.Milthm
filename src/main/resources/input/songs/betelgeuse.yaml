@@ -1,8 +1,10 @@
 ---
-id: "song_92a8cda3a5a540d4b28908fc812693db"
+id: "song_betelgeuse"
 title: "参宿四~Betelgeuse~"
 titleCulture: "0b0000000c0000000d000000"
 latinTitle: "Betelgeuse"
-artist: "people_a42860ca10bf418b806287f55fe278a9"
+artist:
+  - "people_amberry"
+  - "people_villax"
 tags:
 - ""
