@@ -1,15 +1,15 @@
 ---
 id: "22bd5632-25cc-412f-9299-bcf2cdd64aed"
-illustration: "illustration_718f049e519fc5d4cbd13c6ddf6d484f"
+illustration: "illustration_a_reincarnation_of_a_scattering_spring"
 bpmInfo:
 - start: 0.05
   bpm: 183.76
   beatsPerBar: 0
-songId: "song_c265e598ddfb42c7926e2e83a389b3bb"
+songId: "song_illustration_a_reincarnation_of_a_scattering_spring"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "Ariayaka"
 charterRefs:
-- "people_07c261ba1fbb404dbdfb29730135e5ad"
+- "people_ariayaka"
 chartId: "chart_22bd563225cc412f9299bcf2cdd64aed"
 tags: []
