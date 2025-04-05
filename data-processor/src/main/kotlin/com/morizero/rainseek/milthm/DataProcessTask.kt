@@ -5,6 +5,7 @@ import com.fasterxml.jackson.databind.SerializationFeature
 import com.fasterxml.jackson.dataformat.yaml.YAMLMapper
 import com.fasterxml.jackson.module.kotlin.registerKotlinModule
 import java.io.File
+import java.util.Arrays
 import java.util.concurrent.ConcurrentHashMap
 import org.gradle.api.DefaultTask
 import org.gradle.api.NonNullApi
@@ -54,7 +55,7 @@ open class DataProcessTask : DefaultTask() {
                 title = songsMap[(chart.songId)]?.title?: "",
                 titleCulture = songsMap[chart.songId]?.titleCulture?: "",
                 latinTitle = songsMap[chart.songId]?.latinTitle?: "",
-                artist = patchArtList(songsMap[chart.songId]?.artist?: emptyList()),
+                artist = songsMap[chart.songId]?.artist?.map { peopleMap[it]?.name ?: "null" } ?: emptyList(),
                 illustrator = peopleMap[illustrationMap[chart.illustration]?.illustrator ?: ""]?.name?:"",
                 illustration = illustrationMap[chart.illustration]?.description ?: "",
                 illustrationTag = illustrationMap[chart.illustration]?.tags ?: emptyList(),
@@ -79,15 +80,6 @@ open class DataProcessTask : DefaultTask() {
         testFile.createNewFile()
         objectMapper.writeValue(testFile, processedDocumentList)
 
-    }
-
-    fun patchArtList(list:List<String>): List<String> {
-        val a: List<String> = emptyList()
-            list.forEach{
-                peopleMap[it]?.name ?: "null"
-                a + it
-            }
-        return a
     }
 
     fun loadFiles() {
