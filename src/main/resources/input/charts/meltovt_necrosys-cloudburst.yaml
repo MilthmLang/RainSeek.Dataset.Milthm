@@ -1,16 +1,17 @@
 ---
 id: "97ef94ce-df45-4a92-9645-2456f606e0fa"
-illustration: "illustration_00571087d5c61184ea932321416fad42"
+illustration: "illustration_meltovt_necrosys"
 bpmInfo:
 - start: -0.01
   bpm: 210.0
   beatsPerBar: 4
-songId: "song_b5ec259140384ecd9cbccdd75c76de44"
+songId: "song_meltovt_necrosys"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "XZADUDU179 feat. AKKO"
 charterRefs:
-- "people_a1b5a3c898ae44e3ab4b83bba06f4702"
+- "people_akko"
+- "people_xzadudu179"
 chartId: "chart_97ef94cedf454a9296452456f606e0fa"
 tags:
 - "notanote"

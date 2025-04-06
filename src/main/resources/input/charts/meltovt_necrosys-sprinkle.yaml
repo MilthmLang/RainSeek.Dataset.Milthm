@@ -1,16 +1,16 @@
 ---
 id: "e7ec6340-be44-44ab-8545-d5b7cf326fd4"
-illustration: "illustration_00571087d5c61184ea932321416fad42"
+illustration: "illustration_meltovt_necrosys"
 bpmInfo:
 - start: 0.2857143
   bpm: 210.0
   beatsPerBar: 4
-songId: "song_b5ec259140384ecd9cbccdd75c76de44"
+songId: "song_meltovt_necrosys"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "猪肉小憨包"
 charterRefs:
-- "people_f461bd6618774ef8a34895c4157814cb"
+- "people_shuxuezhu"
 chartId: "chart_e7ec6340be4444ab8545d5b7cf326fd4"
 tags:
 - "notanote"
