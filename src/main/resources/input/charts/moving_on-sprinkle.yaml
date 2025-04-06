@@ -1,16 +1,16 @@
 ---
 id: "7d5df9f6-080f-4da0-974a-d2b8cb86e7e6"
-illustration: "illustration_50602b557260e6d458fbf7126b6c33e6"
+illustration: "illustration_moving_on"
 bpmInfo:
 - start: 0.0
   bpm: 180.0
   beatsPerBar: 0
-songId: "song_ef43346b07744f719bfbe99379b68813"
+songId: "song_moving_on"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "lei motife"
 charterRefs:
-- "people_958f88c6e8064c12a59b0c13920776b7"
+- "people_leitimo"
 chartId: "chart_7d5df9f6080f4da0974ad2b8cb86e7e6"
 tags:
 - "0"
