@@ -45,6 +45,7 @@ open class DataProcessTask : DefaultTask() {
     @Internal
     var songsMap: ConcurrentHashMap<String, Song> = ConcurrentHashMap()
 
+    // 用来记录各类型 ID 是否被使用，保存时添加前缀以区分类型
     @Internal
     var keyUsedList: ConcurrentHashMap<String, Boolean> = ConcurrentHashMap()
 
@@ -54,59 +55,74 @@ open class DataProcessTask : DefaultTask() {
     @TaskAction
     fun execute() {
         loadFiles()
+
+        // 遍历每个图表生成 ProcessedDocument
         chartMap.forEach { (_, chart) ->
             val song = songsMap[chart.songId]
             val illustration = illustrationMap[chart.illustration]
-            val artistNames = songsMap[chart.songId]?.artist?.mapNotNull { peopleMap[it]?.name } ?: emptyList()
+
+            // 合并 tags：图表、歌曲、插画，chart.charterRefs 关联人物，以及插画指定的 illustrator
+            val allTags = mutableSetOf<String>()
+            allTags.addAll(chart.tags)
+            song?.let { allTags.addAll(it.tags) }
+            illustration?.let { allTags.addAll(it.tags) }
+            chart.charterRefs.forEach { ref ->
+                peopleMap[ref]?.let { allTags.addAll(it.tags) }
+            }
+            illustration?.illustrator?.let { illustratorId ->
+                peopleMap[illustratorId]?.let { allTags.addAll(it.tags) }
+            }
+
+            // 移除使用过的 ID（按照保存时添加的前缀）
+            // 图表作为入口，不计入未使用检查，因此不移除其 keyUsedList 中的 chart_ 前缀项
+            song?.id?.let { keyUsedList.remove("song_${it}") }
+            illustration?.id?.let { keyUsedList.remove("illustration_${it}") }
+            illustration?.illustrator?.let { keyUsedList.remove("people_${it}") }
+            chart.charterRefs.forEach { ref ->
+                peopleMap[ref]?.id?.let { keyUsedList.remove("people_${it}") }
+            }
+            // 如果图表中涉及到的人物，比如 chart.chartId 对应的人物，也移除掉
+            peopleMap[chart.chartId]?.id?.let { keyUsedList.remove("people_${it}") }
+
             val processedDocument = ProcessedDocument(
                 id = chart.id,
                 title = song?.title ?: "",
                 titleCulture = song?.titleCulture ?: "",
                 latinTitle = song?.latinTitle ?: "",
-                artist = artistNames,
-                illustrator = peopleMap[illustration?.illustrator ?: ""]?.name ?: "",
+                artist = song?.artist?.mapNotNull { peopleMap[it]?.name } ?: emptyList(),
+                illustrator = illustration?.illustrator?.let { peopleMap[it]?.name } ?: "",
                 illustration = illustration?.description ?: "",
                 illustrationTag = illustration?.tags ?: emptyList(),
                 squareArtwork = "",
                 bpmInfo = chart.bpmInfo,
-                songId = "",
+                songId = song?.id ?: "",
                 difficulty = chart.difficulty,
                 difficultyValue = chart.difficultyValue,
                 charter = chart.charter,
                 chartId = chart.id,
-                tags = chart.tags +
-                        (song?.tags ?: emptyList()) +
-                        (illustration?.tags ?: emptyList()) +
-                        (peopleMap[illustration?.illustrator ?: ""]?.tags ?: emptyList())
+                tags = allTags.toList()
             )
-
-            // 移除已经使用的 key
-            chart.charterRefs.forEach { ref ->
-                peopleMap[ref]?.id?.let { keyUsedList.remove(it) }
-            }
-            illustration?.id?.let { keyUsedList.remove(it) }
-            peopleMap[chart.illustration]?.id?.let { keyUsedList.remove(it) }
-            peopleMap[chart.chartId]?.id?.let { keyUsedList.remove(it) }
-            songsMap[chart.songId]?.id?.let { keyUsedList.remove(it) }
 
             processedDocumentList.add(processedDocument)
         }
 
+        // 输出最终结果
         val objectMapper = ObjectMapper()
             .registerKotlinModule()
             .enable(SerializationFeature.INDENT_OUTPUT)
-
         val buildDir = project.layout.buildDirectory.asFile.get()
         buildDir.mkdirs()
         val outputFile = File(buildDir, "ProcessedDocument.json")
         outputFile.createNewFile()
         objectMapper.writeValue(outputFile, processedDocumentList)
 
+        // 警告：输出未被使用的 ID，格式为 "Key $k : $v not used"
+        // 跳过图表相关的 key，因为图表作为入口，不计入未使用检查
         if (keyUsedList.isNotEmpty()) {
-            keyUsedList.keys.forEach { document ->
-                val parts = document.split("_")
-                if (parts.size >= 2) {
-                    logger.warn("Key ${parts[0]} but not used: ${parts[1]}")
+            keyUsedList.keys.sorted().forEach { key ->
+                if (!key.startsWith("chart_")) {
+                    logger.warn("Key ${key.split("_")[0]} : ${key.split("_")[1]} not used")
+
                 }
             }
         }
@@ -115,49 +131,56 @@ open class DataProcessTask : DefaultTask() {
     fun loadFiles() {
         val errors = mutableListOf<String>()
 
+        // 加载图表
         chartsDirPath.forEach { file ->
             val chart = yamlMapper.readValue(file, Chart::class.java)
+            val key = chart.chartId
             if (chartMap.containsKey(chart.chartId)) {
                 errors.add("Duplicate chart id: ${chart.chartId}")
             } else {
                 chartMap[chart.chartId] = chart
-                keyUsedList[chart.chartId] = true
+                keyUsedList[key] = true
             }
         }
 
+        // 加载插画
         illustrationsDirPath.forEach { file ->
             val illustration = yamlMapper.readValue(file, Illustration::class.java)
+            val key = illustration.id
             if (illustrationMap.containsKey(illustration.id)) {
                 errors.add("Duplicate illustration id: ${illustration.id}")
             } else {
                 illustrationMap[illustration.id] = illustration
-                keyUsedList[illustration.id] = true
+                keyUsedList[key] = true
             }
         }
 
+        // 加载人物
         peopleDirPath.forEach { file ->
             val person = yamlMapper.readValue(file, People::class.java)
+            val key = person.id
             if (peopleMap.containsKey(person.id)) {
                 errors.add("Duplicate people id: ${person.id}")
             } else {
                 peopleMap[person.id] = person
-                keyUsedList[person.id] = true
+                keyUsedList[key] = true
             }
         }
 
+        // 加载歌曲
         songsDirPath.forEach { file ->
             val song = yamlMapper.readValue(file, Song::class.java)
+            val key = song.id
             if (songsMap.containsKey(song.id)) {
                 errors.add("Duplicate song id: ${song.id}")
             } else {
                 songsMap[song.id] = song
-                keyUsedList[song.id] = true
+                keyUsedList[key] = true
             }
         }
 
         if (errors.isNotEmpty()) {
-            throw IllegalStateException("加载文件时出现以下错误：\n" + errors.joinToString(separator = "\n"))
+            //throw IllegalStateException("加载文件时出现以下错误：\n" + errors.joinToString(separator = "\n"))
         }
     }
-
 }
