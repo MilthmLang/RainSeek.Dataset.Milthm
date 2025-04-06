@@ -1,15 +1,15 @@
 ---
 id: "4001a2b3-374d-438e-8e2b-2bd6d3651805"
-illustration: "illustration_09a9604de38598f4ea24f0cb96a3d022"
+illustration: "illustration_neon_iro_no_machi"
 bpmInfo:
 - start: 0.005
   bpm: 110.0
   beatsPerBar: 0
-songId: "song_55a0e5d6808747ca98f52beab9dc36a4"
+songId: "song_neon_iro_no_machi"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "Magazet in Rhythmic music"
 charterRefs:
-- "people_ca56bd2acaf24fbda77da4029a68d098"
+- "people_magazet"
 chartId: "chart_4001a2b3374d438e8e2b2bd6d3651805"
 tags: []
