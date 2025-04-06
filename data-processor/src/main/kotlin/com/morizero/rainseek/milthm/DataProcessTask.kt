@@ -113,37 +113,51 @@ open class DataProcessTask : DefaultTask() {
     }
 
     fun loadFiles() {
+        val errors = mutableListOf<String>()
+
         chartsDirPath.forEach { file ->
             val chart = yamlMapper.readValue(file, Chart::class.java)
             if (chartMap.containsKey(chart.chartId)) {
-                throw IllegalStateException("Duplicate chart id: ${chart.chartId}")
+                errors.add("Duplicate chart id: ${chart.chartId}")
+            } else {
+                chartMap[chart.chartId] = chart
+                keyUsedList[chart.chartId] = true
             }
-            keyUsedList[chart.chartId] = true
-            chartMap[chart.chartId] = chart
         }
+
         illustrationsDirPath.forEach { file ->
             val illustration = yamlMapper.readValue(file, Illustration::class.java)
             if (illustrationMap.containsKey(illustration.id)) {
-                throw IllegalStateException("Duplicate illustration id: ${illustration.id}")
+                errors.add("Duplicate illustration id: ${illustration.id}")
+            } else {
+                illustrationMap[illustration.id] = illustration
+                keyUsedList[illustration.id] = true
             }
-            illustrationMap[illustration.id] = illustration
-            keyUsedList[illustration.id] = true
         }
+
         peopleDirPath.forEach { file ->
             val person = yamlMapper.readValue(file, People::class.java)
             if (peopleMap.containsKey(person.id)) {
-                throw IllegalStateException("Duplicate people id: ${person.id}")
+                errors.add("Duplicate people id: ${person.id}")
+            } else {
+                peopleMap[person.id] = person
+                keyUsedList[person.id] = true
             }
-            peopleMap[person.id] = person
-            keyUsedList[person.id] = true
         }
+
         songsDirPath.forEach { file ->
             val song = yamlMapper.readValue(file, Song::class.java)
             if (songsMap.containsKey(song.id)) {
-                throw IllegalStateException("Duplicate song id: ${song.id}")
+                errors.add("Duplicate song id: ${song.id}")
+            } else {
+                songsMap[song.id] = song
+                keyUsedList[song.id] = true
             }
-            songsMap[song.id] = song
-            keyUsedList[song.id] = true
+        }
+
+        if (errors.isNotEmpty()) {
+            throw IllegalStateException("加载文件时出现以下错误：\n" + errors.joinToString(separator = "\n"))
         }
     }
+
 }
