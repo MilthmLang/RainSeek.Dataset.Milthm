@@ -8,10 +8,10 @@ bpmInfo:
 songId: "song_blueface"
 difficulty: "Drizzle"
 difficultyValue: 0.0
-# TODO
 charter: "SakiA vs. TwT"
 charterRefs:
-- "people_23a5f1ec79394ddcbbafabbb51317447"
+- "people_sakia"
+- "people_tcstwtbhy"
 chartId: "chart_2d6e3256818b434e9980ee6fcf14a8c7"
 tags:
 - "0"

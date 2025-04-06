@@ -9,9 +9,8 @@ songId: "song_ameonna"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "下雨の云"
-# TODO
 charterRefs:
-- "people_244b50709acc4130a8ac86b5b959ec15"
+- "people_yunmeng"
 chartId: "chart_9953eae44f604cfea8c39ada13a4b1ca"
 tags:
 - "prolog"
