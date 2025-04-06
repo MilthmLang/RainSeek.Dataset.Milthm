@@ -145,39 +145,42 @@ open class DataProcessTask : DefaultTask() {
                 titleCulture = song?.titleCulture ?: "",
                 latinTitle = song?.latinTitle ?: "",
                 artist = song?.artistsRef?.mapNotNull { peopleMap[it]?.name } ?: emptyList(),
-                illustrator = illustration?.illustrator?.map { peopleMap[it]?.name ?: "" }?.filter { it.isNotBlank() }
-                    ?.toList() ?: emptyList(),
+                illustrator = illustration?.illustrator?.map { peopleMap[it]?.name ?: "" }?.filter { it.isNotBlank() }?.toList() ?: emptyList(),
                 illustration = illustration?.description ?: "",
                 squareArtwork = illustration?.squareArtwork ?: "",
                 bpmInfo = chart.bpmInfo,
                 songId = song?.id ?: "",
                 difficulty = chart.difficulty,
                 difficultyValue = chart.difficultyValue,
-                charter = chart.charter,
-                chartId = chart.id,
+                charter = chart.charterRefs.map { ref -> peopleMap[ref]?.name ?: "" },
+                chartId = chart.chartId,
                 tags = allTags.toList()
             )
 
             // 添加到处理后的文档列表
             processedDocumentList.add(processedDocument)
 
-            // 从未使用集合中移除已使用的ID
-            keyUsedSet.remove(chart.songId)
-            keyUsedSet.remove(chart.illustration)
-            illustration?.let { it.illustrator.forEach { item -> keyUsedSet.remove(item) } }
+            keyUsedSet.remove(chart.chartId)//chart
+            keyUsedSet.remove(chart.illustration)//illustration
+            illustration?.let { keyUsedSet.remove(it.squareArtwork) }//illustration
 
             illustration?.let {
-                keyUsedSet.remove(it.squareArtwork)
-            }
-            // 移除图表制作者和歌曲艺术家的ID
-            for (i in chart.charterRefs) {
-                peopleMap[i]?.let { keyUsedSet.remove(it.id) }
-            }
-            for (i in song!!.artistsRef) {
-                peopleMap[i]?.let {
-                    keyUsedSet.remove(it.id)
+                it.illustrator.forEach { it ->
+                    keyUsedSet.remove(it)//illustrator
                 }
+
             }
+            keyUsedSet.remove(chart.songId)//song
+            chart.charterRefs.forEach { ref ->
+                keyUsedSet.remove(ref)//charter
+            }
+            song!!.artistsRef.forEach { id ->
+                keyUsedSet.remove(id)//artist
+            }
+            song.artist.forEach { string ->
+                keyUsedSet.remove(string)//artist
+            }
+
 
             keyUsedSet = keyUsedSet.toSortedSet()
         }
@@ -194,7 +197,8 @@ open class DataProcessTask : DefaultTask() {
         if (keyUsedSet.isNotEmpty()) {
             keyUsedSet.forEach { key ->
                 if (!key.startsWith("chart_")) {
-                    logger.warn("Key ${key.split("_")[0]} : ${key.split("_")[1]} not used")
+                    val parts = key.split("_", limit = 2)
+                    logger.warn("Key ${parts[0]} : ${parts[1]} not used")
                 }
             }
         }

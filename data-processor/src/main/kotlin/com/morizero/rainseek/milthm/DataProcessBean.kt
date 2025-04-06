@@ -30,7 +30,8 @@ data class ProcessedDocument(
     var songId: String = "",
     var difficulty: String = "",
     var difficultyValue: Double = 0.0,
-    var charter: String = "",
+    @JsonDeserialize(using = ArtistDeserializer::class)
+    var charter: List<String> = emptyList(),
     var chartId: String = "",
     var tags: List<String> = emptyList()
 )
@@ -58,7 +59,7 @@ data class Song(
     @JsonDeserialize(using = ArtistDeserializer::class)
     var artistsRef: List<String> = emptyList(),
     @JsonDeserialize(using = ArtistDeserializer::class)
-    val artist: String = "",
+    val artist: List<String> = emptyList(),
     var tags: List<String> = emptyList()
 
 )
