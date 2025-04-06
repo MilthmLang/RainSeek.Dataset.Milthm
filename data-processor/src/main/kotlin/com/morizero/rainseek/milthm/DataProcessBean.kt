@@ -20,8 +20,9 @@ data class ProcessedDocument(
     var title: String,
     var titleCulture: String = "",
     var latinTitle: String = "",
+    var artist: String = "",
     @JsonDeserialize(using = ArtistDeserializer::class)
-    var artist: List<String> = emptyList(),
+    var artistsList: List<String> = emptyList(),
     @JsonDeserialize(using = ArtistDeserializer::class)
     var illustrator: List<String> = emptyList(),
     var illustration: String = "",
@@ -58,8 +59,7 @@ data class Song(
     val latinTitle: String = "",
     @JsonDeserialize(using = ArtistDeserializer::class)
     var artistsRef: List<String> = emptyList(),
-    @JsonDeserialize(using = ArtistDeserializer::class)
-    val artist: List<String> = emptyList(),
+    val artist: String,
     var tags: List<String> = emptyList()
 
 )

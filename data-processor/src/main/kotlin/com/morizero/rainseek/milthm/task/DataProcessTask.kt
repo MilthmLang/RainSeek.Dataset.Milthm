@@ -4,19 +4,31 @@ import com.fasterxml.jackson.databind.ObjectMapper
 import com.fasterxml.jackson.databind.SerializationFeature
 import com.fasterxml.jackson.dataformat.yaml.YAMLMapper
 import com.fasterxml.jackson.module.kotlin.registerKotlinModule
-import com.morizero.rainseek.milthm.Chart
-import com.morizero.rainseek.milthm.Illustration
-import com.morizero.rainseek.milthm.People
-import com.morizero.rainseek.milthm.ProcessedDocument
-import com.morizero.rainseek.milthm.Song
-import java.io.File
-import java.util.concurrent.ConcurrentHashMap
-import kotlin.collections.get
+import com.morizero.rainseek.milthm.*
 import org.gradle.api.DefaultTask
 import org.gradle.api.NonNullApi
 import org.gradle.api.tasks.CacheableTask
 import org.gradle.api.tasks.Internal
 import org.gradle.api.tasks.TaskAction
+import java.io.File
+import java.util.concurrent.ConcurrentHashMap
+import kotlin.collections.MutableList
+import kotlin.collections.component1
+import kotlin.collections.component2
+import kotlin.collections.distinct
+import kotlin.collections.emptyList
+import kotlin.collections.filter
+import kotlin.collections.forEach
+import kotlin.collections.isNotEmpty
+import kotlin.collections.joinToString
+import kotlin.collections.map
+import kotlin.collections.mapNotNull
+import kotlin.collections.mutableListOf
+import kotlin.collections.mutableSetOf
+import kotlin.collections.remove
+import kotlin.collections.set
+import kotlin.collections.toList
+import kotlin.collections.toSortedSet
 
 /**
  * 数据处理任务，用于处理图表、歌曲、插画和人物数据，并生成最终的ProcessedDocument列表。
@@ -34,6 +46,7 @@ open class DataProcessTask : DefaultTask() {
 
     @Internal
     var enableOnExceptionToThrow: Boolean = true
+
     /**
      * 资源目录路径，包含输入数据文件。
      */
@@ -144,8 +157,10 @@ open class DataProcessTask : DefaultTask() {
                 title = song?.title ?: "",
                 titleCulture = song?.titleCulture ?: "",
                 latinTitle = song?.latinTitle ?: "",
-                artist = song?.artistsRef?.mapNotNull { peopleMap[it]?.name } ?: emptyList(),
-                illustrator = illustration?.illustrator?.map { peopleMap[it]?.name ?: "" }?.filter { it.isNotBlank() }?.toList() ?: emptyList(),
+                artist = song?.artist ?: "",
+                artistsList = song?.artistsRef?.mapNotNull { peopleMap[it]?.name } ?: emptyList(),
+                illustrator = illustration?.illustrator?.map { peopleMap[it]?.name ?: "" }?.filter { it.isNotBlank() }
+                    ?.toList() ?: emptyList(),
                 illustration = illustration?.description ?: "",
                 squareArtwork = illustration?.squareArtwork ?: "",
                 bpmInfo = chart.bpmInfo,
@@ -176,9 +191,6 @@ open class DataProcessTask : DefaultTask() {
             }
             song!!.artistsRef.forEach { id ->
                 keyUsedSet.remove(id)//artist
-            }
-            song.artist.forEach { string ->
-                keyUsedSet.remove(string)//artist
             }
 
 
