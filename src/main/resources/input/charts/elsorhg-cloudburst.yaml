@@ -1,11 +1,12 @@
 ---
 id: "f7b864bc-72a3-4c9d-ab7c-b57946fb77ec"
-illustration: "illustration_ea7ef25f08d034846965a88e6287e96b"
+illustration: ""
+illustrationSquare: "illustration_elsorhg"
 bpmInfo:
 - start: -0.003538462
   bpm: 195.0
   beatsPerBar: 4
-songId: "song_119082f2caaa46e7ba988e23bf953cbc"
+songId: "song_elsorhg"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "UndefinedViolet"
