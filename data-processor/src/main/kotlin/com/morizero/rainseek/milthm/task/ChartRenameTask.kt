@@ -1,7 +1,8 @@
-package com.morizero.rainseek.milthm
+package com.morizero.rainseek.milthm.task
 
 import com.fasterxml.jackson.dataformat.yaml.YAMLMapper
 import com.fasterxml.jackson.module.kotlin.registerKotlinModule
+import com.morizero.rainseek.milthm.Chart
 import org.gradle.api.DefaultTask
 import org.gradle.api.NonNullApi
 import org.gradle.api.tasks.CacheableTask
@@ -11,17 +12,10 @@ import java.io.File
 
 @NonNullApi
 @CacheableTask
-open class RenameChartTask : DefaultTask() {
-
-    /**
-     * 资源目录路径，包含输入数据文件。
-     */
+open class ChartRenameTask : DefaultTask() {
     @Internal
     val resourceDirPath = File("${project.rootDir}/src/main/resources/input")
 
-    /**
-     * 图表目录下的所有文件。
-     */
     @Internal
     val chartsDirPath: Array<out File> = resourceDirPath.resolve("charts").listFiles() ?: emptyArray()
 

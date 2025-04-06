@@ -1,6 +1,7 @@
 package com.morizero.rainseek.milthm
 
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize
 import kotlinx.serialization.Serializable
 
@@ -79,4 +80,9 @@ data class Illustration(
     var illustrator: String = "",
     var description: String = "",
     var tags: List<String> = emptyList()
+)
+
+@JsonIgnoreProperties(ignoreUnknown = true)
+data class IdModel(
+    var id: String = "",
 )
