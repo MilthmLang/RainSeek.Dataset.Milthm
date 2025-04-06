@@ -3,6 +3,8 @@ id: "song_937552ea7ef74e96b12431a465770909"
 title: "White Lizard"
 titleCulture: "00000000"
 latinTitle: "White Lizard"
-artist: "people_31a3d50b714d489284dcc4274b57d334"
+artist: "Lydia Esrig"
+artistsRef:
+- "people_31a3d50b714d489284dcc4274b57d334"
 tags:
 - "RainWorld"

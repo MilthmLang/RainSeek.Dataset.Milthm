@@ -3,6 +3,8 @@ id: "song_pieces_of_the_cycle"
 title: "サイクルの欠片"
 titleCulture: "14000000"
 latinTitle: "Pieces of the Cycle"
-artist: "people_tsuki_p"
+artist: "TsukiP"
+artistsRef:
+- "people_tsuki_p"
 tags:
-  - 1st anniversary
+- "1st anniversary"

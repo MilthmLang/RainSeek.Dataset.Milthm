@@ -3,11 +3,13 @@ id: "song_episodic_rain"
 title: "时落之雨"
 titleCulture: "0b0000000c0000000d000000"
 latinTitle: "Episodic Rain"
-artist: "people_delos"
+artist: "Delos"
+artistsRef:
+- "people_delos"
 tags:
-  - 魔法少女小圆
-  - 魔法少女まどか☆マギカ
-  - Puella Magi Madoka Magica
-  - SHAFT
-  - 魔法少女小织
-  - 晓美焰
+- "魔法少女小圆"
+- "魔法少女まどか☆マギカ"
+- "Puella Magi Madoka Magica"
+- "SHAFT"
+- "魔法少女小织"
+- "晓美焰"

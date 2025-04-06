@@ -3,6 +3,8 @@ id: "song_62b84565d5ea474689097366a4720d0f"
 title: "OverRain"
 titleCulture: "00000000"
 latinTitle: "OverRain"
-artist: "people_ec4eeec3292e4810be42666efde317b6"
+artist: "SharK"
+artistsRef:
+- "people_ec4eeec3292e4810be42666efde317b6"
 tags:
 - "chapter1"

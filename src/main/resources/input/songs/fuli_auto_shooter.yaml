@@ -3,6 +3,8 @@ id: "song_fuli_auto_shooter"
 title: "FULi AUTO SHOOTER"
 titleCulture: "00000000"
 latinTitle: "FULi AUTO SHOOTER"
-artist: "people_myukke"
+artist: "MYUKKE."
+artistsRef:
+- "people_myukke"
 tags:
 - ""

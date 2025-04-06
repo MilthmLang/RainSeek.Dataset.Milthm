@@ -3,6 +3,8 @@ id: "song_agnostic"
 title: "Agnostic"
 titleCulture: "00000000"
 latinTitle: "Agnostic"
-artist: "people_c236facffe3b4937833ddfa3ba924c0c"
+artist: "AiSS"
+artistsRef:
+- "people_c236facffe3b4937833ddfa3ba924c0c"
 tags:
 - ""

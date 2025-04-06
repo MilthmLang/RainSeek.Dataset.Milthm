@@ -3,6 +3,8 @@ id: "song_fragment_of_memories"
 title: "Fragment of Memories"
 titleCulture: "00000000"
 latinTitle: "Fragment of Memories"
-artist: "people_u_ruri"
+artist: "U-Ruri"
+artistsRef:
+- "people_u_ruri"
 tags:
 - "chapter1"

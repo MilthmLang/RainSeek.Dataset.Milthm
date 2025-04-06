@@ -3,6 +3,8 @@ id: "song_excellent_broadband_which_makes_my_internet_speed_spin"
 title: "选择你的宽带"
 titleCulture: "0b0000000c0000000d000000"
 latinTitle: "Excellent broadband, which makes my internet speed spin"
-artist: "people_moryueci"
+artist: "MoryueCi"
+artistsRef:
+- "people_moryueci"
 tags:
-  - April Fool 2024
+- "April Fool 2024"

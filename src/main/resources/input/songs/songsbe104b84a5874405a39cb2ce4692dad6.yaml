@@ -3,6 +3,8 @@ id: "song_e09f68707cec4381a500dc2360c9a488"
 title: "Welcome to Milthm"
 titleCulture: "00000000"
 latinTitle: "Welcome to Milthm"
-artist: "people_tsuki_p"
+artist: "TsukiP"
+artistsRef:
+- "people_tsuki_p"
 tags:
 - ""

@@ -3,6 +3,8 @@ id: "song_6321c34dd1764850a27d0595efd01d20"
 title: "烁雨"
 titleCulture: "0b0000000c0000000d000000"
 latinTitle: "Sparkrain"
-artist: "people_ilusmin"
+artist: "ILusMin"
+artistsRef:
+- "people_ilusmin"
 tags:
 - "notanote"

@@ -3,6 +3,8 @@ id: "song_kasane"
 title: "KASANE"
 titleCulture: "00000000"
 latinTitle: "KASANE"
-artist: "people_kaede_hiyama"
+artist: "Kaede Hiyama"
+artistsRef:
+- "people_kaede_hiyama"
 tags:
 - ""

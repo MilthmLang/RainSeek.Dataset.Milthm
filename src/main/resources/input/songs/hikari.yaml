@@ -3,6 +3,8 @@ id: "song_hikari"
 title: "Hikari"
 titleCulture: "00000000"
 latinTitle: "Hikari"
-artist: "people_kuroe"
+artist: "Kuroe"
+artistsRef:
+- "people_kuroe"
 tags:
 - ""

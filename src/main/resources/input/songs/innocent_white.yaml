@@ -3,6 +3,8 @@ id: "song_innocent_white"
 title: "Innocent white"
 titleCulture: "00000000"
 latinTitle: "Innocent white"
-artist: "people_0a4f4f1e9d154edfb9ae70a539131bb2"
+artist: "影虎。"
+artistsRef:
+- "people_0a4f4f1e9d154edfb9ae70a539131bb2"
 tags:
 - "notanote"

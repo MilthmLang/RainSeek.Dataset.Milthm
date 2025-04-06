@@ -3,6 +3,8 @@ id: "song_kagetsu"
 title: "花月"
 titleCulture: "0b0000000c0000000d00000014000000"
 latinTitle: "Kagetsu"
-artist: "people_kirara_magic"
+artist: "Kirara Magic"
+artistsRef:
+- "people_kirara_magic"
 tags:
 - ""

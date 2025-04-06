@@ -3,6 +3,8 @@ id: "song_6e549e0529f747e4ad00a7dc2ee60952"
 title: "slic.hertz"
 titleCulture: "00000000"
 latinTitle: "slic.hertz"
-artist: "people_0a06cabb5fda4eba9dcd780e1d45b9c8"
+artist: "Sobrem"
+artistsRef:
+- "people_0a06cabb5fda4eba9dcd780e1d45b9c8"
 tags:
 - ""

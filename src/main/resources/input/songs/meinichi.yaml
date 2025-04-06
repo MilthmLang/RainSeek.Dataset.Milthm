@@ -3,6 +3,8 @@ id: "song_meinichi"
 title: "命日"
 titleCulture: "140000000b0000000c0000000d000000"
 latinTitle: "Meinichi"
-artist: "people_leaf"
+artist: "LeaF"
+artistsRef:
+- "people_leaf"
 tags:
 - "0"

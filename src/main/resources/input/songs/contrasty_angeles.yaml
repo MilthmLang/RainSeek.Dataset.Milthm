@@ -3,6 +3,8 @@ id: "song_contrasty_angeles"
 title: "Contrasty Angeles"
 titleCulture: "00000000"
 latinTitle: "Contrasty Angeles"
-artist: "people_hlxq_v_m"
+artist: "HLxQ.v.M"
+artistsRef:
+- "people_hlxq_v_m"
 tags:
 - "chapter1"

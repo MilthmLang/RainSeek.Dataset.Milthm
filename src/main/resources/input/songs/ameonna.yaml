@@ -3,6 +3,8 @@ id: "song_ameonna"
 title: "雨女"
 titleCulture: "0b0000000c0000000d00000014000000"
 latinTitle: "Ameonna"
-artist: "people_tsuki_p"
+artist: "TsukiP"
+artistsRef:
+- "people_tsuki_p"
 tags:
 - "0"

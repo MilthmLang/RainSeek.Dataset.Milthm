@@ -3,6 +3,8 @@ id: "song_jump_out"
 title: "Jump out?"
 titleCulture: "00000000"
 latinTitle: "Jump out?"
-artist: "people_b_r_i"
+artist: "B.R.I"
+artistsRef:
+- "people_b_r_i"
 tags:
 - "0"

@@ -3,6 +3,8 @@ id: "song_e4dbbd9741a0481ab7b4a57d912c794d"
 title: "Sundown"
 titleCulture: "00000000"
 latinTitle: "Sundown"
-artist: "people_james_primate"
+artist: "James Primate"
+artistsRef:
+- "people_james_primate"
 tags:
 - "RainWorld"

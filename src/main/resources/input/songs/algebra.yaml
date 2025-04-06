@@ -3,6 +3,8 @@ id: "song_algebra"
 title: "Algebra"
 titleCulture: "00000000"
 latinTitle: "Algebra"
-artist: "people_rin"
+artist: "Function Phantom"
+artistsRef:
+- "people_rin"
 tags:
 - ""

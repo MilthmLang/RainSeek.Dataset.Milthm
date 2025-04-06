@@ -3,8 +3,9 @@ id: "song_reminiscence_in_starlight"
 title: "暮予星光"
 titleCulture: "0b0000000c0000000d000000"
 latinTitle: "Reminiscence in Starlight"
-artist:
-  - people_chacha
-  - people_ryosu
+artist: "RyosU feat. 茶茶"
+artistsRef:
+- "people_chacha"
+- "people_ryosu"
 tags:
 - ""

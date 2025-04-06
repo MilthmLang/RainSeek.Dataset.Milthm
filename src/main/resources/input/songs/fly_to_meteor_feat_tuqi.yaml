@@ -3,9 +3,10 @@ id: "song_fly_to_meteor_feat_tuqi"
 title: "Fly To Meteor feat.兔柒 (Milthm Edit)"
 titleCulture: "00000000"
 latinTitle: "Fly To Meteor feat.兔柒 (Milthm Edit)"
-artist:
-  - "people_shootingstar"
-  - "people_moryueci"
-  - "people_cyberspace"
+artist: "ShooTinGStaR + MoryueCi + Cyberspace"
+artistsRef:
+- "people_shootingstar"
+- "people_moryueci"
+- "people_cyberspace"
 tags:
-  - ""
+- ""

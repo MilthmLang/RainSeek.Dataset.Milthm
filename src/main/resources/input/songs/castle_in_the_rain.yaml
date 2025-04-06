@@ -3,6 +3,8 @@ id: "song_castle_in_the_rain"
 title: "雨之城"
 titleCulture: "0b0000000c0000000d000000"
 latinTitle: "Castle in the Rain"
-artist: "people_cslriseto"
+artist: "CsLrisEto"
+artistsRef:
+- "people_cslriseto"
 tags:
 - "0"

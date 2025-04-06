@@ -3,6 +3,8 @@ id: "song_dogbite"
 title: "Dogbite"
 titleCulture: "00000000"
 latinTitle: "Dogbite"
-artist: "people_t_pazolite"
+artist: "t+pazolite"
+artistsRef:
+- "people_t_pazolite"
 tags:
 - ""

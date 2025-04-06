@@ -3,6 +3,8 @@ id: "song_meltovt_necrosys"
 title: "Meltovt Necrosys"
 titleCulture: "00000000"
 latinTitle: "Meltovt Necrosys"
-artist: "people_c2f436c14885424f875c4080a44ae6d6"
+artist: "Halv"
+artistsRef:
+- "people_c2f436c14885424f875c4080a44ae6d6"
 tags:
 - "notanote"

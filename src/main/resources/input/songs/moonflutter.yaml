@@ -3,6 +3,8 @@ id: "song_moonflutter"
 title: "Moonflutter"
 titleCulture: "00000000"
 latinTitle: "Moonflutter"
-artist: "people_reku_mochizuki"
+artist: "Reku Mochizuki"
+artistsRef:
+- "people_reku_mochizuki"
 tags:
 - ""

@@ -3,6 +3,8 @@ id: "song_cybernetic_blazar"
 title: "cybernetic blazar"
 titleCulture: "00000000"
 latinTitle: "cybernetic blazar"
-artist: "people_aaaa"
+artist: "ああああ"
+artistsRef:
+- "people_aaaa"
 tags:
 - "notanote"

@@ -3,6 +3,8 @@ id: "song_a86fa5d1a11c4f0aaa3ae215baed8a6c"
 title: "Threat - Superstructure"
 titleCulture: "00000000"
 latinTitle: "Threat - Superstructure"
-artist: "people_james_primate"
+artist: "James Primate"
+artistsRef:
+- "people_james_primate"
 tags:
 - "RainWorld"

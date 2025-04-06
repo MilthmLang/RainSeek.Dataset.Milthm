@@ -3,6 +3,8 @@ id: "song_aconsma"
 title: "Aconsma"
 titleCulture: "00000000"
 latinTitle: "Aconsma"
-artist: "people_ilusmin"
+artist: "ILusMin"
+artistsRef:
+- "people_ilusmin"
 tags:
 - "chapter1"

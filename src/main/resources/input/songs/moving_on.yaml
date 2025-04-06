@@ -3,6 +3,8 @@ id: "song_moving_on"
 title: "Moving On"
 titleCulture: "00000000"
 latinTitle: "Moving On"
-artist: "people_nastram"
+artist: "Nastram"
+artistsRef:
+- "people_nastram"
 tags:
 - "0"
