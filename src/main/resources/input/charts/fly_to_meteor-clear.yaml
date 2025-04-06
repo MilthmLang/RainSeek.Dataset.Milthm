@@ -1,15 +1,15 @@
 ---
 id: "ead657f6-f0f2-4a21-acfd-4322892a0562"
-illustration: "illustration_aa45b98602a25514bb28613d6c3323d8"
+illustration: "illustration_fly_to_meteor"
 bpmInfo:
 - start: 0.03
   bpm: 180.0
   beatsPerBar: 0
-songId: "song_2bc55eaaa11142e387982cf9ffe4f3d1"
+songId: "song_fly_to_meteor_feat_tuqi"
 difficulty: "Clear"
 difficultyValue: 0.0
 charter: "回望时，皆是你与光芒"
 charterRefs:
-- "people_6c1ca03a949e429ca2d0e3650258af02"
+- "people_yuhuo"
 chartId: "chart_ead657f6f0f24a21acfd4322892a0562"
 tags: []
