@@ -57,6 +57,7 @@ data class Song(
     val latinTitle: String = "",
     @JsonDeserialize(using = ArtistDeserializer::class)
     var artistsRef: List<String> = emptyList(),
+    @JsonDeserialize(using = ArtistDeserializer::class)
     val artist: String = "",
     var tags: List<String> = emptyList()
 
