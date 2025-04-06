@@ -1,15 +1,15 @@
 ---
 id: "d70bc3b4-752a-45b9-bd31-c6ab8b9a7c9e"
-illustration: "illustration_7e83bf1b7f5e2184fb230368a90eaeb5"
+illustration: "illustration_infp_mp3"
 bpmInfo:
 - start: 0.01
   bpm: 100.0
   beatsPerBar: 0
-songId: "song_c8019326482b47f18319f1094acd1f4c"
+songId: "song_infp_mp3"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "MGZT.mil"
 charterRefs:
-- "people_29b91bf6d8d04a05890371ecb61ff52e"
+- "people_magazet"
 chartId: "chart_d70bc3b4752a45b9bd31c6ab8b9a7c9e"
 tags: []
