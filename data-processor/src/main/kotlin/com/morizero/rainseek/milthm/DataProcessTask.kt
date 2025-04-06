@@ -7,6 +7,8 @@ import com.fasterxml.jackson.module.kotlin.registerKotlinModule
 import java.io.File
 import java.util.Arrays
 import java.util.concurrent.ConcurrentHashMap
+import java.util.concurrent.ConcurrentLinkedQueue
+import java.util.concurrent.ConcurrentSkipListSet
 import org.gradle.api.DefaultTask
 import org.gradle.api.NonNullApi
 import org.gradle.api.tasks.CacheableTask
@@ -41,6 +43,9 @@ open class DataProcessTask : DefaultTask() {
     var songsMap: ConcurrentHashMap<String, Song> = ConcurrentHashMap()
 
     @Internal
+    var keyUsedList: ConcurrentSkipListSet<String> = ConcurrentSkipListSet()
+
+    @Internal
     var processedDocumentList: MutableList<ProcessedDocument> = mutableListOf()
 
 
@@ -66,8 +71,26 @@ open class DataProcessTask : DefaultTask() {
                 difficultyValue = chart.difficultyValue,
                 charter = chart.charter,
                 chartId = chart.id,
-                tags = chart.tags
+                tags = chart.tags +
+                        (songsMap[chart.songId]?.tags ?: emptyList()) +
+                        (illustrationMap[chart.illustration]?.tags ?: emptyList()) +
+                        (peopleMap[illustrationMap[chart.illustration]?.illustrator ?: ""]?.tags ?: emptyList())
             )
+            if (chart.id != null){
+                keyUsedList.remove(chart.id)
+            }
+            if (illustrationMap[chart.illustration]?.id != null){
+                keyUsedList.remove(illustrationMap[chart.illustration]?.id)
+            }
+            if(peopleMap[chart.illustration]?.id != null) {
+                keyUsedList.remove(peopleMap[chart.illustration]?.id)
+            }
+            if (peopleMap[chart.chartId]?.id != null) {
+                keyUsedList.remove(peopleMap[chart.chartId]?.id)
+            }
+            if (songsMap[chart.songId]?.id != null) {
+                keyUsedList.remove(songsMap[chart.songId]?.id)
+            }
             processedDocumentList.add(processedDocument)
         }
         val objectMapper = ObjectMapper()
@@ -79,25 +102,45 @@ open class DataProcessTask : DefaultTask() {
         val testFile = File(buildDir, "/ProcessedDocument.json")
         testFile.createNewFile()
         objectMapper.writeValue(testFile, processedDocumentList)
-
+        if (!keyUsedList.isEmpty()) {
+            for (document in keyUsedList) {
+                logger.warn("Key ${document.split("_")[0]} but not used: ${document.split("_")[1]}")
+            }
+        }
     }
 
     fun loadFiles() {
         for (chart in chartsDirPath) {
             val c = yamlMapper.readValue(chart , Chart::class.java)
+            if (chartMap.get(c.chartId) != null) {
+                logger.error("Duplicate chart id: ${c.chartId}")
+            }
+            keyUsedList.add(c.id)
             chartMap.put(c.chartId , c)
         }
         for (illustration in illustrationsDirPath) {
             val i = yamlMapper.readValue(illustration , Illustration::class.java)
+            if (illustrationMap.get(i.id) != null) {
+                logger.error("Duplicate illustration id: ${i.id}")
+            }
             illustrationMap.put(i.id , i)
+            keyUsedList.add(i.id)
         }
         for (people in peopleDirPath) {
             val p = yamlMapper.readValue(people , People::class.java)
+            if (peopleMap.get(p.id) != null) {
+                logger.error("Duplicate people id: ${p.id}")
+            }
             peopleMap.put(p.id , p)
+            keyUsedList.add(p.id)
         }
         for (song in songsDirPath) {
             val s = yamlMapper.readValue(song , Song::class.java)
+            if (songsMap.get(s.id) != null) {
+                logger.error("Duplicate song id: ${s.id}")
+            }
             songsMap.put(s.id , s)
+            keyUsedList.add(s.id)
         }
     }
 }
