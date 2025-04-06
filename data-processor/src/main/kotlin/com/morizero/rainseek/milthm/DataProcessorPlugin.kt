@@ -7,5 +7,6 @@ class DataProcessorPlugin : Plugin<Project> {
     override fun apply(target: Project) {
         println("Milthm Data-Process, Launched!")
         target.tasks.register("data-process", DataProcessTask::class.java)
+        target.tasks.register("rename-chart", RenameChartTask::class.java)
     }
 }

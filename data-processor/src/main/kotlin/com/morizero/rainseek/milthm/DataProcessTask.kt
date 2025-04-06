@@ -4,13 +4,13 @@ import com.fasterxml.jackson.databind.ObjectMapper
 import com.fasterxml.jackson.databind.SerializationFeature
 import com.fasterxml.jackson.dataformat.yaml.YAMLMapper
 import com.fasterxml.jackson.module.kotlin.registerKotlinModule
-import java.io.File
-import java.util.concurrent.ConcurrentHashMap
 import org.gradle.api.DefaultTask
 import org.gradle.api.NonNullApi
 import org.gradle.api.tasks.CacheableTask
 import org.gradle.api.tasks.Internal
 import org.gradle.api.tasks.TaskAction
+import java.io.File
+import java.util.concurrent.ConcurrentHashMap
 
 /**
  * 数据处理任务，用于处理图表、歌曲、插画和人物数据，并生成最终的ProcessedDocument列表。
