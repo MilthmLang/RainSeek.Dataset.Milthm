@@ -56,7 +56,8 @@ data class Song(
     var titleCulture: String = "",
     val latinTitle: String = "",
     @JsonDeserialize(using = ArtistDeserializer::class)
-    val artist: List<String> = emptyList(),
+    var artistsRef: List<String> = emptyList(),
+    val artist: String = "",
     var tags: List<String> = emptyList()
 
 )
@@ -79,6 +80,7 @@ data class Illustration(
     var id: String = "",
     @JsonDeserialize(using = ArtistDeserializer::class)
     var illustrator: List<String> = emptyList(),
+    var squareArtwork: String = "",
     var description: String = "",
     var tags: List<String> = emptyList()
 )
