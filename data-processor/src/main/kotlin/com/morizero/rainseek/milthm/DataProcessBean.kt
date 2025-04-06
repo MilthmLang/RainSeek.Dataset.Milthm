@@ -63,6 +63,7 @@ data class Song(
 data class Chart(
     var id: String = "",
     var illustration: String = "",
+    var illustrationSquare: String = "",
     var bpmInfo: List<BPMData> = emptyList(),
     var songId: String = "",
     var difficulty: String = "",

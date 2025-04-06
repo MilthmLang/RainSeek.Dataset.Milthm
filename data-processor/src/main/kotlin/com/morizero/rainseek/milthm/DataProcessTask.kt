@@ -12,78 +12,122 @@ import org.gradle.api.tasks.CacheableTask
 import org.gradle.api.tasks.Internal
 import org.gradle.api.tasks.TaskAction
 
-@NonNullApi
-@CacheableTask
+/**
+ * 数据处理任务，用于处理图表、歌曲、插画和人物数据，并生成最终的ProcessedDocument列表。
+ * 该任务会检查数据的完整性，并输出未被使用的ID作为警告。
+ */
+@NonNullApi  // 表示该API不接受null参数
+@CacheableTask  // 表示该任务支持增量构建和缓存
 open class DataProcessTask : DefaultTask() {
-    @Internal
+    /**
+     * YAML映射器，用于读取和解析YAML格式的文件。
+     * 注册了Kotlin模块以支持Kotlin特有的特性。
+     */
+    @Internal  // 表示该属性不是任务的输入或输出
     val yamlMapper = YAMLMapper().registerKotlinModule()
 
+    /**
+     * 资源目录路径，包含输入数据文件。
+     */
     @Internal
     val resourceDirPath = File("${project.rootDir}/src/main/resources/input")
 
+    /**
+     * 图表目录下的所有文件。
+     */
     @Internal
     val chartsDirPath: Array<out File> = resourceDirPath.resolve("charts").listFiles() ?: emptyArray()
 
+    /**
+     * 插画目录下的所有文件。
+     */
     @Internal
     val illustrationsDirPath: Array<out File> = resourceDirPath.resolve("illustrations").listFiles() ?: emptyArray()
 
+    /**
+     * 人物目录下的所有文件。
+     */
     @Internal
     val peopleDirPath: Array<out File> = resourceDirPath.resolve("people").listFiles() ?: emptyArray()
 
+    /**
+     * 歌曲目录下的所有文件。
+     */
     @Internal
     val songsDirPath: Array<out File> = resourceDirPath.resolve("songs").listFiles() ?: emptyArray()
 
+    /**
+     * 图表数据的映射表，键为图表ID，值为图表对象。
+     */
     @Internal
     var chartMap: ConcurrentHashMap<String, Chart> = ConcurrentHashMap()
 
+    /**
+     * 插画数据的映射表，键为插画ID，值为插画对象。
+     */
     @Internal
     var illustrationMap: ConcurrentHashMap<String, Illustration> = ConcurrentHashMap()
 
+    /**
+     * 人物数据的映射表，键为人物ID，值为人物对象。
+     */
     @Internal
     var peopleMap: ConcurrentHashMap<String, People> = ConcurrentHashMap()
 
+    /**
+     * 歌曲数据的映射表，键为歌曲ID，值为歌曲对象。
+     */
     @Internal
     var songsMap: ConcurrentHashMap<String, Song> = ConcurrentHashMap()
 
-    // 用来记录各类型 ID 是否被使用，保存时添加前缀以区分类型
+    /**
+     * 用于记录各类型ID是否被使用的集合。
+     * 保存时添加前缀以区分类型。
+     */
     @Internal
-    var keyUsedList: ConcurrentHashMap<String, Boolean> = ConcurrentHashMap()
+    var keyUsedSet = mutableSetOf<String>()
 
+    /**
+     * 处理后的文档列表，包含所有合并后的数据。
+     */
     @Internal
     var processedDocumentList: MutableList<ProcessedDocument> = mutableListOf()
 
+    /**
+     * 任务执行的主方法。
+     * 加载所有数据文件，处理并生成最终的ProcessedDocument列表。
+     * 输出未被使用的ID作为警告。
+     */
     @TaskAction
     fun execute() {
+        // 加载所有数据文件
         loadFiles()
 
-        // 遍历每个图表生成 ProcessedDocument
+        // 遍历每个图表生成ProcessedDocument
         chartMap.forEach { (_, chart) ->
+            // 获取关联的歌曲和插画
             val song = songsMap[chart.songId]
             val illustration = illustrationMap[chart.illustration]
 
-            // 合并 tags：图表、歌曲、插画，chart.charterRefs 关联人物，以及插画指定的 illustrator
-            val allTags = mutableSetOf<String>()
+            // 合并所有标签：图表、歌曲、插画，以及相关人物的标签
+            var allTags = mutableSetOf<String>()
             allTags.addAll(chart.tags)
             song?.let { allTags.addAll(it.tags) }
             illustration?.let { allTags.addAll(it.tags) }
+            // 添加图表制作者的标签
             chart.charterRefs.forEach { ref ->
                 peopleMap[ref]?.let { allTags.addAll(it.tags) }
             }
+            // 添加插图画师的标签
             illustration?.illustrator?.let { illustratorId ->
                 peopleMap[illustratorId]?.let { allTags.addAll(it.tags) }
             }
 
-            // 移除使用过的 ID（按照保存时添加的前缀）
-            // 图表作为入口，不计入未使用检查，因此不移除其 keyUsedList 中的 chart_ 前缀项
-            song?.id?.let { keyUsedList.remove(it) }
-            illustration?.id?.let { keyUsedList.remove(it) }
-            illustration?.illustrator?.let { keyUsedList.remove(it) }
-            chart.charterRefs.forEach { ref ->
-                peopleMap[ref]?.id?.let { keyUsedList.remove(it) }
-            }
-            // 如果图表中涉及到的人物，比如 chart.chartId 对应的人物，也移除掉
-            peopleMap[chart.chartId]?.id?.let { keyUsedList.remove(it) }
+            // 对集合进行排序
+            keyUsedSet = keyUsedSet.toSortedSet()
+            allTags = allTags.toSortedSet()
 
+            // 创建处理后的文档对象
             val processedDocument = ProcessedDocument(
                 id = chart.id,
                 title = song?.title ?: "",
@@ -103,10 +147,26 @@ open class DataProcessTask : DefaultTask() {
                 tags = allTags.toList()
             )
 
+            // 添加到处理后的文档列表
             processedDocumentList.add(processedDocument)
+
+            // 从未使用集合中移除已使用的ID
+            keyUsedSet.remove(chart.songId)
+            keyUsedSet.remove(chart.illustration)
+            illustration?.let { keyUsedSet.remove(it.illustrator) }
+
+            // 移除图表制作者和歌曲艺术家的ID
+            for (i in chart.charterRefs) {
+                peopleMap[i]?.let { keyUsedSet.remove(it.id) }
+            }
+            for (i in song!!.artist) {
+                peopleMap[i]?.let { keyUsedSet.remove(it.id) }
+            }
+
+            keyUsedSet = keyUsedSet.toSortedSet()
         }
 
-        // 输出最终结果
+        // 配置JSON映射器并输出最终结果
         val objectMapper = ObjectMapper()
             .registerKotlinModule()
             .enable(SerializationFeature.INDENT_OUTPUT)
@@ -116,69 +176,67 @@ open class DataProcessTask : DefaultTask() {
         outputFile.createNewFile()
         objectMapper.writeValue(outputFile, processedDocumentList)
 
-        // 警告：输出未被使用的 ID，格式为 "Key $k : $v not used"
-        // 跳过图表相关的 key，因为图表作为入口，不计入未使用检查
-        if (keyUsedList.isNotEmpty()) {
-            keyUsedList.keys.sorted().forEach { key ->
+        // 输出未被使用的ID作为警告（跳过图表相关的key）
+        if (keyUsedSet.isNotEmpty()) {
+            keyUsedSet.forEach { key ->
                 if (!key.startsWith("chart_")) {
                     logger.warn("Key ${key.split("_")[0]} : ${key.split("_")[1]} not used")
-
                 }
             }
         }
     }
 
+    /**
+     * 加载所有数据文件到对应的映射表中。
+     * 检查重复的ID并在发现错误时抛出异常。
+     */
     fun loadFiles() {
         val errors = mutableListOf<String>()
 
-        // 加载图表
+        // 加载谱面数据
         chartsDirPath.forEach { file ->
             val chart = yamlMapper.readValue(file, Chart::class.java)
-            val key = chart.chartId
             if (chartMap.containsKey(chart.chartId)) {
-                errors.add("Duplicate chart id: ${chart.chartId}")
+                errors.add("重复的谱面 ID: ${chart.chartId}")
             } else {
                 chartMap[chart.chartId] = chart
-                keyUsedList[key] = true
             }
         }
 
-        // 加载插画
+        // 加载插画数据
         illustrationsDirPath.forEach { file ->
             val illustration = yamlMapper.readValue(file, Illustration::class.java)
-            val key = illustration.id
             if (illustrationMap.containsKey(illustration.id)) {
-                errors.add("Duplicate illustration id: ${illustration.id}")
+                errors.add("重复的插画 ID: ${illustration.id}")
             } else {
                 illustrationMap[illustration.id] = illustration
-                keyUsedList[key] = true
+                keyUsedSet.add(illustration.id)
             }
         }
 
-        // 加载人物
+        // 加载人物数据
         peopleDirPath.forEach { file ->
             val person = yamlMapper.readValue(file, People::class.java)
-            val key = person.id
             if (peopleMap.containsKey(person.id)) {
-                errors.add("Duplicate people id: ${person.id}")
+                errors.add("重复的人物 ID: ${person.id}")
             } else {
                 peopleMap[person.id] = person
-                keyUsedList[key] = true
+                keyUsedSet.add(person.id)
             }
         }
 
-        // 加载歌曲
+        // 加载歌曲数据
         songsDirPath.forEach { file ->
             val song = yamlMapper.readValue(file, Song::class.java)
-            val key = song.id
             if (songsMap.containsKey(song.id)) {
-                errors.add("Duplicate song id: ${song.id}")
+                errors.add("重复的歌曲 ID: ${song.id}")
             } else {
                 songsMap[song.id] = song
-                keyUsedList[key] = true
+                keyUsedSet.add(song.id)
             }
         }
 
+        // 如果有错误，抛出异常
         if (errors.isNotEmpty()) {
             throw IllegalStateException("加载文件时出现以下错误：\n" + errors.joinToString(separator = "\n"))
         }
