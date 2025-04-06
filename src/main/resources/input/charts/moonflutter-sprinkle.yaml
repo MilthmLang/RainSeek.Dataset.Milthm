@@ -1,15 +1,15 @@
 ---
 id: "dae03da2-2ff0-4ed1-9624-945c2b9d3118"
-illustration: "illustration_df13cbddc62adfc4597277c79980f839"
+illustration: "illustration_moonflutter"
 bpmInfo:
 - start: 0.0
   bpm: 174.0
   beatsPerBar: 0
-songId: "song_4a2ee6ef96614864bbaaec1a991f4795"
+songId: "song_moonflutter"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "Magaflutter"
 charterRefs:
-- "people_9d9a9ba18d1046bf9c8c4a8ccf160568"
+- "people_magazet"
 chartId: "chart_dae03da22ff04ed19624945c2b9d3118"
 tags: []

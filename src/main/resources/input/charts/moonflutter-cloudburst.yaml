@@ -1,15 +1,16 @@
 ---
 id: "61f5e310-d45b-40dc-a934-e3a849382729"
-illustration: "illustration_df13cbddc62adfc4597277c79980f839"
+illustration: "illustration_moonflutter"
 bpmInfo:
 - start: 0.0
   bpm: 174.0
   beatsPerBar: 0
-songId: "song_4a2ee6ef96614864bbaaec1a991f4795"
+songId: "song_moonflutter"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "云梦 % xzadudu179"
 charterRefs:
-- "people_d32754af541544a4a0fb83f16c70a261"
+- "people_yunmeng"
+- "people_xzadudu179"
 chartId: "chart_61f5e310d45b40dca934e3a849382729"
 tags: []
