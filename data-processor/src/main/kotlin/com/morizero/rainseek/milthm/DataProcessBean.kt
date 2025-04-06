@@ -21,10 +21,10 @@ data class ProcessedDocument(
     var titleCulture: String = "",
     var latinTitle: String = "",
     @JsonDeserialize(using = ArtistDeserializer::class)
-    var artist: List<String> =emptyList(),
-    var illustrator: String,
+    var artist: List<String> = emptyList(),
+    @JsonDeserialize(using = ArtistDeserializer::class)
+    var illustrator: List<String> = emptyList(),
     var illustration: String = "",
-    var illustrationTag: List<String> = emptyList(),
     var squareArtwork: String = "",
     var bpmInfo: List<BPMData> = emptyList(),
     var songId: String = "",
@@ -77,7 +77,8 @@ data class Chart(
 
 data class Illustration(
     var id: String = "",
-    var illustrator: String = "",
+    @JsonDeserialize(using = ArtistDeserializer::class)
+    var illustrator: List<String> = emptyList(),
     var description: String = "",
     var tags: List<String> = emptyList()
 )

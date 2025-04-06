@@ -29,6 +29,7 @@ open class DataProcessTask : DefaultTask() {
 
     @Internal
     var enableOnExceptionToThrow: Boolean = true
+
     /**
      * 资源目录路径，包含输入数据文件。
      */
@@ -122,13 +123,16 @@ open class DataProcessTask : DefaultTask() {
                 peopleMap[ref]?.let { allTags.addAll(it.tags) }
             }
             // 添加插图画师的标签
-            illustration?.illustrator?.let { illustratorId ->
+            illustration?.illustrator?.forEach { illustratorId ->
                 peopleMap[illustratorId]?.let { allTags.addAll(it.tags) }
+            }
+            song?.artist?.forEach { artistId ->
+                peopleMap[artistId]?.let { allTags.addAll(it.tags) }
             }
 
             // 对集合进行排序
             keyUsedSet = keyUsedSet.toSortedSet()
-            allTags = allTags.toSortedSet()
+            allTags = allTags.filter { it.isNotBlank() }.distinct().toSortedSet()
 
             // 创建处理后的文档对象
             val processedDocument = ProcessedDocument(
@@ -137,9 +141,9 @@ open class DataProcessTask : DefaultTask() {
                 titleCulture = song?.titleCulture ?: "",
                 latinTitle = song?.latinTitle ?: "",
                 artist = song?.artist?.mapNotNull { peopleMap[it]?.name } ?: emptyList(),
-                illustrator = illustration?.illustrator?.let { peopleMap[it]?.name } ?: "",
+                illustrator = illustration?.illustrator?.map { peopleMap[it]?.name ?: "" }?.filter { it.isNotBlank() }
+                    ?.toList() ?: emptyList(),
                 illustration = illustration?.description ?: "",
-                illustrationTag = illustration?.tags ?: emptyList(),
                 squareArtwork = "",
                 bpmInfo = chart.bpmInfo,
                 songId = song?.id ?: "",
@@ -147,8 +151,7 @@ open class DataProcessTask : DefaultTask() {
                 difficultyValue = chart.difficultyValue,
                 charter = chart.charter,
                 chartId = chart.id,
-                tags = allTags.toList()
-            )
+                tags = allTags.toList())
 
             // 添加到处理后的文档列表
             processedDocumentList.add(processedDocument)
@@ -156,7 +159,7 @@ open class DataProcessTask : DefaultTask() {
             // 从未使用集合中移除已使用的ID
             keyUsedSet.remove(chart.songId)
             keyUsedSet.remove(chart.illustration)
-            illustration?.let { keyUsedSet.remove(it.illustrator) }
+            illustration?.let { it.illustrator.forEach { item -> keyUsedSet.remove(item) } }
 
             // 移除图表制作者和歌曲艺术家的ID
             for (i in chart.charterRefs) {
@@ -170,9 +173,7 @@ open class DataProcessTask : DefaultTask() {
         }
 
         // 配置JSON映射器并输出最终结果
-        val objectMapper = ObjectMapper()
-            .registerKotlinModule()
-            .enable(SerializationFeature.INDENT_OUTPUT)
+        val objectMapper = ObjectMapper().registerKotlinModule().enable(SerializationFeature.INDENT_OUTPUT)
         val buildDir = project.layout.buildDirectory.asFile.get()
         buildDir.mkdirs()
         val outputFile = File(buildDir, "ProcessedDocument.json")
