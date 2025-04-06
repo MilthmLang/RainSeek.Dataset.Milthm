@@ -180,7 +180,7 @@ open class DataProcessTask : DefaultTask() {
         }
 
         if (errors.isNotEmpty()) {
-            //throw IllegalStateException("加载文件时出现以下错误：\n" + errors.joinToString(separator = "\n"))
+            throw IllegalStateException("加载文件时出现以下错误：\n" + errors.joinToString(separator = "\n"))
         }
     }
 }
