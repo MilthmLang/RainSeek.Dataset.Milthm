@@ -26,6 +26,8 @@ open class DataProcessTask : DefaultTask() {
     @Internal  // 表示该属性不是任务的输入或输出
     val yamlMapper = YAMLMapper().registerKotlinModule()
 
+    @Internal
+    var enableOnExceptionToThrow: Boolean = true
     /**
      * 资源目录路径，包含输入数据文件。
      */
@@ -237,7 +239,7 @@ open class DataProcessTask : DefaultTask() {
         }
 
         // 如果有错误，抛出异常
-        if (errors.isNotEmpty()) {
+        if (errors.isNotEmpty() and enableOnExceptionToThrow) {
             throw IllegalStateException("加载文件时出现以下错误：\n" + errors.joinToString(separator = "\n"))
         }
     }
