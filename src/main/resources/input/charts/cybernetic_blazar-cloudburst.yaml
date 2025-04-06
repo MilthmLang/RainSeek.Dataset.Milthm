@@ -1,6 +1,6 @@
 ---
-id: "cea79b8c-23fd-4fbd-b2a9-6f080ef15b44"
-illustration: "illustration_cf796efb7ebcd1c4f878a0bc9fcc174c"
+id: "3a908e2d-8a39-4220-a6b8-4817bd1cea4a"
+illustration: "illustration_cybernetic_blazar"
 bpmInfo:
 - start: 1.625
   bpm: 148.0
@@ -23,12 +23,13 @@ bpmInfo:
 - start: 61.285
   bpm: 148.0
   beatsPerBar: 4
-songId: "song_7bd5fb09519848dab1eb026dc245ba90"
-difficulty: "Drizzle"
+songId: "song_cybernetic_blazar"
+difficulty: "Cloudburst"
 difficultyValue: 0.0
-charter: "cybernetic blazer"
+charter: "泪泪泪泪 AAAA KKKK"
 charterRefs:
-- "people_0e1d1bf9bea64e03850c55248517817a"
-chartId: "chart_cea79b8c23fd4fbdb2a96f080ef15b44"
+- "people_leitimo"
+- "people_akko"
+chartId: "chart_3a908e2d8a394220a6b84817bd1cea4a"
 tags:
 - "notanote"

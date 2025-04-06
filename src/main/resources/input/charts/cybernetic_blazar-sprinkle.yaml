@@ -1,6 +1,6 @@
 ---
 id: "b1361177-1426-47cc-b036-afd09cad775b"
-illustration: "illustration_cf796efb7ebcd1c4f878a0bc9fcc174c"
+illustration: "illustration_cybernetic_blazar"
 bpmInfo:
 - start: 0.009
   bpm: 148.0
@@ -23,12 +23,12 @@ bpmInfo:
 - start: 61.285
   bpm: 148.0
   beatsPerBar: 4
-songId: "song_7bd5fb09519848dab1eb026dc245ba90"
+songId: "song_cybernetic_blazar"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "云"
 charterRefs:
-- "people_28485e2489e748c0ab5f2715f4e436a4"
+- "people_yunmenga"
 chartId: "chart_b1361177142647ccb036afd09cad775b"
 tags:
 - "notanote"
