@@ -75,14 +75,14 @@ open class DataProcessTask : DefaultTask() {
 
             // 移除使用过的 ID（按照保存时添加的前缀）
             // 图表作为入口，不计入未使用检查，因此不移除其 keyUsedList 中的 chart_ 前缀项
-            song?.id?.let { keyUsedList.remove("song_${it}") }
-            illustration?.id?.let { keyUsedList.remove("illustration_${it}") }
-            illustration?.illustrator?.let { keyUsedList.remove("people_${it}") }
+            song?.id?.let { keyUsedList.remove(it) }
+            illustration?.id?.let { keyUsedList.remove(it) }
+            illustration?.illustrator?.let { keyUsedList.remove(it) }
             chart.charterRefs.forEach { ref ->
-                peopleMap[ref]?.id?.let { keyUsedList.remove("people_${it}") }
+                peopleMap[ref]?.id?.let { keyUsedList.remove(it) }
             }
             // 如果图表中涉及到的人物，比如 chart.chartId 对应的人物，也移除掉
-            peopleMap[chart.chartId]?.id?.let { keyUsedList.remove("people_${it}") }
+            peopleMap[chart.chartId]?.id?.let { keyUsedList.remove(it) }
 
             val processedDocument = ProcessedDocument(
                 id = chart.id,
