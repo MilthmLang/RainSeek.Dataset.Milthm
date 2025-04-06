@@ -1,15 +1,15 @@
 ---
 id: "4fa17ebf-6a8e-47c1-8d8b-bd1344ccd559"
-illustration: "illustration_2e58d06c4e3eb174d989c757b1e5e60e"
+illustration: "illustration_pieces_of_the_cycle"
 bpmInfo:
 - start: -0.3
   bpm: 100.0
   beatsPerBar: 0
-songId: "song_3706b262bdf247f48cc727529047a738"
+songId: "song_pieces_of_the_cycle"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "2023.2.15"
 charterRefs:
-- "people_e8ed4b0b7759413499a94a2aaf83b1dc"
+- "people_magazet"
 chartId: "chart_4fa17ebf6a8e47c18d8bbd1344ccd559"
 tags: []
