@@ -1,16 +1,19 @@
 ---
 id: "da07cabf-7c7b-4083-a41a-879be13c8c94"
-illustration: "illustration_5ee28e26d49fcfc4e830bb45af9906a7"
+illustration: "illustration_eclat"
 bpmInfo:
 - start: 0.02
   bpm: 180.0
   beatsPerBar: 0
-songId: "song_5f94aaccfba546a98bd4cbe341ef511d"
+songId: "song_eclat"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "GUGU_QwQ x 喵卡 x Kiyotsuki x 云梦"
 charterRefs:
-- "people_aef7e14bd47846ad924b62c6272c7dd7"
+- "people_kiyotsuki"
+- "people_yunmeng"
+- "people_miaoka"
+- "people_gugu"
 chartId: "chart_da07cabf7c7b4083a41a879be13c8c94"
 tags:
 - "0"

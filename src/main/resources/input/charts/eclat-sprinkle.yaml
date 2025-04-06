@@ -1,16 +1,16 @@
 ---
 id: "2cfa74ee-7e6d-4ebf-8f0a-e7cfb3a7e94c"
-illustration: "illustration_5ee28e26d49fcfc4e830bb45af9906a7"
+illustration: "illustration_eclat"
 bpmInfo:
 - start: 0.02
   bpm: 180.0
   beatsPerBar: 0
-songId: "song_5f94aaccfba546a98bd4cbe341ef511d"
+songId: "song_eclat"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "TCSTWTBHY"
 charterRefs:
-- "people_f5aec3b672584379a32ed66d093f5d4f"
+- "people_tcstwtbhy"
 chartId: "chart_2cfa74ee7e6d4ebf8f0ae7cfb3a7e94c"
 tags:
 - "0"
