@@ -22,16 +22,16 @@ open class DataProcessTask : DefaultTask() {
     val resourceDirPath = File("${project.rootDir}/src/main/resources/input")
 
     @Internal
-    val chartsDirPath: Array<out File> = resourceDirPath.resolve("charts").listFiles()
+    val chartsDirPath: Array<out File> = resourceDirPath.resolve("charts").listFiles() ?: emptyArray()
 
     @Internal
-    val illustrationsDirPath: Array<out File> = resourceDirPath.resolve("illustrations").listFiles()
+    val illustrationsDirPath: Array<out File> = resourceDirPath.resolve("illustrations").listFiles() ?: emptyArray()
 
     @Internal
-    val peopleDirPath: Array<out File> = resourceDirPath.resolve("people").listFiles()
+    val peopleDirPath: Array<out File> = resourceDirPath.resolve("people").listFiles() ?: emptyArray()
 
     @Internal
-    val songsDirPath: Array<out File> = resourceDirPath.resolve("songs").listFiles()
+    val songsDirPath: Array<out File> = resourceDirPath.resolve("songs").listFiles() ?: emptyArray()
 
     @Internal
     var chartMap: ConcurrentHashMap<String, Chart> = ConcurrentHashMap()
@@ -51,20 +51,22 @@ open class DataProcessTask : DefaultTask() {
     @Internal
     var processedDocumentList: MutableList<ProcessedDocument> = mutableListOf()
 
-
     @TaskAction
     fun execute() {
         loadFiles()
         chartMap.forEach { (_, chart) ->
+            val song = songsMap[chart.songId]
+            val illustration = illustrationMap[chart.illustration]
+            val artistNames = songsMap[chart.songId]?.artist?.mapNotNull { peopleMap[it]?.name } ?: emptyList()
             val processedDocument = ProcessedDocument(
                 id = chart.id,
-                title = songsMap[(chart.songId)]?.title ?: "",
-                titleCulture = songsMap[chart.songId]?.titleCulture ?: "",
-                latinTitle = songsMap[chart.songId]?.latinTitle ?: "",
-                artist = songsMap[chart.songId]?.artist?.map { peopleMap[it]?.name ?: "null" } ?: emptyList(),
-                illustrator = peopleMap[illustrationMap[chart.illustration]?.illustrator ?: ""]?.name ?: "",
-                illustration = illustrationMap[chart.illustration]?.description ?: "",
-                illustrationTag = illustrationMap[chart.illustration]?.tags ?: emptyList(),
+                title = song?.title ?: "",
+                titleCulture = song?.titleCulture ?: "",
+                latinTitle = song?.latinTitle ?: "",
+                artist = artistNames,
+                illustrator = peopleMap[illustration?.illustrator ?: ""]?.name ?: "",
+                illustration = illustration?.description ?: "",
+                illustrationTag = illustration?.tags ?: emptyList(),
                 squareArtwork = "",
                 bpmInfo = chart.bpmInfo,
                 songId = "",
@@ -73,78 +75,75 @@ open class DataProcessTask : DefaultTask() {
                 charter = chart.charter,
                 chartId = chart.id,
                 tags = chart.tags +
-                        (songsMap[chart.songId]?.tags ?: emptyList()) +
-                        (illustrationMap[chart.illustration]?.tags ?: emptyList()) +
-                        (peopleMap[illustrationMap[chart.illustration]?.illustrator ?: ""]?.tags ?: emptyList())
+                        (song?.tags ?: emptyList()) +
+                        (illustration?.tags ?: emptyList()) +
+                        (peopleMap[illustration?.illustrator ?: ""]?.tags ?: emptyList())
             )
-            for (c in chart.charterRefs) {
-                if (peopleMap[c]?.id != null) {
-                    keyUsedList.remove(peopleMap[c]?.id)
-                }
+
+            // 移除已经使用的 key
+            chart.charterRefs.forEach { ref ->
+                peopleMap[ref]?.id?.let { keyUsedList.remove(it) }
             }
-            if (illustrationMap[chart.illustration]?.id != null) {
-                keyUsedList.remove(illustrationMap[chart.illustration]?.id)
-            }
-            if (peopleMap[chart.illustration]?.id != null) {
-                keyUsedList.remove(peopleMap[chart.illustration]?.id)
-            }
-            if (peopleMap[chart.chartId]?.id != null) {
-                keyUsedList.remove(peopleMap[chart.chartId]?.id)
-            }
-            if (songsMap[chart.songId]?.id != null) {
-                keyUsedList.remove(songsMap[chart.songId]?.id)
-            }
+            illustration?.id?.let { keyUsedList.remove(it) }
+            peopleMap[chart.illustration]?.id?.let { keyUsedList.remove(it) }
+            peopleMap[chart.chartId]?.id?.let { keyUsedList.remove(it) }
+            songsMap[chart.songId]?.id?.let { keyUsedList.remove(it) }
 
             processedDocumentList.add(processedDocument)
         }
+
         val objectMapper = ObjectMapper()
             .registerKotlinModule()
             .enable(SerializationFeature.INDENT_OUTPUT)
 
         val buildDir = project.layout.buildDirectory.asFile.get()
         buildDir.mkdirs()
-        val testFile = File(buildDir, "/ProcessedDocument.json")
-        testFile.createNewFile()
-        objectMapper.writeValue(testFile, processedDocumentList)
-        if (!keyUsedList.isEmpty()) {
-            for (document in keyUsedList.keys) {
-                logger.warn("Key ${document.split("_")[0]} but not used: ${document.split("_")[1]}")
+        val outputFile = File(buildDir, "ProcessedDocument.json")
+        outputFile.createNewFile()
+        objectMapper.writeValue(outputFile, processedDocumentList)
+
+        if (keyUsedList.isNotEmpty()) {
+            keyUsedList.keys.forEach { document ->
+                val parts = document.split("_")
+                if (parts.size >= 2) {
+                    logger.warn("Key ${parts[0]} but not used: ${parts[1]}")
+                }
             }
         }
     }
 
     fun loadFiles() {
-        for (chart in chartsDirPath) {
-            val c = yamlMapper.readValue(chart, Chart::class.java)
-            if (chartMap.get(c.chartId) != null) {
-                throw IllegalStateException("Duplicate chart id: ${chartMap.get(c.chartId)!!.chartId}")
+        chartsDirPath.forEach { file ->
+            val chart = yamlMapper.readValue(file, Chart::class.java)
+            if (chartMap.containsKey(chart.chartId)) {
+                throw IllegalStateException("Duplicate chart id: ${chart.chartId}")
             }
-            keyUsedList.put(c.chartId, true)
-            chartMap.put(c.chartId, c)
+            keyUsedList[chart.chartId] = true
+            chartMap[chart.chartId] = chart
         }
-        for (illustration in illustrationsDirPath) {
-            val i = yamlMapper.readValue(illustration, Illustration::class.java)
-            if (illustrationMap.get(i.id) != null) {
-                throw IllegalStateException("Duplicate illustration id: ${i.id}")
+        illustrationsDirPath.forEach { file ->
+            val illustration = yamlMapper.readValue(file, Illustration::class.java)
+            if (illustrationMap.containsKey(illustration.id)) {
+                throw IllegalStateException("Duplicate illustration id: ${illustration.id}")
             }
-            illustrationMap.put(i.id, i)
-            keyUsedList.put(i.id, true)
+            illustrationMap[illustration.id] = illustration
+            keyUsedList[illustration.id] = true
         }
-        for (people in peopleDirPath) {
-            val p = yamlMapper.readValue(people, People::class.java)
-            if (peopleMap.get(p.id) != null) {
-                throw IllegalStateException("Duplicate people id: ${peopleMap.get(p.id)!!.id}")
+        peopleDirPath.forEach { file ->
+            val person = yamlMapper.readValue(file, People::class.java)
+            if (peopleMap.containsKey(person.id)) {
+                throw IllegalStateException("Duplicate people id: ${person.id}")
             }
-            peopleMap.put(p.id, p)
-            keyUsedList.put(p.id, true)
+            peopleMap[person.id] = person
+            keyUsedList[person.id] = true
         }
-        for (song in songsDirPath) {
-            val s = yamlMapper.readValue(song, Song::class.java)
-            if (songsMap.get(s.id) != null) {
-                throw IllegalStateException("Duplicate song id: ${songsMap.get(s.id)}")
+        songsDirPath.forEach { file ->
+            val song = yamlMapper.readValue(file, Song::class.java)
+            if (songsMap.containsKey(song.id)) {
+                throw IllegalStateException("Duplicate song id: ${song.id}")
             }
-            songsMap.put(s.id, s)
-            keyUsedList.put(s.id, true)
+            songsMap[song.id] = song
+            keyUsedList[song.id] = true
         }
     }
 }
