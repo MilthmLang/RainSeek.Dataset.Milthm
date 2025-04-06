@@ -1,15 +1,15 @@
 ---
 id: "1ec80826-e11e-43af-acd3-c154212443b9"
-illustration: "illustration_4b28827b58823f049977cc592d4b9de2"
+illustration: "illustration_imaginary_tomorrow"
 bpmInfo:
 - start: 0.0
   bpm: 135.0
   beatsPerBar: 0
-songId: "song_f93f1d21c78a447592f04e84ee13c22a"
+songId: "song_imaginary_tomorrow"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "Akko feat. 澪"
 charterRefs:
-- "people_cd6c51182d2848b9ad1ea0214a339324"
+- "people_akko"
 chartId: "chart_1ec80826e11e43afacd3c154212443b9"
 tags: []
