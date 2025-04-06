@@ -1,15 +1,15 @@
 ---
 id: "5c0778d6-b2db-444f-a911-7892ffdf3ba5"
-illustration: "illustration_cdc7bf376ab9cff40a9ac241f08c16b6"
+illustration: "illustration_kasane"
 bpmInfo:
 - start: 0.0
   bpm: 190.0
   beatsPerBar: 4
-songId: "song_143e63ca77484b1e89fefed18a532870"
+songId: "song_kasane"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "kasane vitamin b"
 charterRefs:
-- "people_5880a3bd68f5485ca0919e7f779403de"
+- "people_vitamin_b"
 chartId: "chart_5c0778d6b2db444fa9117892ffdf3ba5"
 tags: []
