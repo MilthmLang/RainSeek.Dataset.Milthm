@@ -1,15 +1,16 @@
 ---
 id: "ef55520f-c913-449f-bf26-ab947384127e"
-illustration: "illustration_47062fe68c333e94ea586d1edd064350"
+illustration: "illustration_broken_conviction"
 bpmInfo:
 - start: 0.07
   bpm: 180.0
   beatsPerBar: 0
-songId: "song_3d4fcad4364a43a18eb6884b53961092"
+songId: "song_broken_conviction"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "Akko feat. Lei"
 charterRefs:
-- "people_2d0e66bca8d34973a52e8a76393f9cac"
+- "people_akko"
+- "people_leitimo"
 chartId: "chart_ef55520fc913449fbf26ab947384127e"
 tags: []
