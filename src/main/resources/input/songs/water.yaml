@@ -1,10 +1,11 @@
 ---
-id: "song_d2a71352f0a04198a9bbdde7db2f4b61"
+id: "song_water"
 title: "WATER"
 titleCulture: "00000000"
 latinTitle: "WATER"
 artist: "A-39 & 沙包P"
 artistsRef:
-- "people_f7765adc89c741d3ab28ae026c382961"
+  - "people_a_39"
+  - "people_shabao_p"
 tags:
-- ""
+  - ""
