@@ -1,6 +1,8 @@
 ---
 id: "606be389-ad01-41e3-a1ba-e7b355d16948"
-illustration: "illustration_sundown"
+illustration:
+  - "illustration_sundown"
+  - "illustration_sundown_empty"
 bpmInfo:
 - start: 0.0
   bpm: 109.0
