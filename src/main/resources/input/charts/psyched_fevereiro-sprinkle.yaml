@@ -1,15 +1,15 @@
 ---
 id: "9a8d5198-664a-418a-868b-b28d992c9b9e"
-illustration: "illustration_b33cfcfe75f1439499069c78e38e87c7"
+illustration: "illustration_psyched_fevereiro"
 bpmInfo:
 - start: 0.0
   bpm: 150.0
   beatsPerBar: 0
-songId: "song_b400e7b93f984691928f882bdc619328"
+songId: "song_psyched_fevereiro"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "Psyched Akkko"
 charterRefs:
-- "people_573aba87d7de40289575e9aba9630524"
+- "people_akko"
 chartId: "chart_9a8d5198664a418a868bb28d992c9b9e"
 tags: []

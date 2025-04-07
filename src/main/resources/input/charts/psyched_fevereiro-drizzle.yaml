@@ -1,15 +1,15 @@
 ---
 id: "2484331f-4345-4f97-98ac-edda4be3f723"
-illustration: "illustration_b33cfcfe75f1439499069c78e38e87c7"
+illustration: "illustration_psyched_fevereiro"
 bpmInfo:
 - start: -0.04
   bpm: 150.0
   beatsPerBar: 0
-songId: "song_b400e7b93f984691928f882bdc619328"
+songId: "song_psyched_fevereiro"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "Psyched Akko"
 charterRefs:
-- "people_520841fedc6747438a10fa7a15838f57"
+- "people_akko"
 chartId: "chart_2484331f43454f9798acedda4be3f723"
 tags: []
