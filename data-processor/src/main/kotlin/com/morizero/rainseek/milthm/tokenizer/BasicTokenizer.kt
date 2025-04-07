@@ -1,5 +1,7 @@
 package com.morizero.rainseek.milthm.tokenizer
 
+import com.morizero.rainseek.milthm.model.TokenModel
+
 class BasicTokenizer(private val delimiters: List<String> = listOf(" "), private val caseSensitive: Boolean = false) :
     Tokenizer {
     override fun tokenize(input: String): List<TokenModel> {

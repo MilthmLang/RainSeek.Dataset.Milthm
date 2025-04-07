@@ -1,4 +1,4 @@
-package com.morizero.rainseek.milthm
+package com.morizero.rainseek.milthm.utils
 
 import com.fasterxml.jackson.core.JsonParser
 import com.fasterxml.jackson.core.JsonToken
@@ -7,7 +7,7 @@ import com.fasterxml.jackson.databind.JsonDeserializer
 import java.io.IOException
 
 
-class ArtistDeserializer : JsonDeserializer<MutableList<String?>?>() {
+class StringOrStringList : JsonDeserializer<MutableList<String?>?>() {
     @Throws(IOException::class)
     override fun deserialize(p: JsonParser, ctxt: DeserializationContext?): MutableList<String?>? {
         val artists = ArrayList<String?>()
@@ -20,14 +20,14 @@ class ArtistDeserializer : JsonDeserializer<MutableList<String?>?>() {
         } else if (p.currentToken() == JsonToken.START_ARRAY) {
             while (p.nextToken() != JsonToken.END_ARRAY) {
                 val value = p.valueAsString
-                if (!value.isEmpty()) {
+                if (value.isNotEmpty()) {
                     artists.add(value)
                 }
             }
         } else if (p.currentToken() == JsonToken.VALUE_NULL) {
-            return null
+            return artists
         }
 
-        return if (artists.isEmpty()) null else artists
+        return if (artists.isEmpty()) artists else artists
     }
 }

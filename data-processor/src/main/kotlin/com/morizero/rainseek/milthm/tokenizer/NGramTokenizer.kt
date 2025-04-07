@@ -1,5 +1,7 @@
 package com.morizero.rainseek.milthm.tokenizer
 
+import com.morizero.rainseek.milthm.model.TokenModel
+
 class NGramTokenizer(
     private val n: Int = 3,
     private val caseSensitive: Boolean = false,

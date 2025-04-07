@@ -1,4 +1,4 @@
-package com.morizero.rainseek.milthm.tokenizer
+package com.morizero.rainseek.milthm.model
 
 data class TokenModel(
     var value: String,

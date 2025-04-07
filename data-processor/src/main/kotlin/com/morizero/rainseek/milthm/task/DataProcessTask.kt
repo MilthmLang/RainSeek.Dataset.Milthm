@@ -4,7 +4,7 @@ import com.fasterxml.jackson.databind.ObjectMapper
 import com.fasterxml.jackson.databind.SerializationFeature
 import com.fasterxml.jackson.dataformat.yaml.YAMLMapper
 import com.fasterxml.jackson.module.kotlin.registerKotlinModule
-import com.morizero.rainseek.milthm.*
+import com.morizero.rainseek.milthm.model.*
 import org.gradle.api.DefaultTask
 import org.gradle.api.NonNullApi
 import org.gradle.api.tasks.CacheableTask
@@ -12,23 +12,9 @@ import org.gradle.api.tasks.Internal
 import org.gradle.api.tasks.TaskAction
 import java.io.File
 import java.util.concurrent.ConcurrentHashMap
-import kotlin.collections.MutableList
 import kotlin.collections.component1
 import kotlin.collections.component2
-import kotlin.collections.distinct
-import kotlin.collections.emptyList
-import kotlin.collections.filter
-import kotlin.collections.forEach
-import kotlin.collections.isNotEmpty
-import kotlin.collections.joinToString
-import kotlin.collections.map
-import kotlin.collections.mapNotNull
-import kotlin.collections.mutableListOf
-import kotlin.collections.mutableSetOf
-import kotlin.collections.remove
 import kotlin.collections.set
-import kotlin.collections.toList
-import kotlin.collections.toSortedSet
 
 /**
  * 数据处理任务，用于处理图表、歌曲、插画和人物数据，并生成最终的ProcessedDocument列表。
@@ -121,29 +107,35 @@ open class DataProcessTask : DefaultTask() {
      */
     @TaskAction
     fun execute() {
-        // 加载所有数据文件
         loadFiles()
 
-        // 遍历每个图表生成ProcessedDocument
         chartMap.forEach { (_, chart) ->
-            // 获取关联的歌曲和插画
-            val song = songsMap[chart.songId]
-            val illustration = illustrationMap[chart.illustration]
+            val song = songsMap[chart.songId] ?: throw IllegalArgumentException("Unknown song ID: ${chart.songId}")
 
-            // 合并所有标签：图表、歌曲、插画，以及相关人物的标签
             var allTags = mutableSetOf<String>()
             allTags.addAll(chart.tags)
-            song?.let { allTags.addAll(it.tags) }
-            illustration?.let { allTags.addAll(it.tags) }
-            // 添加图表制作者的标签
+            song.let { allTags.addAll(it.tags) }
             chart.charterRefs.forEach { ref ->
                 peopleMap[ref]?.let { allTags.addAll(it.tags) }
             }
-            // 添加插图画师的标签
-            illustration?.illustrator?.forEach { illustratorId ->
-                peopleMap[illustratorId]?.let { allTags.addAll(it.tags) }
+
+
+            val landscapeIllustrations = chart.illustration.mapNotNull { illustrationId ->
+                illustrationMap[illustrationId]
+            }.toList()
+            val squareIllustrations = chart.illustrationSquare.mapNotNull { illustrationId ->
+                illustrationMap[illustrationId]
+            }.toList()
+            val illustrations = landscapeIllustrations + squareIllustrations
+
+            illustrations.forEach {
+                it.let { allTags.addAll(it.tags) }
+                it.illustrator.forEach { illustratorId ->
+                    peopleMap[illustratorId]?.let { allTags.addAll(it.tags) }
+                }
             }
-            song?.artistsRef?.forEach { artistId ->
+
+            song.artistsRef.forEach { artistId ->
                 peopleMap[artistId]?.let { allTags.addAll(it.tags) }
             }
 
@@ -154,17 +146,14 @@ open class DataProcessTask : DefaultTask() {
             // 创建处理后的文档对象
             val processedDocument = ProcessedDocument(
                 id = chart.id,
-                title = song?.title ?: "",
-                titleCulture = song?.titleCulture ?: "",
-                latinTitle = song?.latinTitle ?: "",
-                artist = song?.artist ?: "",
-                artistsList = song?.artistsRef?.mapNotNull { peopleMap[it]?.name } ?: emptyList(),
-                illustrator = illustration?.illustrator?.map { peopleMap[it]?.name ?: "" }?.filter { it.isNotBlank() }
-                    ?.toList() ?: emptyList(),
-                illustration = illustration?.description ?: "",
-                squareArtwork = illustration?.squareArtwork ?: "",
+                title = song.title ?: "",
+                titleCulture = song.titleCulture ?: "",
+                latinTitle = song.latinTitle ?: "",
+                artist = song.artist ?: "",
+                artistsList = song.artistsRef.mapNotNull { peopleMap[it]?.name } ?: emptyList(),
+                illustrator = illustrations.flatMap { it.illustrator }.distinct().mapNotNull { peopleMap[it]?.name },
                 bpmInfo = chart.bpmInfo,
-                songId = song?.id ?: "",
+                songId = song.id ?: "",
                 difficulty = chart.difficulty,
                 difficultyValue = chart.difficultyValue,
                 charter = chart.charterRefs.map { ref -> peopleMap[ref]?.name ?: "" },
@@ -175,25 +164,21 @@ open class DataProcessTask : DefaultTask() {
             // 添加到处理后的文档列表
             processedDocumentList.add(processedDocument)
 
-            keyUsedSet.remove(chart.chartId)//chart
-            keyUsedSet.remove(chart.illustration)//illustration
-            illustration?.let { keyUsedSet.remove(it.squareArtwork) }//illustration
-
-            illustration?.let {
-                it.illustrator.forEach { it ->
-                    keyUsedSet.remove(it)//illustrator
+            keyUsedSet.remove(chart.chartId)
+            illustrations.forEach { keyUsedSet.remove(it.id) }
+            illustrations.forEach { illustration ->
+                illustration.illustrator.forEach {
+                    keyUsedSet.remove(it)
                 }
-
             }
-            keyUsedSet.remove(chart.songId)//song
+
+            keyUsedSet.remove(chart.songId)
             chart.charterRefs.forEach { ref ->
-                keyUsedSet.remove(ref)//charter
+                keyUsedSet.remove(ref)
             }
-            song!!.artistsRef.forEach { id ->
-                keyUsedSet.remove(id)//artist
+            song.artistsRef.forEach { id ->
+                keyUsedSet.remove(id)
             }
-
-
             keyUsedSet = keyUsedSet.toSortedSet()
         }
 

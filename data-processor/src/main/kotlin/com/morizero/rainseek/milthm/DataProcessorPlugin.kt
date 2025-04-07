@@ -1,8 +1,8 @@
 package com.morizero.rainseek.milthm
 
+import com.morizero.rainseek.milthm.task.ChartRenameTask
 import com.morizero.rainseek.milthm.task.DataProcessTask
 import com.morizero.rainseek.milthm.task.IdBasedRenameTask
-import com.morizero.rainseek.milthm.task.ChartRenameTask
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 

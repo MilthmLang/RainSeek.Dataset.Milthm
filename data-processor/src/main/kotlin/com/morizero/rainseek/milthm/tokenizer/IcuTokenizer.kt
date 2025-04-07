@@ -2,6 +2,7 @@ package com.morizero.rainseek.milthm.tokenizer
 
 import com.ibm.icu.text.BreakIterator
 import com.ibm.icu.util.ULocale
+import com.morizero.rainseek.milthm.model.TokenModel
 
 class IcuTokenizer(val locale: ULocale) : Tokenizer {
     override fun tokenize(input: String): List<TokenModel> {

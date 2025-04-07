@@ -2,7 +2,7 @@ package com.morizero.rainseek.milthm.task
 
 import com.fasterxml.jackson.dataformat.yaml.YAMLMapper
 import com.fasterxml.jackson.module.kotlin.registerKotlinModule
-import com.morizero.rainseek.milthm.IdModel
+import com.morizero.rainseek.milthm.model.IdModel
 import org.gradle.api.DefaultTask
 import org.gradle.api.NonNullApi
 import org.gradle.api.tasks.CacheableTask
