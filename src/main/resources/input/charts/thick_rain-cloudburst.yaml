@@ -1,16 +1,16 @@
 ---
 id: "6df0b462-dded-46db-8505-3ff86fc46c26"
-illustration: "illustration_190d3a3c08e95ed47a6b3bda5d7d53fd"
+illustration: "illustration_thick_rain"
 bpmInfo:
 - start: 0.0
   bpm: 140.0
   beatsPerBar: 0
-songId: "song_a09dc908ca9046258cdf123a0ee5396d"
+songId: "song_thick_rain"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "Magazet with Luvia"
 charterRefs:
-- "people_69862a91f55e4122a3fb532899f55edc"
+- "people_magazet"
 chartId: "chart_6df0b462dded46db85053ff86fc46c26"
 tags:
 - "chapter1"
