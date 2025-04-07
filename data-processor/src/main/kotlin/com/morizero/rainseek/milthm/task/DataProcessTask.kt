@@ -115,7 +115,7 @@ open class DataProcessTask : DefaultTask() {
             var allTags = mutableSetOf<String>()
             allTags.addAll(chart.tags)
             song.let { allTags.addAll(it.tags) }
-            chart.charterRefs.forEach { ref ->
+            chart.chartersRef.forEach { ref ->
                 peopleMap[ref]?.let { allTags.addAll(it.tags) }
             }
 
@@ -156,7 +156,7 @@ open class DataProcessTask : DefaultTask() {
                 songId = song.id ?: "",
                 difficulty = chart.difficulty,
                 difficultyValue = chart.difficultyValue,
-                charter = chart.charterRefs.map { ref -> peopleMap[ref]?.name ?: "" },
+                charter = chart.chartersRef.map { ref -> peopleMap[ref]?.name ?: "" },
                 chartId = chart.chartId,
                 tags = allTags.toList()
             )
@@ -173,7 +173,7 @@ open class DataProcessTask : DefaultTask() {
             }
 
             keyUsedSet.remove(chart.songId)
-            chart.charterRefs.forEach { ref ->
+            chart.chartersRef.forEach { ref ->
                 keyUsedSet.remove(ref)
             }
             song.artistsRef.forEach { id ->

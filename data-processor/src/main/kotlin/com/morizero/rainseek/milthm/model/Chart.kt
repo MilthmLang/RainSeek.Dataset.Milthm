@@ -15,7 +15,7 @@ data class Chart(
     var difficulty: String = "",
     var difficultyValue: Double = 0.0,
     var charter: String = "",
-    var charterRefs: List<String> = emptyList(),
+    var chartersRef: List<String> = emptyList(),
     var chartId: String = "",
     var tags: List<String> = emptyList()
 )
