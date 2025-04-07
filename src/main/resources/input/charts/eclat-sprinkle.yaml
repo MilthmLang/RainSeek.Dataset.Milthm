@@ -9,7 +9,7 @@ songId: "song_eclat"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "TCSTWTBHY"
-charterRefs:
+chartersRef:
 - "people_tcstwtbhy"
 chartId: "chart_2cfa74ee7e6d4ebf8f0ae7cfb3a7e94c"
 tags:

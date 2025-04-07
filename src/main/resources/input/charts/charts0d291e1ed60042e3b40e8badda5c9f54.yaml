@@ -9,7 +9,7 @@ songId: "song_0e7a0933fc3044b787eccef6384dd5a0"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "Milthm"
-charterRefs:
+chartersRef:
 - "people_f9d92fa9f0e94eb8827096ba0c8d142b"
 chartId: "chart_d83fd3e1a6094b73b1f1348ee1dca71d"
 tags: []

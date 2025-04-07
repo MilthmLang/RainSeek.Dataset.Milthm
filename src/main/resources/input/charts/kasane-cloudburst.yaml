@@ -9,7 +9,7 @@ songId: "song_kasane"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "kasane vitamin b"
-charterRefs:
+chartersRef:
 - "people_vitamin_b"
 chartId: "chart_5c0778d6b2db444fa9117892ffdf3ba5"
 tags: []

@@ -9,7 +9,7 @@ songId: "song_meltovt_necrosys"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "XZADUDU179 feat. AKKO"
-charterRefs:
+chartersRef:
 - "people_akko"
 - "people_xzadudu179"
 chartId: "chart_97ef94cedf454a9296452456f606e0fa"

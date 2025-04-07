@@ -9,7 +9,7 @@ songId: "song_ameonna"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "sm"
-charterRefs:
+chartersRef:
 - "people_nishenmou"
 chartId: "chart_375f0d9382e243509b4698c3dd836305"
 tags:

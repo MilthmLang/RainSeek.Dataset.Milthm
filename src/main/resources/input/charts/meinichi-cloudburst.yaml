@@ -9,7 +9,7 @@ songId: "song_meinichi"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "Kiyotsuki"
-charterRefs:
+chartersRef:
 - "people_kiyotsuki"
 chartId: "chart_04d821ff493a421d83a5a61a59b2d3d3"
 tags:

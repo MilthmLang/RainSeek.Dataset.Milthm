@@ -9,7 +9,7 @@ songId: "song_fly_to_meteor_milthm_edit"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "奔赴星空的少年"
-charterRefs:
+chartersRef:
 - "people_yuhuo"
 chartId: "chart_508fff6a32dc4f6b88c7bbd86e639085"
 tags: []

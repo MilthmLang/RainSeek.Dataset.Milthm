@@ -9,7 +9,7 @@ songId: "song_dogbite"
 difficulty: "Special"
 difficultyValue: 0.0
 charter: "爬爬|Biting with|赤澪"
-charterRefs:
+chartersRef:
 - "people_papa"
 - "people_akko"
 chartId: "chart_e543f4a55f5545e59c41ebe1c155c12e"

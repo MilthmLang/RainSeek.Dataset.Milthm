@@ -9,7 +9,7 @@ songId: "song_e09f68707cec4381a500dc2360c9a488"
 difficulty: "Special"
 difficultyValue: 0.0
 charter: "爬爬 beaten by LuviaDuck, very hurt"
-charterRefs:
+chartersRef:
 - "people_35ff05d3a55e474cb97bbfeb454b9db0"
 chartId: "chart_eade667e610b419cbc3d503d7946d1ea"
 tags: []

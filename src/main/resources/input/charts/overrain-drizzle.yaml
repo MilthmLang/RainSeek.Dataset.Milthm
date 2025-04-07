@@ -9,7 +9,7 @@ songId: "song_overrain"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "OverAkko"
-charterRefs:
+chartersRef:
 - "people_akko"
 chartId: "chart_c5032ab4c03c42c3b132445b94165e8d"
 tags:

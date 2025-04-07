@@ -9,7 +9,7 @@ songId: "song_e09f68707cec4381a500dc2360c9a488"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "Buger404、TCSTWTBHY"
-charterRefs:
+chartersRef:
 - "people_371397b112fc4736928e2b3833f284a2"
 chartId: "chart_364be32ef6854efb80b564281c93939d"
 tags: []

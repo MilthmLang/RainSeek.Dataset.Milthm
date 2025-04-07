@@ -9,7 +9,7 @@ songId: "song_thick_rain"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "See Into The Blue Dream"
-charterRefs:
+chartersRef:
 - "people_magazet"
 chartId: "chart_7687d948dbe148c4a786fbe669ec7b0c"
 tags:

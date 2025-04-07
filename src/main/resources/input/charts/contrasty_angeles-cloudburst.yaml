@@ -9,7 +9,7 @@ songId: "song_contrasty_angeles"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "Kiyotsuki"
-charterRefs:
+chartersRef:
 - "people_kiyotsuki"
 chartId: "chart_269efa5f8b694a71be247abe57372b3f"
 tags:

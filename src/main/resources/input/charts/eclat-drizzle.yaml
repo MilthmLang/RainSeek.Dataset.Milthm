@@ -9,7 +9,7 @@ songId: "song_eclat"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "Kiyotsuki"
-charterRefs:
+chartersRef:
 - "people_kiyotsuki"
 chartId: "chart_520361a1805b4332b53e1da11a94de1b"
 tags:

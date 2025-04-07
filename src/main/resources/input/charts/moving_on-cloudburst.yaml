@@ -9,7 +9,7 @@ songId: "song_moving_on"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "海盐焗奇诺TwT"
-charterRefs:
+chartersRef:
 - "people_tcstwtbhy"
 chartId: "chart_aafec4af3479445b9b30b6822b9f5e19"
 tags:

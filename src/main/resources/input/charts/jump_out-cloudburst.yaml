@@ -9,7 +9,7 @@ songId: "song_jump_out"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "[Anonymous]"
-charterRefs:
+chartersRef:
 - "people_tcstwtbhy"
 chartId: "chart_9e083951188f4998951a58d08b4b4f45"
 tags:

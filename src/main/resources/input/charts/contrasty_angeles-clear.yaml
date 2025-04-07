@@ -9,7 +9,7 @@ songId: "song_contrasty_angeles"
 difficulty: "Clear"
 difficultyValue: 0.0
 charter: "😈papa😈"
-charterRefs:
+chartersRef:
 - "people_papa"
 chartId: "chart_6252f7c48eae4b59a22f9f142f904029"
 tags:

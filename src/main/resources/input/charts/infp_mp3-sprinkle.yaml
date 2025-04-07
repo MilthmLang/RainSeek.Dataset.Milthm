@@ -9,7 +9,7 @@ songId: "song_infp_mp3"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "MGZT.mil"
-charterRefs:
+chartersRef:
 - "people_magazet"
 chartId: "chart_37a9f1a032d44f78acae1be9ca7ea42f"
 tags: []

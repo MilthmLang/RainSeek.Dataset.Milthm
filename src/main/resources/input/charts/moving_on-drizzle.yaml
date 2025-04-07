@@ -9,7 +9,7 @@ songId: "song_moving_on"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "忙忙忙阿鱼"
-charterRefs:
+chartersRef:
 - "people_ayu"
 chartId: "chart_6d4c9a212ed448929b38fd53840de04f"
 tags:

@@ -12,7 +12,7 @@ songId: "song_agnostic"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "Mirabilis jalapa L."
-charterRefs:
+chartersRef:
 - "people_magazet"
 chartId: "chart_74bf4e17c24648719b2b0dd0d0e6ee28"
 tags: []

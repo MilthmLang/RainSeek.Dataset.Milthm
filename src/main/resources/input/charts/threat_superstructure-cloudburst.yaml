@@ -9,7 +9,7 @@ songId: "song_threat_superstructure"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "Kiyotsuki"
-charterRefs:
+chartersRef:
 - "people_kiyotsuki"
 chartId: "chart_7c0cdf77fcfa4f96989724ca10582c32"
 tags:

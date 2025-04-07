@@ -9,7 +9,7 @@ songId: "song_ameonna"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "雨のMagazet"
-charterRefs:
+chartersRef:
 - "people_magazet"
 chartId: "chart_9a55b865086041b99f78bc5209bc9f44"
 tags:

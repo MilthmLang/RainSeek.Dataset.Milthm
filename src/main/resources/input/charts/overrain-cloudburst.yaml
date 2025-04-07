@@ -9,7 +9,7 @@ songId: "song_overrain"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "NintyKeven feat. AK"
-charterRefs:
+chartersRef:
 - "people_ninty_keven"
 - "people_akko"
 chartId: "chart_fc40c7fce62a4fa8891e430444191e26"

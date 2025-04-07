@@ -9,7 +9,7 @@ songId: "song_sparkrain"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "Ariayaka"
-charterRefs:
+chartersRef:
 - "people_ariayaka"
 chartId: "chart_ca4c79a7709a40c5b0e0c04b6deff431"
 tags:

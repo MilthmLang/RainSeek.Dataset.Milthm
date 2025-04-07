@@ -9,7 +9,7 @@ songId: "song_neon_iro_no_machi"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "Magazet in Romantic love"
-charterRefs:
+chartersRef:
 - "people_magazet"
 chartId: "chart_fa97e3413a7247bc927eb9cf87980b37"
 tags: []

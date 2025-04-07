@@ -9,7 +9,7 @@ songId: "song_bio_engineering"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "雨眠 & 泪泪 & 爬爬 eaten by lizards"
-charterRefs:
+chartersRef:
 - "people_ninty_keven"
 - "people_leitimo"
 - "people_papa"

@@ -9,7 +9,7 @@ songId: "song_rainbow_flavor"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "Akko"
-charterRefs:
+chartersRef:
 - "people_akko"
 chartId: "chart_ac9308f8b89643af879ab65bcfcaa874"
 tags: []

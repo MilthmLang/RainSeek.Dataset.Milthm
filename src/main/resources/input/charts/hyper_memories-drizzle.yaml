@@ -9,7 +9,7 @@ songId: "song_hyper_memories"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "Eric_Lian"
-charterRefs:
+chartersRef:
 - "people_eric_lian"
 chartId: "chart_68fbf0ebf43a4497afb18282176aed97"
 tags:

@@ -9,7 +9,7 @@ songId: "song_meltovt_necrosys"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "猪肉小憨包"
-charterRefs:
+chartersRef:
 - "people_shuxuezhu"
 chartId: "chart_e7ec6340be4444ab8545d5b7cf326fd4"
 tags:

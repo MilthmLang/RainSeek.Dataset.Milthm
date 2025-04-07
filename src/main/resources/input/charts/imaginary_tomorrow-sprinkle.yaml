@@ -9,7 +9,7 @@ songId: "song_imaginary_tomorrow"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "Akko feat. 澪"
-charterRefs:
+chartersRef:
 - "people_akko"
 chartId: "chart_1ec80826e11e43afacd3c154212443b9"
 tags: []

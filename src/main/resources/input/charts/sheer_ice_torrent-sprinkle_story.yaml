@@ -9,7 +9,7 @@ songId: "song_sheer_ice_torrent"
 difficulty: "Sprinkle_Story"
 difficultyValue: 0.0
 charter: "3"
-charterRefs:
+chartersRef:
 - "people_milthm_team"
 chartId: "chart_d3ddf678adb04158ae1021c2667c7ba8"
 tags:

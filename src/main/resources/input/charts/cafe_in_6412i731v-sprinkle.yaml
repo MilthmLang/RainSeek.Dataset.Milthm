@@ -9,7 +9,7 @@ songId: "song_cafe_in_6412i731v"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "Kiyotsuki"
-charterRefs:
+chartersRef:
 - "people_kiyotsuki"
 chartId: "chart_faf0dc82df37456ab726283e27df9c31"
 tags: []

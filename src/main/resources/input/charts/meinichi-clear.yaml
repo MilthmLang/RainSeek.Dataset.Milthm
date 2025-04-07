@@ -9,7 +9,7 @@ songId: "song_meinichi"
 difficulty: "Clear"
 difficultyValue: 0.0
 charter: "[A→A(_)]通过两台电视闲聊"
-charterRefs:
+chartersRef:
 - "people_tcstwtbhy"
 chartId: "chart_d742e98992c4447487ef57b218d0fc41"
 tags:

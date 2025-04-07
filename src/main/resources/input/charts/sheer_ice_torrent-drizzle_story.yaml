@@ -9,7 +9,7 @@ songId: "song_sheer_ice_torrent"
 difficulty: "Drizzle_Story"
 difficultyValue: 0.0
 charter: "3"
-charterRefs:
+chartersRef:
 - "people_milthm_team"
 chartId: "chart_e23637e8fe164d9ab3c99e059745ad3c"
 tags:

@@ -9,7 +9,7 @@ songId: "song_a_reincarnation_of_a_scattering_spring"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "Ariayaka"
-charterRefs:
+chartersRef:
 - "people_ariayaka"
 chartId: "chart_8442e9aaea0a4d9e8592cfd9228eb14c"
 tags: []

@@ -9,7 +9,7 @@ songId: "song_thick_rain"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "Walk Into The Blue Dream"
-charterRefs:
+chartersRef:
 - "people_magazet"
 chartId: "chart_62c1cdc757c24a5f809bbcfb6c6a0469"
 tags:

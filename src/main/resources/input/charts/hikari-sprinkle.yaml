@@ -9,7 +9,7 @@ songId: "song_hikari"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "BlueDream0★blingbling~"
-charterRefs:
+chartersRef:
 - "people_magazet"
 chartId: "chart_2022fd8f3210415186368ec888236214"
 tags: []

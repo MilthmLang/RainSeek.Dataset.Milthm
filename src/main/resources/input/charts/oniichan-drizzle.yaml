@@ -9,7 +9,7 @@ songId: "song_oniichan"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "Oniiakko"
-charterRefs:
+chartersRef:
 - "people_akko"
 chartId: "chart_a8f6451beeb34cb4898b4a8c4233567f"
 tags: []

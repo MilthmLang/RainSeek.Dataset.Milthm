@@ -9,7 +9,7 @@ songId: "song_castle_in_the_rain"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "阿鱼x俩位异世界旅人"
-charterRefs:
+chartersRef:
 - "people_ayu"
 chartId: "chart_acdab4355aa345dea8159dbb7cd13130"
 tags:

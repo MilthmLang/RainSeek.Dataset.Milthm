@@ -9,7 +9,7 @@ songId: "song_fly_to_meteor_milthm_edit"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "行于繁星的旅人"
-charterRefs:
+chartersRef:
 - "people_yuhuo"
 chartId: "chart_35ab3fba928d4b08be7f2fc67a77a838"
 tags: []

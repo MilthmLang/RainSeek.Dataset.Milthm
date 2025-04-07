@@ -9,7 +9,7 @@ songId: "song_pieces_of_the_cycle"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "2023.2.15"
-charterRefs:
+chartersRef:
 - "people_magazet"
 chartId: "chart_4fa17ebf6a8e47c18d8bbd1344ccd559"
 tags: []

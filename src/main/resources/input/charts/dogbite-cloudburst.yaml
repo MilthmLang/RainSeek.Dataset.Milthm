@@ -9,7 +9,7 @@ songId: "song_dogbite"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "Milthm Furry Group"
-charterRefs:
+chartersRef:
 - "people_papa"
 - "people_akko"
 - "people_eric_lian"

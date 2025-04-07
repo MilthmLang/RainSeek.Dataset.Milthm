@@ -9,7 +9,7 @@ songId: "song_meltovt_necrosys"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "Mt"
-charterRefs:
+chartersRef:
 - "people_magazet"
 chartId: "chart_c55ac81bf00d40318f54a7735ce84cd3"
 tags:

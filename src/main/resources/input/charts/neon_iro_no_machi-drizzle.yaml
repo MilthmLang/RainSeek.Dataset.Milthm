@@ -9,7 +9,7 @@ songId: "song_neon_iro_no_machi"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "Magazet in Bustling city"
-charterRefs:
+chartersRef:
 - "people_magazet"
 chartId: "chart_5ab2ddde5f3e42ecb6261296680093d1"
 tags: []

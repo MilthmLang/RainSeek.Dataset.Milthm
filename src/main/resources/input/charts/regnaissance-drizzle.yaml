@@ -9,7 +9,7 @@ songId: "song_regnaissance"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "Murty vs. Papa"
-charterRefs:
+chartersRef:
 - "people_murty"
 - "people_papa"
 chartId: "chart_dd163ba4a1fa4fc7ba4591561c824cc8"

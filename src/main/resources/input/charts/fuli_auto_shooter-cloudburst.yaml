@@ -9,7 +9,7 @@ songId: "song_fuli_auto_shooter"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "Akko"
-charterRefs:
+chartersRef:
 - "people_akko"
 chartId: "chart_addba2e9ad454770b850717ab2e0e17d"
 tags: []

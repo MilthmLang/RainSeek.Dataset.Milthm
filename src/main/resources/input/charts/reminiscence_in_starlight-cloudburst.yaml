@@ -9,7 +9,7 @@ songId: "song_reminiscence_in_starlight"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "Akko"
-charterRefs:
+chartersRef:
 - "people_akko"
 chartId: "chart_725abac15de5463f870da99a41cae61e"
 tags: []

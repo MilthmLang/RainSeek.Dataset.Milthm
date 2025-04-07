@@ -9,7 +9,7 @@ songId: "song_fragment_of_memories"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "Akko"
-charterRefs:
+chartersRef:
 - "people_akko"
 chartId: "chart_de74f3673a914421a657f0e8268083a3"
 tags:

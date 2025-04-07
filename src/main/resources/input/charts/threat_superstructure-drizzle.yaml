@@ -9,7 +9,7 @@ songId: "song_threat_superstructure"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "Eric_Lian vs. Magazet"
-charterRefs:
+chartersRef:
 - "people_eric_lian"
 - "people_magazet"
 chartId: "chart_98913dff725744aaa0f2abcd58d11fcd"

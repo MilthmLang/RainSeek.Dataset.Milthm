@@ -9,7 +9,7 @@ songId: "song_rainbow_flavor"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "Akko"
-charterRefs:
+chartersRef:
 - "people_akko"
 chartId: "chart_5b104c2e94ad4156ab25d1b11be487f3"
 tags: []

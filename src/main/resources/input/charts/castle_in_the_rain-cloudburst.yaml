@@ -9,7 +9,7 @@ songId: "song_castle_in_the_rain"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "淡水鱼+WH_C+爬爬+404"
-charterRefs:
+chartersRef:
 - "people_3469290f9e7b4db2836cb40f92358979"
 chartId: "chart_858f698c4bd940f0aa8b793021e0c550"
 tags:

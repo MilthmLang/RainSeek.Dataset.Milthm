@@ -9,7 +9,7 @@ songId: "song_sparkrain"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "Akko"
-charterRefs:
+chartersRef:
 - "people_akko"
 chartId: "chart_9476c969d02d40cab64feb3efae43ee7"
 tags:

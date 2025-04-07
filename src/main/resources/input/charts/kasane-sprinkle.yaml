@@ -9,7 +9,7 @@ songId: "song_kasane"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "母鸡Sama"
-charterRefs:
+chartersRef:
 - "people_muji"
 chartId: "chart_3b11fea9a2e340f7bbe2196cfcf25a1c"
 tags: []

@@ -9,7 +9,7 @@ songId: "song_sheer_ice_torrent"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "姜片"
-charterRefs:
+chartersRef:
 - "people_jiangpian"
 chartId: "chart_e23637e8fe154d9ab3c99e059745ad3c"
 tags:

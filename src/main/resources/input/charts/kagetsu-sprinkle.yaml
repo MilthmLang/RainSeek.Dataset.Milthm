@@ -9,7 +9,7 @@ songId: "song_kagetsu"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "Kiyotsuki"
-charterRefs:
+chartersRef:
 - "people_kiyotsuki"
 chartId: "chart_d6514d6718d34d8e8492890061efb6f7"
 tags: []

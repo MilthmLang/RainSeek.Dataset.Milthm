@@ -9,7 +9,7 @@ songId: "song_3a1d89dc56f84b97b5ffc23d80b63ad6"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "TCSTWTBHY in Words"
-charterRefs:
+chartersRef:
 - "people_f26c5002cd8b48869fddb14fbb00a9c9"
 chartId: "chart_9884d23930074e78a655297f000bcf50"
 tags: []

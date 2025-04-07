@@ -9,7 +9,7 @@ songId: "song_hikari"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "BlueDream0☆kirakira~"
-charterRefs:
+chartersRef:
 - "people_magazet"
 chartId: "chart_1ab3b5cfb6af48ec99e82d3a4e9edc72"
 tags: []

@@ -9,7 +9,7 @@ songId: "song_reminiscence_in_starlight"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "Kiyotsuki"
-charterRefs:
+chartersRef:
 - "people_kiyotsuki"
 chartId: "chart_bdf2975e8b194af89b1cdc6f62587e7c"
 tags: []

@@ -9,7 +9,7 @@ songId: "song_bio_engineering"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "Kiyotsuki"
-charterRefs:
+chartersRef:
 - "people_kiyotsuki"
 chartId: "chart_9953c1b3f92a406c8ea678dbee1b8f71"
 tags:

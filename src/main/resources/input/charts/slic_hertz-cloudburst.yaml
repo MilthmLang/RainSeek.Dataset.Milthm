@@ -15,7 +15,7 @@ songId: "song_slic_hertz"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "Kiyotsuki"
-charterRefs:
+chartersRef:
 - "people_kiyotsuki"
 chartId: "chart_e0162d0e072749c280faf611621650ea"
 tags: []

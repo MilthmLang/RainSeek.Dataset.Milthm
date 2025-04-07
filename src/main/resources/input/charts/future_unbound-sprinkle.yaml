@@ -9,7 +9,7 @@ songId: "song_future_unbound"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "Kiyotsuki"
-charterRefs:
+chartersRef:
 - "people_kiyotsuki"
 chartId: "chart_3442183bcf7d48429ddf04243914916a"
 tags: []

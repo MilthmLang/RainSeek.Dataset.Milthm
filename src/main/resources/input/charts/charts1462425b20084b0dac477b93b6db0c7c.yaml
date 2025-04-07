@@ -9,7 +9,7 @@ songId: "song_e50c2b5113874796b8067a1776972004"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "TCSTWTBHY"
-charterRefs:
+chartersRef:
 - "people_f5aec3b672584379a32ed66d093f5d4f"
 chartId: "chart_9c28aeec247e4b9d9edca92d0bd06303"
 tags:

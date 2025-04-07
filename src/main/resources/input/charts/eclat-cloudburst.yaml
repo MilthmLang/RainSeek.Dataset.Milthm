@@ -9,7 +9,7 @@ songId: "song_eclat"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "GUGU_QwQ x 喵卡 x Kiyotsuki x 云梦"
-charterRefs:
+chartersRef:
 - "people_kiyotsuki"
 - "people_yunmeng"
 - "people_miaoka"

@@ -12,7 +12,7 @@ songId: "song_slic_hertz"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "zero.dream"
-charterRefs:
+chartersRef:
 - "people_milthm_team"
 chartId: "chart_6eac0020b9a1480e9539633c0e502f9c"
 tags: []

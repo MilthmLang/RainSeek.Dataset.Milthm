@@ -9,7 +9,7 @@ songId: "song_episodic_rain"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "Kiyotsuki"
-charterRefs:
+chartersRef:
 - "people_kiyotsuki"
 chartId: "chart_54ea2f8fae054abaa1178d187bf08074"
 tags: []

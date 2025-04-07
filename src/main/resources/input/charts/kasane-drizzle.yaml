@@ -9,7 +9,7 @@ songId: "song_kasane"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "母鸡Sama"
-charterRefs:
+chartersRef:
 - "people_muji"
 chartId: "chart_76aebcf6d55d4490b48a1fc3162a974a"
 tags: []

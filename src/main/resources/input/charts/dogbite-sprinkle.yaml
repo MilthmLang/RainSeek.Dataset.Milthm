@@ -9,7 +9,7 @@ songId: "song_dogbite"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "t+cstwtbhy"
-charterRefs:
+chartersRef:
 - "people_tcstwtbhy"
 chartId: "chart_5aac139bab96486da0816bfebe382932"
 tags: []

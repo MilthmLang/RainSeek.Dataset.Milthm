@@ -9,7 +9,7 @@ songId: "song_kagetsu"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "Milthm"
-charterRefs:
+chartersRef:
 - "people_f9d92fa9f0e94eb8827096ba0c8d142b"
 chartId: "chart_8c794275de294beb87a1af024fe94e1e"
 tags: []

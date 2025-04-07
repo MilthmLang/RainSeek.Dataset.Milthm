@@ -9,7 +9,7 @@ songId: "song_regnaissance"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "Destroyed Particles"
-charterRefs:
+chartersRef:
 - "people_3acd71ef46ae4f2eb069bf9a578b2268"
 chartId: "chart_80df6e2269c34983a712adeebb47fb2b"
 tags:

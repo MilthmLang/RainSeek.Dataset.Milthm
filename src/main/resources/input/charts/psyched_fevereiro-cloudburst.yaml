@@ -9,7 +9,7 @@ songId: "song_psyched_fevereiro"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "Psyched Akkkko"
-charterRefs:
+chartersRef:
 - "people_akko"
 chartId: "chart_03b883cff28b4e338f67d3bcb1a74719"
 tags: []

@@ -9,7 +9,7 @@ songId: "song_infp_mp3"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "MGZT.mil"
-charterRefs:
+chartersRef:
 - "people_magazet"
 chartId: "chart_d70bc3b4752a45b9bd31c6ab8b9a7c9e"
 tags: []

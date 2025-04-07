@@ -9,7 +9,7 @@ songId: "song_episodic_rain"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "Kiyotsuki"
-charterRefs:
+chartersRef:
 - "people_kiyotsuki"
 chartId: "chart_b2594118dcf547509e57e4eeef6142fe"
 tags: []

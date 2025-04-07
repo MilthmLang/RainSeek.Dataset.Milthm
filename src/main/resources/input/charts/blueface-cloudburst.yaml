@@ -9,7 +9,7 @@ songId: "song_blueface"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "爬爬-TwT-云梦"
-charterRefs:
+chartersRef:
 - "people_yunmeng"
 - "people_papa"
 chartId: "chart_130d1d7dba20467cb5f5eafc51882809"

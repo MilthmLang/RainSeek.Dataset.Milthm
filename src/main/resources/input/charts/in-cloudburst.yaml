@@ -9,7 +9,7 @@ songId: "song_in"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "vitamIN b"
-charterRefs:
+chartersRef:
 - "people_vitamin_b"
 chartId: "chart_f425914cdb82413caca996ff151b8605"
 tags: []

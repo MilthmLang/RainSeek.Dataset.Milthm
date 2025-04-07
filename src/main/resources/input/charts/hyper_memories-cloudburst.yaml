@@ -9,7 +9,7 @@ songId: "song_hyper_memories"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "HYPER(AKKO. XZADUDU179)"
-charterRefs:
+chartersRef:
 - "people_akko"
 - "people_xzadudu179"
 chartId: "chart_ed40cd1b2741415abe816fcc63db4044"

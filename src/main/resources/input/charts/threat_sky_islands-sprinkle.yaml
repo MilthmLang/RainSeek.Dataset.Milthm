@@ -9,7 +9,7 @@ songId: "song_threat_sky_islands"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "Kiyotsuki x TCSTWTBHY"
-charterRefs:
+chartersRef:
 - "people_kiyotsuki"
 - "people_tcstwtbhy"
 chartId: "chart_eb7a9055b56f46ba9c300f9380d2f5b5"

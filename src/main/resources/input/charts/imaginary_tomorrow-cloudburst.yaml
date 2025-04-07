@@ -9,7 +9,7 @@ songId: "song_imaginary_tomorrow"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "赤澪 feat. Magazet"
-charterRefs:
+chartersRef:
 - "people_akko"
 - "people_magazet"
 chartId: "chart_c902851bfa0144f497a8ab6d317fccd4"

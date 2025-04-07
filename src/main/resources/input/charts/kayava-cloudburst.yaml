@@ -9,7 +9,7 @@ songId: "song_kayava"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "Akko"
-charterRefs:
+chartersRef:
 - "people_akko"
 chartId: "chart_1a3167ae910545459aa73cab60874e9c"
 tags:

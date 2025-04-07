@@ -9,7 +9,7 @@ songId: "song_algebra"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "Akko"
-charterRefs:
+chartersRef:
 - "people_akko"
 chartId: "chart_14080c32a16c464cb24a880f1a7e657d"
 tags: []

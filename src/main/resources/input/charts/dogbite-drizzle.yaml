@@ -9,7 +9,7 @@ songId: "song_dogbite"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "Peekaboo & Magazet"
-charterRefs:
+chartersRef:
 - "people_magazet"
 - "people_tcstwtbhy"
 chartId: "chart_d8074d7edc36419093770c62c3775dac"

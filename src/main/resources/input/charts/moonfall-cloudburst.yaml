@@ -9,7 +9,7 @@ songId: "song_moonfall"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "Ariayaka"
-charterRefs:
+chartersRef:
 - "people_ariayaka"
 chartId: "chart_a8d6dfa7b8794eefa10adbbd46519583"
 tags: []

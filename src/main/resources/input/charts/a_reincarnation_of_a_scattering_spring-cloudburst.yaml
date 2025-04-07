@@ -9,7 +9,7 @@ songId: "song_a_reincarnation_of_a_scattering_spring"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "Ariayaka"
-charterRefs:
+chartersRef:
 - "people_ariayaka"
 chartId: "chart_22bd563225cc412f9299bcf2cdd64aed"
 tags: []

@@ -15,7 +15,7 @@ songId: "song_oiiaioooooiai"
 difficulty: "Special"
 difficultyValue: 0.0
 charter: "爬爬：oiiaioooooiai"
-charterRefs:
+chartersRef:
 - "people_papa"
 chartId: "chart_1104f25d24934bc79172b262d36488ac"
 tags: []

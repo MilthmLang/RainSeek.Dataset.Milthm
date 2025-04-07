@@ -27,7 +27,7 @@ songId: "song_cybernetic_blazar"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "泪泪泪泪 AAAA KKKK"
-charterRefs:
+chartersRef:
 - "people_leitimo"
 - "people_akko"
 chartId: "chart_3a908e2d8a394220a6b84817bd1cea4a"

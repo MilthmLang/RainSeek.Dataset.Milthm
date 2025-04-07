@@ -9,7 +9,7 @@ songId: "song_threat_sky_islands"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "Eric_Lian vs. Magazet"
-charterRefs:
+chartersRef:
 - "people_eric_lian"
 - "people_magazet"
 chartId: "chart_0af38afbfe05403c90b62876bb18616e"

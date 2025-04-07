@@ -9,7 +9,7 @@ songId: "song_fc8c51af9f3e452091015531a801dc08"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "Kiyotsuki"
-charterRefs:
+chartersRef:
 - "people_kiyotsuki"
 chartId: "chart_cfa1c1fd432e4313ae23fbd6f731ae46"
 tags: []

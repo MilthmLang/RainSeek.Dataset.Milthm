@@ -9,7 +9,7 @@ songId: "song_betelgeuse"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "Akko"
-charterRefs:
+chartersRef:
 - "people_akko"
 chartId: "chart_81daeec2c1ae421897faf9796504dba9"
 tags: []

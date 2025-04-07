@@ -9,7 +9,7 @@ songId: "song_in"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "pig live k\"IN\"o carven "
-charterRefs:
+chartersRef:
 - "people_shuxuezhu"
 - "people_wangzi"
 chartId: "chart_e663eb5366d44a76b533445ef08ee18e"

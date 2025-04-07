@@ -9,7 +9,7 @@ songId: "song_fragment_of_memories"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "碎渣子云 eat 母鸡"
-charterRefs:
+chartersRef:
 - "people_muji"
 - "people_yunmeng"
 chartId: "chart_6b478cca035d4297b34aae75658d81bd"

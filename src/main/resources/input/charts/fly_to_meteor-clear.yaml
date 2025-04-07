@@ -9,7 +9,7 @@ songId: "song_fly_to_meteor_feat_tuqi"
 difficulty: "Clear"
 difficultyValue: 0.0
 charter: "回望时，皆是你与光芒"
-charterRefs:
+chartersRef:
 - "people_yuhuo"
 chartId: "chart_ead657f6f0f24a21acfd4322892a0562"
 tags: []

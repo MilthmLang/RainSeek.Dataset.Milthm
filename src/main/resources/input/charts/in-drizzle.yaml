@@ -9,7 +9,7 @@ songId: "song_in"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "partIclNstuz"
-charterRefs:
+chartersRef:
 - "people_akko"
 chartId: "chart_e7cd8b7fa19c488db9b6127524586ed3"
 tags: []

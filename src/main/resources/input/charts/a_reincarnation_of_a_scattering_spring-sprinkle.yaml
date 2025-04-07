@@ -9,7 +9,7 @@ songId: "song_a_reincarnation_of_a_scattering_spring"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "十返清月"
-charterRefs:
+chartersRef:
 - "people_shifanqingyue"
 chartId: "chart_c9a9bc4586954fb9babed2027a6d9ed7"
 tags: []

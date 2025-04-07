@@ -9,7 +9,7 @@ songId: "song_neon_iro_no_machi"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "Magazet in Rhythmic music"
-charterRefs:
+chartersRef:
 - "people_magazet"
 chartId: "chart_4001a2b3374d438e8e2b2bd6d3651805"
 tags: []

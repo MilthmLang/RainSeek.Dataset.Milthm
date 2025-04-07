@@ -9,7 +9,7 @@ songId: "song_oniichan"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "Kiyotsuki"
-charterRefs:
+chartersRef:
 - "people_kiyotsuki"
 chartId: "chart_f728706ae40a421daabadde4bc35e8e3"
 tags: []

@@ -9,7 +9,7 @@ songId: "song_cafe_in_6412i731v"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "Kiyotsuki + Eric"
-charterRefs:
+chartersRef:
 - "people_kiyotsuki"
 - "people_eric_lian"
 chartId: "chart_825405cbd2624f109e984d967e4e33f4"

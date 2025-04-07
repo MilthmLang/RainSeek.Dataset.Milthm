@@ -9,7 +9,7 @@ songId: "song_fc8c51af9f3e452091015531a801dc08"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "十返清月"
-charterRefs:
+chartersRef:
 - "people_shifanqingyue"
 chartId: "chart_00e3e0b6fbdd4a7dbcabba6540f4225d"
 tags: []

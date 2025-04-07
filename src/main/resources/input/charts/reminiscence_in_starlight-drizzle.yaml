@@ -9,7 +9,7 @@ songId: "song_reminiscence_in_starlight"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "Milthm"
-charterRefs:
+chartersRef:
 - "people_milthm_team"
 chartId: "chart_b75e195e79914e4a8afc7372b4ae95fd"
 tags: []

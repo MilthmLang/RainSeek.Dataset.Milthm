@@ -9,7 +9,7 @@ songId: "song_kagetsu"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "Kiyotsuki"
-charterRefs:
+chartersRef:
 - "people_kiyotsuki"
 chartId: "chart_cdacaee42866410993a85bbbf0dc6207"
 tags: []

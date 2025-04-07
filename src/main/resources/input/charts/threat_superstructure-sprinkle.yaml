@@ -9,7 +9,7 @@ songId: "song_threat_superstructure"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "Supercloud x Supertcstwtbhy"
-charterRefs:
+chartersRef:
 - "people_yunmeng"
 - "people_tcstwtbhy"
 chartId: "chart_8e72dab7e72f4842a499559659279e2c"

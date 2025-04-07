@@ -9,7 +9,7 @@ songId: "song_3a1d89dc56f84b97b5ffc23d80b63ad6"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "Akko in Words"
-charterRefs:
+chartersRef:
 - "people_7014530e2f774bc3b3ae913525656ca1"
 chartId: "chart_35b424f8d0de41ab9512f365a154c328"
 tags: []

@@ -9,7 +9,7 @@ songId: "song_regnaissance"
 difficulty: "Clear"
 difficultyValue: 0.0
 charter: "Reborned Particles"
-charterRefs:
+chartersRef:
 - "people_akko"
 chartId: "chart_9acd5289bc8149fbafc87b0631e60e60"
 tags:

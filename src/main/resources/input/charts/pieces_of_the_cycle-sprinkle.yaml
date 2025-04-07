@@ -9,7 +9,7 @@ songId: "song_pieces_of_the_cycle"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "2023.11.17"
-charterRefs:
+chartersRef:
 - "people_magazet"
 chartId: "chart_e75e2d8086a0464f8d298dd0bb68328b"
 tags: []

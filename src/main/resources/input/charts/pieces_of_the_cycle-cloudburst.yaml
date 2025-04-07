@@ -9,7 +9,7 @@ songId: "song_pieces_of_the_cycle"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "2024.11.17"
-charterRefs:
+chartersRef:
 - "people_magazet"
 chartId: "chart_bb5b762887b14e1c8e078bacadf6f2b1"
 tags: []

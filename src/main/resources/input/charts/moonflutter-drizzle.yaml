@@ -9,7 +9,7 @@ songId: "song_moonflutter"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "Kiyotsuki"
-charterRefs:
+chartersRef:
 - "people_kiyotsuki"
 chartId: "chart_794c04607a5e4ffbbfcc2800f1d5bfb2"
 tags: []

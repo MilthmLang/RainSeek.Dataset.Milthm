@@ -9,7 +9,7 @@ songId: "song_innocent_white"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "Innocent Magazet"
-charterRefs:
+chartersRef:
 - "people_magazet"
 chartId: "chart_14700ddab3c7429da5ce8a65f2fe4846"
 tags:

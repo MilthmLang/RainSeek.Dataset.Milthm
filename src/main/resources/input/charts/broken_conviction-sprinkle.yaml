@@ -9,7 +9,7 @@ songId: "song_broken_conviction"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "Akko"
-charterRefs:
+chartersRef:
 - "people_akko"
 chartId: "chart_de2327c70d63496f9974dbb70bfcbed8"
 tags: []

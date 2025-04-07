@@ -9,7 +9,7 @@ songId: "song_e50c2b5113874796b8067a1776972004"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "Ursulina AS DRIZZLE"
-charterRefs:
+chartersRef:
 - "people_6b7351327b4d497196f0504ff776c631"
 chartId: "chart_2103d16c9a074001be01155ef305118e"
 tags:

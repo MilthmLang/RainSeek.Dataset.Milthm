@@ -9,7 +9,7 @@ songId: "song_algebra"
 difficulty: "Special"
 difficultyValue: 0.0
 charter: "Milthm Team"
-charterRefs:
+chartersRef:
 - "people_milthm_team"
 chartId: "chart_cc508ca65d5f4222a4a93a8cfbaac03e"
 tags:

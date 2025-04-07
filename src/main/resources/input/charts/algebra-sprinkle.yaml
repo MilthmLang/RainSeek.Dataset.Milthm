@@ -9,7 +9,7 @@ songId: "song_algebra"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "200319202320020825"
-charterRefs:
+chartersRef:
 - "people_milthm_team"
 chartId: "chart_962ec79e489c43eabd726dc3448e3983"
 tags: []

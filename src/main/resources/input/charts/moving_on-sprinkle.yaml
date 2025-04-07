@@ -9,7 +9,7 @@ songId: "song_moving_on"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "lei motife"
-charterRefs:
+chartersRef:
 - "people_leitimo"
 chartId: "chart_7d5df9f6080f4da0974ad2b8cb86e7e6"
 tags:

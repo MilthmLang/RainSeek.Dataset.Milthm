@@ -9,7 +9,7 @@ songId: "song_aconsma"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "Kiyotsuki"
-charterRefs:
+chartersRef:
 - "people_kiyotsuki"
 chartId: "chart_8b3297049ce54361abd5b89c68b61286"
 tags:

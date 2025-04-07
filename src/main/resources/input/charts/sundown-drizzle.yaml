@@ -9,7 +9,7 @@ songId: "song_sundown"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "179 綾吟 Kiyotsuki Attuned."
-charterRefs:
+chartersRef:
 - "people_xzadudu179"
 - "people_ariayaka"
 - "people_kiyotsuki"

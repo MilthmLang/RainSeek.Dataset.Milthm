@@ -9,7 +9,7 @@ songId: "song_aconsma"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "Akko"
-charterRefs:
+chartersRef:
 - "people_akko"
 chartId: "chart_8f75c6ffa5ac4738b5e92549fa838084"
 tags:

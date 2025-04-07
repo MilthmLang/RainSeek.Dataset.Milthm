@@ -9,7 +9,7 @@ songId: "song_rainbow_flavor"
 difficulty: "Special"
 difficultyValue: 0.0
 charter: "Akko"
-charterRefs:
+chartersRef:
   - "people_akko"
 chartId: "chart_242edeade9cd428d9799f8a603109fc6"
 tags:

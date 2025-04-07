@@ -9,7 +9,7 @@ songId: "song_fragment_of_memories"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "Akko"
-charterRefs:
+chartersRef:
 - "people_akko"
 chartId: "chart_a5000e56b91740ce9ebb12cc2c4a2e70"
 tags:

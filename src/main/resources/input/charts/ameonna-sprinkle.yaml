@@ -9,7 +9,7 @@ songId: "song_ameonna"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "下雨の云"
-charterRefs:
+chartersRef:
 - "people_yunmeng"
 chartId: "chart_9953eae44f604cfea8c39ada13a4b1ca"
 tags:

@@ -9,7 +9,7 @@ songId: "song_bio_engineering"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "Eric_Lian & xzadudu179"
-charterRefs:
+chartersRef:
 - "people_eric_lian"
 - "people_xzadudu179"
 chartId: "chart_a5ba0b3b1eb54b438d129e82b6d0afaa"

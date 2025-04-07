@@ -9,7 +9,7 @@ songId: "song_jump_out"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "TCSTWTBHY?"
-charterRefs:
+chartersRef:
 - "people_tcstwtbhy"
 chartId: "chart_213a40e1d945464caa6e9ae82db8fc50"
 tags:

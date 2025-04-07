@@ -9,7 +9,7 @@ songId: "song_blueface"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "澪：TwT"
-charterRefs:
+chartersRef:
 - "people_akko"
 - "people_tcstwtbhy"
 chartId: "chart_d89765a705a144a18ed3f23f5f15741a"

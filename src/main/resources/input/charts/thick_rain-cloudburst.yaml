@@ -9,7 +9,7 @@ songId: "song_thick_rain"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "Magazet with Luvia"
-charterRefs:
+chartersRef:
 - "people_magazet"
 chartId: "chart_6df0b462dded46db85053ff86fc46c26"
 tags:

@@ -12,7 +12,7 @@ songId: "song_slic_hertz"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "part.icles"
-charterRefs:
+chartersRef:
 - "people_milthm_team"
 chartId: "chart_26a76638ec894809bd405d6afe403c40"
 tags: []

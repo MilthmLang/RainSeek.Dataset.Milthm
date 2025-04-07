@@ -9,7 +9,7 @@ songId: "song_innocent_white"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "Danc(2)ing H(8)old"
-charterRefs:
+chartersRef:
 - "people_tcstwtbhy"
 chartId: "chart_7072a099a482484d84a5945ac94807e1"
 tags:

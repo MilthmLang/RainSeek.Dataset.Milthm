@@ -9,7 +9,7 @@ songId: "song_meinichi"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "嘤箱"
-charterRefs:
+chartersRef:
 - "people_yingxiang"
 chartId: "chart_4144b70277bd4ff49ba0aa7c70b2bab5"
 tags:

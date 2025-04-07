@@ -9,7 +9,7 @@ songId: "song_moonflutter"
 difficulty: "Clear"
 difficultyValue: 0.0
 charter: "Papaflutter"
-charterRefs:
+chartersRef:
 - "people_papa"
 chartId: "chart_eab07c23395d47f3be3315c7c566f694"
 tags: []

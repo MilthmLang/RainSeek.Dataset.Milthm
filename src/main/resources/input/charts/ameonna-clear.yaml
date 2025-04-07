@@ -9,7 +9,7 @@ songId: "song_ameonna"
 difficulty: "Clear"
 difficultyValue: 0.0
 charter: "爬爬"
-charterRefs:
+chartersRef:
 - "people_papa"
 chartId: "chart_217898b14806401fadf5740e9d72b66e"
 tags:

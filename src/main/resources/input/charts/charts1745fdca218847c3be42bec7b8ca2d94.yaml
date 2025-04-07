@@ -9,7 +9,7 @@ songId: "song_fc8c51af9f3e452091015531a801dc08"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "十返清月"
-charterRefs:
+chartersRef:
 - "people_shifanqingyue"
 chartId: "chart_f28a654da2c44ff288f0592ba52cd4fd"
 tags: []

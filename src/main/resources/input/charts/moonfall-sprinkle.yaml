@@ -9,7 +9,7 @@ songId: "song_moonfall"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "十返清月"
-charterRefs:
+chartersRef:
 - "people_shifanqingyue"
 chartId: "chart_9eb53fd3a91c45c68608f3a76eecf9f7"
 tags: []

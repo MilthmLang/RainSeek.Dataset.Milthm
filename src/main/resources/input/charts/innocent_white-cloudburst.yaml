@@ -9,7 +9,7 @@ songId: "song_innocent_white"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "Ariayaka feat. 舞仙翼 (Notanote)"
-charterRefs:
+chartersRef:
 - "people_ariayaka"
 - "people_wuxianyi"
 chartId: "chart_cc75ce1cdbed4bc794eb728bf36bb1ec"

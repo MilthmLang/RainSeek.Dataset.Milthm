@@ -9,7 +9,7 @@ songId: "song_infp_mp3"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "MGZT.mil"
-charterRefs:
+chartersRef:
 - "people_magazet"
 chartId: "chart_3ebe1bbe5d134175ad91dcf85c7bfd19"
 tags: []

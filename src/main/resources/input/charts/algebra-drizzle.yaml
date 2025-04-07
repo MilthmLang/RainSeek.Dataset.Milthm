@@ -9,7 +9,7 @@ songId: "song_algebra"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "Magazet"
-charterRefs:
+chartersRef:
 - "people_magazet"
 chartId: "chart_e09a8896ad874cee8f2a40b8d4439f26"
 tags: []

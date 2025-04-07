@@ -9,7 +9,7 @@ songId: "song_threat_metropolis"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "Akko"
-charterRefs:
+chartersRef:
 - "people_akko"
 chartId: "chart_c292f47ed8ff483fbfd7aa43937f0e2e"
 tags:

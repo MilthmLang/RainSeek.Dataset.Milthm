@@ -9,7 +9,7 @@ songId: "song_kayava"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "云"
-charterRefs:
+chartersRef:
 - "people_yunmeng"
 chartId: "chart_1ae6231bd1654f09a1389ec0d29431a7"
 tags:

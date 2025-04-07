@@ -9,7 +9,7 @@ songId: "song_moonflutter"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "Magaflutter"
-charterRefs:
+chartersRef:
 - "people_magazet"
 chartId: "chart_dae03da22ff04ed19624945c2b9d3118"
 tags: []

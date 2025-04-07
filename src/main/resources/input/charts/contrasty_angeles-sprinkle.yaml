@@ -9,7 +9,7 @@ songId: "song_contrasty_angeles"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "Kiyotsuki"
-charterRefs:
+chartersRef:
 - "people_kiyotsuki"
 chartId: "chart_c18f27b62d4e463182b14ede237874df"
 tags:

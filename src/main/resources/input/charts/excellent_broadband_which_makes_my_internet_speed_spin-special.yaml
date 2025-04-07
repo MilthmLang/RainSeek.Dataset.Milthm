@@ -9,7 +9,7 @@ songId: "song_excellent_broadband_which_makes_my_internet_speed_spin"
 difficulty: "Special"
 difficultyValue: 0.0
 charter: "Choose Your Game"
-charterRefs:
+chartersRef:
 - "people_magazet"
 chartId: "chart_1ccef64509b6400da438b2f2fdc0debc"
 tags:

@@ -9,7 +9,7 @@ songId: "song_fuli_auto_shooter"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "Akko"
-charterRefs:
+chartersRef:
 - "people_akko"
 chartId: "chart_423e7ae797e94c87a77836af2020a59d"
 tags: []

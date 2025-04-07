@@ -9,7 +9,7 @@ songId: "song_moonflutter"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "云梦 % xzadudu179"
-charterRefs:
+chartersRef:
 - "people_yunmeng"
 - "people_xzadudu179"
 chartId: "chart_61f5e310d45b40dca934e3a849382729"

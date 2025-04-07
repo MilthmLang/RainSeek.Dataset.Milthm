@@ -11,7 +11,7 @@ songId: "song_threat_metropolis"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "Kiyotsuki"
-charterRefs:
+chartersRef:
 - "people_kiyotsuki"
 chartId: "chart_abefe6c92b3045efb5b08edb5fc18195"
 tags:

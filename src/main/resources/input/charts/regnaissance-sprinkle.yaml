@@ -9,7 +9,7 @@ songId: "song_regnaissance"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "Eric_Lian"
-charterRefs:
+chartersRef:
 - "people_eric_lian"
 chartId: "chart_a5a9a7e430304bb39eef04e58a0fbdb4"
 tags:

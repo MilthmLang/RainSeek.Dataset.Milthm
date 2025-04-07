@@ -9,7 +9,7 @@ songId: "song_jump_out"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "Kiyotsuki"
-charterRefs:
+chartersRef:
 - "people_kiyotsuki"
 chartId: "chart_38b25a54afa94369b28690ba2e29df0b"
 tags:

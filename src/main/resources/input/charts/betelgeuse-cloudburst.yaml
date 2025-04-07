@@ -9,7 +9,7 @@ songId: "song_betelgeuse"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "Akko vs. Kiyotsuki"
-charterRefs:
+chartersRef:
   - "people_akko"
   - "people_kiyotsuki"
 chartId: "chart_01929c36e7ba40d58123ca3d4c2da4fb"

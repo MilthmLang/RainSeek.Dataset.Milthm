@@ -9,7 +9,7 @@ songId: "song_kayava"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "Akko"
-charterRefs:
+chartersRef:
 - "people_akko"
 chartId: "chart_85a6566fd9df408ea8120b13a80362cc"
 tags:

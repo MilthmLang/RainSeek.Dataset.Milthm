@@ -12,7 +12,7 @@ songId: "song_agnostic"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "Monotropa uniflora L."
-charterRefs:
+chartersRef:
 - "people_magazet"
 chartId: "chart_9a75cbb5f9ad4557b3ed5553a16023d7"
 tags: []

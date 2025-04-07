@@ -9,7 +9,7 @@ songId: "song_future_unbound"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "xzadudu179 is Unbound"
-charterRefs:
+chartersRef:
 - "people_xzadudu179"
 chartId: "chart_7131ad7b16024acdbfc11ff712d054f0"
 tags: []

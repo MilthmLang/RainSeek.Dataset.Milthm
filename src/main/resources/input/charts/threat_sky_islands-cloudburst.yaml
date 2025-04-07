@@ -9,7 +9,7 @@ songId: "song_threat_sky_islands"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "Ariayaka"
-charterRefs:
+chartersRef:
   - "people_ariayaka"
 chartId: "chart_13fda58e30914b3d8eb94ac8346ce61a"
 tags:

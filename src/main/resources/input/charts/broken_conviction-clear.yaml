@@ -9,7 +9,7 @@ songId: "song_broken_conviction"
 difficulty: "Clear"
 difficultyValue: 0.0
 charter: "Kiyotsuki"
-charterRefs:
+chartersRef:
 - "people_kiyotsuki"
 chartId: "chart_a19a54b6363e49ae9cd2633a2db8ae4f"
 tags: []

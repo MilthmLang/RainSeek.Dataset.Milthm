@@ -9,7 +9,7 @@ songId: "song_aconsma"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "Kiyotsuki"
-charterRefs:
+chartersRef:
 - "people_kiyotsuki"
 chartId: "chart_c3769378d5954119b93ce0db2b3ea8e2"
 tags:

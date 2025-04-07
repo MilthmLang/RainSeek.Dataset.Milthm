@@ -9,7 +9,7 @@ songId: "song_sheer_ice_torrent"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "Magazet"
-charterRefs:
+chartersRef:
 - "people_magazet"
 chartId: "chart_d3ddf678adb04157ae1021c2667c7ba8"
 tags:

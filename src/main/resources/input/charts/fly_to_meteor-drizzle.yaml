@@ -9,7 +9,7 @@ songId: "song_fly_to_meteor_milthm_edit"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "仰望夜空的孩童"
-charterRefs:
+chartersRef:
 - "people_yuhuo"
 chartId: "chart_adcc6c1129864f3cae7e4b52fe75dc83"
 tags: []

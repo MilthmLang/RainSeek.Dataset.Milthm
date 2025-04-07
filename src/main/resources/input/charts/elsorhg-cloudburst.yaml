@@ -10,7 +10,7 @@ songId: "song_elsorhg"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "UndefinedViolet"
-charterRefs:
+chartersRef:
 - "people_9bd0029958084551bc0705aba2b58ef4"
 chartId: "chart_f7b864bc72a34c9dab7cb57946fb77ec"
 tags:

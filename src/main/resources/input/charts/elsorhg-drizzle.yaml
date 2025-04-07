@@ -10,7 +10,7 @@ songId: "song_elsorhg"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "Kiyotsuki"
-charterRefs:
+chartersRef:
 - "people_kiyotsuki"
 chartId: "chart_e27a66da19c54d3a85f45defdf5b7b88"
 tags:

@@ -9,7 +9,7 @@ songId: "song_hyper_memories"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "Eric_Lian"
-charterRefs:
+chartersRef:
 - "people_eric_lian"
 chartId: "chart_0785d07e50e14e3fb1aa01fa43d0c2f6"
 tags:
