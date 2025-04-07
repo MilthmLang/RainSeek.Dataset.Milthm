@@ -1,15 +1,15 @@
 ---
 id: "9884d239-3007-4e78-a655-297f000bcf50"
-illustration: "illustration_eee54c0d24facfc48ab3b61084a5bf15"
+illustration: "illustration_words"
 bpmInfo:
 - start: 0.0
   bpm: 150.0
   beatsPerBar: 0
-songId: "song_3a1d89dc56f84b97b5ffc23d80b63ad6"
+songId: "song_words"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "TCSTWTBHY in Words"
 chartersRef:
-- "people_f26c5002cd8b48869fddb14fbb00a9c9"
+- "people_tcstwtbhy"
 chartId: "chart_9884d23930074e78a655297f000bcf50"
 tags: []
