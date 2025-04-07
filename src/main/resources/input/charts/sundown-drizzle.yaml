@@ -1,16 +1,18 @@
 ---
 id: "606be389-ad01-41e3-a1ba-e7b355d16948"
-illustration: "illustration_f320cb34fb055e04889f16fcb481cc40"
+illustration: "illustration_sundown"
 bpmInfo:
 - start: 0.0
   bpm: 109.0
   beatsPerBar: 0
-songId: "song_e4dbbd9741a0481ab7b4a57d912c794d"
+songId: "song_sundown"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "179 綾吟 Kiyotsuki Attuned."
 charterRefs:
-- "people_efcf0752f31945079a03ad21e80a999e"
+- "people_xzadudu179"
+- "people_ariayaka"
+- "people_kiyotsuki"
 chartId: "chart_606be389ad0141e3a1bae7b355d16948"
 tags:
 - "RainWorld"
