@@ -2,14 +2,14 @@
 id: "5ab2ddde-5f3e-42ec-b626-1296680093d1"
 illustration: "illustration_neon_iro_no_machi"
 bpmInfo:
-- start: 0.005
-  bpm: 110.0
-  beatsPerBar: 0
+  - start: 0.005
+    bpm: 110.0
+    beatsPerBar: 0
 songId: "song_neon_iro_no_machi"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "Magazet in Bustling city"
 chartersRef:
-- "people_magazet"
+  - "people_magazet"
 chartId: "chart_5ab2ddde5f3e42ecb6261296680093d1"
-tags: []
+tags: [ ]

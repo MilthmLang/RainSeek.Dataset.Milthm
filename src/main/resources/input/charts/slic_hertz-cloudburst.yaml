@@ -2,20 +2,20 @@
 id: "e0162d0e-0727-49c2-80fa-f611621650ea"
 illustration: "illustration_slic_hertz"
 bpmInfo:
-- start: -1.137931
-  bpm: 145.0
-  beatsPerBar: 0
-- start: 154.44827
-  bpm: 116.0
-  beatsPerBar: 4
-- start: 156.51724
-  bpm: 145.0
-  beatsPerBar: 4
+  - start: -1.137931
+    bpm: 145.0
+    beatsPerBar: 0
+  - start: 154.44827
+    bpm: 116.0
+    beatsPerBar: 4
+  - start: 156.51724
+    bpm: 145.0
+    beatsPerBar: 4
 songId: "song_slic_hertz"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "Kiyotsuki"
 chartersRef:
-- "people_kiyotsuki"
+  - "people_kiyotsuki"
 chartId: "chart_e0162d0e072749c280faf611621650ea"
-tags: []
+tags: [ ]

@@ -2,14 +2,14 @@
 id: "a6ef2d0a-057b-4ada-be88-23dcde06ada5"
 illustration: "illustration_hikari"
 bpmInfo:
-- start: 0.001
-  bpm: 175.0
-  beatsPerBar: 0
+  - start: 0.001
+    bpm: 175.0
+    beatsPerBar: 0
 songId: "song_hikari"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "179 -qwq- Primticles"
 chartersRef:
-- "people_xzadudu179"
+  - "people_xzadudu179"
 chartId: "chart_a6ef2d0a057b4adabe8823dcde06ada5"
-tags: []
+tags: [ ]

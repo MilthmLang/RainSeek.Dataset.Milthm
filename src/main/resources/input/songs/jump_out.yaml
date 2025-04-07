@@ -5,6 +5,6 @@ titleCulture: "00000000"
 latinTitle: "Jump out?"
 artist: "B.R.I"
 artistsRef:
-- "people_b_r_i"
+  - "people_b_r_i"
 tags:
-- "0"
+  - "0"

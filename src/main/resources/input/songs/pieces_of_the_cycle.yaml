@@ -5,6 +5,6 @@ titleCulture: "14000000"
 latinTitle: "Pieces of the Cycle"
 artist: "TsukiP"
 artistsRef:
-- "people_tsuki_p"
+  - "people_tsuki_p"
 tags:
-- "1st anniversary"
+  - "1st anniversary"

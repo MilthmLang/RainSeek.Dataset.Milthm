@@ -2,14 +2,14 @@
 id: "35b424f8-d0de-41ab-9512-f365a154c328"
 illustration: "illustration_words"
 bpmInfo:
-- start: 0.0
-  bpm: 150.0
-  beatsPerBar: 0
+  - start: 0.0
+    bpm: 150.0
+    beatsPerBar: 0
 songId: "song_words"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "Akko in Words"
 chartersRef:
-- "people_akko"
+  - "people_akko"
 chartId: "chart_35b424f8d0de41ab9512f365a154c328"
-tags: []
+tags: [ ]

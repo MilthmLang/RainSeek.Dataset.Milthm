@@ -4,15 +4,15 @@ illustration:
   - "illustration_threat_metropolis_day"
   - "illustration_threat_metropolis_night"
 bpmInfo:
-- start: 0.057
-  bpm: 108.106
-  beatsPerBar: 4
+  - start: 0.057
+    bpm: 108.106
+    beatsPerBar: 4
 songId: "song_threat_metropolis"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "Kiyotsuki"
 chartersRef:
-- "people_kiyotsuki"
+  - "people_kiyotsuki"
 chartId: "chart_abefe6c92b3045efb5b08edb5fc18195"
 tags:
-- "RainWorld"
+  - "RainWorld"

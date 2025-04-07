@@ -2,14 +2,14 @@
 id: "fa97e341-3a72-47bc-927e-b9cf87980b37"
 illustration: "illustration_neon_iro_no_machi"
 bpmInfo:
-- start: 0.005
-  bpm: 110.0
-  beatsPerBar: 0
+  - start: 0.005
+    bpm: 110.0
+    beatsPerBar: 0
 songId: "song_neon_iro_no_machi"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "Magazet in Romantic love"
 chartersRef:
-- "people_magazet"
+  - "people_magazet"
 chartId: "chart_fa97e3413a7247bc927eb9cf87980b37"
-tags: []
+tags: [ ]

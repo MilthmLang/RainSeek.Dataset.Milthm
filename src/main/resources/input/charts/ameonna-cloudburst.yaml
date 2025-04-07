@@ -2,15 +2,15 @@
 id: "9a55b865-0860-41b9-9f78-bc5209bc9f44"
 illustration: "illustration_ameonna"
 bpmInfo:
-- start: 0.0
-  bpm: 150.0
-  beatsPerBar: 0
+  - start: 0.0
+    bpm: 150.0
+    beatsPerBar: 0
 songId: "song_ameonna"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "雨のMagazet"
 chartersRef:
-- "people_magazet"
+  - "people_magazet"
 chartId: "chart_9a55b865086041b99f78bc5209bc9f44"
 tags:
-- "prolog"
+  - "prolog"

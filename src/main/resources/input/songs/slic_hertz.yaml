@@ -5,6 +5,6 @@ titleCulture: "00000000"
 latinTitle: "slic.hertz"
 artist: "Sobrem"
 artistsRef:
-- "people_sobrem"
+  - "people_sobrem"
 tags:
-- ""
+  - ""

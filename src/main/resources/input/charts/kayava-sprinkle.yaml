@@ -2,15 +2,15 @@
 id: "1ae6231b-d165-4f09-a138-9ec0d29431a7"
 illustration: "illustration_kayava"
 bpmInfo:
-- start: -0.02
-  bpm: 120.0
-  beatsPerBar: 0
+  - start: -0.02
+    bpm: 120.0
+    beatsPerBar: 0
 songId: "song_kayava"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "云"
 chartersRef:
-- "people_yunmeng"
+  - "people_yunmeng"
 chartId: "chart_1ae6231bd1654f09a1389ec0d29431a7"
 tags:
-- "RainWorld"
+  - "RainWorld"

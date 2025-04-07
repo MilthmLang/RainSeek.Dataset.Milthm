@@ -2,14 +2,14 @@
 id: "cfa1c1fd-432e-4313-ae23-fbd6f731ae46"
 illustration: "illustration_tiger_lotus"
 bpmInfo:
-- start: 0.0
-  bpm: 177.0
-  beatsPerBar: 0
+  - start: 0.0
+    bpm: 177.0
+    beatsPerBar: 0
 songId: "song_tiger_lotus"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "Kiyotsuki"
 chartersRef:
-- "people_kiyotsuki"
+  - "people_kiyotsuki"
 chartId: "chart_cfa1c1fd432e4313ae23fbd6f731ae46"
-tags: []
+tags: [ ]

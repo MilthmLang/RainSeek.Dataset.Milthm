@@ -2,33 +2,33 @@
 id: "cea79b8c-23fd-4fbd-b2a9-6f080ef15b44"
 illustration: "illustration_cybernetic_blazar"
 bpmInfo:
-- start: 1.625
-  bpm: 148.0
-  beatsPerBar: 4
-- start: 40.543
-  bpm: 220.0
-  beatsPerBar: 3
-- start: 47.088
-  bpm: 230.0
-  beatsPerBar: 3
-- start: 50.218
-  bpm: 210.0
-  beatsPerBar: 3
-- start: 51.932
-  bpm: 156.0
-  beatsPerBar: 4
-- start: 58.085
-  bpm: 150.0
-  beatsPerBar: 4
-- start: 61.285
-  bpm: 148.0
-  beatsPerBar: 4
+  - start: 1.625
+    bpm: 148.0
+    beatsPerBar: 4
+  - start: 40.543
+    bpm: 220.0
+    beatsPerBar: 3
+  - start: 47.088
+    bpm: 230.0
+    beatsPerBar: 3
+  - start: 50.218
+    bpm: 210.0
+    beatsPerBar: 3
+  - start: 51.932
+    bpm: 156.0
+    beatsPerBar: 4
+  - start: 58.085
+    bpm: 150.0
+    beatsPerBar: 4
+  - start: 61.285
+    bpm: 148.0
+    beatsPerBar: 4
 songId: "song_cybernetic_blazar"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "cybernetic blazer"
 chartersRef:
-- "people_milthm_team"
+  - "people_milthm_team"
 chartId: "chart_cea79b8c23fd4fbdb2a96f080ef15b44"
 tags:
-- "notanote"
+  - "notanote"

@@ -5,6 +5,6 @@ titleCulture: "00000000"
 latinTitle: "Fragment of Memories"
 artist: "U-Ruri"
 artistsRef:
-- "people_u_ruri"
+  - "people_u_ruri"
 tags:
-- "chapter1"
+  - "chapter1"

@@ -2,14 +2,14 @@
 id: "03b883cf-f28b-4e33-8f67-d3bcb1a74719"
 illustration: "illustration_psyched_fevereiro"
 bpmInfo:
-- start: 0.0
-  bpm: 150.0
-  beatsPerBar: 0
+  - start: 0.0
+    bpm: 150.0
+    beatsPerBar: 0
 songId: "song_psyched_fevereiro"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "Psyched Akkkko"
 chartersRef:
-- "people_akko"
+  - "people_akko"
 chartId: "chart_03b883cff28b4e338f67d3bcb1a74719"
-tags: []
+tags: [ ]

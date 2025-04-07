@@ -2,16 +2,16 @@
 id: "0af38afb-fe05-403c-90b6-2876bb18616e"
 illustration: "illustration_threat_sky_islands"
 bpmInfo:
-- start: 0.047
-  bpm: 120.0
-  beatsPerBar: 4
+  - start: 0.047
+    bpm: 120.0
+    beatsPerBar: 4
 songId: "song_threat_sky_islands"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "Eric_Lian vs. Magazet"
 chartersRef:
-- "people_eric_lian"
-- "people_magazet"
+  - "people_eric_lian"
+  - "people_magazet"
 chartId: "chart_0af38afbfe05403c90b62876bb18616e"
 tags:
-- "RainWorld"
+  - "RainWorld"

@@ -5,8 +5,8 @@ titleCulture: "00000000"
 latinTitle: "Fly To Meteor (Milthm Edit)"
 artist: "ShooTinGStaR + xzadudu179 + Cyberspace"
 artistsRef:
-- "people_shootingstar"
-- "people_xzadudu179"
-- "people_cyberspace"
+  - "people_shootingstar"
+  - "people_xzadudu179"
+  - "people_cyberspace"
 tags:
-- ""
+  - ""

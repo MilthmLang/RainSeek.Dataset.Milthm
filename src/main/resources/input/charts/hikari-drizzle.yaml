@@ -2,14 +2,14 @@
 id: "1ab3b5cf-b6af-48ec-99e8-2d3a4e9edc72"
 illustration: "illustration_hikari"
 bpmInfo:
-- start: 0.007
-  bpm: 175.0
-  beatsPerBar: 0
+  - start: 0.007
+    bpm: 175.0
+    beatsPerBar: 0
 songId: "song_hikari"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "BlueDream0☆kirakira~"
 chartersRef:
-- "people_magazet"
+  - "people_magazet"
 chartId: "chart_1ab3b5cfb6af48ec99e82d3a4e9edc72"
-tags: []
+tags: [ ]

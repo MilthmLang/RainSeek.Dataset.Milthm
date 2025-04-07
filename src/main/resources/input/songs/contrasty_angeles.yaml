@@ -5,6 +5,6 @@ titleCulture: "00000000"
 latinTitle: "Contrasty Angeles"
 artist: "HLxQ.v.M"
 artistsRef:
-- "people_hlxq_v_m"
+  - "people_hlxq_v_m"
 tags:
-- "chapter1"
+  - "chapter1"

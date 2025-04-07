@@ -2,14 +2,14 @@
 id: "54ea2f8f-ae05-4aba-a117-8d187bf08074"
 illustration: "illustration_episodic_rain"
 bpmInfo:
-- start: -0.024
-  bpm: 124.0
-  beatsPerBar: 0
+  - start: -0.024
+    bpm: 124.0
+    beatsPerBar: 0
 songId: "song_episodic_rain"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "Kiyotsuki"
 chartersRef:
-- "people_kiyotsuki"
+  - "people_kiyotsuki"
 chartId: "chart_54ea2f8fae054abaa1178d187bf08074"
-tags: []
+tags: [ ]

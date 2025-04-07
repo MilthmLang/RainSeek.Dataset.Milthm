@@ -2,16 +2,16 @@
 id: "eb7a9055-b56f-46ba-9c30-0f9380d2f5b5"
 illustration: "illustration_threat_sky_islands"
 bpmInfo:
-- start: 0.047
-  bpm: 120.0
-  beatsPerBar: 0
+  - start: 0.047
+    bpm: 120.0
+    beatsPerBar: 0
 songId: "song_threat_sky_islands"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "Kiyotsuki x TCSTWTBHY"
 chartersRef:
-- "people_kiyotsuki"
-- "people_tcstwtbhy"
+  - "people_kiyotsuki"
+  - "people_tcstwtbhy"
 chartId: "chart_eb7a9055b56f46ba9c300f9380d2f5b5"
 tags:
-- "RainWorld"
+  - "RainWorld"

@@ -5,6 +5,6 @@ titleCulture: "00000000"
 latinTitle: "FULi AUTO SHOOTER"
 artist: "MYUKKE."
 artistsRef:
-- "people_myukke"
+  - "people_myukke"
 tags:
-- ""
+  - ""

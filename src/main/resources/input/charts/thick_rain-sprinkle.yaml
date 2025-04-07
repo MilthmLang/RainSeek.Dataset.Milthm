@@ -2,15 +2,15 @@
 id: "62c1cdc7-57c2-4a5f-809b-bcfb6c6a0469"
 illustration: "illustration_thick_rain"
 bpmInfo:
-- start: 0.0
-  bpm: 140.0
-  beatsPerBar: 0
+  - start: 0.0
+    bpm: 140.0
+    beatsPerBar: 0
 songId: "song_thick_rain"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "Walk Into The Blue Dream"
 chartersRef:
-- "people_magazet"
+  - "people_magazet"
 chartId: "chart_62c1cdc757c24a5f809bbcfb6c6a0469"
 tags:
-- "chapter1"
+  - "chapter1"

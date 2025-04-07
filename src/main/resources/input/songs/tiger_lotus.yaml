@@ -5,6 +5,6 @@ titleCulture: "0c0000000d0000000b00000014000000"
 latinTitle: "Tiger Lotus"
 artist: "PYKAMIA"
 artistsRef:
-- "people_pykamia"
+  - "people_pykamia"
 tags:
-- ""
+  - ""

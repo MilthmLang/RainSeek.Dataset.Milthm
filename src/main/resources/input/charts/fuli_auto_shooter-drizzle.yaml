@@ -2,14 +2,14 @@
 id: "d93cfe14-d3b1-4934-98a4-77b89e1f1304"
 illustration: "illustration_fuli_auto_shooter"
 bpmInfo:
-- start: -0.02
-  bpm: 145.0
-  beatsPerBar: 0
+  - start: -0.02
+    bpm: 145.0
+    beatsPerBar: 0
 songId: "song_fuli_auto_shooter"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "Akko"
 chartersRef:
-- "people_akko"
+  - "people_akko"
 chartId: "chart_d93cfe14d3b1493498a477b89e1f1304"
-tags: []
+tags: [ ]

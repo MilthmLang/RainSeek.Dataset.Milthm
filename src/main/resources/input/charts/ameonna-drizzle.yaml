@@ -2,15 +2,15 @@
 id: "375f0d93-82e2-4350-9b46-98c3dd836305"
 illustration: "illustration_ameonna"
 bpmInfo:
-- start: 0.0
-  bpm: 150.0
-  beatsPerBar: 0
+  - start: 0.0
+    bpm: 150.0
+    beatsPerBar: 0
 songId: "song_ameonna"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "sm"
 chartersRef:
-- "people_nishenmou"
+  - "people_nishenmou"
 chartId: "chart_375f0d9382e243509b4698c3dd836305"
 tags:
-- "prolog"
+  - "prolog"

@@ -5,6 +5,6 @@ titleCulture: "00000000"
 latinTitle: "Aconsma"
 artist: "ILusMin"
 artistsRef:
-- "people_ilusmin"
+  - "people_ilusmin"
 tags:
-- "chapter1"
+  - "chapter1"

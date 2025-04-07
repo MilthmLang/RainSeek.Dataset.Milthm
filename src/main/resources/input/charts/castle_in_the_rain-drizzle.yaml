@@ -2,15 +2,15 @@
 id: "e69b4e77-ccb2-4694-ba88-7209ed097783"
 illustration: "illustration_castle_in_the_rain"
 bpmInfo:
-- start: -0.003
-  bpm: 102.0
-  beatsPerBar: 0
+  - start: -0.003
+    bpm: 102.0
+    beatsPerBar: 0
 songId: "song_castle_in_the_rain"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "阿鱼x俩位异世界旅人"
 chartersRef:
-- "people_5f5c7b7a52cd468ca2069ef68aecbd08"
+  - "people_5f5c7b7a52cd468ca2069ef68aecbd08"
 chartId: "chart_e69b4e77ccb24694ba887209ed097783"
 tags:
-- "0"
+  - "0"

@@ -2,15 +2,15 @@
 id: "14700dda-b3c7-429d-a5ce-8a65f2fe4846"
 illustration: "illustration_innocent_white"
 bpmInfo:
-- start: 0.0
-  bpm: 180.0
-  beatsPerBar: 0
+  - start: 0.0
+    bpm: 180.0
+    beatsPerBar: 0
 songId: "song_innocent_white"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "Innocent Magazet"
 chartersRef:
-- "people_magazet"
+  - "people_magazet"
 chartId: "chart_14700ddab3c7429da5ce8a65f2fe4846"
 tags:
-- "notanote"
+  - "notanote"

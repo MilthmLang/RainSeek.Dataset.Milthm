@@ -2,14 +2,14 @@
 id: "3b11fea9-a2e3-40f7-bbe2-196cfcf25a1c"
 illustration: "illustration_kasane"
 bpmInfo:
-- start: 0.0
-  bpm: 190.0
-  beatsPerBar: 0
+  - start: 0.0
+    bpm: 190.0
+    beatsPerBar: 0
 songId: "song_kasane"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "母鸡Sama"
 chartersRef:
-- "people_muji"
+  - "people_muji"
 chartId: "chart_3b11fea9a2e340f7bbe2196cfcf25a1c"
-tags: []
+tags: [ ]

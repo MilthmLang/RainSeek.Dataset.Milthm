@@ -5,8 +5,8 @@ titleCulture: "00000000"
 latinTitle: "Fly To Meteor feat.兔柒 (Milthm Edit)"
 artist: "ShooTinGStaR + MoryueCi + Cyberspace"
 artistsRef:
-- "people_shootingstar"
-- "people_moryueci"
-- "people_cyberspace"
+  - "people_shootingstar"
+  - "people_moryueci"
+  - "people_cyberspace"
 tags:
-- ""
+  - ""

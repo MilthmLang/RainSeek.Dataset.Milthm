@@ -5,6 +5,6 @@ titleCulture: "00000000"
 latinTitle: "Welcome to Milthm"
 artist: "TsukiP"
 artistsRef:
-- "people_tsuki_p"
+  - "people_tsuki_p"
 tags:
-- ""
+  - ""

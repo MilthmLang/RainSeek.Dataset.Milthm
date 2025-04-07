@@ -5,6 +5,6 @@ titleCulture: "00000000"
 latinTitle: "Moving On"
 artist: "Nastram"
 artistsRef:
-- "people_nastram"
+  - "people_nastram"
 tags:
-- "0"
+  - "0"

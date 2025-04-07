@@ -5,6 +5,6 @@ titleCulture: "00000000"
 latinTitle: "KASANE"
 artist: "Kaede Hiyama"
 artistsRef:
-- "people_kaede_hiyama"
+  - "people_kaede_hiyama"
 tags:
-- ""
+  - ""

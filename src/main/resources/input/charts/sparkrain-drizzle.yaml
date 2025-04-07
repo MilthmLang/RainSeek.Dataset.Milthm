@@ -2,15 +2,15 @@
 id: "eceaaf9e-3754-4054-9c17-2d87644de96e"
 illustration: "illustration_sparkrain"
 bpmInfo:
-- start: 0.13
-  bpm: 166.0
-  beatsPerBar: 3
+  - start: 0.13
+    bpm: 166.0
+    beatsPerBar: 3
 songId: "song_sparkrain"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "Eric&Akko"
 chartersRef:
-- "people_24752ddf4d0b417984c60efab9d154ec"
+  - "people_24752ddf4d0b417984c60efab9d154ec"
 chartId: "chart_eceaaf9e375440549c172d87644de96e"
 tags:
-- "notanote"
+  - "notanote"

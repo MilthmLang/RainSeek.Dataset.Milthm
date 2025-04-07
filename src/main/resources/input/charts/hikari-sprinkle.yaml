@@ -2,14 +2,14 @@
 id: "2022fd8f-3210-4151-8636-8ec888236214"
 illustration: "illustration_hikari"
 bpmInfo:
-- start: 0.001
-  bpm: 175.0
-  beatsPerBar: 0
+  - start: 0.001
+    bpm: 175.0
+    beatsPerBar: 0
 songId: "song_hikari"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "BlueDream0★blingbling~"
 chartersRef:
-- "people_magazet"
+  - "people_magazet"
 chartId: "chart_2022fd8f3210415186368ec888236214"
-tags: []
+tags: [ ]

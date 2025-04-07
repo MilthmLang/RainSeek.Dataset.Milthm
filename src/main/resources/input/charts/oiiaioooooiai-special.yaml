@@ -2,20 +2,20 @@
 id: "1104f25d-2493-4bc7-9172-b262d36488ac"
 illustration: "illustration_oiiaioooooiai"
 bpmInfo:
-- start: -0.12483784
-  bpm: 150.0
-  beatsPerBar: 4
-- start: 0.263
-  bpm: 148.0
-  beatsPerBar: 4
-- start: 3.1008377
-  bpm: 110.0
-  beatsPerBar: 4
+  - start: -0.12483784
+    bpm: 150.0
+    beatsPerBar: 4
+  - start: 0.263
+    bpm: 148.0
+    beatsPerBar: 4
+  - start: 3.1008377
+    bpm: 110.0
+    beatsPerBar: 4
 songId: "song_oiiaioooooiai"
 difficulty: "Special"
 difficultyValue: 0.0
 charter: "爬爬：oiiaioooooiai"
 chartersRef:
-- "people_papa"
+  - "people_papa"
 chartId: "chart_1104f25d24934bc79172b262d36488ac"
-tags: []
+tags: [ ]

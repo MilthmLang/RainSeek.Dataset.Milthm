@@ -5,6 +5,6 @@ titleCulture: "0b0000000c0000000d00000014000000"
 latinTitle: "Moonfall"
 artist: "10lulu"
 artistsRef:
-- "people_ten_lulu"
+  - "people_ten_lulu"
 tags:
-- "Arcaea Rewind 2023"
+  - "Arcaea Rewind 2023"

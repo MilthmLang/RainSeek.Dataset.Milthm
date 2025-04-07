@@ -5,7 +5,7 @@ titleCulture: "0b0000000c0000000d000000"
 latinTitle: "Reminiscence in Starlight"
 artist: "RyosU feat. 茶茶"
 artistsRef:
-- "people_chacha"
-- "people_ryosu"
+  - "people_chacha"
+  - "people_ryosu"
 tags:
-- ""
+  - ""

@@ -2,15 +2,15 @@
 id: "213a40e1-d945-464c-aa6e-9ae82db8fc50"
 illustration: "illustration_jump_out"
 bpmInfo:
-- start: 0.0
-  bpm: 174.0
-  beatsPerBar: 0
+  - start: 0.0
+    bpm: 174.0
+    beatsPerBar: 0
 songId: "song_jump_out"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "TCSTWTBHY?"
 chartersRef:
-- "people_tcstwtbhy"
+  - "people_tcstwtbhy"
 chartId: "chart_213a40e1d945464caa6e9ae82db8fc50"
 tags:
-- "0"
+  - "0"

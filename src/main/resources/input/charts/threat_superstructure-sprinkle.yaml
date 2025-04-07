@@ -2,16 +2,16 @@
 id: "8e72dab7-e72f-4842-a499-559659279e2c"
 illustration: "illustration_threat_superstructure"
 bpmInfo:
-- start: 0.057
-  bpm: 108.106
-  beatsPerBar: 4
+  - start: 0.057
+    bpm: 108.106
+    beatsPerBar: 4
 songId: "song_threat_superstructure"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "Supercloud x Supertcstwtbhy"
 chartersRef:
-- "people_yunmeng"
-- "people_tcstwtbhy"
+  - "people_yunmeng"
+  - "people_tcstwtbhy"
 chartId: "chart_8e72dab7e72f4842a499559659279e2c"
 tags:
-- "RainWorld"
+  - "RainWorld"

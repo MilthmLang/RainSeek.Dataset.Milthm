@@ -3,14 +3,14 @@ id: "5aaafcea-684f-4310-936d-67ae35956c48"
 illustration: "illustration_rainshower"
 illustrationSquare: "illustration_rainshower_square"
 bpmInfo:
-- start: 0.927138
-  bpm: 174.0
-  beatsPerBar: 4
+  - start: 0.927138
+    bpm: 174.0
+    beatsPerBar: 4
 songId: "song_rainshower"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: " "
 chartersRef:
-- "people_b4d949af078645ed84bd2fe611fa4777"
+  - "people_b4d949af078645ed84bd2fe611fa4777"
 chartId: "chart_5aaafcea684f4310936d67ae35956c48"
-tags: []
+tags: [ ]

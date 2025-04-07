@@ -2,14 +2,14 @@
 id: "f425914c-db82-413c-aca9-96ff151b8605"
 illustration: "illustration_in"
 bpmInfo:
-- start: 0.0
-  bpm: 133.0
-  beatsPerBar: 0
+  - start: 0.0
+    bpm: 133.0
+    beatsPerBar: 0
 songId: "song_in"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "vitamIN b"
 chartersRef:
-- "people_vitamin_b"
+  - "people_vitamin_b"
 chartId: "chart_f425914cdb82413caca996ff151b8605"
-tags: []
+tags: [ ]

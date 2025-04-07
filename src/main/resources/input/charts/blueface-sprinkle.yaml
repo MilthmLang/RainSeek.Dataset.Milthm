@@ -2,16 +2,16 @@
 id: "d89765a7-05a1-44a1-8ed3-f23f5f15741a"
 illustration: "illustration_blueface"
 bpmInfo:
-- start: 0.08
-  bpm: 125.0
-  beatsPerBar: 0
+  - start: 0.08
+    bpm: 125.0
+    beatsPerBar: 0
 songId: "song_blueface"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "澪：TwT"
 chartersRef:
-- "people_akko"
-- "people_tcstwtbhy"
+  - "people_akko"
+  - "people_tcstwtbhy"
 chartId: "chart_d89765a705a144a18ed3f23f5f15741a"
 tags:
-- "0"
+  - "0"

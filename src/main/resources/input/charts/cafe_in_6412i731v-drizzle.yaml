@@ -2,14 +2,14 @@
 id: "54c60c83-9a80-458d-bf11-b04be1af1977"
 illustration: "illustration_cafe_in_6412i731v"
 bpmInfo:
-- start: 0.0
-  bpm: 234.0
-  beatsPerBar: 4
+  - start: 0.0
+    bpm: 234.0
+    beatsPerBar: 4
 songId: "song_cafe_in_6412i731v"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "Kiyotsuki"
 chartersRef:
-- "people_kiyotsuki"
+  - "people_kiyotsuki"
 chartId: "chart_54c60c839a80458dbf11b04be1af1977"
-tags: []
+tags: [ ]

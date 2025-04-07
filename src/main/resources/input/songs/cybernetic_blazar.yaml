@@ -5,6 +5,6 @@ titleCulture: "00000000"
 latinTitle: "cybernetic blazar"
 artist: "ああああ"
 artistsRef:
-- "people_aaaa"
+  - "people_aaaa"
 tags:
-- "notanote"
+  - "notanote"

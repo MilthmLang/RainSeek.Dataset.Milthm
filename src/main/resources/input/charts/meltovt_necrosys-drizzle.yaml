@@ -2,15 +2,15 @@
 id: "c55ac81b-f00d-4031-8f54-a7735ce84cd3"
 illustration: "illustration_meltovt_necrosys"
 bpmInfo:
-- start: -0.01
-  bpm: 210.0
-  beatsPerBar: 4
+  - start: -0.01
+    bpm: 210.0
+    beatsPerBar: 4
 songId: "song_meltovt_necrosys"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "Mt"
 chartersRef:
-- "people_magazet"
+  - "people_magazet"
 chartId: "chart_c55ac81bf00d40318f54a7735ce84cd3"
 tags:
-- "notanote"
+  - "notanote"

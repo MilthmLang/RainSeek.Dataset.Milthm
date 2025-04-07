@@ -2,9 +2,9 @@
 id: "01929c36-e7ba-40d5-8123-ca3d4c2da4fb"
 illustration: "illustration_betelgeuse"
 bpmInfo:
-- start: 0.0085
-  bpm: 105.0
-  beatsPerBar: 0
+  - start: 0.0085
+    bpm: 105.0
+    beatsPerBar: 0
 songId: "song_betelgeuse"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
@@ -13,4 +13,4 @@ chartersRef:
   - "people_akko"
   - "people_kiyotsuki"
 chartId: "chart_01929c36e7ba40d58123ca3d4c2da4fb"
-tags: []
+tags: [ ]

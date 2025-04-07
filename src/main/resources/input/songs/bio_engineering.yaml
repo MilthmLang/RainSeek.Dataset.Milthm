@@ -5,6 +5,6 @@ titleCulture: "00000000"
 latinTitle: "Bio-Engineering"
 artist: "James Primate & Lydia Esrig"
 artistsRef:
-- "people_c17481254ac2442fa38b878a1b66e253"
+  - "people_c17481254ac2442fa38b878a1b66e253"
 tags:
-- "RainWorld"
+  - "RainWorld"

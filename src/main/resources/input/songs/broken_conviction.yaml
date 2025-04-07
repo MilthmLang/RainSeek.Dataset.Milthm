@@ -5,6 +5,6 @@ titleCulture: "00000000"
 latinTitle: "Broken Conviction"
 artist: "Cansol"
 artistsRef:
-- "people_cansol"
+  - "people_cansol"
 tags:
-- ""
+  - ""

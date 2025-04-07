@@ -5,6 +5,6 @@ titleCulture: "ffffffff"
 latinTitle: "Blueface"
 artist: "Gray Planet"
 artistsRef:
-- "people_gray_planet"
+  - "people_gray_planet"
 tags:
-- "0"
+  - "0"

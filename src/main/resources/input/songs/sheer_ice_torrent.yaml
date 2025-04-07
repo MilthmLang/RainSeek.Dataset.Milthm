@@ -5,6 +5,6 @@ titleCulture: "00000000"
 latinTitle: "Sheer Ice Torrent"
 artist: "Connor \"12LBS\" Skidmore"
 artistsRef:
-- "people_connor_12lbs_skidmore"
+  - "people_connor_12lbs_skidmore"
 tags:
-- "RainWorld"
+  - "RainWorld"

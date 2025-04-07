@@ -2,15 +2,15 @@
 id: "7072a099-a482-484d-84a5-945ac94807e1"
 illustration: "illustration_innocent_white"
 bpmInfo:
-- start: 0.0
-  bpm: 180.0
-  beatsPerBar: 0
+  - start: 0.0
+    bpm: 180.0
+    beatsPerBar: 0
 songId: "song_innocent_white"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "Danc(2)ing H(8)old"
 chartersRef:
-- "people_tcstwtbhy"
+  - "people_tcstwtbhy"
 chartId: "chart_7072a099a482484d84a5945ac94807e1"
 tags:
-- "notanote"
+  - "notanote"

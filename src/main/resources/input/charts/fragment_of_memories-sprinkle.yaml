@@ -2,15 +2,15 @@
 id: "de74f367-3a91-4421-a657-f0e8268083a3"
 illustration: "illustration_fragment_of_memories"
 bpmInfo:
-- start: 0.0
-  bpm: 154.0
-  beatsPerBar: 0
+  - start: 0.0
+    bpm: 154.0
+    beatsPerBar: 0
 songId: "song_fragment_of_memories"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "Akko"
 chartersRef:
-- "people_akko"
+  - "people_akko"
 chartId: "chart_de74f3673a914421a657f0e8268083a3"
 tags:
-- "chapter1"
+  - "chapter1"

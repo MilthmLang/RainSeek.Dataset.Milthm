@@ -5,6 +5,6 @@ titleCulture: "00000000"
 latinTitle: "INFP.mp3"
 artist: "TsukiP"
 artistsRef:
-- "people_tsuki_p"
+  - "people_tsuki_p"
 tags:
-- ""
+  - ""

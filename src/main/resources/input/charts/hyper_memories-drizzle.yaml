@@ -2,15 +2,15 @@
 id: "68fbf0eb-f43a-4497-afb1-8282176aed97"
 illustration: "illustration_hyper_memories"
 bpmInfo:
-- start: -0.002
-  bpm: 250.0
-  beatsPerBar: 4
+  - start: -0.002
+    bpm: 250.0
+    beatsPerBar: 4
 songId: "song_hyper_memories"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "Eric_Lian"
 chartersRef:
-- "people_eric_lian"
+  - "people_eric_lian"
 chartId: "chart_68fbf0ebf43a4497afb18282176aed97"
 tags:
-- "chapter1"
+  - "chapter1"

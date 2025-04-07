@@ -2,15 +2,15 @@
 id: "9476c969-d02d-40ca-b64f-eb3efae43ee7"
 illustration: "illustration_sparkrain"
 bpmInfo:
-- start: 0.13
-  bpm: 166.0
-  beatsPerBar: 3
+  - start: 0.13
+    bpm: 166.0
+    beatsPerBar: 3
 songId: "song_sparkrain"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "Akko"
 chartersRef:
-- "people_akko"
+  - "people_akko"
 chartId: "chart_9476c969d02d40cab64feb3efae43ee7"
 tags:
-- "notanote"
+  - "notanote"

@@ -2,14 +2,14 @@
 id: "ac9308f8-b896-43af-879a-b65bcfcaa874"
 illustration: "illustration_rainbow_flavor"
 bpmInfo:
-- start: -0.04
-  bpm: 128.0
-  beatsPerBar: 0
+  - start: -0.04
+    bpm: 128.0
+    beatsPerBar: 0
 songId: "song_rainbow_flavor"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "Akko"
 chartersRef:
-- "people_akko"
+  - "people_akko"
 chartId: "chart_ac9308f8b89643af879ab65bcfcaa874"
-tags: []
+tags: [ ]

@@ -5,6 +5,6 @@ titleCulture: "00000000"
 latinTitle: "Agnostic"
 artist: "AiSS"
 artistsRef:
-- "people_aiss"
+  - "people_aiss"
 tags:
-- ""
+  - ""

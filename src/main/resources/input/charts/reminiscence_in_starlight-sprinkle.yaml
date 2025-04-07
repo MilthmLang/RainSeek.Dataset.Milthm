@@ -2,14 +2,14 @@
 id: "bdf2975e-8b19-4af8-9b1c-dc6f62587e7c"
 illustration: "illustration_reminiscence_in_starlight"
 bpmInfo:
-- start: 0.0
-  bpm: 170.0
-  beatsPerBar: 0
+  - start: 0.0
+    bpm: 170.0
+    beatsPerBar: 0
 songId: "song_reminiscence_in_starlight"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "Kiyotsuki"
 chartersRef:
-- "people_kiyotsuki"
+  - "people_kiyotsuki"
 chartId: "chart_bdf2975e8b194af89b1cdc6f62587e7c"
-tags: []
+tags: [ ]

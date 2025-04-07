@@ -5,7 +5,7 @@ titleCulture: "0b0000000c0000000d000000"
 latinTitle: "Betelgeuse"
 artist: "Villax vs. Amberry"
 artistsRef:
-- "people_amberry"
-- "people_villax"
+  - "people_amberry"
+  - "people_villax"
 tags:
-- ""
+  - ""

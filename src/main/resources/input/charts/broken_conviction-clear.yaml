@@ -2,14 +2,14 @@
 id: "a19a54b6-363e-49ae-9cd2-633a2db8ae4f"
 illustration: "illustration_broken_conviction"
 bpmInfo:
-- start: 0.07
-  bpm: 180.0
-  beatsPerBar: 4
+  - start: 0.07
+    bpm: 180.0
+    beatsPerBar: 4
 songId: "song_broken_conviction"
 difficulty: "Clear"
 difficultyValue: 0.0
 charter: "Kiyotsuki"
 chartersRef:
-- "people_kiyotsuki"
+  - "people_kiyotsuki"
 chartId: "chart_a19a54b6363e49ae9cd2633a2db8ae4f"
-tags: []
+tags: [ ]

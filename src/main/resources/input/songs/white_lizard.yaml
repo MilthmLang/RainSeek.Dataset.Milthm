@@ -5,6 +5,6 @@ titleCulture: "00000000"
 latinTitle: "White Lizard"
 artist: "Lydia Esrig"
 artistsRef:
-- "people_lydia_esrig"
+  - "people_lydia_esrig"
 tags:
-- "RainWorld"
+  - "RainWorld"

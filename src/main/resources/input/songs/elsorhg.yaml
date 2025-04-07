@@ -5,6 +5,6 @@ titleCulture: "00000000"
 latinTitle: "Elsorhg"
 artist: "Fl00t"
 artistsRef:
-- "people_fl00t"
+  - "people_fl00t"
 tags:
-- "notanote"
+  - "notanote"

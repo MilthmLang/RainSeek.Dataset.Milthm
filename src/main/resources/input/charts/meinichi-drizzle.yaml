@@ -2,15 +2,15 @@
 id: "4144b702-77bd-4ff4-9ba0-aa7c70b2bab5"
 illustration: "illustration_meinichi"
 bpmInfo:
-- start: 0.002
-  bpm: 124.0
-  beatsPerBar: 0
+  - start: 0.002
+    bpm: 124.0
+    beatsPerBar: 0
 songId: "song_meinichi"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "嘤箱"
 chartersRef:
-- "people_yingxiang"
+  - "people_yingxiang"
 chartId: "chart_4144b70277bd4ff49ba0aa7c70b2bab5"
 tags:
-- "0"
+  - "0"

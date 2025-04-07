@@ -5,6 +5,6 @@ titleCulture: "0b0000000c0000000d000000"
 latinTitle: "Thick Rain"
 artist: "有棵里里"
 artistsRef:
-- "people_youkelili"
+  - "people_youkelili"
 tags:
-- "chapter1"
+  - "chapter1"

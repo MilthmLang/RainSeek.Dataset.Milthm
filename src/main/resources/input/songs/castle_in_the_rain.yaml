@@ -5,6 +5,6 @@ titleCulture: "0b0000000c0000000d000000"
 latinTitle: "Castle in the Rain"
 artist: "CsLrisEto"
 artistsRef:
-- "people_cslriseto"
+  - "people_cslriseto"
 tags:
-- "0"
+  - "0"

@@ -5,6 +5,6 @@ titleCulture: "00000000"
 latinTitle: "OverRain"
 artist: "SharK"
 artistsRef:
-- "people_catalpa"
+  - "people_catalpa"
 tags:
-- "chapter1"
+  - "chapter1"

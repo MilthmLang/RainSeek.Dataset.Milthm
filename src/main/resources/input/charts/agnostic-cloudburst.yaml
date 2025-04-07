@@ -2,17 +2,17 @@
 id: "b60f0788-f9af-4a41-8c73-2b72151d309f"
 illustration: "illustration_agnostic"
 bpmInfo:
-- start: 0.063
-  bpm: 167.0
-  beatsPerBar: 0
-- start: 0.053
-  bpm: 167.0
-  beatsPerBar: 0
+  - start: 0.063
+    bpm: 167.0
+    beatsPerBar: 0
+  - start: 0.053
+    bpm: 167.0
+    beatsPerBar: 0
 songId: "song_agnostic"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "Matthiola incana (L.) R. Br."
 chartersRef:
-- "people_magazet"
+  - "people_magazet"
 chartId: "chart_b60f0788f9af4a418c732b72151d309f"
-tags: []
+tags: [ ]

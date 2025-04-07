@@ -2,14 +2,14 @@
 id: "eab07c23-395d-47f3-be33-15c7c566f694"
 illustration: "illustration_moonflutter"
 bpmInfo:
-- start: 0.0
-  bpm: 87.0
-  beatsPerBar: 0
+  - start: 0.0
+    bpm: 87.0
+    beatsPerBar: 0
 songId: "song_moonflutter"
 difficulty: "Clear"
 difficultyValue: 0.0
 charter: "Papaflutter"
 chartersRef:
-- "people_papa"
+  - "people_papa"
 chartId: "chart_eab07c23395d47f3be3315c7c566f694"
-tags: []
+tags: [ ]

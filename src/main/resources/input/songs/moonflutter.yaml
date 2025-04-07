@@ -5,6 +5,6 @@ titleCulture: "00000000"
 latinTitle: "Moonflutter"
 artist: "Reku Mochizuki"
 artistsRef:
-- "people_reku_mochizuki"
+  - "people_reku_mochizuki"
 tags:
-- ""
+  - ""

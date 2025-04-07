@@ -2,14 +2,14 @@
 id: "b75e195e-7991-4e4a-8afc-7372b4ae95fd"
 illustration: "illustration_reminiscence_in_starlight"
 bpmInfo:
-- start: 0.0
-  bpm: 170.0
-  beatsPerBar: 0
+  - start: 0.0
+    bpm: 170.0
+    beatsPerBar: 0
 songId: "song_reminiscence_in_starlight"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "Milthm"
 chartersRef:
-- "people_milthm_team"
+  - "people_milthm_team"
 chartId: "chart_b75e195e79914e4a8afc7372b4ae95fd"
-tags: []
+tags: [ ]

@@ -2,15 +2,15 @@
 id: "eb802d90-72c0-4b95-856a-b2951a57c0ec"
 illustration: "illustration_sheer_ice_torrent"
 bpmInfo:
-- start: -0.012
-  bpm: 116.0
-  beatsPerBar: 0
+  - start: -0.012
+    bpm: 116.0
+    beatsPerBar: 0
 songId: "song_sheer_ice_torrent"
 difficulty: "Cloudburst_Story"
 difficultyValue: 0.0
 charter: "3"
 chartersRef:
-- "people_milthm_team"
+  - "people_milthm_team"
 chartId: "chart_eb802d9072c04b95856ab2951a57c0ec"
 tags:
-- "RainWorld"
+  - "RainWorld"

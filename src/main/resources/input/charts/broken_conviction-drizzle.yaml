@@ -2,14 +2,14 @@
 id: "7c30226f-0ea5-4b71-aab7-7fefca1070dd"
 illustration: "illustration_broken_conviction"
 bpmInfo:
-- start: 0.07
-  bpm: 180.0
-  beatsPerBar: 0
+  - start: 0.07
+    bpm: 180.0
+    beatsPerBar: 0
 songId: "song_broken_conviction"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "Akko"
 chartersRef:
-- "people_akko"
+  - "people_akko"
 chartId: "chart_7c30226f0ea54b71aab77fefca1070dd"
-tags: []
+tags: [ ]

@@ -2,15 +2,15 @@
 id: "6a647130-01de-4cf2-ba7a-a6065f043465"
 illustration: "illustration_white_lizard"
 bpmInfo:
-- start: 0.0
-  bpm: 97.0
-  beatsPerBar: 0
+  - start: 0.0
+    bpm: 97.0
+    beatsPerBar: 0
 songId: "song_white_lizard"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "Kiyotsuki"
 chartersRef:
-- "people_kiyotsuki"
+  - "people_kiyotsuki"
 chartId: "chart_6a64713001de4cf2ba7aa6065f043465"
 tags:
-- "RainWorld"
+  - "RainWorld"

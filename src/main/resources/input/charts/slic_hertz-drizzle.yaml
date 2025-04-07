@@ -2,17 +2,17 @@
 id: "6eac0020-b9a1-480e-9539-633c0e502f9c"
 illustration: "illustration_slic_hertz"
 bpmInfo:
-- start: -1.137931
-  bpm: 145.0
-  beatsPerBar: 0
-- start: 154.44827
-  bpm: 116.0
-  beatsPerBar: 4
+  - start: -1.137931
+    bpm: 145.0
+    beatsPerBar: 0
+  - start: 154.44827
+    bpm: 116.0
+    beatsPerBar: 4
 songId: "song_slic_hertz"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "zero.dream"
 chartersRef:
-- "people_milthm_team"
+  - "people_milthm_team"
 chartId: "chart_6eac0020b9a1480e9539633c0e502f9c"
-tags: []
+tags: [ ]

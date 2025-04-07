@@ -2,14 +2,14 @@
 id: "81daeec2-c1ae-4218-97fa-f9796504dba9"
 illustration: "illustration_betelgeuse"
 bpmInfo:
-- start: 0.0
-  bpm: 105.0
-  beatsPerBar: 0
+  - start: 0.0
+    bpm: 105.0
+    beatsPerBar: 0
 songId: "song_betelgeuse"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "Akko"
 chartersRef:
-- "people_akko"
+  - "people_akko"
 chartId: "chart_81daeec2c1ae421897faf9796504dba9"
-tags: []
+tags: [ ]

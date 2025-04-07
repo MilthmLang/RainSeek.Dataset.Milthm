@@ -2,15 +2,15 @@
 id: "825405cb-d262-4f10-9e98-4d967e4e33f4"
 illustration: "illustration_cafe_in_6412i731v"
 bpmInfo:
-- start: 0.0
-  bpm: 234.0
-  beatsPerBar: 4
+  - start: 0.0
+    bpm: 234.0
+    beatsPerBar: 4
 songId: "song_cafe_in_6412i731v"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "Kiyotsuki + Eric"
 chartersRef:
-- "people_kiyotsuki"
-- "people_eric_lian"
+  - "people_kiyotsuki"
+  - "people_eric_lian"
 chartId: "chart_825405cbd2624f109e984d967e4e33f4"
-tags: []
+tags: [ ]

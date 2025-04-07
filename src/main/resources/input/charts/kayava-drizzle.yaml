@@ -2,15 +2,15 @@
 id: "85a6566f-d9df-408e-a812-0b13a80362cc"
 illustration: "illustration_kayava"
 bpmInfo:
-- start: -0.02
-  bpm: 120.0
-  beatsPerBar: 0
+  - start: -0.02
+    bpm: 120.0
+    beatsPerBar: 0
 songId: "song_kayava"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "Akko"
 chartersRef:
-- "people_akko"
+  - "people_akko"
 chartId: "chart_85a6566fd9df408ea8120b13a80362cc"
 tags:
-- "RainWorld"
+  - "RainWorld"

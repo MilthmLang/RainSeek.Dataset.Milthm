@@ -5,8 +5,8 @@ titleCulture: "00000000"
 latinTitle: "Threat - Waterfront Complex"
 artist: "James Primate, Lydia Esrig, Connor \"12LBS\" Skidmore"
 artistsRef:
-- "people_james_primate"
-- "people_lydia_esrig"
-- "people_connor_12lbs_skidmore"
+  - "people_james_primate"
+  - "people_lydia_esrig"
+  - "people_connor_12lbs_skidmore"
 tags:
-- "RainWorld"
+  - "RainWorld"

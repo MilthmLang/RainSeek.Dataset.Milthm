@@ -2,15 +2,15 @@
 id: "acdab435-5aa3-45de-a815-9dbb7cd13130"
 illustration: "illustration_castle_in_the_rain"
 bpmInfo:
-- start: -0.003
-  bpm: 102.0
-  beatsPerBar: 0
+  - start: -0.003
+    bpm: 102.0
+    beatsPerBar: 0
 songId: "song_castle_in_the_rain"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "阿鱼x俩位异世界旅人"
 chartersRef:
-- "people_ayu"
+  - "people_ayu"
 chartId: "chart_acdab4355aa345dea8159dbb7cd13130"
 tags:
-- "0"
+  - "0"

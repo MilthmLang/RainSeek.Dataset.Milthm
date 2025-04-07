@@ -2,15 +2,15 @@
 id: "9953eae4-4f60-4cfe-a8c3-9ada13a4b1ca"
 illustration: "illustration_ameonna"
 bpmInfo:
-- start: 0.0
-  bpm: 150.0
-  beatsPerBar: 0
+  - start: 0.0
+    bpm: 150.0
+    beatsPerBar: 0
 songId: "song_ameonna"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "下雨の云"
 chartersRef:
-- "people_yunmeng"
+  - "people_yunmeng"
 chartId: "chart_9953eae44f604cfea8c39ada13a4b1ca"
 tags:
-- "prolog"
+  - "prolog"

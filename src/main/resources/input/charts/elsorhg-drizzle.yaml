@@ -3,15 +3,15 @@ id: "e27a66da-19c5-4d3a-85f4-5defdf5b7b88"
 illustration: ""
 illustrationSquare: "illustration_elsorhg"
 bpmInfo:
-- start: -0.003538462
-  bpm: 195.0
-  beatsPerBar: 4
+  - start: -0.003538462
+    bpm: 195.0
+    beatsPerBar: 4
 songId: "song_elsorhg"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "Kiyotsuki"
 chartersRef:
-- "people_kiyotsuki"
+  - "people_kiyotsuki"
 chartId: "chart_e27a66da19c54d3a85f45defdf5b7b88"
 tags:
-- "notanote"
+  - "notanote"

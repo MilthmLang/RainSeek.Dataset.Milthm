@@ -2,16 +2,16 @@
 id: "98913dff-7257-44aa-a0f2-abcd58d11fcd"
 illustration: "illustration_threat_superstructure"
 bpmInfo:
-- start: 0.1
-  bpm: 108.106
-  beatsPerBar: 4
+  - start: 0.1
+    bpm: 108.106
+    beatsPerBar: 4
 songId: "song_threat_superstructure"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "Eric_Lian vs. Magazet"
 chartersRef:
-- "people_eric_lian"
-- "people_magazet"
+  - "people_eric_lian"
+  - "people_magazet"
 chartId: "chart_98913dff725744aaa0f2abcd58d11fcd"
 tags:
-- "RainWorld"
+  - "RainWorld"

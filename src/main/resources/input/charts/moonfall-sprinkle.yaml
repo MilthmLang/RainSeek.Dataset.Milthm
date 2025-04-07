@@ -2,14 +2,14 @@
 id: "9eb53fd3-a91c-45c6-8608-f3a76eecf9f7"
 illustration: "illustration_moonfall"
 bpmInfo:
-- start: 0.0
-  bpm: 196.0
-  beatsPerBar: 4
+  - start: 0.0
+    bpm: 196.0
+    beatsPerBar: 4
 songId: "song_moonfall"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "十返清月"
 chartersRef:
-- "people_shifanqingyue"
+  - "people_shifanqingyue"
 chartId: "chart_9eb53fd3a91c45c68608f3a76eecf9f7"
-tags: []
+tags: [ ]

@@ -2,15 +2,15 @@
 id: "975a9b31-3f04-4587-b77e-2282dec95188"
 illustration: "illustration_threat_metropolis_day"
 bpmInfo:
-- start: 0.0
-  bpm: 124.0
-  beatsPerBar: 0
+  - start: 0.0
+    bpm: 124.0
+    beatsPerBar: 0
 songId: "song_threat_metropolis"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "Akko & Papa"
 chartersRef:
-- "people_11a8d4b71e7849ac925fed79cd7fb5fe"
+  - "people_11a8d4b71e7849ac925fed79cd7fb5fe"
 chartId: "chart_975a9b313f044587b77e2282dec95188"
 tags:
-- "RainWorld"
+  - "RainWorld"

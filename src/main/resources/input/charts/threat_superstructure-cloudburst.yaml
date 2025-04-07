@@ -2,16 +2,16 @@
 id: "7c0cdf77-fcfa-4f96-9897-24ca10582c32"
 illustration: "illustration_threat_superstructure"
 bpmInfo:
-- start: 0.057
-  bpm: 108.106
-  beatsPerBar: 4
+  - start: 0.057
+    bpm: 108.106
+    beatsPerBar: 4
 songId: "song_threat_superstructure"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "Kiyotsuki"
 chartersRef:
-- "people_kiyotsuki"
+  - "people_kiyotsuki"
 chartId: "chart_7c0cdf77fcfa4f96989724ca10582c32"
 tags:
-- "RainWorld"
-- "Random"
+  - "RainWorld"
+  - "Random"

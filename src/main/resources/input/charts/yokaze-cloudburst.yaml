@@ -2,14 +2,14 @@
 id: "887157ea-fe1a-480b-b7e9-e6a4f9e27ae4"
 illustration: "illustration_yokaze"
 bpmInfo:
-- start: -0.02
-  bpm: 132.0
-  beatsPerBar: 0
+  - start: -0.02
+    bpm: 132.0
+    beatsPerBar: 0
 songId: "song_yokaze"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "Kiyotsuki"
 chartersRef:
-- "people_kiyotsuki"
+  - "people_kiyotsuki"
 chartId: "chart_887157eafe1a480bb7e9e6a4f9e27ae4"
-tags: []
+tags: [ ]

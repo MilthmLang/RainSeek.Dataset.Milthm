@@ -2,15 +2,15 @@
 id: "0785d07e-50e1-4e3f-b1aa-01fa43d0c2f6"
 illustration: "illustration_hyper_memories"
 bpmInfo:
-- start: -0.002
-  bpm: 250.0
-  beatsPerBar: 4
+  - start: -0.002
+    bpm: 250.0
+    beatsPerBar: 4
 songId: "song_hyper_memories"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "Eric_Lian"
 chartersRef:
-- "people_eric_lian"
+  - "people_eric_lian"
 chartId: "chart_0785d07e50e14e3fb1aa01fa43d0c2f6"
 tags:
-- "chapter1"
+  - "chapter1"

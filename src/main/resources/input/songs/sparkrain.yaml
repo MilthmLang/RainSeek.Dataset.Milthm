@@ -5,6 +5,6 @@ titleCulture: "0b0000000c0000000d000000"
 latinTitle: "Sparkrain"
 artist: "ILusMin"
 artistsRef:
-- "people_ilusmin"
+  - "people_ilusmin"
 tags:
-- "notanote"
+  - "notanote"

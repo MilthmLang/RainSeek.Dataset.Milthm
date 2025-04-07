@@ -2,14 +2,14 @@
 id: "ca751a94-f71e-4556-9d54-76de325ca29c"
 illustration: "illustration_moonfall"
 bpmInfo:
-- start: 0.0
-  bpm: 196.0
-  beatsPerBar: 4
+  - start: 0.0
+    bpm: 196.0
+    beatsPerBar: 4
 songId: "song_moonfall"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "十返清月"
 chartersRef:
-- "people_shifanqingyue"
+  - "people_shifanqingyue"
 chartId: "chart_ca751a94f71e45569d5476de325ca29c"
-tags: []
+tags: [ ]

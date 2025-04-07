@@ -2,16 +2,16 @@
 id: "dd163ba4-a1fa-4fc7-ba45-91561c824cc8"
 illustration: "illustration_regnaissance"
 bpmInfo:
-- start: 0.003
-  bpm: 174.17
-  beatsPerBar: 0
+  - start: 0.003
+    bpm: 174.17
+    beatsPerBar: 0
 songId: "song_regnaissance"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "Murty vs. Papa"
 chartersRef:
-- "people_murty"
-- "people_papa"
+  - "people_murty"
+  - "people_papa"
 chartId: "chart_dd163ba4a1fa4fc7ba4591561c824cc8"
 tags:
-- "chapter1"
+  - "chapter1"

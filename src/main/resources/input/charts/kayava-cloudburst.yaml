@@ -2,15 +2,15 @@
 id: "1a3167ae-9105-4545-9aa7-3cab60874e9c"
 illustration: "illustration_kayava"
 bpmInfo:
-- start: -0.02
-  bpm: 120.0
-  beatsPerBar: 0
+  - start: -0.02
+    bpm: 120.0
+    beatsPerBar: 0
 songId: "song_kayava"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "Akko"
 chartersRef:
-- "people_akko"
+  - "people_akko"
 chartId: "chart_1a3167ae910545459aa73cab60874e9c"
 tags:
-- "RainWorld"
+  - "RainWorld"

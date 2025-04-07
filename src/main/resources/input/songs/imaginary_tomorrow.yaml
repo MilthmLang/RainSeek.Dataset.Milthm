@@ -5,7 +5,7 @@ titleCulture: "0b0000000c0000000d00000014000000"
 latinTitle: "Imaginary Tomorrow"
 artist: "如月青藍 feat. 双葉湊音"
 artistsRef:
-- "people_azure_kisaragi"
-- "people_futabaminato"
+  - "people_azure_kisaragi"
+  - "people_futabaminato"
 tags:
-- ""
+  - ""

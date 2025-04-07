@@ -5,6 +5,6 @@ titleCulture: "00000000"
 latinTitle: "KAEDE"
 artist: "Ocelot"
 artistsRef:
-- "people_rin"
+  - "people_rin"
 tags:
-- ""
+  - ""

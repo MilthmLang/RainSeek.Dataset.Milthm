@@ -5,8 +5,8 @@ titleCulture: "14000000"
 latinTitle: "Neon Iro no Machi feat. Mai"
 artist: "Reo、ヒトリ (lyric: 霉霉杏)"
 artistsRef:
-- "people_reo"
-- "people_hitori"
-- "people_meimeixing"
+  - "people_reo"
+  - "people_hitori"
+  - "people_meimeixing"
 tags:
-- ""
+  - ""

@@ -2,14 +2,14 @@
 id: "d6514d67-18d3-4d8e-8492-890061efb6f7"
 illustration: "illustration_kagetsu"
 bpmInfo:
-- start: -0.015
-  bpm: 128.0
-  beatsPerBar: 4
+  - start: -0.015
+    bpm: 128.0
+    beatsPerBar: 4
 songId: "song_kagetsu"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "Kiyotsuki"
 chartersRef:
-- "people_kiyotsuki"
+  - "people_kiyotsuki"
 chartId: "chart_d6514d6718d34d8e8492890061efb6f7"
-tags: []
+tags: [ ]

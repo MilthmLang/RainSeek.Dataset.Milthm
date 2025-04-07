@@ -2,15 +2,15 @@
 id: "e543f4a5-5f55-45e5-9c41-ebe1c155c12e"
 illustration: "illustration_dogbite"
 bpmInfo:
-- start: 0.0
-  bpm: 97.5
-  beatsPerBar: 0
+  - start: 0.0
+    bpm: 97.5
+    beatsPerBar: 0
 songId: "song_dogbite"
 difficulty: "Special"
 difficultyValue: 0.0
 charter: "爬爬|Biting with|赤澪"
 chartersRef:
-- "people_papa"
-- "people_akko"
+  - "people_papa"
+  - "people_akko"
 chartId: "chart_e543f4a55f5545e59c41ebe1c155c12e"
-tags: []
+tags: [ ]

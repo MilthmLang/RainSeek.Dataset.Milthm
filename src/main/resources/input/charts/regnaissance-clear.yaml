@@ -2,15 +2,15 @@
 id: "9acd5289-bc81-49fb-afc8-7b0631e60e60"
 illustration: "illustration_regnaissance"
 bpmInfo:
-- start: 0.003
-  bpm: 174.17
-  beatsPerBar: 0
+  - start: 0.003
+    bpm: 174.17
+    beatsPerBar: 0
 songId: "song_regnaissance"
 difficulty: "Clear"
 difficultyValue: 0.0
 charter: "Reborned Particles"
 chartersRef:
-- "people_akko"
+  - "people_akko"
 chartId: "chart_9acd5289bc8149fbafc87b0631e60e60"
 tags:
-- "chapter1"
+  - "chapter1"

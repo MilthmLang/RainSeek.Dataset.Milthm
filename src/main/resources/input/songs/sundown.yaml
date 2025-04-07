@@ -5,6 +5,6 @@ titleCulture: "00000000"
 latinTitle: "Sundown"
 artist: "James Primate"
 artistsRef:
-- "people_james_primate"
+  - "people_james_primate"
 tags:
-- "RainWorld"
+  - "RainWorld"

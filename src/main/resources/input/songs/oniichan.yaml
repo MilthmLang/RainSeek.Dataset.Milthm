@@ -5,6 +5,6 @@ titleCulture: "00000000"
 latinTitle: "Oniichan"
 artist: "MoryueCi"
 artistsRef:
-- "people_moryueci"
+  - "people_moryueci"
 tags:
-- ""
+  - ""

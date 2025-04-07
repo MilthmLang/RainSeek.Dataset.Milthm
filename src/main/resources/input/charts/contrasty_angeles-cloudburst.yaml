@@ -2,15 +2,15 @@
 id: "269efa5f-8b69-4a71-be24-7abe57372b3f"
 illustration: "illustration_contrasty_angeles"
 bpmInfo:
-- start: 1.18
-  bpm: 210.0
-  beatsPerBar: 4
+  - start: 1.18
+    bpm: 210.0
+    beatsPerBar: 4
 songId: "song_contrasty_angeles"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "Kiyotsuki"
 chartersRef:
-- "people_kiyotsuki"
+  - "people_kiyotsuki"
 chartId: "chart_269efa5f8b694a71be247abe57372b3f"
 tags:
-- "chapter1"
+  - "chapter1"

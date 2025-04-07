@@ -2,15 +2,15 @@
 id: "ac138fef-ad0b-4d0d-883c-453e6fe11d37"
 illustration: "illustration_contrasty_angeles"
 bpmInfo:
-- start: 1.18
-  bpm: 210.0
-  beatsPerBar: 4
+  - start: 1.18
+    bpm: 210.0
+    beatsPerBar: 4
 songId: "song_contrasty_angeles"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "Kiyotsuki"
 chartersRef:
-- "people_kiyotsuki"
+  - "people_kiyotsuki"
 chartId: "chart_ac138fefad0b4d0d883c453e6fe11d37"
 tags:
-- "chapter1"
+  - "chapter1"

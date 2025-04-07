@@ -5,6 +5,6 @@ titleCulture: "00000000"
 latinTitle: "Regnaissance"
 artist: "AiSS vs. Abit"
 artistsRef:
-- "people_aiss"
+  - "people_aiss"
 tags:
-- "chapter1"
+  - "chapter1"

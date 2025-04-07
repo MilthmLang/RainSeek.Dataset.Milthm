@@ -2,14 +2,14 @@
 id: "a4ac4167-5934-4157-90e7-675c994b4451"
 illustration: "illustration_betelgeuse"
 bpmInfo:
-- start: 0.0
-  bpm: 105.0
-  beatsPerBar: 0
+  - start: 0.0
+    bpm: 105.0
+    beatsPerBar: 0
 songId: "song_betelgeuse"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "Akko"
 chartersRef:
-- "people_akko"
+  - "people_akko"
 chartId: "chart_a4ac41675934415790e7675c994b4451"
-tags: []
+tags: [ ]

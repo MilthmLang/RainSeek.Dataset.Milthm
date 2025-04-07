@@ -2,17 +2,17 @@
 id: "74bf4e17-c246-4871-9b2b-0dd0d0e6ee28"
 illustration: "illustration_agnostic"
 bpmInfo:
-- start: 0.063
-  bpm: 167.0
-  beatsPerBar: 0
-- start: 0.053
-  bpm: 167.0
-  beatsPerBar: 0
+  - start: 0.063
+    bpm: 167.0
+    beatsPerBar: 0
+  - start: 0.053
+    bpm: 167.0
+    beatsPerBar: 0
 songId: "song_agnostic"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "Mirabilis jalapa L."
 chartersRef:
-- "people_magazet"
+  - "people_magazet"
 chartId: "chart_74bf4e17c24648719b2b0dd0d0e6ee28"
-tags: []
+tags: [ ]

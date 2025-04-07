@@ -2,14 +2,14 @@
 id: "423e7ae7-97e9-4c87-a778-36af2020a59d"
 illustration: "illustration_fuli_auto_shooter"
 bpmInfo:
-- start: -0.02
-  bpm: 145.0
-  beatsPerBar: 0
+  - start: -0.02
+    bpm: 145.0
+    beatsPerBar: 0
 songId: "song_fuli_auto_shooter"
 difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "Akko"
 chartersRef:
-- "people_akko"
+  - "people_akko"
 chartId: "chart_423e7ae797e94c87a77836af2020a59d"
-tags: []
+tags: [ ]

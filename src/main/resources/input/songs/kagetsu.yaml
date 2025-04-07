@@ -5,6 +5,6 @@ titleCulture: "0b0000000c0000000d00000014000000"
 latinTitle: "Kagetsu"
 artist: "Kirara Magic"
 artistsRef:
-- "people_kirara_magic"
+  - "people_kirara_magic"
 tags:
-- ""
+  - ""

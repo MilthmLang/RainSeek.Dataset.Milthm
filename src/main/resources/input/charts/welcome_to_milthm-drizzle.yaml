@@ -2,15 +2,15 @@
 id: "364be32e-f685-4efb-80b5-64281c93939d"
 illustration: "illustration_welcome_to_milthm"
 bpmInfo:
-- start: -0.015
-  bpm: 150.0
-  beatsPerBar: 1
+  - start: -0.015
+    bpm: 150.0
+    beatsPerBar: 1
 songId: "song_welcome_to_milthm"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "Buger404、TCSTWTBHY"
 chartersRef:
-- "people_buger404"
-- "people_tcstwtbhy"
+  - "people_buger404"
+  - "people_tcstwtbhy"
 chartId: "chart_364be32ef6854efb80b564281c93939d"
-tags: []
+tags: [ ]

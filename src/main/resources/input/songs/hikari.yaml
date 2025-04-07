@@ -5,6 +5,6 @@ titleCulture: "00000000"
 latinTitle: "Hikari"
 artist: "Kuroe"
 artistsRef:
-- "people_kuroe"
+  - "people_kuroe"
 tags:
-- ""
+  - ""

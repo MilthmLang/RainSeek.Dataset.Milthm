@@ -2,16 +2,16 @@
 id: "cc75ce1c-dbed-4bc7-94eb-728bf36bb1ec"
 illustration: "illustration_innocent_white"
 bpmInfo:
-- start: 0.0
-  bpm: 180.0
-  beatsPerBar: 0
+  - start: 0.0
+    bpm: 180.0
+    beatsPerBar: 0
 songId: "song_innocent_white"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "Ariayaka feat. 舞仙翼 (Notanote)"
 chartersRef:
-- "people_ariayaka"
-- "people_wuxianyi"
+  - "people_ariayaka"
+  - "people_wuxianyi"
 chartId: "chart_cc75ce1cdbed4bc794eb728bf36bb1ec"
 tags:
-- "notanote"
+  - "notanote"
