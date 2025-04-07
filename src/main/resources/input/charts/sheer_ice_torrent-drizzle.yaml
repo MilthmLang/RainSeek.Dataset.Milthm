@@ -1,16 +1,16 @@
 ---
 id: "e23637e8-fe15-4d9a-b3c9-9e059745ad3c"
-illustration: "illustration_402fbad2af03eff4d86e239d6a6f7e43"
+illustration: "illustration_sheer_ice_torrent"
 bpmInfo:
 - start: -0.012
   bpm: 116.0
   beatsPerBar: 0
-songId: "song_36336809430d47cfb8d8dd224ad308c0"
+songId: "song_sheer_ice_torrent"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "姜片"
 charterRefs:
-- "people_0e51eee39cea4188af4ee39257f11e21"
+- "people_jiangpian"
 chartId: "chart_e23637e8fe154d9ab3c99e059745ad3c"
 tags:
 - "RainWorld"
