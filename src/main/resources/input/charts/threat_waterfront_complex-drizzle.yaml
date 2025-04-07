@@ -1,16 +1,16 @@
 ---
 id: "2103d16c-9a07-4001-be01-155ef305118e"
-illustration: "illustration_db438a956a5a35b48a672de7c3d524ad"
+illustration: "illustration_threat_waterfront_complex"
 bpmInfo:
 - start: 0.0
   bpm: 122.0
   beatsPerBar: 0
-songId: "song_e50c2b5113874796b8067a1776972004"
+songId: "song_threat_waterfront_complex"
 difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "Ursulina AS DRIZZLE"
 chartersRef:
-- "people_6b7351327b4d497196f0504ff776c631"
+- "people_magazet"
 chartId: "chart_2103d16c9a074001be01155ef305118e"
 tags:
 - "RainWorld"
