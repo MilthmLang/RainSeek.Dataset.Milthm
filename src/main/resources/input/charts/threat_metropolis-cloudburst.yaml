@@ -1,11 +1,13 @@
 ---
 id: "abefe6c9-2b30-45ef-b5b0-8edb5fc18195"
-illustration: "illustration_ab5aee05883a6764ba08986fff974094"
+illustration:
+  - "illustration_threat_metropolis_day"
+  - "illustration_threat_metropolis_night"
 bpmInfo:
 - start: 0.057
   bpm: 108.106
   beatsPerBar: 4
-songId: "song_d8a54732d327411eac4806ae527676bb"
+songId: "song_threat_metropolis"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
 charter: "Kiyotsuki"
