@@ -10,7 +10,8 @@ difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "Akko & Papa"
 chartersRef:
-  - "people_11a8d4b71e7849ac925fed79cd7fb5fe"
+  - "people_akko"
+  - "people_papa"
 chartId: "chart_975a9b313f044587b77e2282dec95188"
 tags:
   - "RainWorld"

@@ -10,7 +10,8 @@ difficulty: "Drizzle"
 difficultyValue: 0.0
 charter: "Eric&Akko"
 chartersRef:
-  - "people_24752ddf4d0b417984c60efab9d154ec"
+  - "people_eric_lian"
+  - "people_akko"
 chartId: "chart_eceaaf9e375440549c172d87644de96e"
 tags:
   - "notanote"

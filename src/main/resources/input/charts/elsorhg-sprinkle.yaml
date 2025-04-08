@@ -11,7 +11,8 @@ difficulty: "Sprinkle"
 difficultyValue: 0.0
 charter: "Magazet + Kiyotsuki"
 chartersRef:
-  - "people_47bbb92e96cb49da8864c3f4197d6e3d"
+  - "people_magazet"
+  - "people_kiyotsuki"
 chartId: "chart_640cea9200244ba5aa168a38f77743ac"
 tags:
   - "notanote"
