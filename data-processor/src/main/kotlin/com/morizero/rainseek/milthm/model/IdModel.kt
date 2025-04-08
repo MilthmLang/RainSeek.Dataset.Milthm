@@ -5,5 +5,5 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 data class IdModel(
-    var id: String = "",
-)
+    override var id: String = "",
+) : IdInterface

@@ -4,7 +4,7 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize
 import com.morizero.rainseek.milthm.utils.StringOrStringList
 
 data class Chart(
-    var id: String = "",
+    override var id: String = "",
 
     @JsonDeserialize(using = StringOrStringList::class) var illustration: List<String> = emptyList(),
 
@@ -18,4 +18,4 @@ data class Chart(
     var chartersRef: List<String> = emptyList(),
     var chartId: String = "",
     var tags: List<String> = emptyList()
-)
+) : IdInterface

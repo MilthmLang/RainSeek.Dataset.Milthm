@@ -4,7 +4,7 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize
 import com.morizero.rainseek.milthm.utils.StringOrStringList
 
 data class Song(
-    var id: String = "",
+    override var id: String = "",
     var title: String = "",
     var titleCulture: String = "",
     val latinTitle: String = "",
@@ -12,5 +12,4 @@ data class Song(
     var artistsRef: List<String> = emptyList(),
     val artist: String,
     var tags: List<String> = emptyList()
-
-)
+) : IdInterface
