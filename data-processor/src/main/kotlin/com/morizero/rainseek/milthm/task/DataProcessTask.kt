@@ -75,23 +75,29 @@ open class DataProcessTask : DefaultTask() {
             // 创建处理后的文档对象
             val processedDocument = ProcessedDocument(
                 id = chart.id,
+
                 title = song.title,
                 titleCulture = song.titleCulture,
                 latinTitle = song.latinTitle,
-                artist = song.artist,
-                artistsList = song.artistsRef.map {
-                    (peopleMap[it] ?: throw IllegalArgumentException("Unknown people ID: $it")).name
-                },
-                illustrator = illustrations.map { it.illustrator }.distinct(),
-                illustratorsList = illustrations.flatMap { it.illustratorsList }.distinct()
-                    .mapNotNull { peopleMap[it]?.name },
                 bpmInfo = chart.bpmInfo,
                 songId = song.id,
                 difficulty = chart.difficulty,
                 difficultyValue = chart.difficultyValue,
-                charter = chart.chartersRef.map { ref ->
+
+                artist = song.artist,
+                artistsList = song.artistsRef.map {
+                    (peopleMap[it] ?: throw IllegalArgumentException("Unknown people ID: $it")).name
+                },
+
+                illustrator = illustrations.map { it.illustrator }.distinct(),
+                illustratorsList = illustrations.flatMap { it.illustratorsList }.distinct()
+                    .mapNotNull { peopleMap[it]?.name },
+
+                charter = chart.charter,
+                chartersList = chart.chartersRef.map { ref ->
                     (peopleMap[ref] ?: throw IllegalArgumentException("Unknown people ID: $ref")).name
                 },
+
                 tags = allTags.toList()
             )
 

@@ -6,10 +6,9 @@ import com.fasterxml.jackson.databind.DeserializationContext
 import com.fasterxml.jackson.databind.JsonDeserializer
 import java.io.IOException
 
-
-class StringOrStringList : JsonDeserializer<MutableList<String?>?>() {
+class StringOrStringList : JsonDeserializer<List<String?>?>() {
     @Throws(IOException::class)
-    override fun deserialize(p: JsonParser, ctxt: DeserializationContext?): MutableList<String?>? {
+    override fun deserialize(p: JsonParser, ctxt: DeserializationContext?): List<String?>? {
         val artists = ArrayList<String?>()
 
         if (p.currentToken() == JsonToken.VALUE_STRING) {
@@ -28,6 +27,6 @@ class StringOrStringList : JsonDeserializer<MutableList<String?>?>() {
             return artists
         }
 
-        return if (artists.isEmpty()) artists else artists
+        return artists
     }
 }

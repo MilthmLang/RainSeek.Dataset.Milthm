@@ -5,9 +5,12 @@ import com.morizero.rainseek.milthm.utils.StringOrStringList
 
 data class ProcessedDocument(
     override var id: String,
+
+    var songId: String = "",
     var title: String,
     var titleCulture: String = "",
     var latinTitle: String = "",
+    var bpmInfo: List<BPMData> = emptyList(),
 
     var artist: String = "",
     @JsonDeserialize(using = StringOrStringList::class)
@@ -17,15 +20,12 @@ data class ProcessedDocument(
     @JsonDeserialize(using = StringOrStringList::class)
     var illustratorsList: List<String> = emptyList(),
 
-    var bpmInfo: List<BPMData> = emptyList(),
-
-    var songId: String = "",
-
     var difficulty: String = "",
     var difficultyValue: Double = 0.0,
 
+    var charter: String = "",
     @JsonDeserialize(using = StringOrStringList::class)
-    var charter: List<String> = emptyList(),
+    var chartersList: List<String> = emptyList(),
 
     var tags: List<String> = emptyList()
 ) : IdInterface
