@@ -1,17 +1,19 @@
 ---
 id: "illustration_rainshower"
-illustrator: "people_shun_yamaguchi"
+illustrator: "Shun Yamaguchi"
+illustratorsList:
+  - "people_shun_yamaguchi"
 description: ""
 tags:
-  - dark
-  - chaos
-  - glitch
-  - face
-  - black
-  - blue
-  - text
-  - japanese
-  - fragmentation
-  - tension
-  - horror
-  - surreal
+  - "dark"
+  - "chaos"
+  - "glitch"
+  - "face"
+  - "black"
+  - "blue"
+  - "text"
+  - "japanese"
+  - "fragmentation"
+  - "tension"
+  - "horror"
+  - "surreal"

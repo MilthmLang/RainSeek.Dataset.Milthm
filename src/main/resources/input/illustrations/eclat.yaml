@@ -1,18 +1,20 @@
 ---
 id: "illustration_eclat"
-illustrator: "people_myob"
+illustrator: "MYOB!"
+illustratorsList:
+  - "people_myob"
 description: ""
 tags:
-  - futuristic
-  - city
-  - night
-  - raining
-  - reflection
-  - tall buildings
-  - platform
-  - lone person
-  - cool blue tones
-  - advanced tech
-  - signage
-  - character
-  - female
+  - "futuristic"
+  - "city"
+  - "night"
+  - "raining"
+  - "reflection"
+  - "tall buildings"
+  - "platform"
+  - "lone person"
+  - "cool blue tones"
+  - "advanced tech"
+  - "signage"
+  - "character"
+  - "female"

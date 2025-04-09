@@ -1,25 +1,27 @@
 ---
 id: "illustration_in"
-illustrator: "people_nanakaria"
+illustrator: "nanakaria"
+illustratorsList:
+  - "people_nanakaria"
 description: ""
 tags:
-  - anime
-  - ghost
-  - dj
-  - music
-  - purple
-  - modern
-  - computer
-  - hand
-  - notes
-  - ribbon
-  - flow
-  - dark
-  - art
-  - IN
-  - Zris
-  - Katie
-  - fantasy
-  - female
-  - luvia
-  - character
+  - "anime"
+  - "ghost"
+  - "dj"
+  - "music"
+  - "purple"
+  - "modern"
+  - "computer"
+  - "hand"
+  - "notes"
+  - "ribbon"
+  - "flow"
+  - "dark"
+  - "art"
+  - "IN"
+  - "Zris"
+  - "Katie"
+  - "fantasy"
+  - "female"
+  - "luvia"
+  - "character"

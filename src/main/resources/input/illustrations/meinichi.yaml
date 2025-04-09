@@ -1,28 +1,29 @@
 ---
 id: "illustration_meinichi"
-illustrator:
-  - people_abai
-  - people_qier
-  - people_ranqi
+illustrator: "染七 QIER 阿白"
+illustratorsList:
+  - "people_abai"
+  - "people_qier"
+  - "people_ranqi"
 description: ""
 tags:
-  - rain
-  - rose
-  - red
-  - petal
-  - melancholy
-  - dark,
-  - reflection
-  - petals
-  - blue eyes
-  - silver hair
-  - melancholy
-  - water droplets
-  - school uniform
-  - close-up
-  - emotional
-  - somber
-  - falling petals
-  - luvia
-  - character
-  - female
+  - "rain"
+  - "rose"
+  - "red"
+  - "petal"
+  - "melancholy"
+  - "dark,"
+  - "reflection"
+  - "petals"
+  - "blue eyes"
+  - "silver hair"
+  - "melancholy"
+  - "water droplets"
+  - "school uniform"
+  - "close-up"
+  - "emotional"
+  - "somber"
+  - "falling petals"
+  - "luvia"
+  - "character"
+  - "female"

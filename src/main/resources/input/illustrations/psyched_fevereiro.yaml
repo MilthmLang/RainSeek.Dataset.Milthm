@@ -1,24 +1,26 @@
 ---
 id: "illustration_psyched_fevereiro"
-illustrator: "people_c_h_s"
+illustrator: "C.H.S"
+illustratorsList:
+  - "people_c_h_s"
 description: ""
 tags:
-  - panda
-  - surreal
-  - dark
-  - hallway
-  - red curtain
-  - pointing
-  - gesture
-  - focus
-  - exit sign
-  - light
-  - contrast
-  - dim lighting
-  - shadows
-  - mysterious
-  - intense
-  - text
-  - title
-  - artist name
-  - minimal lighting
+  - "panda"
+  - "surreal"
+  - "dark"
+  - "hallway"
+  - "red curtain"
+  - "pointing"
+  - "gesture"
+  - "focus"
+  - "exit sign"
+  - "light"
+  - "contrast"
+  - "dim lighting"
+  - "shadows"
+  - "mysterious"
+  - "intense"
+  - "text"
+  - "title"
+  - "artist name"
+  - "minimal lighting"

@@ -1,26 +1,28 @@
 ---
 id: "illustration_castle_in_the_rain"
-illustrator: "people_abai"
+illustrator: "阿白"
+illustratorsList:
+  - "people_abai"
 description: ""
 tags:
-  - rain
-  - cityscape
-  - skyscrapers
-  - overcast
-  - dark sky
-  - long hair
-  - blue eyes
-  - black coat
-  - gray scarf
-  - urban
-  - solitude
-  - atmospheric
-  - moody
-  - rainy day
-  - side profile
-  - melancholic
-  - futuristic city
-  - reflective mood
-  - character
-  - luvia
-  - female
+  - "rain"
+  - "cityscape"
+  - "skyscrapers"
+  - "overcast"
+  - "dark sky"
+  - "long hair"
+  - "blue eyes"
+  - "black coat"
+  - "gray scarf"
+  - "urban"
+  - "solitude"
+  - "atmospheric"
+  - "moody"
+  - "rainy day"
+  - "side profile"
+  - "melancholic"
+  - "futuristic city"
+  - "reflective mood"
+  - "character"
+  - "luvia"
+  - "female"

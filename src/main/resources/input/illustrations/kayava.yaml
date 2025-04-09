@@ -1,21 +1,22 @@
 ---
 id: "illustration_kayava"
-illustrator: "people_yuhe"
+illustrator: "域核"
+illustratorsList:
+  - "people_yuhe"
 description: ""
 tags:
-  - cityscape
-  - skyscrapers
-  - red
-  - orange
-  - sunset
-  - abstract
-  - modern
-  - urban
-  - silhouette
-  - palm tree
-  - flying object
-  - futuristic
-  - dark
-  - moody
-  - atmospheric
-# TODO, describe the details related to Rain World in the picture
+  - "cityscape"
+  - "skyscrapers"
+  - "red"
+  - "orange"
+  - "sunset"
+  - "abstract"
+  - "modern"
+  - "urban"
+  - "silhouette"
+  - "palm tree"
+  - "flying object"
+  - "futuristic"
+  - "dark"
+  - "moody"
+  - "atmospheric"

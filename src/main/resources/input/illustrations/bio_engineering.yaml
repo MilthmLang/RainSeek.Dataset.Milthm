@@ -1,13 +1,15 @@
 ---
 id: "illustration_bio_engineering"
-illustrator: "people_abai"
+illustrator: "阿白"
+illustratorsList:
+  - "people_abai"
 description: ""
 tags:
-  - slug cat
-  - industrial setting
-  - metal surface
-  - dim lighting
-  - shadow
-  - sci-fi
-  - minimalistic
-  - eerie atmosphere
+  - "slug cat"
+  - "industrial setting"
+  - "metal surface"
+  - "dim lighting"
+  - "shadow"
+  - "sci-fi"
+  - "minimalistic"
+  - "eerie atmosphere"

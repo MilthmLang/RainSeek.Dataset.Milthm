@@ -1,21 +1,23 @@
 ---
 id: "illustration_regnaissance"
-illustrator: "people_nanakaria"
+illustrator: "nanakaria"
+illustratorsList:
+  - "people_nanakaria"
 description: ""
 tags:
-  - anime
-  - fantasy
-  - magic
-  - fairy
-  - orbs
-  - bubbles
-  - light
-  - glow
-  - night
-  - serene
-  - character
-  - dress
-  - luvia
-  - character
-  - female
-  - floating
+  - "anime"
+  - "fantasy"
+  - "magic"
+  - "fairy"
+  - "orbs"
+  - "bubbles"
+  - "light"
+  - "glow"
+  - "night"
+  - "serene"
+  - "character"
+  - "dress"
+  - "luvia"
+  - "character"
+  - "female"
+  - "floating"

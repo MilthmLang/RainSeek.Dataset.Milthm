@@ -1,27 +1,29 @@
 ---
 id: "illustration_sundown"
-illustrator: "people_abai"
+illustrator: "阿白"
+illustratorsList:
+  - "people_abai"
 description: ""
 tags:
-  - desert
-  - rabbit
-  - sunset
-  - clouds
-  - rocks
-  - sand
-  - calm
-  - peaceful
-  - orange sky
-  - minimalistic
-  - art
-  - nature
-  - solitude
-  - whimsical
-  - fantasy
-  - landscape
-  - warm colors
-  - serene
-  - horizon
-  - adventure
-  - exploration
-  - slug cat
+  - "desert"
+  - "rabbit"
+  - "sunset"
+  - "clouds"
+  - "rocks"
+  - "sand"
+  - "calm"
+  - "peaceful"
+  - "orange sky"
+  - "minimalistic"
+  - "art"
+  - "nature"
+  - "solitude"
+  - "whimsical"
+  - "fantasy"
+  - "landscape"
+  - "warm colors"
+  - "serene"
+  - "horizon"
+  - "adventure"
+  - "exploration"
+  - "slug cat"

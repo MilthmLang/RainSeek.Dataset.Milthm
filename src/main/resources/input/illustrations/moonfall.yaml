@@ -1,23 +1,25 @@
 ---
 id: "illustration_moonfall"
-illustrator: "people_nanakaria"
+illustrator: "nanakaria"
+illustratorsList:
+  - "people_nanakaria"
 description: ""
 tags:
-  - space station
-  - Earth
-  - solar panels
-  - orbit
-  - blue sky
-  - clouds
-  - futuristic
-  - technology
-  - circular structure
-  - debris
-  - outer space
-  - sci-fi
-  - planet view
-  - modern design
-  - high-tech
-  - cosmic
-  - satellite
-  - space craft
+  - "space station"
+  - "Earth"
+  - "solar panels"
+  - "orbit"
+  - "blue sky"
+  - "clouds"
+  - "futuristic"
+  - "technology"
+  - "circular structure"
+  - "debris"
+  - "outer space"
+  - "sci-fi"
+  - "planet view"
+  - "modern design"
+  - "high-tech"
+  - "cosmic"
+  - "satellite"
+  - "space craft"

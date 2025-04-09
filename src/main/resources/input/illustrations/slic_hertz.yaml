@@ -1,28 +1,30 @@
 ---
 id: "illustration_slic_hertz"
-illustrator: "people_myob"
+illustrator: "MYOB!"
+illustratorsList:
+  - "people_myob"
 description: ""
 tags:
-  - western
-  - anime
-  - cowboy hat
-  - bounty hunter
-  - desert landscape
-  - rock formations
-  - sky
-  - clouds
-  - colorful background
-  - vibrant art style
-  - dynamic composition
-  - character interaction
-  - teamwork
-  - determined expressions
-  - detailed costumes
-  - fantasy elements
-  - adventurous mood
-  - dramatic lighting
-  - stylized illustration
-  - digital art
-  - modern anime aesthetic
-  - bold lines
-  - rich color palette
+  - "western"
+  - "anime"
+  - "cowboy hat"
+  - "bounty hunter"
+  - "desert landscape"
+  - "rock formations"
+  - "sky"
+  - "clouds"
+  - "colorful background"
+  - "vibrant art style"
+  - "dynamic composition"
+  - "character interaction"
+  - "teamwork"
+  - "determined expressions"
+  - "detailed costumes"
+  - "fantasy elements"
+  - "adventurous mood"
+  - "dramatic lighting"
+  - "stylized illustration"
+  - "digital art"
+  - "modern anime aesthetic"
+  - "bold lines"
+  - "rich color palette"
