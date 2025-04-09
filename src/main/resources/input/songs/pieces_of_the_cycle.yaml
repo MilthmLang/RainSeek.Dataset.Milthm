@@ -1,10 +1,10 @@
 ---
 id: "song_pieces_of_the_cycle"
 title: "サイクルの欠片"
-titleCulture: "14000000"
+titleCulture: "ja-JP"
 latinTitle: "Pieces of the Cycle"
-artist: "TsukiP"
 artistsRef:
-  - "people_tsuki_p"
+- "people_tsuki_p"
+artist: "TsukiP"
 tags:
-  - "1st anniversary"
+- "1st anniversary"

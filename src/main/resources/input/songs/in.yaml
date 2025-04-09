@@ -1,11 +1,11 @@
 ---
 id: "song_in"
 title: "IN"
-titleCulture: "00000000"
+titleCulture: "en"
 latinTitle: "IN"
-artist: "Zris feat. Katie"
 artistsRef:
-  - "people_zris"
-  - "people_katie"
+- "people_zris"
+- "people_katie"
+artist: "Zris feat. Katie"
 tags:
-  - ""
+- ""

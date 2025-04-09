@@ -1,10 +1,10 @@
 ---
 id: "song_moving_on"
 title: "Moving On"
-titleCulture: "00000000"
+titleCulture: "en"
 latinTitle: "Moving On"
-artist: "Nastram"
 artistsRef:
-  - "people_nastram"
+- "people_nastram"
+artist: "Nastram"
 tags:
-  - "prolog"
+- "prolog"

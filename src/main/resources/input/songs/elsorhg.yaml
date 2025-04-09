@@ -1,10 +1,10 @@
 ---
 id: "song_elsorhg"
 title: "Elsorhg"
-titleCulture: "00000000"
+titleCulture: "en"
 latinTitle: "Elsorhg"
-artist: "Fl00t"
 artistsRef:
-  - "people_fl00t"
+- "people_fl00t"
+artist: "Fl00t"
 tags:
-  - "notanote"
+- "notanote"

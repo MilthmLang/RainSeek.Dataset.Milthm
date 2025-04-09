@@ -1,10 +1,10 @@
 ---
 id: "song_blueface"
 title: "☹"
-titleCulture: "ffffffff"
+titleCulture: "und-ZZ"
 latinTitle: "Blueface"
-artist: "Gray Planet"
 artistsRef:
-  - "people_gray_planet"
+- "people_gray_planet"
+artist: "Gray Planet"
 tags:
-  - "prolog"
+- "prolog"

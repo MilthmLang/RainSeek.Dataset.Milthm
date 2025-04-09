@@ -1,10 +1,10 @@
 ---
 id: "song_slic_hertz"
 title: "slic.hertz"
-titleCulture: "00000000"
+titleCulture: "en"
 latinTitle: "slic.hertz"
-artist: "Sobrem"
 artistsRef:
-  - "people_sobrem"
+- "people_sobrem"
+artist: "Sobrem"
 tags:
-  - ""
+- ""

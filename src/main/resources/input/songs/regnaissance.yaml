@@ -1,10 +1,10 @@
 ---
 id: "song_regnaissance"
 title: "Regnaissance"
-titleCulture: "00000000"
+titleCulture: "en"
 latinTitle: "Regnaissance"
-artist: "AiSS vs. Abit"
 artistsRef:
-  - "people_aiss"
+- "people_aiss"
+artist: "AiSS vs. Abit"
 tags:
-  - "chapter1"
+- "chapter1"

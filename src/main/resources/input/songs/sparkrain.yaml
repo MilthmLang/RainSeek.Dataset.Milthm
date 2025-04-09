@@ -1,10 +1,10 @@
 ---
 id: "song_sparkrain"
 title: "烁雨"
-titleCulture: "0b0000000c0000000d000000"
+titleCulture: "zh-Hans-CN:zh-Hant-TW:yue-Hant-mo"
 latinTitle: "Sparkrain"
-artist: "ILusMin"
 artistsRef:
-  - "people_ilusmin"
+- "people_ilusmin"
+artist: "ILusMin"
 tags:
-  - "notanote"
+- "notanote"

@@ -1,10 +1,10 @@
 ---
 id: "song_welcome_to_milthm"
 title: "Welcome to Milthm"
-titleCulture: "00000000"
+titleCulture: "en"
 latinTitle: "Welcome to Milthm"
-artist: "TsukiP"
 artistsRef:
-  - "people_tsuki_p"
+- "people_tsuki_p"
+artist: "TsukiP"
 tags:
-  - ""
+- ""

@@ -1,12 +1,12 @@
 ---
 id: "song_neon_iro_no_machi"
 title: "ネオン色のまち feat. Mai"
-titleCulture: "14000000"
+titleCulture: "ja-JP"
 latinTitle: "Neon Iro no Machi feat. Mai"
-artist: "Reo、ヒトリ (lyric: 霉霉杏)"
 artistsRef:
-  - "people_reo"
-  - "people_hitori"
-  - "people_meimeixing"
+- "people_reo"
+- "people_hitori"
+- "people_meimeixing"
+artist: "Reo、ヒトリ (lyric: 霉霉杏)"
 tags:
-  - ""
+- ""

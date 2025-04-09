@@ -1,10 +1,10 @@
 ---
 id: "song_psyched_fevereiro"
 title: "Psyched Fevereiro"
-titleCulture: "00000000"
+titleCulture: "en"
 latinTitle: "Psyched Fevereiro"
-artist: "t+pazolite"
 artistsRef:
-  - "people_t_pazolite"
+- "people_t_pazolite"
+artist: "t+pazolite"
 tags:
-  - ""
+- ""

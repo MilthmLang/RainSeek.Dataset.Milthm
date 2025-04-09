@@ -1,10 +1,10 @@
 ---
 id: "song_kaede"
 title: "KAEDE"
-titleCulture: "00000000"
+titleCulture: "en"
 latinTitle: "KAEDE"
-artist: "Ocelot"
 artistsRef:
-  - "people_rin"
+- "people_rin"
+artist: "Ocelot"
 tags:
-  - ""
+- ""

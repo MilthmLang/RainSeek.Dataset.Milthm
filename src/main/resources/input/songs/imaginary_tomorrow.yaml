@@ -1,11 +1,11 @@
 ---
 id: "song_imaginary_tomorrow"
 title: "仮想明日"
-titleCulture: "0b0000000c0000000d00000014000000"
+titleCulture: "zh-Hans-CN:zh-Hant-TW:yue-Hant-mo:ja-JP"
 latinTitle: "Imaginary Tomorrow"
-artist: "如月青藍 feat. 双葉湊音"
 artistsRef:
-  - "people_azure_kisaragi"
-  - "people_futabaminato"
+- "people_azure_kisaragi"
+- "people_futabaminato"
+artist: "如月青藍 feat. 双葉湊音"
 tags:
-  - ""
+- ""

@@ -1,10 +1,10 @@
 ---
 id: "song_overrain"
 title: "OverRain"
-titleCulture: "00000000"
+titleCulture: "en"
 latinTitle: "OverRain"
-artist: "SharK"
 artistsRef:
-  - "people_catalpa"
+- "people_catalpa"
+artist: "SharK"
 tags:
-  - "chapter1"
+- "chapter1"

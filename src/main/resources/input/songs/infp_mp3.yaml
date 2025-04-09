@@ -1,10 +1,10 @@
 ---
 id: "song_infp_mp3"
 title: "INFP.mp3"
-titleCulture: "00000000"
+titleCulture: "en"
 latinTitle: "INFP.mp3"
-artist: "TsukiP"
 artistsRef:
-  - "people_tsuki_p"
+- "people_tsuki_p"
+artist: "TsukiP"
 tags:
-  - ""
+- ""

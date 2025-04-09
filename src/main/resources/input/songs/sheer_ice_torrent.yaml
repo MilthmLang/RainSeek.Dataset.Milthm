@@ -1,10 +1,10 @@
 ---
 id: "song_sheer_ice_torrent"
 title: "Sheer Ice Torrent"
-titleCulture: "00000000"
+titleCulture: "en"
 latinTitle: "Sheer Ice Torrent"
-artist: "Connor \"12LBS\" Skidmore"
 artistsRef:
-  - "people_connor_12lbs_skidmore"
+- "people_connor_12lbs_skidmore"
+artist: "Connor \"12LBS\" Skidmore"
 tags:
-  - "RainWorld"
+- "RainWorld"

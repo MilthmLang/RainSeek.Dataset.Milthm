@@ -1,12 +1,12 @@
 ---
 id: "song_threat_waterfront_complex"
 title: "Threat - Waterfront Complex"
-titleCulture: "00000000"
+titleCulture: "en"
 latinTitle: "Threat - Waterfront Complex"
-artist: "James Primate, Lydia Esrig, Connor \"12LBS\" Skidmore"
 artistsRef:
-  - "people_james_primate"
-  - "people_lydia_esrig"
-  - "people_connor_12lbs_skidmore"
+- "people_james_primate"
+- "people_lydia_esrig"
+- "people_connor_12lbs_skidmore"
+artist: "James Primate, Lydia Esrig, Connor \"12LBS\" Skidmore"
 tags:
-  - "RainWorld"
+- "RainWorld"

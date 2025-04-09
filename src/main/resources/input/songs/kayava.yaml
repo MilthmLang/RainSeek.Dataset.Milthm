@@ -1,10 +1,10 @@
 ---
 id: "song_kayava"
 title: "Kayava"
-titleCulture: "00000000"
+titleCulture: "en"
 latinTitle: "Kayava"
-artist: "James Primate"
 artistsRef:
-  - "people_james_primate"
+- "people_james_primate"
+artist: "James Primate"
 tags:
-  - "RainWorld"
+- "RainWorld"

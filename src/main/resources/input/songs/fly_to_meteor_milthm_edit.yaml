@@ -1,12 +1,12 @@
 ---
 id: "song_fly_to_meteor_milthm_edit"
 title: "Fly To Meteor (Milthm Edit)"
-titleCulture: "00000000"
+titleCulture: "en"
 latinTitle: "Fly To Meteor (Milthm Edit)"
-artist: "ShooTinGStaR + xzadudu179 + Cyberspace"
 artistsRef:
-  - "people_shootingstar"
-  - "people_xzadudu179"
-  - "people_cyberspace"
+- "people_shootingstar"
+- "people_xzadudu179"
+- "people_cyberspace"
+artist: "ShooTinGStaR + xzadudu179 + Cyberspace"
 tags:
-  - ""
+- ""

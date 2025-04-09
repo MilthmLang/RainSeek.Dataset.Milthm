@@ -1,11 +1,11 @@
 ---
 id: "song_bio_engineering"
 title: "Bio-Engineering"
-titleCulture: "00000000"
+titleCulture: "en"
 latinTitle: "Bio-Engineering"
-artist: "James Primate & Lydia Esrig"
 artistsRef:
-  - "people_james_primate"
-  - "people_lydia_esrig"
+- "people_james_primate"
+- "people_lydia_esrig"
+artist: "James Primate & Lydia Esrig"
 tags:
-  - "RainWorld"
+- "RainWorld"

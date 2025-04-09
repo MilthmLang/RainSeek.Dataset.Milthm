@@ -1,10 +1,10 @@
 ---
 id: "song_ameonna"
 title: "雨女"
-titleCulture: "0b0000000c0000000d00000014000000"
+titleCulture: "zh-Hans-CN:zh-Hant-TW:yue-Hant-mo:ja-JP"
 latinTitle: "Ameonna"
-artist: "TsukiP"
 artistsRef:
-  - "people_tsuki_p"
+- "people_tsuki_p"
+artist: "TsukiP"
 tags:
-  - "prolog"
+- "prolog"

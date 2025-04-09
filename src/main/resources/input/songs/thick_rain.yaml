@@ -1,10 +1,10 @@
 ---
 id: "song_thick_rain"
 title: "粗线条的雨"
-titleCulture: "0b0000000c0000000d000000"
+titleCulture: "zh-Hans-CN:zh-Hant-TW:yue-Hant-mo"
 latinTitle: "Thick Rain"
-artist: "有棵里里"
 artistsRef:
-  - "people_youkelili"
+- "people_youkelili"
+artist: "有棵里里"
 tags:
-  - "chapter1"
+- "chapter1"

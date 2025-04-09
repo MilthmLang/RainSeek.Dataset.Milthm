@@ -1,10 +1,10 @@
 ---
 id: "song_oniichan"
 title: "Oniichan"
-titleCulture: "00000000"
+titleCulture: "en"
 latinTitle: "Oniichan"
-artist: "MoryueCi"
 artistsRef:
-  - "people_moryueci"
+- "people_moryueci"
+artist: "MoryueCi"
 tags:
-  - ""
+- ""

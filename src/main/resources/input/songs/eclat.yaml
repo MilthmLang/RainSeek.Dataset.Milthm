@@ -1,9 +1,10 @@
 ---
 id: "song_eclat"
 title: "イコラト"
-titleCulture: "14000000"
+titleCulture: "ja-JP"
 latinTitle: "eclat"
+artistsRef: []
 artist: "people_tsuki_p"
 tags:
-  - éclat
-  - ikorato
+- "éclat"
+- "ikorato"

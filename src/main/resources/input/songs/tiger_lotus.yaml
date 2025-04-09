@@ -1,10 +1,10 @@
 ---
 id: "song_tiger_lotus"
 title: "白虎蓮華"
-titleCulture: "0c0000000d0000000b00000014000000"
+titleCulture: "zh-Hans-CN:zh-Hant-TW:yue-Hant-mo:ja-JP"
 latinTitle: "Tiger Lotus"
-artist: "PYKAMIA"
 artistsRef:
-  - "people_pykamia"
+- "people_pykamia"
+artist: "PYKAMIA"
 tags:
-  - ""
+- ""

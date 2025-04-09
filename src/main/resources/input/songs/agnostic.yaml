@@ -1,10 +1,10 @@
 ---
 id: "song_agnostic"
 title: "Agnostic"
-titleCulture: "00000000"
+titleCulture: "en"
 latinTitle: "Agnostic"
-artist: "AiSS"
 artistsRef:
-  - "people_aiss"
+- "people_aiss"
+artist: "AiSS"
 tags:
-  - ""
+- ""

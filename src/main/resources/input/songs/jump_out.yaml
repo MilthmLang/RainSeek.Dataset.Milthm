@@ -1,10 +1,10 @@
 ---
 id: "song_jump_out"
 title: "Jump out?"
-titleCulture: "00000000"
+titleCulture: "en"
 latinTitle: "Jump out?"
-artist: "B.R.I"
 artistsRef:
-  - "people_b_r_i"
+- "people_b_r_i"
+artist: "B.R.I"
 tags:
-  - "prolog"
+- "prolog"

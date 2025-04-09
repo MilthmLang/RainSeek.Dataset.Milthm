@@ -1,10 +1,10 @@
 ---
 id: "song_moonfall"
 title: "大月墜落狂想"
-titleCulture: "0b0000000c0000000d00000014000000"
+titleCulture: "zh-Hans-CN:zh-Hant-TW:yue-Hant-mo:ja-JP"
 latinTitle: "Moonfall"
-artist: "10lulu"
 artistsRef:
-  - "people_ten_lulu"
+- "people_ten_lulu"
+artist: "10lulu"
 tags:
-  - "Arcaea Rewind 2023"
+- "Arcaea Rewind 2023"

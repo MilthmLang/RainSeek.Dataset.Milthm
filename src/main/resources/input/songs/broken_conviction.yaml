@@ -1,10 +1,10 @@
 ---
 id: "song_broken_conviction"
 title: "Broken Conviction"
-titleCulture: "00000000"
+titleCulture: "en"
 latinTitle: "Broken Conviction"
-artist: "Cansol"
 artistsRef:
-  - "people_cansol"
+- "people_cansol"
+artist: "Cansol"
 tags:
-  - ""
+- ""

@@ -1,10 +1,10 @@
 ---
 id: "song_meltovt_necrosys"
 title: "Meltovt Necrosys"
-titleCulture: "00000000"
+titleCulture: "en"
 latinTitle: "Meltovt Necrosys"
-artist: "Halv"
 artistsRef:
-  - "people_halv"
+- "people_halv"
+artist: "Halv"
 tags:
-  - "notanote"
+- "notanote"

@@ -1,11 +1,11 @@
 ---
 id: "song_betelgeuse"
 title: "参宿四~Betelgeuse~"
-titleCulture: "0b0000000c0000000d000000"
+titleCulture: "zh-Hans-CN:zh-Hant-TW:yue-Hant-mo"
 latinTitle: "Betelgeuse"
-artist: "Villax vs. Amberry"
 artistsRef:
-  - "people_amberry"
-  - "people_villax"
+- "people_amberry"
+- "people_villax"
+artist: "Villax vs. Amberry"
 tags:
-  - ""
+- ""

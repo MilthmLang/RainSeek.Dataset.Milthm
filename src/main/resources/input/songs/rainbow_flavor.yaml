@@ -1,11 +1,11 @@
 ---
 id: "song_rainbow_flavor"
 title: "Rainbow Flavor!"
-titleCulture: "00000000"
+titleCulture: "en"
 latinTitle: "Rainbow Flavor!"
-artist: "SuggestedCopy7 & 亚述"
 artistsRef:
-  - "people_suggestedcopy7"
-  - "people_yashu"
+- "people_suggestedcopy7"
+- "people_yashu"
+artist: "SuggestedCopy7 & 亚述"
 tags:
-  - ""
+- ""

@@ -1,10 +1,10 @@
 ---
 id: "song_words"
 title: "Words"
-titleCulture: "00000000"
+titleCulture: "en"
 latinTitle: "Words"
-artist: "X3ll3n"
 artistsRef:
-  - "people_x3ll3n"
+- "people_x3ll3n"
+artist: "X3ll3n"
 tags:
-  - ""
+- ""

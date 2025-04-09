@@ -1,10 +1,10 @@
 ---
 id: "song_future_unbound"
 title: "Future Unbound (Game Edit)"
-titleCulture: "00000000"
+titleCulture: "en"
 latinTitle: "Future Unbound (Game Edit)"
-artist: "Joulez"
 artistsRef:
-  - "people_joulez"
+- "people_joulez"
+artist: "Joulez"
 tags:
-  - ""
+- ""

@@ -1,10 +1,10 @@
 ---
 id: "song_threat_metropolis"
 title: "Threat - Metropolis"
-titleCulture: "00000000"
+titleCulture: "en"
 latinTitle: "Threat - Metropolis"
-artist: "Connor \"12LBS\" Skidmore"
 artistsRef:
-  - "people_connor_12lbs_skidmore"
+- "people_connor_12lbs_skidmore"
+artist: "Connor \"12LBS\" Skidmore"
 tags:
-  - "RainWorld"
+- "RainWorld"

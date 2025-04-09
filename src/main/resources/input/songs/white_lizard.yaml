@@ -1,10 +1,10 @@
 ---
 id: "song_white_lizard"
 title: "White Lizard"
-titleCulture: "00000000"
+titleCulture: "en"
 latinTitle: "White Lizard"
-artist: "Lydia Esrig"
 artistsRef:
-  - "people_lydia_esrig"
+- "people_lydia_esrig"
+artist: "Lydia Esrig"
 tags:
-  - "RainWorld"
+- "RainWorld"

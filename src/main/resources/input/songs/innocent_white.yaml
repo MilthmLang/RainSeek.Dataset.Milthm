@@ -1,10 +1,10 @@
 ---
 id: "song_innocent_white"
 title: "Innocent white"
-titleCulture: "00000000"
+titleCulture: "en"
 latinTitle: "Innocent white"
-artist: "影虎。"
 artistsRef:
-  - "people_kagetora"
+- "people_kagetora"
+artist: "影虎。"
 tags:
-  - "notanote"
+- "notanote"

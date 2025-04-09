@@ -1,10 +1,10 @@
 ---
 id: "song_kasane"
 title: "KASANE"
-titleCulture: "00000000"
+titleCulture: "en"
 latinTitle: "KASANE"
-artist: "Kaede Hiyama"
 artistsRef:
-  - "people_kaede_hiyama"
+- "people_kaede_hiyama"
+artist: "Kaede Hiyama"
 tags:
-  - ""
+- ""

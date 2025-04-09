@@ -1,10 +1,10 @@
 ---
 id: "song_threat_sky_islands"
 title: "Threat - Sky Islands"
-titleCulture: "00000000"
+titleCulture: "en"
 latinTitle: "Threat - Sky Islands"
-artist: "James Primate"
 artistsRef:
-  - "people_james_primate"
+- "people_james_primate"
+artist: "James Primate"
 tags:
-  - "RainWorld"
+- "RainWorld"

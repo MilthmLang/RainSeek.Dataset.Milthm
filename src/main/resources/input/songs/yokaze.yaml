@@ -1,10 +1,10 @@
 ---
 id: "song_yokaze"
 title: "夜風"
-titleCulture: "140000000b0000000c0000000d000000"
+titleCulture: "zh-Hans-CN:zh-Hant-TW:yue-Hant-mo:ja-JP"
 latinTitle: "Yokaze"
-artist: "Joulez"
 artistsRef:
-  - "people_joulez"
+- "people_joulez"
+artist: "Joulez"
 tags:
-  - ""
+- ""

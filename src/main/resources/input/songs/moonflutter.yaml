@@ -1,10 +1,10 @@
 ---
 id: "song_moonflutter"
 title: "Moonflutter"
-titleCulture: "00000000"
+titleCulture: "en"
 latinTitle: "Moonflutter"
-artist: "Reku Mochizuki"
 artistsRef:
-  - "people_reku_mochizuki"
+- "people_reku_mochizuki"
+artist: "Reku Mochizuki"
 tags:
-  - ""
+- ""
