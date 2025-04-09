@@ -5,9 +5,9 @@ import com.morizero.rainseek.milthm.utils.StringOrStringList
 
 data class Illustration(
     override var id: String = "",
+    var illustrator: String = "",
     @JsonDeserialize(using = StringOrStringList::class)
-    var illustrator: List<String> = emptyList(),
-    var squareArtwork: String = "",
+    var illustratorsList: List<String> = emptyList(),
     var description: String = "",
-    var tags: List<String> = emptyList()
+    var tags: List<String> = emptyList(),
 ) : IdInterface

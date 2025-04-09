@@ -59,10 +59,10 @@ open class DataProcessTask : DefaultTask() {
             }.toList()
             val illustrations = landscapeIllustrations + squareIllustrations
 
-            illustrations.forEach {
-                it.let { allTags.addAll(it.tags) }
-                it.illustrator.forEach { illustratorId ->
-                    peopleMap[illustratorId]?.let { allTags.addAll(it.tags) }
+            illustrations.forEach { illustration ->
+                illustration.let { allTags.addAll(illustration.tags) }
+                illustration.illustratorsList.forEach { illustratorId ->
+                    peopleMap[illustratorId]?.let { people -> allTags.addAll(people.tags) }
                 }
             }
 
@@ -82,7 +82,9 @@ open class DataProcessTask : DefaultTask() {
                 artistsList = song.artistsRef.map {
                     (peopleMap[it] ?: throw IllegalArgumentException("Unknown people ID: $it")).name
                 },
-                illustrator = illustrations.flatMap { it.illustrator }.distinct().mapNotNull { peopleMap[it]?.name },
+                illustrator = illustrations.map { it.illustrator }.distinct(),
+                illustratorsList = illustrations.flatMap { it.illustratorsList }.distinct()
+                    .mapNotNull { peopleMap[it]?.name },
                 bpmInfo = chart.bpmInfo,
                 songId = song.id,
                 difficulty = chart.difficulty,
@@ -95,6 +97,8 @@ open class DataProcessTask : DefaultTask() {
 
             processedDocumentList.add(processedDocument)
         }
+
+        processedDocumentList.sortBy { it.latinTitle }
 
         val buildDir = project.layout.buildDirectory.asFile.get()
         buildDir.mkdirs()

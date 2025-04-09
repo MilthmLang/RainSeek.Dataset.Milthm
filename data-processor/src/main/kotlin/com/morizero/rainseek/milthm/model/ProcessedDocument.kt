@@ -13,8 +13,9 @@ data class ProcessedDocument(
     @JsonDeserialize(using = StringOrStringList::class)
     var artistsList: List<String> = emptyList(),
 
-    @JsonDeserialize(using = StringOrStringList::class)
     var illustrator: List<String> = emptyList(),
+    @JsonDeserialize(using = StringOrStringList::class)
+    var illustratorsList: List<String> = emptyList(),
 
     var bpmInfo: List<BPMData> = emptyList(),
 
