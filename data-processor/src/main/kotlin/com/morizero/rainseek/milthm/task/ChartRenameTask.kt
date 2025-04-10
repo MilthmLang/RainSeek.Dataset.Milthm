@@ -1,8 +1,7 @@
 package com.morizero.rainseek.milthm.task
 
-import com.fasterxml.jackson.dataformat.yaml.YAMLMapper
-import com.fasterxml.jackson.module.kotlin.registerKotlinModule
 import com.morizero.rainseek.milthm.model.Chart
+import com.morizero.rainseek.milthm.utils.yamlMapper
 import org.gradle.api.DefaultTask
 import org.gradle.api.NonNullApi
 import org.gradle.api.tasks.CacheableTask
@@ -18,9 +17,6 @@ open class ChartRenameTask : DefaultTask() {
 
     @Internal
     val chartsDirPath: Array<out File> = resourceDirPath.resolve("charts").listFiles() ?: emptyArray()
-
-    @Internal
-    val yamlMapper = YAMLMapper().registerKotlinModule()
 
     @TaskAction
     fun execute() {
@@ -47,7 +43,7 @@ open class ChartRenameTask : DefaultTask() {
                 file.renameTo(destFile)
                 p = true
             } catch (e: Exception) {
-                logger.error("fail to process, file: {}, {}", file.absoluteFile, e)
+                logger.error("fail to process, file: {}", file.absoluteFile, e)
                 throw e
             }
         }

@@ -1,11 +1,9 @@
 package com.morizero.rainseek.milthm.task
 
-import com.fasterxml.jackson.databind.ObjectMapper
-import com.fasterxml.jackson.databind.SerializationFeature
-import com.fasterxml.jackson.dataformat.yaml.YAMLMapper
-import com.fasterxml.jackson.module.kotlin.registerKotlinModule
 import com.morizero.rainseek.milthm.model.*
 import com.morizero.rainseek.milthm.utils.MapIdObject
+import com.morizero.rainseek.milthm.utils.jsonMapper
+import com.morizero.rainseek.milthm.utils.yamlMapper
 import org.gradle.api.DefaultTask
 import org.gradle.api.tasks.Internal
 import org.gradle.api.tasks.TaskAction
@@ -14,12 +12,6 @@ import kotlin.collections.component1
 import kotlin.collections.component2
 
 open class DataProcessTask : DefaultTask() {
-    @Internal
-    val yamlMapper: ObjectMapper = YAMLMapper().registerKotlinModule()
-
-    @Internal
-    val jsonMapper: ObjectMapper = ObjectMapper().registerKotlinModule().enable(SerializationFeature.INDENT_OUTPUT)
-
     @Internal
     var chartMap: MapIdObject<Chart> = MapIdObject()
 
@@ -38,6 +30,30 @@ open class DataProcessTask : DefaultTask() {
     @TaskAction
     fun execute() {
         loadFiles()
+        processDocument()
+
+        saveToFiles()
+    }
+
+    private fun saveToFiles() {
+        val buildDir = project.layout.buildDirectory.asFile.get()
+        val outputDir = buildDir.resolve("output")
+        outputDir.mkdirs()
+
+        File(outputDir, "packed-document.json").also { jsonOutputFile ->
+            jsonMapper.writeValue(jsonOutputFile, processedDocumentList)
+        }
+        File(outputDir, "unpacked-document").also { dir ->
+            dir.mkdirs()
+            processedDocumentList.forEach { document ->
+                val file = File(dir, "${document.fileName}.yaml")
+                yamlMapper.writeValue(file, document)
+            }
+        }
+
+    }
+
+    private fun processDocument() {
 
         chartMap.forEach { (_, chart) ->
             val song = songsMap[chart.songId] ?: throw IllegalArgumentException("Unknown song ID: ${chart.songId}")
@@ -72,9 +88,17 @@ open class DataProcessTask : DefaultTask() {
 
             allTags = allTags.filter { it.isNotBlank() }.distinct().toSortedSet()
 
-            // 创建处理后的文档对象
             val processedDocument = ProcessedDocument(
                 id = chart.id,
+                fileName = chart.songId.let { songId ->
+                    if (!songId.startsWith("song_")) {
+                        throw IllegalStateException("unacceptable songId: $songId")
+                    }
+
+                    val songName = songId.substring("song_".length)
+                    val newFileName = "$songName-${chart.difficulty.lowercase()}"
+                    newFileName
+                },
 
                 title = song.title,
                 titleCulture = song.titleCulture,
@@ -106,18 +130,12 @@ open class DataProcessTask : DefaultTask() {
 
         processedDocumentList.sortBy { it.latinTitle }
 
-        val buildDir = project.layout.buildDirectory.asFile.get()
-        buildDir.mkdirs()
-        val outputFile = File(buildDir, "ProcessedDocument.json")
-        outputFile.createNewFile()
-        jsonMapper.writeValue(outputFile, processedDocumentList)
-
         (illustrationMap.notAccessedKeys + songsMap.notAccessedKeys + peopleMap.notAccessedKeys).forEach { key ->
             logger.warn("no reference to $key")
         }
     }
 
-    fun loadFiles() {
+    private fun loadFiles() {
         val resourceDirPath = project.rootDir.resolve("src/main/resources/input")
 
         resourceDirPath.resolve("charts").listFiles()?.let {
