@@ -33,6 +33,7 @@ open class DataProcessTask : DefaultTask() {
         processDocument()
 
         saveToFiles()
+        saveToSqlite()
     }
 
     private fun saveToFiles() {
@@ -50,6 +51,10 @@ open class DataProcessTask : DefaultTask() {
                 yamlMapper.writeValue(file, document)
             }
         }
+
+    }
+
+    private fun saveToSqlite() {
 
     }
 

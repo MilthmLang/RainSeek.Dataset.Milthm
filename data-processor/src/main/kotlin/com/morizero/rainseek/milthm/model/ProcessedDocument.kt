@@ -10,27 +10,86 @@ data class ProcessedDocument(
     @JsonIgnore
     var fileName: String = "",
 
+    /**
+     * indexing: unique
+     */
     @JsonIgnore
     var songId: String = "",
+
+    /**
+     * indexing: delimiter
+     * boosting: 10
+     *
+     * indexing: segments
+     * boosting: 5
+     */
     var title: String,
     var titleCulture: String = "",
+
+    /**
+     * indexing: delimiter
+     * boosting: 10
+     *
+     * indexing: segments
+     * boosting: 5
+     */
     var latinTitle: String = "",
+
     var bpmInfo: List<BPMData> = emptyList(),
 
+    /**
+     * indexing: delimiter
+     * boosting: 5
+     */
     var artist: String = "",
     @JsonDeserialize(using = StringOrStringList::class)
+
+    /**
+     * indexing: delimiter
+     * boosting: 5
+     */
     var artistsList: List<String> = emptyList(),
 
+    /**
+     * indexing: delimiter
+     * boosting: 5
+     */
     var illustrator: List<String> = emptyList(),
     @JsonDeserialize(using = StringOrStringList::class)
+
+    /**
+     * indexing: delimiter
+     * boosting: 5
+     */
     var illustratorsList: List<String> = emptyList(),
 
     var difficulty: String = "",
     var difficultyValue: Double = 0.0,
 
+
+    /**
+     * indexing: delimiter
+     * boosting: 5
+     */
     var charter: String = "",
+
+    /**
+     * indexing: delimiter
+     * boosting: 5
+     */
     @JsonDeserialize(using = StringOrStringList::class)
     var chartersList: List<String> = emptyList(),
 
+
+    /**
+     * indexing: delimiter
+     * boosting: 2
+     *
+     * indexing: ngram
+     * boosting: 1
+     *
+     * indexing: segments
+     * boosting: 1
+     */
     var tags: List<String> = emptyList()
 ) : IdInterface

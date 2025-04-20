@@ -1,0 +1,65 @@
+package com.morizero.rainseek.milthm.indexing
+
+import com.morizero.rainseek.milthm.model.SearchResult
+import com.morizero.rainseek.milthm.model.TokenModel
+import com.morizero.rainseek.milthm.tokenizer.Tokenizer
+
+class IndexService(
+    val indexName: String,
+    val tokenizers: List<Tokenizer>,
+    val repository: IndexRepository,
+) {
+
+    constructor(indexName: String, tokenizer: Tokenizer, repository: IndexRepository) : this(
+        indexName, listOf(tokenizer), repository
+    )
+
+    private fun tokenize(content: String): List<TokenModel> {
+        val tokens = mutableListOf<TokenModel>()
+        for (tokenizer in tokenizers) {
+            tokens.addAll(tokenizer.tokenize(content))
+        }
+        return tokens
+    }
+
+    fun addDocument(documentId: String, content: String) {
+        val tokens = tokenize(content)
+
+        for (token in tokens) {
+            val tokenEntity = repository.run {
+                findTokenByContent(indexName, token.value) ?: addToken(indexName, token.value)
+            }
+
+            repository.addTokenDocument(indexName, tokenEntity.id, documentId, token.startPosition, token.endPosition)
+        }
+    }
+
+    fun search(query: String): List<SearchResult> {
+        val tokens = tokenize(query)
+
+        val result = mutableMapOf<String, SearchResult>()
+
+        for (token in tokens) {
+            val tokenEntry = repository.findTokenByContent(indexName, token.value) ?: continue
+
+            val tokenDocuments = repository.findTokenDocumentByTokenId(indexName, tokenEntry.id)
+
+            tokenDocuments.forEach {
+
+                val tokenModel = TokenModel(
+                    value = tokenEntry.content, startPosition = it.startPosition, endPosition = it.endPosition
+                )
+
+                if (!result.containsKey(it.documentId)) {
+                    result[it.documentId] = SearchResult(
+                        documentId = it.documentId, matchedToken = mutableListOf(tokenModel)
+                    )
+                } else {
+                    result[it.documentId]!!.matchedToken += tokenModel
+                }
+            }
+        }
+
+        return result.values.toList()
+    }
+}
