@@ -14,4 +14,3 @@ interface IndexRepository {
         indexName: String, tokenId: Long, documentId: String, startPosition: Int, endPosition: Int
     ): TokensDocumentsEntity
 }
-

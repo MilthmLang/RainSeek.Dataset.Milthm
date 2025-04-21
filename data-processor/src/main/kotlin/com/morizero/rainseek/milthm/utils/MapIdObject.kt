@@ -3,7 +3,6 @@ package com.morizero.rainseek.milthm.utils
 import com.morizero.rainseek.milthm.model.IdInterface
 import java.util.concurrent.ConcurrentHashMap
 
-
 class MapIdObject<V> : MutableMap<String, V> where V : IdInterface {
     val underlayMap: ConcurrentHashMap<String, V> = ConcurrentHashMap()
     val accessedFlag: ConcurrentHashMap<String, Boolean> = ConcurrentHashMap()

@@ -98,5 +98,4 @@ class KtormRepository(val db: Database, val indexName: String) : IndexRepository
         } ?: throw IllegalArgumentException("failed to insert data")
         return ret
     }
-
 }
