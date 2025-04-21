@@ -1,15 +1,21 @@
 package com.morizero.rainseek.milthm.task
 
+import com.ibm.icu.util.ULocale
+import com.morizero.rainseek.milthm.indexing.IndexService
+import com.morizero.rainseek.milthm.indexing.KtormRepository
+import com.morizero.rainseek.milthm.indexing.RepositoryFactory
+import com.morizero.rainseek.milthm.indexing.ShadowRepository
 import com.morizero.rainseek.milthm.model.*
+import com.morizero.rainseek.milthm.tokenizer.BasicTokenizer
+import com.morizero.rainseek.milthm.tokenizer.IcuTokenizer
 import com.morizero.rainseek.milthm.utils.MapIdObject
 import com.morizero.rainseek.milthm.utils.jsonMapper
 import com.morizero.rainseek.milthm.utils.yamlMapper
 import org.gradle.api.DefaultTask
 import org.gradle.api.tasks.Internal
 import org.gradle.api.tasks.TaskAction
+import org.ktorm.database.Database
 import java.io.File
-import kotlin.collections.component1
-import kotlin.collections.component2
 
 open class DataProcessTask : DefaultTask() {
     @Internal
@@ -55,7 +61,61 @@ open class DataProcessTask : DefaultTask() {
     }
 
     private fun saveToSqlite() {
+        val buildDir = project.layout.buildDirectory.asFile.get()
+        val outputDir = buildDir.resolve("output")
+        outputDir.mkdirs()
 
+        val dbFile = File(outputDir, "document-index.db")
+        if (dbFile.exists()) {
+            dbFile.delete()
+        }
+
+        val dbPath = dbFile.absolutePath
+        val database = Database.connect(
+            url = "jdbc:sqlite:$dbPath",
+            driver = org.sqlite.JDBC::class.java.name,
+        )
+
+        val repositoryFactory = RepositoryFactory() { indexName -> KtormRepository(database, indexName) }
+        val shadowRepository = ShadowRepository(repositoryFactory)
+
+        val delimitersList = listOf(" ", "#", "~", "-", "(", ")", "?", ".", "\"", "!", ",")
+        val delimitersTokenizer = BasicTokenizer(
+            delimiters = delimitersList
+        )
+
+        val titleDelimiterIndexing = IndexService(
+            repository = shadowRepository, tokenizers = listOf(
+                delimitersTokenizer
+            ), indexName = "title_delimiter"
+        )
+
+        val latinTitleIndexing = IndexService(
+            repository = shadowRepository, tokenizers = listOf(
+                IcuTokenizer(
+                    locale = ULocale.ENGLISH,
+                    ignoreList = delimitersList,
+                )
+            ), indexName = "latin_title_segments"
+        )
+
+        processedDocumentList.forEach { document ->
+            titleDelimiterIndexing.addDocument(document.id, document.title)
+            document.titleCulture.split(":").forEach { culture ->
+                val titleSegmentIndexing = IndexService(
+                    repository = shadowRepository, tokenizers = listOf(
+                        IcuTokenizer(
+                            locale = ULocale.forLanguageTag(culture),
+                            ignoreList = delimitersList,
+                        )
+                    ), indexName = "title_segments"
+                )
+                titleSegmentIndexing.addDocument(document.id, document.title)
+            }
+
+            latinTitleIndexing.addDocument(document.id, document.latinTitle)
+
+        }
     }
 
     private fun processDocument() {

@@ -2,8 +2,7 @@ package com.morizero.rainseek.milthm.tokenizer
 
 import com.morizero.rainseek.milthm.model.TokenModel
 
-class BasicTokenizer(private val delimiters: List<String> = listOf(" "), private val caseSensitive: Boolean = false) :
-    Tokenizer {
+class BasicTokenizer(val delimiters: List<String> = listOf(" "), val caseSensitive: Boolean = false) : Tokenizer {
     override fun tokenize(input: String): List<TokenModel> {
         val tokens = mutableListOf<TokenModel>()
         var index = 0
@@ -43,9 +42,7 @@ class BasicTokenizer(private val delimiters: List<String> = listOf(" "), private
 
             tokens.add(
                 TokenModel(
-                    value = value,
-                    startPosition = start,
-                    endPosition = end
+                    value = value, startPosition = start, endPosition = end
                 )
             )
         }

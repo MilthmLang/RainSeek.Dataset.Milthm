@@ -30,7 +30,21 @@ class IndexService(
                 findTokenByContent(indexName, token.value) ?: addToken(indexName, token.value)
             }
 
-            repository.addTokenDocument(indexName, tokenEntity.id, documentId, token.startPosition, token.endPosition)
+            try {
+                repository.addTokenDocument(
+                    indexName,
+                    tokenEntity.id,
+                    documentId,
+                    token.startPosition,
+                    token.endPosition
+                )
+            } catch (e: org.sqlite.SQLiteException) {
+                if (e.resultCode.code == 2067) {
+                    continue
+                } else {
+                    throw e
+                }
+            }
         }
     }
 

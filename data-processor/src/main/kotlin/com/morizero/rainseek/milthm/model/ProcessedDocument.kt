@@ -27,11 +27,8 @@ data class ProcessedDocument(
     var titleCulture: String = "",
 
     /**
-     * indexing: delimiter
-     * boosting: 10
-     *
      * indexing: segments
-     * boosting: 5
+     * boosting: 10
      */
     var latinTitle: String = "",
 
