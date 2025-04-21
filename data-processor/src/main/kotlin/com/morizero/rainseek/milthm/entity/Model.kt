@@ -8,8 +8,8 @@ import org.ktorm.schema.varchar
 
 interface TokenEntity : Entity<TokenEntity> {
     companion object : Entity.Factory<TokenEntity>() {
-        fun generateTable(tableName: String): TokenEntityTable {
-            return TokenEntityTable(tableName)
+        fun generateTable(tableName: String): TokensTable {
+            return TokensTable(tableName)
         }
     }
 
@@ -17,15 +17,15 @@ interface TokenEntity : Entity<TokenEntity> {
     var content: String
 }
 
-class TokenEntityTable(tableName: String) : Table<TokenEntity>(tableName) {
+class TokensTable(tableName: String) : Table<TokenEntity>(tableName) {
     val id = long("id").primaryKey().bindTo { it.id }
-    val content = varchar("name").bindTo { it.content }
+    val content = varchar("content").bindTo { it.content }
 }
 
-interface TokensDocumentsEntity : Entity<TokensDocumentsEntity> {
-    companion object : Entity.Factory<TokensDocumentsEntity>() {
-        fun generateTable(tableName: String): TokensDocumentsEntityTable {
-            return TokensDocumentsEntityTable(tableName)
+interface DocumentTokenEntity : Entity<DocumentTokenEntity> {
+    companion object : Entity.Factory<DocumentTokenEntity>() {
+        fun generateTable(tableName: String): DocumentsTokensTable {
+            return DocumentsTokensTable(tableName)
         }
     }
 
@@ -36,7 +36,7 @@ interface TokensDocumentsEntity : Entity<TokensDocumentsEntity> {
     var endPosition: Int
 }
 
-class TokensDocumentsEntityTable(tableName: String) : Table<TokensDocumentsEntity>(tableName) {
+class DocumentsTokensTable(tableName: String) : Table<DocumentTokenEntity>(tableName) {
     val id = long("id").primaryKey().bindTo { it.id }
     val tokenId = long("token_id").bindTo { it.tokenId }
     val documentId = varchar("document_id").bindTo { it.documentId }

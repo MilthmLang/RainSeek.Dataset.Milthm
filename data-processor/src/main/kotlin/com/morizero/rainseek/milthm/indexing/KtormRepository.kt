@@ -1,9 +1,9 @@
 package com.morizero.rainseek.milthm.indexing
 
 import com.morizero.rainseek.milthm.entity.TokenEntity
-import com.morizero.rainseek.milthm.entity.TokenEntityTable
-import com.morizero.rainseek.milthm.entity.TokensDocumentsEntity
-import com.morizero.rainseek.milthm.entity.TokensDocumentsEntityTable
+import com.morizero.rainseek.milthm.entity.TokensTable
+import com.morizero.rainseek.milthm.entity.DocumentTokenEntity
+import com.morizero.rainseek.milthm.entity.DocumentsTokensTable
 import org.ktorm.database.Database
 import org.ktorm.dsl.and
 import org.ktorm.dsl.eq
@@ -17,8 +17,8 @@ class KtormRepository(val db: Database, val indexName: String) : IndexRepository
     val createTokenEntityTable: String = """
             CREATE TABLE IF NOT EXISTS $tokenEntityTableName (
                 id INTEGER PRIMARY KEY,
-                name TEXT NOT NULL,
-                UNIQUE(name)
+                content TEXT NOT NULL,
+                UNIQUE(content)
             );
         """.trimIndent()
 
@@ -33,12 +33,12 @@ class KtormRepository(val db: Database, val indexName: String) : IndexRepository
             );
         """.trimIndent()
 
-    private fun tokensTable(): TokenEntityTable {
+    private fun tokensTable(): TokensTable {
         return TokenEntity.Companion.generateTable(tokenEntityTableName)
     }
 
-    private fun tokensDocumentsTable(): TokensDocumentsEntityTable {
-        return TokensDocumentsEntity.Companion.generateTable(documentsTokensTableName)
+    private fun documentsTokensTable(): DocumentsTokensTable {
+        return DocumentTokenEntity.Companion.generateTable(documentsTokensTableName)
     }
 
     init {
@@ -71,22 +71,22 @@ class KtormRepository(val db: Database, val indexName: String) : IndexRepository
         return ret
     }
 
-    override fun findTokenDocumentByTokenId(indexName: String, tokenId: Long): List<TokensDocumentsEntity> {
+    override fun findDocumentTokenByTokenId(indexName: String, tokenId: Long): List<DocumentTokenEntity> {
         if (indexName != this.indexName) {
             throw IllegalArgumentException("index name '$indexName' mismatch")
         }
-        return db.sequenceOf(tokensDocumentsTable()).filter { it.tokenId eq tokenId }.toList()
+        return db.sequenceOf(documentsTokensTable()).filter { it.tokenId eq tokenId }.toList()
     }
 
-    override fun addTokenDocument(
+    override fun addDocumentToken(
         indexName: String, tokenId: Long, documentId: String, startPosition: Int, endPosition: Int
-    ): TokensDocumentsEntity {
+    ): DocumentTokenEntity {
         if (indexName != this.indexName) {
             throw IllegalArgumentException("index name '$indexName' mismatch")
         }
-        val table = db.sequenceOf(tokensDocumentsTable())
+        val table = db.sequenceOf(documentsTokensTable())
 
-        val documentToken = TokensDocumentsEntity.Companion()
+        val documentToken = DocumentTokenEntity.Companion()
         documentToken.tokenId = tokenId
         documentToken.documentId = documentId
         documentToken.startPosition = startPosition

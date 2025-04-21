@@ -42,7 +42,7 @@ class IndexService(
             }
 
             try {
-                repository.addTokenDocument(
+                repository.addDocumentToken(
                     indexName, tokenEntity.id, documentId, token.startPosition, token.endPosition
                 )
             } catch (e: org.sqlite.SQLiteException) {
@@ -61,14 +61,14 @@ class IndexService(
         val result = mutableMapOf<String, SearchResult>()
 
         for (token in tokens) {
-            val tokenEntry = repository.findTokenByContent(indexName, token.value) ?: continue
+            val tokenEntity = repository.findTokenByContent(indexName, token.value) ?: continue
 
-            val tokenDocuments = repository.findTokenDocumentByTokenId(indexName, tokenEntry.id)
+            val documentsToken = repository.findDocumentTokenByTokenId(indexName, tokenEntity.id)
 
-            tokenDocuments.forEach {
+            documentsToken.forEach {
 
                 val tokenModel = TokenModel(
-                    value = tokenEntry.content, startPosition = it.startPosition, endPosition = it.endPosition
+                    value = tokenEntity.content, startPosition = it.startPosition, endPosition = it.endPosition
                 )
 
                 if (!result.containsKey(it.documentId)) {
