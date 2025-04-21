@@ -82,7 +82,7 @@ open class DataProcessTask : DefaultTask() {
         val shadowRepository = ShadowRepository(repositoryFactory)
 
         val delimitersList =
-            listOf(" ", "#", "~", "-", "(", ")", "?", ".", "\"", "!", ",", "\r", "\n", "+", ".", "_", "†", "・")
+            listOf(" ", "#", "~", "-", "(", ")", "?", ".", "\"", "!", ",", "\r", "\n", "+", ".", "_", "†", "・", "/")
         val basicDelimitersTokenizer = BasicTokenizer(
             delimiters = delimitersList,
             predictor = fun(tokenModel: TokenModel): Boolean {
