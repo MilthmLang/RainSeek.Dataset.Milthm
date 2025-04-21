@@ -8,6 +8,8 @@ import com.morizero.rainseek.milthm.indexing.ShadowRepository
 import com.morizero.rainseek.milthm.model.*
 import com.morizero.rainseek.milthm.tokenizer.BasicTokenizer
 import com.morizero.rainseek.milthm.tokenizer.IcuTokenizer
+import com.morizero.rainseek.milthm.tokenizer.LineTokenizer
+import com.morizero.rainseek.milthm.tokenizer.NGramTokenizer
 import com.morizero.rainseek.milthm.utils.MapIdObject
 import com.morizero.rainseek.milthm.utils.jsonMapper
 import com.morizero.rainseek.milthm.utils.yamlMapper
@@ -79,9 +81,13 @@ open class DataProcessTask : DefaultTask() {
         val repositoryFactory = RepositoryFactory() { indexName -> KtormRepository(database, indexName) }
         val shadowRepository = ShadowRepository(repositoryFactory)
 
-        val delimitersList = listOf(" ", "#", "~", "-", "(", ")", "?", ".", "\"", "!", ",")
+        val delimitersList =
+            listOf(" ", "#", "~", "-", "(", ")", "?", ".", "\"", "!", ",", "\r", "\n", "+", ".", "_", "†", "・")
         val delimitersTokenizer = BasicTokenizer(
-            delimiters = delimitersList
+            delimiters = delimitersList,
+            predictor = fun(tokenModel: TokenModel): Boolean {
+                return tokenModel.value.length >= 3
+            },
         )
 
         val titleDelimiterIndexing = IndexService(
@@ -94,9 +100,67 @@ open class DataProcessTask : DefaultTask() {
             repository = shadowRepository, tokenizers = listOf(
                 IcuTokenizer(
                     locale = ULocale.ENGLISH,
-                    ignoreList = delimitersList,
+                    predictor = fun(tokenModel: TokenModel): Boolean {
+                        return !delimitersList.contains(tokenModel.value)
+                    },
                 )
             ), indexName = "latin_title_segments"
+        )
+
+        val artistDelimiterIndexing = IndexService(
+            repository = shadowRepository, tokenizers = listOf(
+                delimitersTokenizer
+            ), indexName = "artist_delimiter"
+        )
+
+        val artistsListDelimiterIndexing = IndexService(
+            repository = shadowRepository, tokenizers = listOf(
+                delimitersTokenizer
+            ), indexName = "artists_list_delimiter"
+        )
+
+        val illustratorDelimiterIndexing = IndexService(
+            repository = shadowRepository, tokenizers = listOf(
+                delimitersTokenizer
+            ), indexName = "illustrator_delimiter"
+        )
+
+        val illustratorsListDelimiterIndexing = IndexService(
+            repository = shadowRepository, tokenizers = listOf(
+                delimitersTokenizer
+            ), indexName = "illustrators_list_delimiter"
+        )
+
+        val charterDelimiterIndexing = IndexService(
+            repository = shadowRepository, tokenizers = listOf(
+                delimitersTokenizer
+            ), indexName = "charter_delimiter"
+        )
+
+        val chartersListDelimiterIndexing = IndexService(
+            repository = shadowRepository, tokenizers = listOf(
+                delimitersTokenizer
+            ), indexName = "charters_list_delimiter"
+        )
+
+        val tagsDelimiterIndexing = IndexService(
+            repository = shadowRepository, tokenizers = listOf(
+                delimitersTokenizer,
+                LineTokenizer(),
+            ), indexName = "tags_delimiter"
+        )
+        val tagsNgram3Indexing = IndexService(
+            repository = shadowRepository, tokenizers = listOf(
+                NGramTokenizer(3, delimiters = delimitersList),
+            ), indexName = "tags_ngram3"
+        )
+        val tagsSegmentsIndexing = IndexService(
+            repository = shadowRepository, tokenizers = listOf(
+                IcuTokenizer(
+                    locale = ULocale.CHINA, predictor = fun(tokenModel: TokenModel): Boolean {
+                        return !delimitersList.contains(tokenModel.value)
+                    })
+            ), indexName = "tags_segments"
         )
 
         processedDocumentList.forEach { document ->
@@ -106,7 +170,9 @@ open class DataProcessTask : DefaultTask() {
                     repository = shadowRepository, tokenizers = listOf(
                         IcuTokenizer(
                             locale = ULocale.forLanguageTag(culture),
-                            ignoreList = delimitersList,
+                            predictor = fun(tokenModel: TokenModel): Boolean {
+                                return !delimitersList.contains(tokenModel.value)
+                            },
                         )
                     ), indexName = "title_segments"
                 )
@@ -115,6 +181,18 @@ open class DataProcessTask : DefaultTask() {
 
             latinTitleIndexing.addDocument(document.id, document.latinTitle)
 
+            artistDelimiterIndexing.addDocument(document.id, listOf(document.artist))
+            artistsListDelimiterIndexing.addDocument(document.id, document.artistsList)
+
+            illustratorDelimiterIndexing.addDocument(document.id, document.illustrator)
+            illustratorsListDelimiterIndexing.addDocument(document.id, document.illustratorsList)
+
+            charterDelimiterIndexing.addDocument(document.id, document.charter)
+            chartersListDelimiterIndexing.addDocument(document.id, document.chartersList)
+
+            tagsDelimiterIndexing.addDocument(document.id, document.tags)
+            tagsNgram3Indexing.addDocument(document.id, document.tags)
+            tagsSegmentsIndexing.addDocument(document.id, document.tags)
         }
     }
 

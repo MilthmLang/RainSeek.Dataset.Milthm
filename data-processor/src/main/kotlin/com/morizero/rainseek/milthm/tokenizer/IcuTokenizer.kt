@@ -6,7 +6,10 @@ import com.ibm.icu.text.Normalizer2
 import com.ibm.icu.util.ULocale
 import com.morizero.rainseek.milthm.model.TokenModel
 
-class IcuTokenizer(val locale: ULocale, val ignoreList: List<String>) : Tokenizer {
+class IcuTokenizer(
+    val locale: ULocale,
+    val predictor: (token: TokenModel) -> Boolean = { true },
+) : Tokenizer {
     val normalizer = Normalizer2.getInstance(null, "nfkc", Normalizer2.Mode.COMPOSE)
 
     private fun normalize(input: String): String {
@@ -29,8 +32,9 @@ class IcuTokenizer(val locale: ULocale, val ignoreList: List<String>) : Tokenize
 
             val word = normalizedInput.substring(start, end)
 
-            if (word.isNotBlank() && !ignoreList.contains(word)) {
-                tokenList.add(TokenModel(word, start, end))
+            val tokenModel = TokenModel(word, start, end)
+            if (word.isNotBlank() && predictor(tokenModel)) {
+                tokenList.add(tokenModel)
             }
 
             start = end

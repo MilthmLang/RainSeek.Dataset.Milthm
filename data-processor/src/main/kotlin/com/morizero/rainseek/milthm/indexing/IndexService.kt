@@ -22,9 +22,20 @@ class IndexService(
         return tokens
     }
 
+    fun addDocument(documentId: String, content: List<String>) {
+        val sb = StringBuilder(64)
+        for (item in content) {
+            sb.append(item).append("\n")
+        }
+        addDocument(documentId, sb.toString())
+    }
+
     fun addDocument(documentId: String, content: String) {
         val tokens = tokenize(content)
+        linkDocumentToToken(documentId, tokens)
+    }
 
+    private fun linkDocumentToToken(documentId: String, tokens: List<TokenModel>) {
         for (token in tokens) {
             val tokenEntity = repository.run {
                 findTokenByContent(indexName, token.value) ?: addToken(indexName, token.value)
@@ -32,11 +43,7 @@ class IndexService(
 
             try {
                 repository.addTokenDocument(
-                    indexName,
-                    tokenEntity.id,
-                    documentId,
-                    token.startPosition,
-                    token.endPosition
+                    indexName, tokenEntity.id, documentId, token.startPosition, token.endPosition
                 )
             } catch (e: org.sqlite.SQLiteException) {
                 if (e.resultCode.code == 2067) {

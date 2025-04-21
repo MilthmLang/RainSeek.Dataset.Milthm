@@ -82,7 +82,7 @@ data class ProcessedDocument(
      * indexing: delimiter
      * boosting: 2
      *
-     * indexing: ngram
+     * indexing: ngram(3)
      * boosting: 1
      *
      * indexing: segments
