@@ -83,16 +83,22 @@ open class DataProcessTask : DefaultTask() {
 
         val delimitersList =
             listOf(" ", "#", "~", "-", "(", ")", "?", ".", "\"", "!", ",", "\r", "\n", "+", ".", "_", "†", "・")
-        val delimitersTokenizer = BasicTokenizer(
+        val basicDelimitersTokenizer = BasicTokenizer(
             delimiters = delimitersList,
             predictor = fun(tokenModel: TokenModel): Boolean {
                 return tokenModel.value.length >= 3
             },
         )
+        val nameDelimitersTokenizer = BasicTokenizer(
+            delimiters = delimitersList,
+            predictor = fun(tokenModel: TokenModel): Boolean {
+                return tokenModel.value.isNotEmpty()
+            },
+        )
 
         val titleDelimiterIndexing = IndexService(
             repository = shadowRepository, tokenizers = listOf(
-                delimitersTokenizer
+                nameDelimitersTokenizer
             ), indexName = "title_delimiter"
         )
 
@@ -109,43 +115,43 @@ open class DataProcessTask : DefaultTask() {
 
         val artistDelimiterIndexing = IndexService(
             repository = shadowRepository, tokenizers = listOf(
-                delimitersTokenizer
+                nameDelimitersTokenizer
             ), indexName = "artist_delimiter"
         )
 
         val artistsListDelimiterIndexing = IndexService(
             repository = shadowRepository, tokenizers = listOf(
-                delimitersTokenizer
+                nameDelimitersTokenizer
             ), indexName = "artists_list_delimiter"
         )
 
         val illustratorDelimiterIndexing = IndexService(
             repository = shadowRepository, tokenizers = listOf(
-                delimitersTokenizer
+                nameDelimitersTokenizer
             ), indexName = "illustrator_delimiter"
         )
 
         val illustratorsListDelimiterIndexing = IndexService(
             repository = shadowRepository, tokenizers = listOf(
-                delimitersTokenizer
+                nameDelimitersTokenizer
             ), indexName = "illustrators_list_delimiter"
         )
 
         val charterDelimiterIndexing = IndexService(
             repository = shadowRepository, tokenizers = listOf(
-                delimitersTokenizer
+                nameDelimitersTokenizer
             ), indexName = "charter_delimiter"
         )
 
         val chartersListDelimiterIndexing = IndexService(
             repository = shadowRepository, tokenizers = listOf(
-                delimitersTokenizer
+                nameDelimitersTokenizer
             ), indexName = "charters_list_delimiter"
         )
 
         val tagsDelimiterIndexing = IndexService(
             repository = shadowRepository, tokenizers = listOf(
-                delimitersTokenizer,
+                basicDelimitersTokenizer,
                 LineTokenizer(),
             ), indexName = "tags_delimiter"
         )
