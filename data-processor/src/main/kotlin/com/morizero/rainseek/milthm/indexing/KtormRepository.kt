@@ -1,9 +1,6 @@
 package com.morizero.rainseek.milthm.indexing
 
-import com.morizero.rainseek.milthm.entity.TokenEntity
-import com.morizero.rainseek.milthm.entity.TokensTable
-import com.morizero.rainseek.milthm.entity.DocumentTokenEntity
-import com.morizero.rainseek.milthm.entity.DocumentsTokensTable
+import com.morizero.rainseek.milthm.entity.*
 import org.ktorm.database.Database
 import org.ktorm.dsl.and
 import org.ktorm.dsl.eq
@@ -33,6 +30,16 @@ class KtormRepository(val db: Database, val indexName: String) : IndexRepository
             );
         """.trimIndent()
 
+    val createMigrationTable: String = """
+            CREATE TABLE IF NOT EXISTS migrations (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                key TEXT UNIQUE NOT NULL,
+                value TEXT NOT NULL,
+                created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+                updated_at DATETIME DEFAULT CURRENT_TIMESTAMP
+            );
+        """.trimIndent()
+
     private fun tokensTable(): TokensTable {
         return TokenEntity.Companion.generateTable(tokenEntityTableName)
     }
@@ -44,8 +51,27 @@ class KtormRepository(val db: Database, val indexName: String) : IndexRepository
     init {
         db.useConnection {
             it.createStatement().use { stmt ->
-                stmt.execute(createTokenEntityTable);
-                stmt.execute(createDocumentsTokensEntityTable);
+                stmt.execute(createMigrationTable)
+            }
+        }
+
+        val versionRecord = db.sequenceOf(MigrationsTable).firstOrNull { it.key eq "version" }
+        if (versionRecord == null) {
+            val versionRecordToInsert = MigrationEntity().apply {
+                key = "version"
+                value = "1"
+            }
+            db.sequenceOf(MigrationsTable).add(versionRecordToInsert)
+        } else {
+            if (versionRecord.value.toInt() > 1) {
+                throw IllegalArgumentException("database downgrade is not allowed")
+            }
+        }
+
+        db.useConnection {
+            it.createStatement().use { stmt ->
+                stmt.execute(createTokenEntityTable)
+                stmt.execute(createDocumentsTokensEntityTable)
             }
         }
     }

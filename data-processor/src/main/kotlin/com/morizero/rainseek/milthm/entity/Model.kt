@@ -2,6 +2,7 @@ package com.morizero.rainseek.milthm.entity
 
 import org.ktorm.entity.Entity
 import org.ktorm.schema.Table
+import org.ktorm.schema.datetime
 import org.ktorm.schema.int
 import org.ktorm.schema.long
 import org.ktorm.schema.varchar
@@ -42,4 +43,21 @@ class DocumentsTokensTable(tableName: String) : Table<DocumentTokenEntity>(table
     val documentId = varchar("document_id").bindTo { it.documentId }
     val startPosition = int("start_position").bindTo { it.startPosition }
     val endPosition = int("end_position").bindTo { it.endPosition }
+}
+
+interface MigrationEntity : Entity<MigrationEntity> {
+    companion object : Entity.Factory<MigrationEntity>()
+    val id: Int
+    var key: String
+    var value: String
+    var createdAt: java.time.LocalDateTime
+    var updatedAt: java.time.LocalDateTime
+}
+
+object MigrationsTable : Table<MigrationEntity>("migrations") {
+    val id = int("id").primaryKey().bindTo { it.id }
+    val key = varchar("key").bindTo { it.key }
+    val value = varchar("value").bindTo { it.value }
+    val createdAt = datetime("created_at").bindTo { it.createdAt }
+    val updatedAt = datetime("updated_at").bindTo { it.updatedAt }
 }
