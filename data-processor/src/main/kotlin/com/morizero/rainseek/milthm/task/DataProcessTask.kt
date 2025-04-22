@@ -49,10 +49,10 @@ open class DataProcessTask : DefaultTask() {
         val outputDir = buildDir.resolve("output")
         outputDir.mkdirs()
 
-        File(outputDir, "packed-document.json").also { jsonOutputFile ->
+        File(outputDir, "packed_document.json").also { jsonOutputFile ->
             jsonMapper.writeValue(jsonOutputFile, processedDocumentList)
         }
-        File(outputDir, "unpacked-document").also { dir ->
+        File(outputDir, "unpacked_document").also { dir ->
             dir.mkdirs()
             processedDocumentList.forEach { document ->
                 val file = File(dir, "${document.fileName}.yaml")
@@ -67,7 +67,7 @@ open class DataProcessTask : DefaultTask() {
         val outputDir = buildDir.resolve("output")
         outputDir.mkdirs()
 
-        val dbFile = File(outputDir, "document-index.db")
+        val dbFile = File(outputDir, "chart_documents_indexing.db")
         if (dbFile.exists()) {
             dbFile.delete()
         }
@@ -82,7 +82,7 @@ open class DataProcessTask : DefaultTask() {
         val shadowRepository = ShadowRepository(repositoryFactory)
 
         val delimitersList =
-            listOf(" ", "#", "~", "-", "(", ")", "?", ".", "\"", "!", ",", "\r", "\n", "+", ".", "_", "†", "・", "/")
+            listOf(" ", "#", "~", "-", "(", ")", "?", ".", "\"", "!", ",", "\r", "\n", "\r", "+", ".", "_", "†", "・", "/")
         val basicDelimitersTokenizer = BasicTokenizer(
             delimiters = delimitersList,
             predictor = fun(tokenModel: TokenModel): Boolean {
