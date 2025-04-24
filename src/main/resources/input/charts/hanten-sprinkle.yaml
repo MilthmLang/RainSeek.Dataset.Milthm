@@ -1,0 +1,17 @@
+---
+id: "97573233-f735-4432-ad7c-745367c11ffc"
+illustration:
+  - "illustration_hanten"
+illustrationSquare: [ ]
+bpmInfo:
+  - start: 0.0
+    bpm: 96.0
+songId: "song_hanten"
+difficulty: "Sprinkle"
+difficultyValue: 0.0
+charter: "Akko"
+chartersRef:
+  - "people_akko"
+chartId: "chart_97573233f7354432ad7c745367c11ffc"
+tags:
+  - "electrode_core"

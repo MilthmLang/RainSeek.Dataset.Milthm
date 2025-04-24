@@ -1,0 +1,17 @@
+---
+id: "5d4a26e7-8810-4a97-87b8-26dd3876463f"
+illustration:
+  - "illustration_virtual_s0da"
+illustrationSquare: [ ]
+bpmInfo:
+  - start: -0.5
+    bpm: 150.0
+songId: "song_virtual_s0da"
+difficulty: "Sprinkle"
+difficultyValue: 0.0
+charter: "Magazet"
+chartersRef:
+  - "people_magazet"
+chartId: "chart_5d4a26e788104a9787b826dd3876463f"
+tags:
+  - "electrode_core"

@@ -1,0 +1,10 @@
+---
+id: "song_hanten"
+title: "はんてん"
+titleCulture: "14000000"
+latinTitle: "Hanten"
+artistsRef:
+  - "people_me_dd"
+artist: "ME_DD"
+tags:
+  - "electrode_core"

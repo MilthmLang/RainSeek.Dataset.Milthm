@@ -1,0 +1,17 @@
+---
+id: "e9789bd9-bc33-412c-a1c9-d00ded16b324"
+illustration:
+  - "illustration_virtual_s0da"
+illustrationSquare: [ ]
+bpmInfo:
+  - start: -0.5
+    bpm: 150.0
+songId: "song_virtual_s0da"
+difficulty: "Drizzle"
+difficultyValue: 0.0
+charter: "Magazet"
+chartersRef:
+  - "people_magazet"
+chartId: "chart_e9789bd9bc33412ca1c9d00ded16b324"
+tags:
+  - "electrode_core"

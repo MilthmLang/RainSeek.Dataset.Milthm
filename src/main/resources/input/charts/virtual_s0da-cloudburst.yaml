@@ -1,0 +1,17 @@
+---
+id: "e9ae00a5-355c-45ff-b099-91cd5455193c"
+illustration:
+  - "illustration_virtual_s0da"
+illustrationSquare: [ ]
+bpmInfo:
+  - start: -0.5
+    bpm: 150.0
+songId: "song_virtual_s0da"
+difficulty: "Cloudburst"
+difficultyValue: 0.0
+charter: "🐍Ursulina💧"
+chartersRef:
+  - "people_ursulina"
+chartId: "chart_e9ae00a5355c45ffb09991cd5455193c"
+tags:
+  - "electrode_core"

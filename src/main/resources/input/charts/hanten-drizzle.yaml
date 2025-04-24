@@ -1,0 +1,17 @@
+---
+id: "738d7d56-9716-4cf1-8bb4-a54e31c6df61"
+illustration:
+  - "illustration_hanten"
+illustrationSquare: [ ]
+bpmInfo:
+  - start: 0.0
+    bpm: 96.0
+songId: "song_hanten"
+difficulty: "Drizzle"
+difficultyValue: 0.0
+charter: "Akko"
+chartersRef:
+  - "people_akko"
+chartId: "chart_738d7d5697164cf18bb4a54e31c6df61"
+tags:
+  - "electrode_core"

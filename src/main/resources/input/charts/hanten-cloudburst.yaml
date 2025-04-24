@@ -1,0 +1,17 @@
+---
+id: "cdb92390-bb3e-4ec7-bfbd-764c57345058"
+illustration:
+  - "illustration_hanten"
+illustrationSquare: [ ]
+bpmInfo:
+  - start: 0.0
+    bpm: 96.0
+songId: "song_hanten"
+difficulty: "Cloudburst"
+difficultyValue: 0.0
+charter: "papa but left for 8 months"
+chartersRef:
+  - "people_papa"
+chartId: "chart_cdb92390bb3e4ec7bfbd764c57345058"
+tags:
+  - "electrode_core"

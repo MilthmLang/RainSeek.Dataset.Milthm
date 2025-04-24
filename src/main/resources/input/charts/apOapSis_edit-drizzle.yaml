@@ -1,0 +1,17 @@
+---
+id: "433e8313-04b8-4abc-aaf0-d4d102bb7f24"
+illustration:
+  - "song_apoapsis_edit"
+illustrationSquare: [ ]
+bpmInfo:
+  - start: 0.0
+    bpm: 180.0
+songId: "song_apoapsis_edit"
+difficulty: "Drizzle"
+difficultyValue: 0.0
+charter: "Ariayaka"
+chartersRef:
+  - "people_ariayaka"
+chartId: "chart_433e831304b84abcaaf0d4d102bb7f24"
+tags:
+  - "electrode_core"

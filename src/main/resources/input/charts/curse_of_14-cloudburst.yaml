@@ -1,0 +1,17 @@
+---
+id: "5f5490a8-f2e2-4ab6-9800-1db6f3eed344"
+illustration:
+  - "illustration_curse_of_14"
+illustrationSquare: [ ]
+bpmInfo:
+  - start: -0.02
+    bpm: 170.0
+songId: "song_curse_of_14"
+difficulty: "Cloudburst"
+difficultyValue: 0.0
+charter: "Curse of stars"
+chartersRef:
+  - "people_dianzhuixingkong"
+chartId: "chart_5f5490a8f2e24ab698001db6f3eed344"
+tags:
+  - "electrode_core"
