@@ -81,8 +81,12 @@ open class DataProcessTask : DefaultTask() {
         val repositoryFactory = RepositoryFactory() { indexName -> KtormRepository(database, indexName) }
         val shadowRepository = ShadowRepository(repositoryFactory)
 
-        val delimitersList =
-            listOf(" ", "#", "~", "-", "(", ")", "?", ".", "\"", "!", ",", "\r", "\n", "\r", "+", ".", "_", "†", "・", "/")
+        val delimitersList = listOf(
+            " ", "#", "~", "-", "(", ")", "?", ".",
+            "!", ",", "+", ".", "_", "†", "/",
+            "\"", "\r", "\n",
+            "（", "）", "・",
+        )
         val basicDelimitersTokenizer = BasicTokenizer(
             delimiters = delimitersList,
             predictor = fun(tokenModel: TokenModel): Boolean {
