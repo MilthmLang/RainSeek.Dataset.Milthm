@@ -105,6 +105,13 @@ open class DataProcessTask : DefaultTask() {
                 nameDelimitersTokenizer
             ), indexName = "title_delimiter"
         )
+        val title3GramIndexing = IndexService(
+            repository = shadowRepository, tokenizers = listOf(
+                NGramTokenizer(3, delimiters = delimitersList),
+                NGramTokenizer(2, delimiters = delimitersList),
+                NGramTokenizer(1, delimiters = delimitersList),
+            ), indexName = "title_ngram3"
+        )
 
         val latinTitleIndexing = IndexService(
             repository = shadowRepository, tokenizers = listOf(
@@ -115,6 +122,13 @@ open class DataProcessTask : DefaultTask() {
                     },
                 )
             ), indexName = "latin_title_segments"
+        )
+        val latinTitle3GramIndexing = IndexService(
+            repository = shadowRepository, tokenizers = listOf(
+                NGramTokenizer(3, delimiters = delimitersList),
+                NGramTokenizer(2, delimiters = delimitersList),
+                NGramTokenizer(1, delimiters = delimitersList),
+            ), indexName = "latin_title_ngram3"
         )
 
         val artistDelimiterIndexing = IndexService(
@@ -175,6 +189,7 @@ open class DataProcessTask : DefaultTask() {
 
         processedDocumentList.forEach { document ->
             titleDelimiterIndexing.addDocument(document.id, document.title)
+            title3GramIndexing.addDocument(document.id, document.title)
             document.titleCulture.split(":").forEach { culture ->
                 val titleSegmentIndexing = IndexService(
                     repository = shadowRepository, tokenizers = listOf(
@@ -190,6 +205,7 @@ open class DataProcessTask : DefaultTask() {
             }
 
             latinTitleIndexing.addDocument(document.id, document.latinTitle)
+            latinTitle3GramIndexing.addDocument(document.id, document.latinTitle)
 
             artistDelimiterIndexing.addDocument(document.id, listOf(document.artist))
             artistsListDelimiterIndexing.addDocument(document.id, document.artistsList)
