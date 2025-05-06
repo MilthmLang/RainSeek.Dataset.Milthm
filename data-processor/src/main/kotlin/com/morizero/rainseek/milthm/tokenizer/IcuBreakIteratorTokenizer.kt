@@ -6,9 +6,10 @@ import com.ibm.icu.text.Normalizer2
 import com.ibm.icu.util.ULocale
 import com.morizero.rainseek.milthm.model.TokenModel
 
-class IcuTokenizer(
+class IcuBreakIteratorTokenizer(
     val locale: ULocale,
     val predictor: (token: TokenModel) -> Boolean = { true },
+    val mode: BreakIteratorMode = BreakIteratorMode.WORD,
 ) : Tokenizer {
     val normalizer = Normalizer2.getInstance(null, "nfkc", Normalizer2.Mode.COMPOSE)
 
@@ -20,7 +21,7 @@ class IcuTokenizer(
     override fun tokenize(input: String): List<TokenModel> {
         val normalizedInput = normalize(input)
 
-        val wordIterator = BreakIterator.getWordInstance(locale)
+        val wordIterator = mode(locale)
         wordIterator.setText(normalizedInput)
 
         val tokenList = mutableListOf<TokenModel>()

@@ -1,5 +1,6 @@
 package com.morizero.rainseek.milthm.task
 
+import com.ibm.icu.text.Normalizer2
 import com.ibm.icu.util.ULocale
 import com.morizero.rainseek.milthm.indexing.IndexService
 import com.morizero.rainseek.milthm.indexing.KtormRepository
@@ -7,7 +8,7 @@ import com.morizero.rainseek.milthm.indexing.RepositoryFactory
 import com.morizero.rainseek.milthm.indexing.ShadowRepository
 import com.morizero.rainseek.milthm.model.*
 import com.morizero.rainseek.milthm.tokenizer.BasicTokenizer
-import com.morizero.rainseek.milthm.tokenizer.IcuTokenizer
+import com.morizero.rainseek.milthm.tokenizer.IcuBreakIteratorTokenizer
 import com.morizero.rainseek.milthm.tokenizer.LineTokenizer
 import com.morizero.rainseek.milthm.tokenizer.NGramTokenizer
 import com.morizero.rainseek.milthm.utils.MapIdObject
@@ -115,7 +116,7 @@ open class DataProcessTask : DefaultTask() {
 
         val latinTitleIndexing = IndexService(
             repository = shadowRepository, tokenizers = listOf(
-                IcuTokenizer(
+                IcuBreakIteratorTokenizer(
                     locale = ULocale.ENGLISH,
                     predictor = fun(tokenModel: TokenModel): Boolean {
                         return !delimitersList.contains(tokenModel.value)
@@ -180,7 +181,7 @@ open class DataProcessTask : DefaultTask() {
         )
         val tagsSegmentsIndexing = IndexService(
             repository = shadowRepository, tokenizers = listOf(
-                IcuTokenizer(
+                IcuBreakIteratorTokenizer(
                     locale = ULocale.CHINA, predictor = fun(tokenModel: TokenModel): Boolean {
                         return !delimitersList.contains(tokenModel.value)
                     })
@@ -193,7 +194,7 @@ open class DataProcessTask : DefaultTask() {
             document.titleCulture.split(":").forEach { culture ->
                 val titleSegmentIndexing = IndexService(
                     repository = shadowRepository, tokenizers = listOf(
-                        IcuTokenizer(
+                        IcuBreakIteratorTokenizer(
                             locale = ULocale.forLanguageTag(culture),
                             predictor = fun(tokenModel: TokenModel): Boolean {
                                 return !delimitersList.contains(tokenModel.value)
