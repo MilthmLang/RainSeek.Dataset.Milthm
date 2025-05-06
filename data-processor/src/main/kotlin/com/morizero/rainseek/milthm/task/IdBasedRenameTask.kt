@@ -21,7 +21,7 @@ open class IdBasedRenameTask @Inject constructor(
     val resourceDirPath = File("${project.rootDir}/src/main/resources/input")
 
     @Internal
-    val chartsDirPath: Array<out File> = resourceDirPath.resolve(subDir).listFiles() ?: emptyArray()
+    val files: Array<out File> = resourceDirPath.resolve(subDir).listFiles() ?: emptyArray()
 
     @Internal
     val yamlMapper = YAMLMapper().registerKotlinModule()
@@ -34,7 +34,7 @@ open class IdBasedRenameTask @Inject constructor(
         val idRegex = Regex("${idPrefix}[0-9a-fA-F]{32}")
 
         var p = false
-        for (file in chartsDirPath) {
+        for (file in files) {
             val idModel = yamlMapper.readValue(file, IdModel::class.java)
             val id = idModel.id
             if (idRegex.matches(id)) {

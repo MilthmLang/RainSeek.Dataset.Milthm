@@ -16,13 +16,13 @@ open class ChartRenameTask : DefaultTask() {
     val resourceDirPath = File("${project.rootDir}/src/main/resources/input")
 
     @Internal
-    val chartsDirPath: Array<out File> = resourceDirPath.resolve("charts").listFiles() ?: emptyArray()
+    val files: Array<out File> = resourceDirPath.resolve("charts").listFiles() ?: emptyArray()
 
     @TaskAction
     fun execute() {
         val songIdRegex = Regex("song_[0-9a-fA-F]{32}")
         var p = false
-        for (file in chartsDirPath) {
+        for (file in files) {
             try {
                 val chart = yamlMapper.readValue(file, Chart::class.java)
                 val songId = chart.songId
