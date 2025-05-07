@@ -3,7 +3,7 @@ package com.morizero.rainseek.milthm.utils
 import com.morizero.rainseek.milthm.model.IdInterface
 import java.util.concurrent.ConcurrentHashMap
 
-class MapIdObject<V> : MutableMap<String, V> where V : IdInterface {
+class MapIdObject<V>(val idPrefix: String = "") : MutableMap<String, V> where V : IdInterface {
     val underlayMap: ConcurrentHashMap<String, V> = ConcurrentHashMap()
     val accessedFlag: ConcurrentHashMap<String, Boolean> = ConcurrentHashMap()
 
@@ -40,6 +40,9 @@ class MapIdObject<V> : MutableMap<String, V> where V : IdInterface {
     }
 
     override fun put(key: String, value: V): V? {
+        if (!key.startsWith(idPrefix)) {
+            throw IllegalStateException("key prefix not start with $idPrefix, key: '$key'")
+        }
         if (accessedFlag.containsKey(key)) {
             throw IllegalStateException("Duplicate key '$key'")
         }

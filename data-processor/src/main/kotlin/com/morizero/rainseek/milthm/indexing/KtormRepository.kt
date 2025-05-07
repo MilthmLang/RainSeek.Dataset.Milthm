@@ -5,6 +5,7 @@ import org.ktorm.database.Database
 import org.ktorm.dsl.and
 import org.ktorm.dsl.eq
 import org.ktorm.entity.*
+import java.time.LocalDateTime
 
 class KtormRepository(val db: Database, val indexName: String) : IndexRepository {
     val tokenEntityTableName = "${indexName}_tokens"
@@ -57,9 +58,12 @@ class KtormRepository(val db: Database, val indexName: String) : IndexRepository
 
         val versionRecord = db.sequenceOf(MigrationsTable).firstOrNull { it.key eq "version" }
         if (versionRecord == null) {
+            val now = LocalDateTime.now()
             val versionRecordToInsert = MigrationEntity().apply {
                 key = "version"
                 value = "1"
+                createdAt = now
+                updatedAt = now
             }
             db.sequenceOf(MigrationsTable).add(versionRecordToInsert)
         } else {

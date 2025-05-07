@@ -1,6 +1,5 @@
 package com.morizero.rainseek.milthm.task
 
-import com.ibm.icu.text.Normalizer2
 import com.ibm.icu.util.ULocale
 import com.morizero.rainseek.milthm.indexing.IndexService
 import com.morizero.rainseek.milthm.indexing.KtormRepository
@@ -25,13 +24,13 @@ open class DataProcessTask : DefaultTask() {
     var chartMap: MapIdObject<Chart> = MapIdObject()
 
     @Internal
-    var illustrationMap: MapIdObject<Illustration> = MapIdObject()
+    var illustrationMap: MapIdObject<Illustration> = MapIdObject("illustration")
 
     @Internal
-    var peopleMap: MapIdObject<People> = MapIdObject()
+    var peopleMap: MapIdObject<People> = MapIdObject("people")
 
     @Internal
-    var songsMap: MapIdObject<Song> = MapIdObject()
+    var songsMap: MapIdObject<Song> = MapIdObject("song")
 
     @Internal
     var processedDocumentList: MutableList<ProcessedDocument> = mutableListOf()
@@ -83,10 +82,17 @@ open class DataProcessTask : DefaultTask() {
         val shadowRepository = ShadowRepository(repositoryFactory)
 
         val delimitersList = listOf(
-            " ", "#", "~", "-", "(", ")", "?", ".",
+            "#", "~", "-", "(", ")", "?", ".",
             "!", ",", "+", ".", "_", "†", "/",
             "\"", "\r", "\n",
             "（", "）", "・",
+
+            "\u0020", "\u00A0",
+            "\u1680",
+            "\u2000", "\u2001", "\u2002", "\u2003",
+            "\u2004", "\u2005", "\u2006", "\u2007",
+            "\u2008", "\u2009", "\u200A",
+            "\u202F", "\u205F", "\u3000",
         )
         val basicDelimitersTokenizer = BasicTokenizer(
             delimiters = delimitersList,
@@ -171,7 +177,7 @@ open class DataProcessTask : DefaultTask() {
         val tagsDelimiterIndexing = IndexService(
             repository = shadowRepository, tokenizers = listOf(
                 basicDelimitersTokenizer,
-                LineTokenizer(),
+                LineTokenizer(delimitersList),
             ), indexName = "tags_delimiter"
         )
         val tagsNgram3Indexing = IndexService(
