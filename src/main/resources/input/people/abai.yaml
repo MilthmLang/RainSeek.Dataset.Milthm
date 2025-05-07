@@ -2,4 +2,5 @@
 id: "people_abai"
 name: "阿白"
 description: ""
-tags: [ ]
+tags:
+  - a bai

@@ -2,4 +2,5 @@
 id: "people_ayu"
 name: "阿鱼"
 description: ""
-tags: [ ]
+tags:
+  - a yu

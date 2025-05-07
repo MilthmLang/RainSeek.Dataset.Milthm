@@ -1,0 +1,18 @@
+---
+id: "a7c0b912-6917-4ea6-bb95-737a3602b439"
+illustration:
+  - "illustration_fantasia_sonata_arcadia"
+illustrationSquare: [ ]
+bpmInfo:
+  - start: 0.302746
+    bpm: 197.0
+songId: "song_fantasia_sonata_arcadia"
+difficulty: "Sprinkle"
+difficultyValue: 0.0
+charter: "Akko feat. Kiyotsuki"
+chartersRef:
+  - "people_akko"
+  - "people_kiyotsuki"
+chartId: "chart_a7c0b91269174ea6bb95737a3602b439"
+tags:
+  - "chapter1"

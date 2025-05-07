@@ -2,4 +2,5 @@
 id: "people_bingguo"
 name: "冰果"
 description: ""
-tags: [ ]
+tags:
+  - bing guo

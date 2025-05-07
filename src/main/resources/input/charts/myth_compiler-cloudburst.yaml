@@ -1,0 +1,31 @@
+---
+id: "91d0766a-dfa5-4bbd-8810-510bf3e88d0f"
+illustration:
+  - "illustration_myth_compiler"
+illustrationSquare: [ ]
+bpmInfo:
+  - start: 2.987
+    bpm: 160.0
+  - start: 11.987
+    bpm: 140.0
+  - start: 13.701
+    bpm: 110.0
+  - start: 15.889
+    bpm: 170.0
+  - start: 151.419
+    bpm: 148.0
+  - start: 153.042
+    bpm: 152.0
+  - start: 154.621
+    bpm: 119.0
+  - start: 156.638
+    bpm: 113.0
+songId: "song_myth_compiler"
+difficulty: "Cloudburst"
+difficultyValue: 0.0
+charter: "点缀星空"
+chartersRef:
+  - "people_dianzhuixingkong"
+chartId: "chart_91d0766adfa54bbd8810510bf3e88d0f"
+tags:
+  - "chapter1"

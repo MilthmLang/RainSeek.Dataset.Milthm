@@ -1,0 +1,18 @@
+---
+id: "bdf5a455-8eda-431a-87db-96f1a6002fda"
+illustration:
+  - "illustration_fantasia_sonata_arcadia"
+illustrationSquare: [ ]
+bpmInfo:
+  - start: 0.302746
+    bpm: 197.0
+songId: "song_fantasia_sonata_arcadia"
+difficulty: "Cloudburst"
+difficultyValue: 0.0
+charter: "Akko & Kiyotsuki"
+chartersRef:
+  - "people_akko"
+  - "people_kiyotsuki"
+chartId: "chart_bdf5a4558eda431a87db96f1a6002fda"
+tags:
+  - "chapter1"

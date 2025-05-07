@@ -1,0 +1,31 @@
+---
+id: "78e7fa00-8388-4385-94dd-323348d154e3"
+illustration:
+  - "illustration_myth_compiler"
+illustrationSquare: [ ]
+bpmInfo:
+  - start: 2.987
+    bpm: 160.0
+  - start: 11.987
+    bpm: 140.0
+  - start: 13.701
+    bpm: 110.0
+  - start: 15.889
+    bpm: 170.0
+  - start: 151.419
+    bpm: 148.0
+  - start: 153.042
+    bpm: 152.0
+  - start: 154.621
+    bpm: 119.0
+  - start: 156.638
+    bpm: 113.0
+songId: "song_myth_compiler"
+difficulty: "Drizzle"
+difficultyValue: 0.0
+charter: "Ariayaka"
+chartersRef:
+  - "people_ariayaka"
+chartId: "chart_78e7fa008388438594dd323348d154e3"
+tags:
+  - "chapter1"

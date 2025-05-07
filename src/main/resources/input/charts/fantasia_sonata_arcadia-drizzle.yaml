@@ -1,0 +1,18 @@
+---
+id: "be50c0a8-f5e4-4c69-a742-3b1bba502282"
+illustration:
+  - "illustration_fantasia_sonata_arcadia"
+illustrationSquare: [ ]
+bpmInfo:
+  - start: 0.302746
+    bpm: 197.0
+songId: "song_fantasia_sonata_arcadia"
+difficulty: "Drizzle"
+difficultyValue: 0.0
+charter: "Akko feat. Kiyotsuki"
+chartersRef:
+  - "people_akko"
+  - "people_kiyotsuki"
+chartId: "chart_be50c0a8f5e44c69a7423b1bba502282"
+tags:
+  - "chapter1"

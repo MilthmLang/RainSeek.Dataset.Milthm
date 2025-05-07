@@ -1,0 +1,20 @@
+---
+id: "414bb92f-a8fa-4566-8f46-b50a610476fb"
+illustration:
+  - "illustration_brightened_demonios"
+illustrationSquare: [ ]
+bpmInfo:
+  - start: 0.004
+    bpm: 177.0
+songId: "song_brightened_demonios"
+difficulty: "Cloudburst"
+difficultyValue: 0.0
+charter: "Kiyotsuki feat. Akko&Eric feat. Matrix"
+chartersRef:
+  - "people_kiyotsuki"
+  - "people_akko"
+  - "people_eric_lian"
+  - "people_shuxuezhu"
+chartId: "chart_414bb92fa8fa45668f46b50a610476fb"
+tags:
+  - "chapter1"

@@ -1,0 +1,17 @@
+---
+id: "1cd56e36-83a7-49e4-a410-b2cef5339d72"
+illustration:
+  - "illustration_louder"
+illustrationSquare: [ ]
+bpmInfo:
+  - start: 0.0
+    bpm: 126.0
+songId: "song_louder"
+difficulty: "Drizzle"
+difficultyValue: 0.0
+charter: "Kiyotsuki"
+chartersRef:
+  - "people_kiyotsuki"
+chartId: "chart_1cd56e3683a749e4a410b2cef5339d72"
+tags:
+  - "prolog"

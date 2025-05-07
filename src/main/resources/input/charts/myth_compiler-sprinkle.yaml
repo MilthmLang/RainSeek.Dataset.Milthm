@@ -1,0 +1,31 @@
+---
+id: "c574dfcd-5471-4f67-8779-614f06ae55bf"
+illustration:
+  - "illustration_myth_compiler"
+illustrationSquare: [ ]
+bpmInfo:
+  - start: 2.987
+    bpm: 160.0
+  - start: 11.987
+    bpm: 140.0
+  - start: 13.701
+    bpm: 110.0
+  - start: 15.889
+    bpm: 170.0
+  - start: 151.419
+    bpm: 148.0
+  - start: 153.042
+    bpm: 152.0
+  - start: 154.621
+    bpm: 119.0
+  - start: 156.638
+    bpm: 113.0
+songId: "song_myth_compiler"
+difficulty: "Sprinkle"
+difficultyValue: 0.0
+charter: "Ariayaka"
+chartersRef:
+  - "people_ariayaka"
+chartId: "chart_c574dfcd54714f678779614f06ae55bf"
+tags:
+  - "chapter1"
