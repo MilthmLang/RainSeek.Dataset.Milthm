@@ -1,0 +1,18 @@
+---
+id: "575ea000-3a9e-4c68-b20e-73a16b4f044d"
+illustration:
+  - "illustration_apoapsis_edit"
+illustrationSquare: [ ]
+bpmInfo:
+  - start: -0.007
+    bpm: 180.0
+songId: "song_apoapsis_edit"
+difficulty: "Cloudburst"
+difficultyValue: 0.0
+charter: "Akko feat. xzadudu179"
+chartersRef:
+  - "people_akko"
+  - "people_xzadudu179"
+chartId: "chart_575ea0003a9e4c68b20e73a16b4f044d"
+tags:
+  - "electrode_core"
