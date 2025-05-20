@@ -181,29 +181,19 @@ open class DataProcessTask : DefaultTask() {
                 NGramTokenizer(3, delimiters = delimitersList),
             ), indexName = "tags_ngram3"
         )
-        val tagsSegmentsIndexing = IndexService(
-            repository = shadowRepository, tokenizers = listOf(
-                MultiLanguageTokenizer(
-                    cultureListStr = ULocale.CHINA.name,
-                    predictor = fun(tokenModel: TokenModel): Boolean {
-                        return !delimitersList.contains(tokenModel.value)
-                    }
-                )
-            ), indexName = "tags_segments"
-        )
 
         processedDocumentList.forEach { document ->
+            val multiLanguageTokenizer = MultiLanguageTokenizer(
+                cultureListStr = document.titleCulture,
+                predictor = fun(tokenModel: TokenModel): Boolean {
+                    return !delimitersList.contains(tokenModel.value)
+                },
+            )
+
             titleDelimiterIndexing.addDocument(document.id, document.title)
             title3GramIndexing.addDocument(document.id, document.title)
             val titleSegmentIndexing = IndexService(
-                repository = shadowRepository, tokenizers = listOf(
-                    MultiLanguageTokenizer(
-                        cultureListStr = document.titleCulture,
-                        predictor = fun(tokenModel: TokenModel): Boolean {
-                            return !delimitersList.contains(tokenModel.value)
-                        },
-                    )
-                ), indexName = "title_segments"
+                repository = shadowRepository, tokenizers = listOf(multiLanguageTokenizer), indexName = "title_segments"
             )
             titleSegmentIndexing.addDocument(document.id, document.title)
 
@@ -221,6 +211,10 @@ open class DataProcessTask : DefaultTask() {
 
             tagsDelimiterIndexing.addDocument(document.id, document.tags)
             tagsNgram3Indexing.addDocument(document.id, document.tags)
+
+            val tagsSegmentsIndexing = IndexService(
+                repository = shadowRepository, tokenizers = listOf(multiLanguageTokenizer), indexName = "tags_segments"
+            )
             tagsSegmentsIndexing.addDocument(document.id, document.tags)
         }
     }

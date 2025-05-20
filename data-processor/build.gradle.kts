@@ -33,6 +33,8 @@ dependencies {
 
     api("com.github.houbb", "opencc4j", "1.13.1")
     api("com.github.houbb", "pinyin", "0.4.0")
+
+    api("org.apache.lucene","lucene-analyzers-kuromoji","8.11.4")
 }
 
 gradlePlugin {
