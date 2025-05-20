@@ -6,10 +6,7 @@ import com.morizero.rainseek.milthm.indexing.KtormRepository
 import com.morizero.rainseek.milthm.indexing.RepositoryFactory
 import com.morizero.rainseek.milthm.indexing.ShadowRepository
 import com.morizero.rainseek.milthm.model.*
-import com.morizero.rainseek.milthm.tokenizer.BasicTokenizer
-import com.morizero.rainseek.milthm.tokenizer.IcuBreakIteratorTokenizer
-import com.morizero.rainseek.milthm.tokenizer.LineTokenizer
-import com.morizero.rainseek.milthm.tokenizer.NGramTokenizer
+import com.morizero.rainseek.milthm.tokenizer.*
 import com.morizero.rainseek.milthm.utils.MapIdObject
 import com.morizero.rainseek.milthm.utils.jsonMapper
 import com.morizero.rainseek.milthm.utils.yamlMapper
@@ -59,7 +56,6 @@ open class DataProcessTask : DefaultTask() {
                 yamlMapper.writeValue(file, document)
             }
         }
-
     }
 
     private fun saveToSqlite() {
@@ -187,29 +183,29 @@ open class DataProcessTask : DefaultTask() {
         )
         val tagsSegmentsIndexing = IndexService(
             repository = shadowRepository, tokenizers = listOf(
-                IcuBreakIteratorTokenizer(
-                    locale = ULocale.CHINA, predictor = fun(tokenModel: TokenModel): Boolean {
+                MultiLanguageTokenizer(
+                    cultureListStr = ULocale.CHINA.name,
+                    predictor = fun(tokenModel: TokenModel): Boolean {
                         return !delimitersList.contains(tokenModel.value)
-                    })
+                    }
+                )
             ), indexName = "tags_segments"
         )
 
         processedDocumentList.forEach { document ->
             titleDelimiterIndexing.addDocument(document.id, document.title)
             title3GramIndexing.addDocument(document.id, document.title)
-            document.titleCulture.split(":").forEach { culture ->
-                val titleSegmentIndexing = IndexService(
-                    repository = shadowRepository, tokenizers = listOf(
-                        IcuBreakIteratorTokenizer(
-                            locale = ULocale.forLanguageTag(culture),
-                            predictor = fun(tokenModel: TokenModel): Boolean {
-                                return !delimitersList.contains(tokenModel.value)
-                            },
-                        )
-                    ), indexName = "title_segments"
-                )
-                titleSegmentIndexing.addDocument(document.id, document.title)
-            }
+            val titleSegmentIndexing = IndexService(
+                repository = shadowRepository, tokenizers = listOf(
+                    MultiLanguageTokenizer(
+                        cultureListStr = document.titleCulture,
+                        predictor = fun(tokenModel: TokenModel): Boolean {
+                            return !delimitersList.contains(tokenModel.value)
+                        },
+                    )
+                ), indexName = "title_segments"
+            )
+            titleSegmentIndexing.addDocument(document.id, document.title)
 
             latinTitleIndexing.addDocument(document.id, document.latinTitle)
             latinTitle3GramIndexing.addDocument(document.id, document.latinTitle)

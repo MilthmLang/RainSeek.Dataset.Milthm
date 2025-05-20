@@ -30,6 +30,9 @@ dependencies {
     api("org.ktorm", "ktorm-core", depVer.ktorm)
     api("org.ktorm", "ktorm-support-sqlite", depVer.ktorm)
     api("org.xerial", "sqlite-jdbc", "3.49.1.0")
+
+    api("com.github.houbb", "opencc4j", "1.13.1")
+    api("com.github.houbb", "pinyin", "0.4.0")
 }
 
 gradlePlugin {

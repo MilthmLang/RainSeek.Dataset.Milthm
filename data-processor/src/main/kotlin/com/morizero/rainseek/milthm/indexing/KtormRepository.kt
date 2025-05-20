@@ -61,13 +61,13 @@ class KtormRepository(val db: Database, val indexName: String) : IndexRepository
             val now = LocalDateTime.now()
             val versionRecordToInsert = MigrationEntity().apply {
                 key = "version"
-                value = "1"
+                value = "2"
                 createdAt = now
                 updatedAt = now
             }
             db.sequenceOf(MigrationsTable).add(versionRecordToInsert)
         } else {
-            if (versionRecord.value.toInt() > 1) {
+            if (versionRecord.value.toInt() > 2) {
                 throw IllegalArgumentException("database downgrade is not allowed")
             }
         }
