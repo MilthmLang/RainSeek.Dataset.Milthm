@@ -35,6 +35,12 @@ dependencies {
     api("com.github.houbb", "pinyin", "0.4.0")
 
     api("org.apache.lucene","lucene-analyzers-kuromoji","8.11.4")
+
+    api(platform("com.squareup.okhttp3:okhttp-bom:4.12.0"))
+    api("com.squareup.okhttp3:okhttp")
+    api("com.squareup.okhttp3:logging-interceptor")
+
+    api("org.apache.commons:commons-lang3:3.17.0")
 }
 
 gradlePlugin {

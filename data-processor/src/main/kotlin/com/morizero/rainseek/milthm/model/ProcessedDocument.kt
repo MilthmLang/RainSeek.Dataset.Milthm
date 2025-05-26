@@ -89,4 +89,23 @@ data class ProcessedDocument(
      * boosting: 1
      */
     var tags: List<String> = emptyList()
-) : IdInterface
+) : IdInterface {
+    companion object {
+        fun ProcessedDocument.fullDocument(): String {
+            return """${title}
+                |${latinTitle}
+                |
+                |$artist
+                |${artistsList.joinToString(" ")}
+                |
+                |$illustrator
+                |${illustratorsList.joinToString(" ")}
+                |
+                |$charter
+                |${chartersList.joinToString(" ")}
+                |
+                |${tags.joinToString(" ")}
+            """.trimMargin()
+        }
+    }
+}

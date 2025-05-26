@@ -18,3 +18,9 @@ fun RepositoryHandler.repo() {
     mavenCentral()
     maven { url = uri("https://plugins.gradle.org/m2/") }
 }
+
+tasks {
+    benchmark {
+        endPoint = System.getProperty("benchmark.endPoint") ?: throw Exception("No endpoint given")
+    }
+}
