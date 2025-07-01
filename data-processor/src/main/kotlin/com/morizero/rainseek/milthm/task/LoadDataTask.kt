@@ -39,10 +39,22 @@ open class LoadDataTask : DefaultTask() {
             val song = songsMap[chart.songId] ?: throw IllegalArgumentException("Unknown song ID: ${chart.songId}")
 
             var allTags = mutableSetOf<String>()
-            allTags.addAll(chart.tags)
-            song.let { allTags.addAll(it.tags) }
+            run {
+                allTags.addAll(chart.tags)
+                allTags.add(chart.charter)
+            }
+            song.let {
+                allTags.addAll(it.tags)
+                allTags.add(it.title)
+                allTags.add(it.latinTitle)
+                allTags.add(it.artist)
+            }
             chart.chartersRef.forEach { ref ->
-                peopleMap[ref]?.let { allTags.addAll(it.tags) }
+                peopleMap[ref]?.let {
+                    allTags.addAll(it.tags)
+                    allTags.add(it.name)
+                    allTags.add(it.description)
+                }
             }
 
             val landscapeIllustrations = chart.illustration.map { illustrationId ->
