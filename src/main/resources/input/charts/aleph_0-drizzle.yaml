@@ -1,0 +1,328 @@
+---
+id: "1dbe0fd0-e089-4a80-8ae4-620d093e9b71"
+illustration:
+  - "illustration_aleph_0"
+illustrationSquare: [ ]
+bpmInfo:
+  - start: 0.937
+    bpm: 250.0
+  - start: 26.856
+    bpm: 35.0
+  - start: 45.884
+    bpm: 250.0
+  - start: 47.084
+    bpm: 250.0
+  - start: 47.319
+    bpm: 251.0
+  - start: 47.558
+    bpm: 252.0
+  - start: 47.796
+    bpm: 253.0
+  - start: 48.033
+    bpm: 254.0
+  - start: 48.269
+    bpm: 255.0
+  - start: 48.504
+    bpm: 256.0
+  - start: 48.738
+    bpm: 257.0
+  - start: 48.971
+    bpm: 258.0
+  - start: 49.203
+    bpm: 259.0
+  - start: 49.434
+    bpm: 260.0
+  - start: 49.664
+    bpm: 261.0
+  - start: 49.893
+    bpm: 262.0
+  - start: 50.122
+    bpm: 263.0
+  - start: 50.35
+    bpm: 264.0
+  - start: 50.577
+    bpm: 265.0
+  - start: 50.804
+    bpm: 266.0
+  - start: 51.029
+    bpm: 267.0
+  - start: 51.253
+    bpm: 268.0
+  - start: 51.476
+    bpm: 269.0
+  - start: 51.699
+    bpm: 270.0
+  - start: 51.921
+    bpm: 271.0
+  - start: 52.142
+    bpm: 272.0
+  - start: 52.362
+    bpm: 273.0
+  - start: 52.581
+    bpm: 274.0
+  - start: 52.799
+    bpm: 275.0
+  - start: 53.017
+    bpm: 276.0
+  - start: 53.234
+    bpm: 277.0
+  - start: 53.45
+    bpm: 278.0
+  - start: 53.665
+    bpm: 279.0
+  - start: 53.88
+    bpm: 280.0
+  - start: 54.094
+    bpm: 281.0
+  - start: 54.309
+    bpm: 282.0
+  - start: 54.521
+    bpm: 283.0
+  - start: 54.733
+    bpm: 284.0
+  - start: 54.944
+    bpm: 285.0
+  - start: 55.154
+    bpm: 286.0
+  - start: 55.363
+    bpm: 287.0
+  - start: 55.572
+    bpm: 288.0
+  - start: 55.78
+    bpm: 289.0
+  - start: 55.987
+    bpm: 290.0
+  - start: 56.193
+    bpm: 291.0
+  - start: 56.399
+    bpm: 292.0
+  - start: 56.604
+    bpm: 293.0
+  - start: 56.809
+    bpm: 294.0
+  - start: 57.013
+    bpm: 295.0
+  - start: 57.216
+    bpm: 296.0
+  - start: 57.418
+    bpm: 297.0
+  - start: 57.622
+    bpm: 298.0
+  - start: 57.823
+    bpm: 299.0
+  - start: 58.023
+    bpm: 300.0
+  - start: 58.223
+    bpm: 301.0
+  - start: 58.422
+    bpm: 302.0
+  - start: 58.62
+    bpm: 303.0
+  - start: 58.818
+    bpm: 304.0
+  - start: 59.015
+    bpm: 305.0
+  - start: 59.212
+    bpm: 306.0
+  - start: 59.408
+    bpm: 307.0
+  - start: 59.603
+    bpm: 308.0
+  - start: 59.797
+    bpm: 309.0
+  - start: 59.991
+    bpm: 310.0
+  - start: 60.184
+    bpm: 311.0
+  - start: 60.376
+    bpm: 312.0
+  - start: 60.568
+    bpm: 313.0
+  - start: 60.761
+    bpm: 314.0
+  - start: 60.952
+    bpm: 315.0
+  - start: 61.142
+    bpm: 316.0
+  - start: 61.333
+    bpm: 317.0
+  - start: 61.522
+    bpm: 318.0
+  - start: 61.71
+    bpm: 319.0
+  - start: 61.898
+    bpm: 320.0
+  - start: 62.085
+    bpm: 321.0
+  - start: 62.273
+    bpm: 322.0
+  - start: 62.459
+    bpm: 323.0
+  - start: 62.644
+    bpm: 324.0
+  - start: 62.829
+    bpm: 325.0
+  - start: 63.015
+    bpm: 326.0
+  - start: 63.199
+    bpm: 327.0
+  - start: 63.382
+    bpm: 328.0
+  - start: 63.564
+    bpm: 329.0
+  - start: 63.753
+    bpm: 330.0
+  - start: 63.934
+    bpm: 331.0
+  - start: 64.115
+    bpm: 332.0
+  - start: 64.295
+    bpm: 333.0
+  - start: 64.475
+    bpm: 334.0
+  - start: 64.654
+    bpm: 335.0
+  - start: 64.833
+    bpm: 336.0
+  - start: 65.011
+    bpm: 337.0
+  - start: 65.193
+    bpm: 338.0
+  - start: 65.37
+    bpm: 339.0
+  - start: 65.546
+    bpm: 340.0
+  - start: 65.722
+    bpm: 341.0
+  - start: 65.897
+    bpm: 342.0
+  - start: 66.072
+    bpm: 343.0
+  - start: 66.246
+    bpm: 344.0
+  - start: 66.42
+    bpm: 345.0
+  - start: 66.595
+    bpm: 346.0
+  - start: 66.768
+    bpm: 347.0
+  - start: 66.94
+    bpm: 348.0
+  - start: 67.112
+    bpm: 349.0
+  - start: 67.283
+    bpm: 350.0
+  - start: 67.454
+    bpm: 351.0
+  - start: 67.624
+    bpm: 352.0
+  - start: 67.794
+    bpm: 353.0
+  - start: 67.969
+    bpm: 354.0
+  - start: 68.137
+    bpm: 355.0
+  - start: 68.306
+    bpm: 356.0
+  - start: 68.476
+    bpm: 357.0
+  - start: 68.644
+    bpm: 358.0
+  - start: 68.811
+    bpm: 359.0
+  - start: 68.978
+    bpm: 360.0
+  - start: 69.144
+    bpm: 361.0
+  - start: 69.319
+    bpm: 362.0
+  - start: 69.484
+    bpm: 363.0
+  - start: 69.649
+    bpm: 364.0
+  - start: 69.813
+    bpm: 365.0
+  - start: 69.981
+    bpm: 366.0
+  - start: 70.144
+    bpm: 367.0
+  - start: 70.307
+    bpm: 368.0
+  - start: 70.47
+    bpm: 369.0
+  - start: 70.632
+    bpm: 370.0
+  - start: 70.794
+    bpm: 371.0
+  - start: 70.955
+    bpm: 372.0
+  - start: 71.116
+    bpm: 373.0
+  - start: 71.276
+    bpm: 374.0
+  - start: 71.436
+    bpm: 375.0
+  - start: 71.596
+    bpm: 376.0
+  - start: 71.755
+    bpm: 377.0
+  - start: 71.924
+    bpm: 378.0
+  - start: 72.082
+    bpm: 379.0
+  - start: 72.24
+    bpm: 380.0
+  - start: 72.397
+    bpm: 381.0
+  - start: 72.554
+    bpm: 382.0
+  - start: 72.711
+    bpm: 383.0
+  - start: 72.867
+    bpm: 384.0
+  - start: 73.023
+    bpm: 385.0
+  - start: 73.178
+    bpm: 386.0
+  - start: 73.333
+    bpm: 387.0
+  - start: 73.488
+    bpm: 388.0
+  - start: 73.642
+    bpm: 389.0
+  - start: 73.796
+    bpm: 390.0
+  - start: 73.949
+    bpm: 391.0
+  - start: 74.102
+    bpm: 392.0
+  - start: 74.255
+    bpm: 393.0
+  - start: 74.407
+    bpm: 394.0
+  - start: 74.559
+    bpm: 395.0
+  - start: 74.71
+    bpm: 396.0
+  - start: 74.861
+    bpm: 397.0
+  - start: 75.012
+    bpm: 398.0
+  - start: 75.162
+    bpm: 399.0
+  - start: 75.312
+    bpm: 200.0
+  - start: 80.112
+    bpm: 250.0
+  - start: 82.032
+    bpm: 250.0
+songId: "song_aleph_0"
+difficulty: "Drizzle"
+difficultyValue: 0.0
+charter: "Akko"
+chartersRef:
+  - "people_akko"
+chartId: "chart_1dbe0fd0e0894a808ae4620d093e9b71"
+tags:
+  - "sv"
+  - "变速"
