@@ -68,9 +68,15 @@ open class LoadDataTask : DefaultTask() {
             val illustrations = landscapeIllustrations + squareIllustrations
 
             illustrations.forEach { illustration ->
-                illustration.let { allTags.addAll(illustration.tags) }
+                illustration.let {
+                    allTags.addAll(illustration.tags)
+                    allTags.add(illustration.illustrator)
+                }
                 illustration.illustratorsList.forEach { illustratorId ->
-                    peopleMap[illustratorId]?.let { people -> allTags.addAll(people.tags) }
+                    peopleMap[illustratorId]?.let { people ->
+                        allTags.addAll(people.tags)
+                        allTags.add(people.name)
+                    }
                 }
             }
 
