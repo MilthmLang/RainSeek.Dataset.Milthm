@@ -4,7 +4,7 @@ title: "Welcome to Milthm"
 titleCulture: "en"
 latinTitle: "Welcome to Milthm"
 artistsRef:
-- "people_tsuki_p"
+  - "people_tsuki_p"
 artist: "TsukiP"
 tags:
-- ""
+  - "tutorial"
