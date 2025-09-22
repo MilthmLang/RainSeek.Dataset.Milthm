@@ -1,9 +1,34 @@
 # RainSeek.Dataset.Milthm
 
-## Build
+## Build & Data Processing
+
+This project uses Gradle for automated data processing.
+
+To run the full data processing workflow, execute:
+
+```
+./gradlew data-process
+```
+
+### Common Tasks
+
+- `rename` — Batch rename data (charts, illustrations, people, songs)
+- `rename-chart` — Rename chart data
+- `rename-illustrations` — Rename illustration data
+- `rename-people` — Rename people data
+- `rename-songs` — Rename song data
+- `data-load` — Load raw data
+- `data-saves` — Save processed data to files
+- `data-indexing` — Index data into SQLite database
+- `benchmark` — Searching benchmark
+
+You can run individual tasks, for example:
 
 ```bash
-./gradlew :data-process
+./gradlew rename
+./gradlew data-load
+./gradlew data-saves
+./gradlew data-indexing
 ```
 
 ## Contribution
