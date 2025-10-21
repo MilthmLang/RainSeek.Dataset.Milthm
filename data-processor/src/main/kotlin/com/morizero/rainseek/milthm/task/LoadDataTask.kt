@@ -4,12 +4,10 @@ import com.morizero.rainseek.milthm.model.*
 import com.morizero.rainseek.milthm.utils.MapIdObject
 import com.morizero.rainseek.milthm.utils.yamlMapper
 import org.gradle.api.DefaultTask
-import org.gradle.api.NonNullApi
 import org.gradle.api.tasks.CacheableTask
 import org.gradle.api.tasks.Internal
 import org.gradle.api.tasks.TaskAction
 
-@NonNullApi
 @CacheableTask
 open class LoadDataTask : DefaultTask() {
     @Internal

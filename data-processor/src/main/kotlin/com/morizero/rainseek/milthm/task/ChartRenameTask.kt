@@ -3,13 +3,11 @@ package com.morizero.rainseek.milthm.task
 import com.morizero.rainseek.milthm.model.Chart
 import com.morizero.rainseek.milthm.utils.yamlMapper
 import org.gradle.api.DefaultTask
-import org.gradle.api.NonNullApi
 import org.gradle.api.tasks.CacheableTask
 import org.gradle.api.tasks.Internal
 import org.gradle.api.tasks.TaskAction
 import java.io.File
 
-@NonNullApi
 @CacheableTask
 open class ChartRenameTask : DefaultTask() {
     @Internal

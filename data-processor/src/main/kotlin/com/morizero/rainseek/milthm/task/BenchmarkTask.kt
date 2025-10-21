@@ -19,7 +19,6 @@ import okhttp3.Request
 import okhttp3.Response
 import org.apache.commons.lang3.RandomStringUtils
 import org.gradle.api.DefaultTask
-import org.gradle.api.NonNullApi
 import org.gradle.api.tasks.CacheableTask
 import org.gradle.api.tasks.Input
 import org.gradle.api.tasks.TaskAction
@@ -29,7 +28,6 @@ import kotlin.math.ln
 import kotlin.math.min
 import kotlin.random.Random
 
-@NonNullApi
 @CacheableTask
 open class BenchmarkTask : DefaultTask() {
 

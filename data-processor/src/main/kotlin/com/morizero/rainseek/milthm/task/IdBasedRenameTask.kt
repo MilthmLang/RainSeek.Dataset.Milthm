@@ -4,14 +4,12 @@ import com.fasterxml.jackson.dataformat.yaml.YAMLMapper
 import com.fasterxml.jackson.module.kotlin.registerKotlinModule
 import com.morizero.rainseek.milthm.model.IdModel
 import org.gradle.api.DefaultTask
-import org.gradle.api.NonNullApi
 import org.gradle.api.tasks.CacheableTask
 import org.gradle.api.tasks.Internal
 import org.gradle.api.tasks.TaskAction
 import java.io.File
 import javax.inject.Inject
 
-@NonNullApi
 @CacheableTask
 open class IdBasedRenameTask @Inject constructor(
     @Inject val subDir: String,
