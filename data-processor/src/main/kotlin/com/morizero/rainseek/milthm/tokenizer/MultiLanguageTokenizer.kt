@@ -11,7 +11,6 @@ import org.apache.lucene.analysis.ja.JapaneseTokenizer
 import org.apache.lucene.analysis.tokenattributes.CharTermAttribute
 import org.apache.lucene.analysis.tokenattributes.OffsetAttribute
 import java.io.StringReader
-import kotlin.collections.plusAssign
 
 
 class MultiLanguageTokenizer(
@@ -131,6 +130,10 @@ class MultiLanguageTokenizer(
             result.forEach { it ->
                 val pinyin = provider(it.value).split(" ")
 
+                if (!isAllEnglishLettersAndDigits(pinyin)) {
+                    return@forEach
+                }
+
                 var i = it.startPosition
                 while (i < it.endPosition) {
                     val m = TokenModel(
@@ -163,7 +166,16 @@ class MultiLanguageTokenizer(
                 Character.UnicodeBlock.CJK_UNIFIED_IDEOGRAPHS,
                 Character.UnicodeBlock.CJK_UNIFIED_IDEOGRAPHS_EXTENSION_A,
                 Character.UnicodeBlock.CJK_UNIFIED_IDEOGRAPHS_EXTENSION_B -> true
+
                 else -> false
+            }
+        }
+    }
+
+    fun isAllEnglishLettersAndDigits(pinyin: List<String>): Boolean {
+        return pinyin.all { token ->
+            token.all { ch ->
+                (ch in 'a'..'z') || (ch in 'A'..'Z') || (ch in '0'..'9')
             }
         }
     }
