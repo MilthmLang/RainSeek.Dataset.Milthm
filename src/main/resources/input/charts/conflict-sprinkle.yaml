@@ -1,0 +1,17 @@
+---
+id: "bd6cc967-d948-4a92-9e68-c86b091873bd "
+illustration:
+- "illustration_conflict"
+illustrationSquare: []
+bpmInfo:
+- start: -0.019
+  bpm: 160.0
+songId: "song_conflict"
+difficulty: "Sprinkle"
+difficultyValue: 0.0
+charter: "your current branch is behind its remote counterpart"
+chartersRef:
+- "people_eric_lian"
+- "people_akko"
+chartId: "chart_conflict_sprinkle"
+tags: []

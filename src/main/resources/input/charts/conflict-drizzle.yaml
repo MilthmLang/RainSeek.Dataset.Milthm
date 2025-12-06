@@ -1,0 +1,16 @@
+---
+id: "8d873c10-b5e8-40e0-bf46-2a66a46d44f2"
+illustration:
+- "illustration_conflict"
+illustrationSquare: []
+bpmInfo:
+- start: -0.015
+  bpm: 160.0
+songId: "song_conflict"
+difficulty: "Drizzle"
+difficultyValue: 0.0
+charter: "[6A9EC0] + Icier"
+chartersRef:
+- "people_icier"
+chartId: "chart_conflict_drizzle"
+tags: []

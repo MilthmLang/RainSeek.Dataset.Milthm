@@ -1,0 +1,16 @@
+---
+id: "cd76fd59-3091-404f-943b-7028c0ef9ffe"
+illustration:
+- "illustration_sound_of_nature"
+illustrationSquare: []
+bpmInfo:
+- start: 0.0
+  bpm: 208.0
+songId: "song_sound_of_nature"
+difficulty: "Cloudburst"
+difficultyValue: 0.0
+charter: "FurryDog running in the Nature"
+chartersRef:
+- "people_shuxuezhu"
+chartId: "chart_sound_of_nature_cloudburst"
+tags: []

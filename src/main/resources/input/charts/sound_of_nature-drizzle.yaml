@@ -1,0 +1,16 @@
+---
+id: "9f67df07-3564-4637-98bd-c815672cf1fc"
+illustration:
+- "illustration_sound_of_nature"
+illustrationSquare: []
+bpmInfo:
+- start: 0.0
+  bpm: 208.0
+songId: "song_sound_of_nature"
+difficulty: "Drizzle"
+difficultyValue: 0.0
+charter: "Sound of Woof！"
+chartersRef:
+- "people_shuxuezhu"
+chartId: "chart_sound_of_nature_drizzle"
+tags: []

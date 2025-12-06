@@ -1,0 +1,16 @@
+---
+id: "1da6bd8f-8c5f-4eb4-9541-2e70a4da6472"
+illustration:
+- "illustration_sound_of_nature"
+illustrationSquare: []
+bpmInfo:
+- start: 0.0
+  bpm: 208.0
+songId: "song_sound_of_nature"
+difficulty: "Sprinkle"
+difficultyValue: 0.0
+charter: "大只黄毛狗狗"
+chartersRef:
+- "people_shuxuezhu"
+chartId: "chart_sound_of_nature_sprinkle"
+tags: []
