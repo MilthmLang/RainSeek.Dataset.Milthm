@@ -1,0 +1,16 @@
+---
+id: "467c01d6-5c0e-473b-9ac9-0cc4827f0098"
+illustration:
+- "illustration_life_garden"
+illustrationSquare: []
+bpmInfo:
+- start: -0.013
+  bpm: 149.0
+songId: "song_life_garden"
+difficulty: "Drizzle"
+difficultyValue: 0.0
+charter: "爬爬"
+chartersRef:
+- "people_papa"
+chartId: "chart_life_garden_drizzle"
+tags: []

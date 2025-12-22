@@ -1,0 +1,16 @@
+---
+id: "db4427b9-ebe2-4084-941a-d697b11a30db"
+illustration:
+- "illustration_melody_to_heaven"
+illustrationSquare: []
+bpmInfo:
+- start: -0.0077
+  bpm: 113.0
+songId: "song_melody_to_heaven"
+difficulty: "Cloudburst"
+difficultyValue: 0.0
+charter: "Ariayaka"
+chartersRef:
+- "people_ariayaka"
+chartId: "chart_melody_to_heaven_cloudburst"
+tags: []

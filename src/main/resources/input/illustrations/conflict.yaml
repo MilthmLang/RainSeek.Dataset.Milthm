@@ -1,7 +1,8 @@
 ---
 id: "illustration_conflict"
-illustrator: ""
-illustratorsList: []
+illustrator: "iimo"
+illustratorsList:
+  - "people_iimo"
 description: ""
 tags:
   - "glitch art"

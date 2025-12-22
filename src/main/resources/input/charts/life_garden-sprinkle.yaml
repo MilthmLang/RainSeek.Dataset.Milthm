@@ -1,0 +1,16 @@
+---
+id: "12cd9ae1-83c0-47e5-b73d-b47af35ea208"
+illustration:
+- "illustration_life_garden"
+illustrationSquare: []
+bpmInfo:
+- start: -0.013
+  bpm: 149.0
+songId: "song_life_garden"
+difficulty: "Sprinkle"
+difficultyValue: 0.0
+charter: "爬爬"
+chartersRef:
+- "people_papa"
+chartId: "chart_life_garden_sprinkle"
+tags: []

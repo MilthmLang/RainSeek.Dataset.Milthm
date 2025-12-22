@@ -1,0 +1,16 @@
+---
+id: "98233a57-65da-4cff-a4db-879547376fa9"
+illustration:
+- "illustration_melody_to_heaven"
+illustrationSquare: []
+bpmInfo:
+- start: -0.0077
+  bpm: 113.0
+songId: "song_melody_to_heaven"
+difficulty: "Sprinkle"
+difficultyValue: 0.0
+charter: "Akko"
+chartersRef:
+- "people_akko"
+chartId: "chart_melody_to_heaven_sprinkle"
+tags: []

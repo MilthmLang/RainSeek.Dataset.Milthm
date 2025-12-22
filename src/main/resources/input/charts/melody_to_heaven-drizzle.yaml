@@ -1,0 +1,16 @@
+---
+id: "d47bc4ce-8543-48d1-addc-5d512d849745"
+illustration:
+- "illustration_melody_to_heaven"
+illustrationSquare: []
+bpmInfo:
+- start: -0.0077
+  bpm: 113.0
+songId: "song_melody_to_heaven"
+difficulty: "Drizzle"
+difficultyValue: 0.0
+charter: "Akko"
+chartersRef:
+- "people_akko"
+chartId: "chart_melody_to_heaven_drizzle"
+tags: []
