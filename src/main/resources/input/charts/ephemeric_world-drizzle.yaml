@@ -1,0 +1,16 @@
+---
+id: "027632b8-fcf0-4f29-9499-617d9c2c1306"
+illustration:
+- "illustration_ephemeric_world"
+illustrationSquare: []
+bpmInfo:
+- start: 0.001
+  bpm: 200.0
+songId: "song_ephemeric_world"
+difficulty: "Drizzle"
+difficultyValue: 0.0
+charter: "Kiyotsuki"
+chartersRef:
+- "people_kiyotsuki"
+chartId: "chart_ephemeric_world_drizzle"
+tags: []

@@ -1,0 +1,62 @@
+---
+id: "0046b267-be27-4b5c-9608-c1d08367c0e7"
+illustration:
+- "illustration_polyridia"
+illustrationSquare: []
+bpmInfo:
+- start: 1.0422294
+  bpm: 170.0
+- start: 3.5128176
+  bpm: 170.0
+- start: 6.336347
+  bpm: 170.0
+- start: 8.806935
+  bpm: 170.0
+- start: 11.630465
+  bpm: 170.0
+- start: 14.101053
+  bpm: 170.0
+- start: 16.924582
+  bpm: 170.0
+- start: 19.39517
+  bpm: 170.0
+- start: 22.2187
+  bpm: 170.0
+- start: 32.10105
+  bpm: 170.0
+- start: 34.2187
+  bpm: 170.0
+- start: 43.04223
+  bpm: 170.0
+- start: 49.395172
+  bpm: 170.0
+- start: 66.689285
+  bpm: 170.0
+- start: 68.80694
+  bpm: 170.0
+- start: 81.159874
+  bpm: 170.0
+- start: 83.983406
+  bpm: 170.0
+- start: 86.453995
+  bpm: 170.0
+- start: 89.27753
+  bpm: 170.0
+- start: 91.748116
+  bpm: 170.0
+- start: 94.57164
+  bpm: 170.0
+- start: 97.04223
+  bpm: 170.0
+- start: 99.86576
+  bpm: 170.0
+- start: 102.33635
+  bpm: 170.0
+songId: "song_polyridia"
+difficulty: "Sprinkle"
+difficultyValue: 0.0
+charter: "Ariayaka"
+chartersRef:
+- "people_ariayaka"
+chartId: "chart_polyridia_sprinkle"
+tags: []
