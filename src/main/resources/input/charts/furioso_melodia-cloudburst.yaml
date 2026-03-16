@@ -1,0 +1,16 @@
+---
+id: "d2d55ec2-8138-4273-9e0a-01b81b534a63"
+illustration:
+- "illustration_furioso_melodia"
+illustrationSquare: []
+bpmInfo:
+- start: 0.0
+  bpm: 155.0
+songId: "song_furioso_melodia"
+difficulty: "Cloudburst"
+difficultyValue: 0.0
+charter: "nera Magazè"
+chartersRef:
+- "people_magazet"
+chartId: "chart_furioso_melodia_cloudburst"
+tags: []

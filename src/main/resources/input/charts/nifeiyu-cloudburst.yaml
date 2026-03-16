@@ -1,0 +1,17 @@
+---
+id: "4f1bc47d-aa5a-4b91-b3ad-f237f28eca16"
+illustration:
+- "illustration_nifeiyu"
+illustrationSquare: []
+bpmInfo:
+- start: 0.0
+  bpm: 174.0
+songId: "song_nifeiyu"
+difficulty: "Cloudburst"
+difficultyValue: 0.0
+charter: "inverse F.lying R.ain"
+chartersRef:
+  - "people_felicks_fox"
+  - "people_rankb"
+chartId: "chart_cloudburst"
+tags: []

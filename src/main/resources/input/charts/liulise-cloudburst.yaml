@@ -1,0 +1,17 @@
+---
+id: "6a732e7d-7392-463d-9c7e-a77afe4dd6de"
+illustration:
+  - "illustration_liulise"
+illustrationSquare: [ ]
+bpmInfo:
+  - start: -0.5
+    bpm: 120.0
+songId: "song_liulise"
+difficulty: "Cloudburst"
+difficultyValue: 0.0
+charter: "”Rに始まり、Fに終わる“"
+chartersRef:
+  - "people_felicks_fox"
+  - "people_rankb"
+chartId: "chart_cloudburst"
+tags: [ ]
