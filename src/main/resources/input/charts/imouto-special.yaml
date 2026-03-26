@@ -1,0 +1,16 @@
+---
+id: "98ba5b90-42da-41df-9a65-d4ef48ec128a"
+illustration:
+- "illustration_imouto"
+illustrationSquare: []
+bpmInfo:
+- start: 0.0
+  bpm: 222.0
+songId: "song_imouto"
+difficulty: "Special"
+difficultyValue: 0.0
+charter: "Kiyotsuki"
+chartersRef:
+- "people_kiyotsuki"
+chartId: "chart_imouto_special"
+tags: []

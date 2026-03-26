@@ -1,0 +1,36 @@
+---
+id: "ba78b4c3-8045-4b7b-91cc-fa79cef09beb"
+illustration:
+- "illustration_lost_civilization"
+illustrationSquare: []
+bpmInfo:
+- start: 1.142
+  bpm: 210.0
+- start: 40.0
+  bpm: 210.0
+- start: 110.285
+  bpm: 200.0
+- start: 112.085
+  bpm: 190.0
+- start: 113.979
+  bpm: 185.0
+- start: 115.924
+  bpm: 175.0
+- start: 116.952
+  bpm: 140.0
+- start: 117.594
+  bpm: 105.0
+- start: 117.879
+  bpm: 90.0
+- start: 118.212
+  bpm: 75.0
+- start: 122.612
+  bpm: 210.0
+songId: "song_lost_civilization"
+difficulty: "Drizzle"
+difficultyValue: 0.0
+charter: "Eric_Lian"
+chartersRef:
+- "people_eric_lian"
+chartId: "chart_lost_civilization_drizzle"
+tags: []

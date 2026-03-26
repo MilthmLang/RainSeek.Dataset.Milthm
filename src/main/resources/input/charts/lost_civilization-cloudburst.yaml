@@ -1,0 +1,37 @@
+---
+id: "5f19c67f-16a5-474a-aa81-f9678af1a296"
+illustration:
+- "illustration_lost_civilization"
+illustrationSquare: []
+bpmInfo:
+- start: 1.142
+  bpm: 210.0
+- start: 40.0
+  bpm: 210.0
+- start: 110.285
+  bpm: 200.0
+- start: 112.085
+  bpm: 190.0
+- start: 113.979
+  bpm: 185.0
+- start: 115.924
+  bpm: 175.0
+- start: 116.952
+  bpm: 140.0
+- start: 117.594
+  bpm: 105.0
+- start: 117.879
+  bpm: 90.0
+- start: 118.212
+  bpm: 75.0
+- start: 122.612
+  bpm: 210.0
+songId: "song_lost_civilization"
+difficulty: "Cloudburst"
+difficultyValue: 0.0
+charter: "Parents"
+chartersRef:
+- "people_papa"
+- "people_magazet"
+chartId: "chart_lost_civilization_cloudburst"
+tags: []
