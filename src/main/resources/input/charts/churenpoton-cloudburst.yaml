@@ -1,0 +1,16 @@
+---
+id: "d94750c8-65e3-4863-a9e6-c0b8a964e3a6"
+illustration:
+- "illustration_churenpoton"
+illustrationSquare: []
+bpmInfo:
+- start: 0.055
+  bpm: 202.0
+songId: "song_churenpoton"
+difficulty: "Cloudburst"
+difficultyValue: 0.0
+charter: "寒冰被击飞了"
+chartersRef:
+- "people_icier"
+chartId: "chart_churenpoton_cloudburst"
+tags: []

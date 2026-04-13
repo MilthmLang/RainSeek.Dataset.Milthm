@@ -1,0 +1,16 @@
+---
+id: "248db576-fbc1-4c6e-b94c-b492f8c8b9fe"
+illustration:
+- "illustration_class_memories"
+illustrationSquare: []
+bpmInfo:
+- start: 0.244
+  bpm: 145.0
+songId: "song_class_memories"
+difficulty: "Drizzle"
+difficultyValue: 0.0
+charter: "papa"
+chartersRef:
+- "people_papa"
+chartId: "chart_class_memories_drizzle"
+tags: []

@@ -1,0 +1,16 @@
+---
+id: "4c7525d9-0ba2-47ee-acb1-9daaa3db0b2f"
+illustration:
+- "illustration_churenpoton"
+illustrationSquare: []
+bpmInfo:
+- start: 0.055
+  bpm: 202.0
+songId: "song_churenpoton"
+difficulty: "Sprinkle"
+difficultyValue: 0.0
+charter: "寒冰咋点到别人的灯了"
+chartersRef:
+- "people_icier"
+chartId: "chart_churenpoton_sprinkle"
+tags: []

@@ -1,0 +1,16 @@
+---
+id: "e67b2e7c-aa31-4a13-a329-555ed06d3a8d"
+illustration:
+- "illustration_churenpoton"
+illustrationSquare: []
+bpmInfo:
+- start: 0.055
+  bpm: 202.0
+songId: "song_churenpoton"
+difficulty: "Drizzle"
+difficultyValue: 0.0
+charter: "寒冰打麻将打傻了"
+chartersRef:
+- "people_icier"
+chartId: "chart_churenpoton_drizzle"
+tags: []
