@@ -36,23 +36,24 @@ class IndexService(
     }
 
     private fun linkDocumentToToken(documentId: String, tokens: List<TokenModel>) {
-        for (token in tokens) {
-            val tokenEntity = repository.run {
-                findTokenByContent(indexName, token.value) ?: addToken(indexName, token.value)
-            }
-
-            try {
-                repository.addDocumentToken(
-                    indexName, tokenEntity.id, documentId, token.startPosition, token.endPosition
-                )
-            } catch (e: org.sqlite.SQLiteException) {
-                if (e.resultCode.code == 2067) {
-                    continue
-                } else {
-                    throw e
-                }
-            }
+        if (tokens.isEmpty()) {
+            return
         }
+
+        val tokenEntities = repository.ensureTokens(indexName, tokens.map { it.value }.toSet())
+        val values = ArrayList<DocumentTokenInsert>(tokens.size)
+        for (token in tokens) {
+            val tokenEntity =
+                tokenEntities[token.value] ?: throw IllegalStateException("failed to resolve token '${token.value}'")
+            values += DocumentTokenInsert(
+                tokenId = tokenEntity.id,
+                documentId = documentId,
+                startPosition = token.startPosition,
+                endPosition = token.endPosition,
+            )
+        }
+
+        repository.addDocumentTokens(indexName, values)
     }
 
     fun search(query: String): List<SearchResult> {

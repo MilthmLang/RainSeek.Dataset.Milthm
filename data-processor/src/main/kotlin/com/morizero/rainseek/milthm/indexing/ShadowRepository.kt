@@ -1,7 +1,7 @@
 package com.morizero.rainseek.milthm.indexing
 
-import com.morizero.rainseek.milthm.entity.TokenEntity
 import com.morizero.rainseek.milthm.entity.DocumentTokenEntity
+import com.morizero.rainseek.milthm.entity.TokenEntity
 
 class ShadowRepository(val repository: RepositoryFactory) : IndexRepository {
 
@@ -27,5 +27,13 @@ class ShadowRepository(val repository: RepositoryFactory) : IndexRepository {
         indexName: String, tokenId: Long, documentId: String, startPosition: Int, endPosition: Int
     ): DocumentTokenEntity {
         return repository(indexName).addDocumentToken(indexName, tokenId, documentId, startPosition, endPosition)
+    }
+
+    override fun ensureTokens(indexName: String, values: Set<String>): Map<String, TokenEntity> {
+        return repository(indexName).ensureTokens(indexName, values)
+    }
+
+    override fun addDocumentTokens(indexName: String, values: List<DocumentTokenInsert>) {
+        repository(indexName).addDocumentTokens(indexName, values)
     }
 }
