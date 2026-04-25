@@ -1,5 +1,7 @@
 package com.morizero.rainseek.milthm.tokenizer
 
+import com.ibm.icu.text.BreakIterator
+import com.ibm.icu.util.ULocale
 import com.morizero.rainseek.milthm.model.TokenModel
 
 class NGramTokenizer(
@@ -12,16 +14,33 @@ class NGramTokenizer(
         val basicTokenizer = BasicTokenizer(delimiters, caseSensitive)
         val basicTokens = basicTokenizer.tokenize(input)
         val nGrams = mutableListOf<TokenModel>()
+        val charIterator = BreakIterator.getCharacterInstance(ULocale.ROOT)
 
         for (token in basicTokens) {
             val tokenValue = token.value
-            for (i in 0..(tokenValue.length - n)) {
-                val nGramValue = tokenValue.substring(i, i + n)
+            charIterator.setText(tokenValue)
+
+            val boundaries = mutableListOf<Int>()
+            var boundary = charIterator.first()
+            while (boundary != BreakIterator.DONE) {
+                boundaries += boundary
+                boundary = charIterator.next()
+            }
+
+            val graphemeCount = boundaries.size - 1
+            if (graphemeCount < n) {
+                continue
+            }
+
+            for (i in 0..(graphemeCount - n)) {
+                val startInToken = boundaries[i]
+                val endExclusiveInToken = boundaries[i + n]
+                val nGramValue = tokenValue.substring(startInToken, endExclusiveInToken)
                 nGrams.add(
                     TokenModel(
                         value = nGramValue,
-                        startPosition = token.startPosition + i,
-                        endPosition = token.startPosition + i + n - 1
+                        startPosition = token.startPosition + startInToken,
+                        endPosition = token.startPosition + endExclusiveInToken - 1
                     )
                 )
             }

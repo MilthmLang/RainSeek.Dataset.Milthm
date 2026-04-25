@@ -40,6 +40,12 @@ dependencies {
     api("com.squareup.okhttp3:logging-interceptor")
 
     api("org.apache.commons:commons-lang3:3.17.0")
+
+    testImplementation(kotlin("test"))
+}
+
+tasks.test {
+    useJUnitPlatform()
 }
 
 gradlePlugin {
