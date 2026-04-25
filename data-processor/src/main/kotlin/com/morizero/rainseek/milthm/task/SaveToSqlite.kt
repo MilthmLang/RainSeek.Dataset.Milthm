@@ -5,46 +5,40 @@ import com.morizero.rainseek.milthm.indexing.IndexService
 import com.morizero.rainseek.milthm.indexing.KtormRepository
 import com.morizero.rainseek.milthm.indexing.RepositoryFactory
 import com.morizero.rainseek.milthm.indexing.ShadowRepository
-import com.morizero.rainseek.milthm.model.*
+import com.morizero.rainseek.milthm.model.ProcessedDocument
+import com.morizero.rainseek.milthm.model.TokenModel
 import com.morizero.rainseek.milthm.tokenizer.*
-import com.morizero.rainseek.milthm.utils.MapIdObject
 import com.morizero.rainseek.milthm.utils.delimitersList
 import org.gradle.api.DefaultTask
+import org.gradle.api.file.DirectoryProperty
+import org.gradle.api.provider.Property
+import org.gradle.api.tasks.Internal
+import org.gradle.api.tasks.OutputDirectory
 import org.gradle.api.tasks.TaskAction
 import org.ktorm.database.Database
 import org.sqlite.JDBC
 import java.io.File
 
-open class SaveToSqlite : DefaultTask() {
-    private lateinit var loadDataTask: LoadDataTask
+abstract class SaveToSqlite : DefaultTask() {
+    @get:Internal
+    abstract val loadDataTask: Property<LoadDataTask>
 
-    private val chartMap: MapIdObject<Chart>
-        get() = loadDataTask.chartMap
-
-    private val illustrationMap: MapIdObject<Illustration>
-        get() = loadDataTask.illustrationMap
-
-    private val peopleMap: MapIdObject<People>
-        get() = loadDataTask.peopleMap
-
-    private val songsMap: MapIdObject<Song>
-        get() = loadDataTask.songsMap
+    @get:OutputDirectory
+    abstract val outputDir: DirectoryProperty
 
     private val processedDocumentList: MutableList<ProcessedDocument>
-        get() = loadDataTask.processedDocumentList
+        get() = loadDataTask.get().processedDocumentList
 
     @TaskAction
     fun execute() {
-        loadDataTask = project.tasks.named("data-load").get() as LoadDataTask
         saveToSqlite()
     }
 
     private fun saveToSqlite() {
-        val buildDir = project.layout.buildDirectory.asFile.get()
-        val outputDir = buildDir.resolve("output")
-        outputDir.mkdirs()
+        val out = outputDir.get().asFile
+        out.mkdirs()
 
-        val dbFile = File(outputDir, "chart_documents_indexing.db")
+        val dbFile = File(out, "chart_documents_indexing.db")
         if (dbFile.exists()) {
             dbFile.delete()
         }

@@ -21,6 +21,6 @@ fun RepositoryHandler.repo() {
 
 tasks {
     benchmark {
-        endPoint = System.getProperty("benchmark.endPoint") ?: throw Exception("No endpoint given")
+        endPoint.set(System.getProperty("benchmark.endPoint") ?: throw Exception("No endpoint given"))
     }
 }

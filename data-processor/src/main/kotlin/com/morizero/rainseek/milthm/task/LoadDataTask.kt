@@ -4,12 +4,20 @@ import com.morizero.rainseek.milthm.model.*
 import com.morizero.rainseek.milthm.utils.MapIdObject
 import com.morizero.rainseek.milthm.utils.yamlMapper
 import org.gradle.api.DefaultTask
+import org.gradle.api.file.DirectoryProperty
 import org.gradle.api.tasks.CacheableTask
+import org.gradle.api.tasks.InputDirectory
 import org.gradle.api.tasks.Internal
+import org.gradle.api.tasks.PathSensitive
+import org.gradle.api.tasks.PathSensitivity
 import org.gradle.api.tasks.TaskAction
 
 @CacheableTask
-open class LoadDataTask : DefaultTask() {
+abstract class LoadDataTask : DefaultTask() {
+    @get:InputDirectory
+    @get:PathSensitive(PathSensitivity.RELATIVE)
+    abstract val inputDir: DirectoryProperty
+
     @Internal
     var chartMap: MapIdObject<Chart> = MapIdObject()
 
@@ -132,7 +140,7 @@ open class LoadDataTask : DefaultTask() {
     }
 
     private fun loadFiles() {
-        val resourceDirPath = project.rootDir.resolve("src/main/resources/input")
+        val resourceDirPath = inputDir.get().asFile
 
         resourceDirPath.resolve("charts").listFiles()?.let {
             chartMap.addAll(it.map { file ->

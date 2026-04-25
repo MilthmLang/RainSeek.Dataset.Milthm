@@ -3,21 +3,22 @@ package com.morizero.rainseek.milthm.task
 import com.morizero.rainseek.milthm.model.Chart
 import com.morizero.rainseek.milthm.utils.yamlMapper
 import org.gradle.api.DefaultTask
+import org.gradle.api.file.DirectoryProperty
 import org.gradle.api.tasks.CacheableTask
-import org.gradle.api.tasks.Internal
+import org.gradle.api.tasks.InputDirectory
+import org.gradle.api.tasks.PathSensitive
+import org.gradle.api.tasks.PathSensitivity
 import org.gradle.api.tasks.TaskAction
-import java.io.File
 
 @CacheableTask
-open class ChartRenameTask : DefaultTask() {
-    @Internal
-    val resourceDirPath = File("${project.rootDir}/src/main/resources/input")
-
-    @Internal
-    val files: Array<out File> = resourceDirPath.resolve("charts").listFiles() ?: emptyArray()
+abstract class ChartRenameTask : DefaultTask() {
+    @get:InputDirectory
+    @get:PathSensitive(PathSensitivity.RELATIVE)
+    abstract val inputDir: DirectoryProperty
 
     @TaskAction
     fun execute() {
+        val files = inputDir.get().asFile.resolve("charts").listFiles() ?: emptyArray()
         val songIdRegex = Regex("song_[0-9a-fA-F]{32}")
         var p = false
         for (file in files) {

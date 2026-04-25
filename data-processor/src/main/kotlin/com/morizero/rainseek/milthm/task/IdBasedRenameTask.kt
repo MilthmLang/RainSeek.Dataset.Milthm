@@ -1,34 +1,34 @@
 package com.morizero.rainseek.milthm.task
 
-import com.fasterxml.jackson.dataformat.yaml.YAMLMapper
-import com.fasterxml.jackson.module.kotlin.registerKotlinModule
 import com.morizero.rainseek.milthm.model.IdModel
 import org.gradle.api.DefaultTask
-import org.gradle.api.tasks.CacheableTask
-import org.gradle.api.tasks.Internal
-import org.gradle.api.tasks.TaskAction
-import java.io.File
+import org.gradle.api.file.DirectoryProperty
+import org.gradle.api.tasks.*
+import tools.jackson.dataformat.yaml.YAMLFactory
+import tools.jackson.dataformat.yaml.YAMLMapper
+import tools.jackson.module.kotlin.kotlinModule
 import javax.inject.Inject
 
 @CacheableTask
-open class IdBasedRenameTask @Inject constructor(
-    @Inject val subDir: String,
-    @Inject val type: String,
+abstract class IdBasedRenameTask @Inject constructor(
+    @get:Input val subDir: String,
+    @get:Input val type: String,
 ) : DefaultTask() {
-    @Internal
-    val resourceDirPath = File("${project.rootDir}/src/main/resources/input")
+    @get:InputDirectory
+    @get:PathSensitive(PathSensitivity.RELATIVE)
+    abstract val inputDir: DirectoryProperty
 
     @Internal
-    val files: Array<out File> = resourceDirPath.resolve(subDir).listFiles() ?: emptyArray()
-
-    @Internal
-    val yamlMapper = YAMLMapper().registerKotlinModule()
+    val yamlMapper = YAMLMapper(
+        YAMLMapper.Builder(YAMLFactory()).addModule(kotlinModule())
+    )
 
     @Internal
     val idPrefix = type + "_"
 
     @TaskAction
     fun execute() {
+        val files = inputDir.get().asFile.resolve(subDir).listFiles() ?: emptyArray()
         val idRegex = Regex("${idPrefix}[0-9a-fA-F]{32}")
 
         var p = false

@@ -1,8 +1,8 @@
 package com.morizero.rainseek.milthm.model
 
 import com.fasterxml.jackson.annotation.JsonIgnore
-import com.fasterxml.jackson.databind.annotation.JsonDeserialize
 import com.morizero.rainseek.milthm.utils.StringOrStringList
+import tools.jackson.databind.annotation.JsonDeserialize
 
 data class ProcessedDocument(
     override var id: String,
@@ -39,12 +39,12 @@ data class ProcessedDocument(
      * boosting: 5
      */
     var artist: String = "",
-    @JsonDeserialize(using = StringOrStringList::class)
 
     /**
      * indexing: delimiter
      * boosting: 5
      */
+    @field:JsonDeserialize(using = StringOrStringList::class)
     var artistsList: List<String> = emptyList(),
 
     /**
@@ -52,12 +52,12 @@ data class ProcessedDocument(
      * boosting: 5
      */
     var illustrator: List<String> = emptyList(),
-    @JsonDeserialize(using = StringOrStringList::class)
 
     /**
      * indexing: delimiter
      * boosting: 5
      */
+    @field:JsonDeserialize(using = StringOrStringList::class)
     var illustratorsList: List<String> = emptyList(),
 
     var difficulty: String = "",
@@ -74,7 +74,7 @@ data class ProcessedDocument(
      * indexing: delimiter
      * boosting: 5
      */
-    @JsonDeserialize(using = StringOrStringList::class)
+    @field:JsonDeserialize(using = StringOrStringList::class)
     var chartersList: List<String> = emptyList(),
 
 

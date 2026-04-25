@@ -1,9 +1,5 @@
 package com.morizero.rainseek.milthm.task
 
-import com.fasterxml.jackson.databind.DeserializationFeature
-import com.fasterxml.jackson.databind.ObjectMapper
-import com.fasterxml.jackson.module.kotlin.readValue
-import com.fasterxml.jackson.module.kotlin.registerKotlinModule
 import com.ibm.icu.util.ULocale
 import com.morizero.rainseek.milthm.model.BenchmarkResult
 import com.morizero.rainseek.milthm.model.BenchmarkResult.Companion.print
@@ -19,9 +15,15 @@ import okhttp3.Request
 import okhttp3.Response
 import org.apache.commons.lang3.RandomStringUtils
 import org.gradle.api.DefaultTask
+import org.gradle.api.provider.Property
 import org.gradle.api.tasks.CacheableTask
 import org.gradle.api.tasks.Input
+import org.gradle.api.tasks.Internal
 import org.gradle.api.tasks.TaskAction
+import tools.jackson.databind.DeserializationFeature
+import tools.jackson.module.kotlin.jsonMapper
+import tools.jackson.module.kotlin.kotlinModule
+import tools.jackson.module.kotlin.readValue
 import java.util.concurrent.ConcurrentHashMap
 import kotlin.math.exp
 import kotlin.math.ln
@@ -29,25 +31,26 @@ import kotlin.math.min
 import kotlin.random.Random
 
 @CacheableTask
-open class BenchmarkTask : DefaultTask() {
+abstract class BenchmarkTask : DefaultTask() {
 
-    @Input
-    lateinit var endPoint: String
+    @get:Input
+    abstract val endPoint: Property<String>
 
-    private lateinit var loadDataTask: LoadDataTask
+    @get:Internal
+    abstract val loadDataTask: Property<LoadDataTask>
 
-    private val jsonMapper =
-        ObjectMapper().registerKotlinModule().configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false)
+    private val jsonMapper = jsonMapper {
+        addModule(kotlinModule())
+        configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false)
+    }
 
     private val processedDocumentList: MutableList<ProcessedDocument>
-        get() = loadDataTask.processedDocumentList
+        get() = loadDataTask.get().processedDocumentList
 
     private val client = OkHttpClient()
 
     @TaskAction
     fun execute() {
-        loadDataTask = project.tasks.named("data-load").get() as LoadDataTask
-
         BenchmarkResult.printHeading()
         val result = tasksOf {
             task(title = "title", relevantDocs = makeTitleRelevance())
@@ -67,10 +70,7 @@ open class BenchmarkTask : DefaultTask() {
         val totalRecall =
             if (totalQueryCount == 0) 0.0 else result.sumOf { it.recall * it.queryCount } / totalQueryCount
         BenchmarkResult(
-            title = "total",
-            precision = totalPrecision,
-            recall = totalRecall,
-            queryCount = totalQueryCount
+            title = "total", precision = totalPrecision, recall = totalRecall, queryCount = totalQueryCount
         ).print()
     }
 
@@ -235,7 +235,7 @@ open class BenchmarkTask : DefaultTask() {
     }
 
     private fun search(query: String, client: OkHttpClient): List<ProcessedDocument> {
-        val requestUrl = endPoint.toHttpUrl().newBuilder().addQueryParameter("q", query).build()
+        val requestUrl = endPoint.get().toHttpUrl().newBuilder().addQueryParameter("q", query).build()
         val request = Request.Builder().url(requestUrl).build()
 
         val response: Response = client.newCall(request).execute()
