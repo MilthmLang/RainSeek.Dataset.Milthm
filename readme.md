@@ -19,6 +19,7 @@ To run the full data processing workflow, execute:
 - `rename-songs` — Rename song data
 - `data-load` — Load raw data
 - `data-saves` — Save processed data to files
+- `data-ranks-document` — Export ranks document fields to `ranks_document.json`
 - `data-indexing` — Index data into SQLite database
 - `benchmark` — Searching benchmark
 
@@ -28,6 +29,7 @@ You can run individual tasks, for example:
 ./gradlew rename
 ./gradlew data-load
 ./gradlew data-saves
+./gradlew data-ranks-document
 ./gradlew data-indexing
 ```
 

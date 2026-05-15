@@ -107,6 +107,7 @@ abstract class LoadDataTask : DefaultTask() {
                 title = song.title,
                 titleCulture = song.titleCulture,
                 latinTitle = song.latinTitle,
+                illustrationId = chart.illustration.firstOrNull() ?: chart.illustrationSquare.firstOrNull().orEmpty(),
                 bpmInfo = chart.bpmInfo,
                 songId = song.id,
                 difficulty = chart.difficulty,

@@ -31,6 +31,10 @@ class DataProcessorPlugin : Plugin<Project> {
                 it.loadDataTask.set(dataLoad)
                 it.outputDir.set(outputDir)
             }
+            register("data-ranks-document", SaveRanksDocument::class.java) {
+                it.loadDataTask.set(dataLoad)
+                it.outputDir.set(outputDir)
+            }
             register("data-indexing", SaveToSqlite::class.java) {
                 it.loadDataTask.set(dataLoad)
                 it.outputDir.set(outputDir)
@@ -52,6 +56,12 @@ class DataProcessorPlugin : Plugin<Project> {
                 )
             }
 
+            named("data-ranks-document").configure {
+                it.dependsOn(
+                    "data-load"
+                )
+            }
+
             named("data-indexing").configure {
                 it.dependsOn(
                     "data-load"
@@ -60,7 +70,7 @@ class DataProcessorPlugin : Plugin<Project> {
 
             register("data-process").configure {
                 it.dependsOn(
-                    "data-load", "data-saves", "data-indexing"
+                    "data-load", "data-saves", "data-ranks-document", "data-indexing"
                 )
             }
 

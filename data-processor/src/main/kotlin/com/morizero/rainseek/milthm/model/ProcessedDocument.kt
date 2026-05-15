@@ -32,6 +32,9 @@ data class ProcessedDocument(
      */
     var latinTitle: String = "",
 
+    @JsonIgnore
+    var illustrationId: String = "",
+
     var bpmInfo: List<BPMData> = emptyList(),
 
     /**
