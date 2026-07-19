@@ -1,0 +1,16 @@
+---
+id: "d00fad69-023e-4b19-80f3-b2b5bf56ddbc"
+illustration:
+- "illustration_daisy"
+illustrationSquare: []
+bpmInfo:
+- start: 0.011
+  bpm: 180.0
+songId: "song_daisy"
+difficulty: "Sprinkle"
+difficultyValue: 0.0
+charter: "Eric_Lian"
+chartersRef:
+- "people_eric_lian"
+chartId: "chart_daisy_sprinkle"
+tags: []

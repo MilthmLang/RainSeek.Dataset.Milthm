@@ -1,0 +1,16 @@
+---
+id: "35e40240-b0f3-4458-9e94-864ad726364f"
+illustration:
+- "illustration_daisy"
+illustrationSquare: []
+bpmInfo:
+- start: 0.011
+  bpm: 180.0
+songId: "song_daisy"
+difficulty: "Cloudburst"
+difficultyValue: 0.0
+charter: "Kiyotsuki"
+chartersRef:
+- "people_kiyotsuki"
+chartId: "chart_daisy_cloudburst"
+tags: []

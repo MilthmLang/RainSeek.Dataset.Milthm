@@ -1,0 +1,18 @@
+---
+id: "6c9c261c-dfce-42d4-9ff7-994f090847d6"
+illustration:
+- "illustration_rustala"
+illustrationSquare: []
+bpmInfo:
+- start: 0.059
+  bpm: 190.0
+- start: 116.26
+  bpm: 184.0
+songId: "song_rustala"
+difficulty: "Clear"
+difficultyValue: 0.0
+charter: "Kiyotsuki"
+chartersRef:
+- "people_kiyotsuki"
+chartId: "chart_rustala_clear"
+tags: []

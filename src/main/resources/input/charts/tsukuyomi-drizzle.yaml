@@ -1,0 +1,16 @@
+---
+id: "bf777819-75a0-408f-afd2-4b3b0eac35f9"
+illustration:
+- "illustration_tsukuyomi"
+illustrationSquare: []
+bpmInfo:
+- start: 0.0
+  bpm: 176.0
+songId: "song_tsukuyomi"
+difficulty: "Drizzle"
+difficultyValue: 0.0
+charter: "Kiyotsuki \"Quid tum, si octo bracchia habeo?\""
+chartersRef:
+- "people_kiyotsuki"
+chartId: "chart_tsukuyomi_drizzle"
+tags: []

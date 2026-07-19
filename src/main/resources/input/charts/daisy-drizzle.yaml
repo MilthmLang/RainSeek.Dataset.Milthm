@@ -1,0 +1,16 @@
+---
+id: "8e2141a7-7a14-4aef-b5d0-6923cad23bcb"
+illustration:
+- "illustration_daisy"
+illustrationSquare: []
+bpmInfo:
+- start: 0.011
+  bpm: 180.0
+songId: "song_daisy"
+difficulty: "Drizzle"
+difficultyValue: 0.0
+charter: "Eric_Lian"
+chartersRef:
+- "people_eric_lian"
+chartId: "chart_daisy_drizzle"
+tags: []
