@@ -11,6 +11,8 @@ difficultyValue: 0.0
 charter: "阿鱼x俩位异世界旅人"
 chartersRef:
   - "people_ayu"
+  - "people_kiyotsuki"
+  - "people_eric_lian"
 chartId: "chart_e69b4e77ccb24694ba887209ed097783"
 tags:
   - "prolog"
