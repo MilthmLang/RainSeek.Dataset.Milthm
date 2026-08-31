@@ -9,8 +9,9 @@ bpmInfo:
 songId: "song_la_fouldre"
 difficulty: "Cloudburst"
 difficultyValue: 0.0
-charter: "Un rêve sans fin (a.k.a Matrix)"
+charter: "Un rêve sans fin (a.k.a Matrix) with Akko"
 chartersRef:
 - "people_shuxuezhu"
+- "people_akko"
 chartId: "chart_la_fouldre_cloudburst"
 tags: []
