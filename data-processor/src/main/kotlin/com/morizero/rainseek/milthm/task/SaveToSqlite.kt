@@ -144,40 +144,46 @@ abstract class SaveToSqlite : DefaultTask() {
             ), indexName = "tags_ngram3"
         )
 
-        processedDocumentList.forEach { document ->
-            val multiLanguageTokenizer = MultiLanguageTokenizer(
-                cultureListStr = document.titleCulture,
-                predictor = fun(tokenModel: TokenModel): Boolean {
-                    return !delimitersList.contains(tokenModel.value)
-                },
-            )
+        database.useTransaction {
+            processedDocumentList.forEach { document ->
+                val multiLanguageTokenizer = MultiLanguageTokenizer(
+                    cultureListStr = document.titleCulture,
+                    predictor = fun(tokenModel: TokenModel): Boolean {
+                        return !delimitersList.contains(tokenModel.value)
+                    },
+                )
 
-            titleDelimiterIndexing.addDocument(document.id, document.title)
-            title3GramIndexing.addDocument(document.id, document.title)
-            val titleSegmentIndexing = IndexService(
-                repository = shadowRepository, tokenizers = listOf(multiLanguageTokenizer), indexName = "title_segments"
-            )
-            titleSegmentIndexing.addDocument(document.id, document.title)
+                titleDelimiterIndexing.addDocument(document.id, document.title)
+                title3GramIndexing.addDocument(document.id, document.title)
+                val titleSegmentIndexing = IndexService(
+                    repository = shadowRepository,
+                    tokenizers = listOf(multiLanguageTokenizer),
+                    indexName = "title_segments"
+                )
+                titleSegmentIndexing.addDocument(document.id, document.title)
 
-            latinTitleIndexing.addDocument(document.id, document.latinTitle)
-            latinTitle3GramIndexing.addDocument(document.id, document.latinTitle)
+                latinTitleIndexing.addDocument(document.id, document.latinTitle)
+                latinTitle3GramIndexing.addDocument(document.id, document.latinTitle)
 
-            artistDelimiterIndexing.addDocument(document.id, listOf(document.artist))
-            artistsListDelimiterIndexing.addDocument(document.id, document.artistsList)
+                artistDelimiterIndexing.addDocument(document.id, listOf(document.artist))
+                artistsListDelimiterIndexing.addDocument(document.id, document.artistsList)
 
-            illustratorDelimiterIndexing.addDocument(document.id, document.illustrator)
-            illustratorsListDelimiterIndexing.addDocument(document.id, document.illustratorsList)
+                illustratorDelimiterIndexing.addDocument(document.id, document.illustrator)
+                illustratorsListDelimiterIndexing.addDocument(document.id, document.illustratorsList)
 
-            charterDelimiterIndexing.addDocument(document.id, document.charter)
-            chartersListDelimiterIndexing.addDocument(document.id, document.chartersList)
+                charterDelimiterIndexing.addDocument(document.id, document.charter)
+                chartersListDelimiterIndexing.addDocument(document.id, document.chartersList)
 
-            tagsDelimiterIndexing.addDocument(document.id, document.tags)
-            tagsNgram3Indexing.addDocument(document.id, document.tags)
+                tagsDelimiterIndexing.addDocument(document.id, document.tags)
+                tagsNgram3Indexing.addDocument(document.id, document.tags)
 
-            val tagsSegmentsIndexing = IndexService(
-                repository = shadowRepository, tokenizers = listOf(multiLanguageTokenizer), indexName = "tags_segments"
-            )
-            tagsSegmentsIndexing.addDocument(document.id, document.tags)
+                val tagsSegmentsIndexing = IndexService(
+                    repository = shadowRepository,
+                    tokenizers = listOf(multiLanguageTokenizer),
+                    indexName = "tags_segments"
+                )
+                tagsSegmentsIndexing.addDocument(document.id, document.tags)
+            }
         }
     }
 }
